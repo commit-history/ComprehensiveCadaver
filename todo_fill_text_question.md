@@ -58,7 +58,7 @@ To draft one Text_Question_EN, read from the card:
   (identification, innervation, actions, origin/insertion, embryological
   origin, foramen, etc.).
 - `Answer_EN` (index 9) — the English answer you need to produce a question for.
-  Often formatted as `Structure // property1; property2` when the question
+  Often formatted as `Structure | property1; property2` when the question
   asks for a property.
 - `Answer_LA` (index 8) — fall back for Latin naming.
 - `Answer_DE` (index 10) — cross-check.
@@ -72,7 +72,7 @@ To draft one Text_Question_EN, read from the card:
 - **Describe the structure, don't name it.** The reader should have to figure
   out the structure from cues (attachments, relations, branches, embryology).
 - **"AND" questions for compound answers.** When the Answer is formatted as
-  `Structure // property` (e.g. `Rectus Abdominis m. // Intercostal nn.
+  `Structure | property` (e.g. `Rectus Abdominis m. | Intercostal nn.
   (T7-T11); Subcostal n.`), write the question so that both halves are
   elicited: *"Which paired vertical muscle lying within the rectus sheath
   between the pubic symphysis and the xiphoid process, and what segmental
@@ -139,7 +139,7 @@ Rules:
   shown, below, pictured, image.
 - Describe the structure by its attachments, relations, branches, or
   embryology — not by its name.
-- If the Answer has "Structure // property" format, write an "AND" question
+- If the Answer has "Structure | property" format, write an "AND" question
   that asks for both halves (e.g. "Which muscle ... and what nerves ...").
 - Length: 20–50 words.
 - End with '?'.

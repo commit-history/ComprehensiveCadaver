@@ -143,9 +143,12 @@ The `--fill-german-question` and `--fill-french-question` flags additionally pop
 | Labels | Details | Result |
 |--------|---------|--------|
 | 1 label, no details | — | `Calcaneus` |
-| 1 label, with details | 1 detail | `Pectineal Line // Pectineus m.` |
-| 1 label, with details | multiple | `Linea Aspera // Adductor brevis m.; Adductor longus m.` |
-| multiple labels | mixed | `Ilium \| AIIS // Rectus femoris m.` |
+| 1 label, with details | 1 detail | `Pectineal Line \| Pectineus m.` |
+| 1 label, with details | multiple | `Linea Aspera \| Adductor brevis m.; Adductor longus m.` |
+| multiple labels, no details | — | `Ilium \| AIIS` |
+| multiple labels, with details | mixed | `Ilium \| AIIS; Rectus femoris m.` |
+
+`|` separates labels; `;` separates alternative names or multiple details. In multi-label cards the label-to-detail boundary uses `;` to avoid collision with the label separator.
 
 ## Contributing
 

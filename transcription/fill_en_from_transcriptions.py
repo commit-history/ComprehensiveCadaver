@@ -416,17 +416,23 @@ def parse_image_src(html: str) -> str | None:
 def build_answer_en(labels: list[dict]) -> str:
     """Build answer_en string from labels array.
 
-    Single label, no details:  "Calcaneus"
-    Single label, with details: "Pectineal Line // Pectineus m."
-    Multiple details:           "Linea Aspera // Adductor brevis m.; Adductor longus m."
-    Multiple labels:            "Ilium | AIIS // Rectus femoris m."
+    Single label, no details:    "Calcaneus"
+    Single label, with details:  "Pectineal Line | Pectineus m."
+    Multiple details:            "Linea Aspera | Adductor brevis m.; Adductor longus m."
+    Multiple labels, no details: "Ilium | AIIS"
+    Multiple labels + details:   "Ilium | AIIS; Rectus femoris m."
+
+    With multiple labels, "|" is the label separator, so the label/detail
+    boundary falls back to "; " to avoid collision.
     """
+    multi_label = len(labels) > 1
+    label_detail_sep = "; " if multi_label else " | "
     parts = []
     for label in labels:
         text = label["text"]
         details = label.get("details", [])
         if details:
-            parts.append(f"{text} // {'; '.join(details)}")
+            parts.append(f"{text}{label_detail_sep}{'; '.join(details)}")
         else:
             parts.append(text)
     return " | ".join(parts)
