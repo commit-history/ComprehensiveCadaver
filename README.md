@@ -45,7 +45,7 @@ If you want to contribute translations or corrections:
 
 1. Make your changes to the cards in Anki.
 2. Export the deck via **File → CrowdAnki: Export deck** and select the **Comprehensive Cadaver** deck.
-3. Choose the top level folder folder in this repository as the export destination (this will overwrite `deck.json` and update the `media` folder).
+3. Choose folder that contains this repository as the export destination (this will overwrite `deck.json` and update the `media` folder). The repository folder must be named `Comprehensive Cadaver`.
 4. The media folder is never commited to keep this repository lean.
 5. Commit your changes and open a pull request.
 
