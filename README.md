@@ -134,7 +134,7 @@ uv run python3 transcription/fill_en_from_transcriptions.py \
   --transcriptions path/to/media-transcriptions
 ```
 
-The script reads each note in `deck.json`, matches the question and answer images to their corresponding transcription files in `ComprehensiveCadaver/media-transcriptions/`, and fills in the `Question_EN` and `Answer_EN` fields.
+The script reads each note in `deck.json`, matches the question and answer images to their corresponding transcription files in `media-transcriptions/`, and fills in the `Question_EN` and `Answer_EN` fields.
 
 The `--fill-german-question` and `--fill-french-question` flags additionally populate `Question_DE` and `Question_FR` using a built-in vocabulary dictionary (`QUESTIONS_EN_VOCAB`) that maps each unique English question to its German and French translation. To update translations, edit the dictionary directly in the script.
 
@@ -153,7 +153,7 @@ If you want to contribute translations or corrections:
 
 1. Make your changes to the cards in Anki.
 2. Export the deck via **File → CrowdAnki: Export deck** and select the **Comprehensive Cadaver** deck.
-3. Choose the top level folder folder in this repository as the export destination (this will overwrite the `ComprehensiveCadaver` and update the `media` folder).
+3. Choose the top level folder folder in this repository as the export destination (this will overwrite `deck.json` and update the `media` folder).
 4. The media folder is never commited to keep this repository lean.
 5. Commit your changes and open a pull request.
 
@@ -161,5 +161,5 @@ If you want to contribute translations or corrections:
 
 - Only modify translation-related fields. Do not change the original English content.
 - Do not rearrange or rename subdecks.
-- Place new media files in `ComprehensiveCadaver/media`.
+- Place new media files in `media/`.
 - Describe what you changed in your pull request.
