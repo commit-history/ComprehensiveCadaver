@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera604.jpeg",
+  "type": "answer",
+  "answer_en": "Seminal Vesicle <br> Mesonephric duct (Wolffian duct)",
+  "labels": [
+    {
+      "text": "Seminal Vesicle",
+      "note": "",
+      "details": [
+        "Mesonephric duct (Wolffian duct)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Male* Pelvis",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved. *Sex assigned at birth"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera430.jpeg",
+  "type": "answer",
+  "answer_en": "Uterine Tube (Oviduct; Fallopian Tube) <br> Paramesonephric duct (Müllerian duct)",
+  "labels": [
+    {
+      "text": "Uterine Tube",
+      "note": "(Oviduct; Fallopian Tube)",
+      "details": [
+        "Paramesonephric duct (Müllerian duct)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

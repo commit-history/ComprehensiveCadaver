@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall120.jpeg",
+  "type": "answer",
+  "answer_en": "External Oblique m. <br> Intercostal nn. (T7-T11) (Thoracoabdominal nn.) <br> Subcostal n.",
+  "labels": [
+    {
+      "text": "External Oblique m.",
+      "note": "",
+      "details": [
+        "Intercostal nn. (T7-T11) (Thoracoabdominal nn.)",
+        "Subcostal n."
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Anterior Rectus Sheath Removed on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

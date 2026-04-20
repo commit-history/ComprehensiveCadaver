@@ -1,0 +1,19 @@
+{
+  "file": "Skull648.jpeg",
+  "type": "answer",
+  "answer_en": "Incus <br> 1st pharyngeal arch <br> (Meckel’s cartilage)",
+  "labels": [
+    {
+      "text": "Incus",
+      "note": "",
+      "details": [
+        "1st pharyngeal arch",
+        "(Meckel’s cartilage)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Ossicles",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

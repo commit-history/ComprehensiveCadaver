@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera414.jpeg",
+  "type": "answer",
+  "answer_en": "Vagina <br> Upper 1/3: Paramesonephric ducts (Müllerian ducts) <br> Lower 2/3: Sinovaginal bulb (Müllerian tubercle)",
+  "labels": [
+    {
+      "text": "Vagina",
+      "note": "",
+      "details": [
+        "Upper 1/3: Paramesonephric ducts (Müllerian ducts)",
+        "Lower 2/3: Sinovaginal bulb (Müllerian tubercle)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox. @MarkAAbbott1"
+}

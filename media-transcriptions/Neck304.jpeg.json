@@ -1,0 +1,19 @@
+{
+  "file": "Neck304.jpeg",
+  "type": "answer",
+  "answer_en": "Sternocleidomastoid m. <br> Flexion of the neck (if contracting bilaterally) <br> Lateral flexion and contralateral rotation of the neck (if contracting unilaterally)",
+  "labels": [
+    {
+      "text": "Sternocleidomastoid m.",
+      "note": "",
+      "details": [
+        "Flexion of the neck (if contracting bilaterally)",
+        "Lateral flexion and contralateral rotation of the neck (if contracting unilaterally)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

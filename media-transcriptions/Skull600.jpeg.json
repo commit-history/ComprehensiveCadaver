@@ -1,0 +1,18 @@
+{
+  "file": "Skull600.jpeg",
+  "type": "answer",
+  "answer_en": "Foramen Cecum <br> Emissary vv.",
+  "labels": [
+    {
+      "text": "Foramen Cecum",
+      "note": "",
+      "details": [
+        "Emissary vv."
+      ]
+    }
+  ],
+  "title": "Superior View of Skull",
+  "subtitle": "(Skull Cap Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

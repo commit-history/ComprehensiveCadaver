@@ -1,0 +1,19 @@
+{
+  "file": "Back242.jpeg",
+  "type": "answer",
+  "answer_en": "Splenius Cervicis m. (Reflected on Right Side) <br> Extension of the neck at the cervical spine (when contracting bilaterally) <br> Ipsilateral rotation and lateral flexion of the head at the cervical spine (when contracting unilaterally)",
+  "labels": [
+    {
+      "text": "Splenius Cervicis m.",
+      "note": "(Reflected on Right Side)",
+      "details": [
+        "Extension of the neck at the cervical spine (when contracting bilaterally)",
+        "Ipsilateral rotation and lateral flexion of the head at the cervical spine (when contracting unilaterally)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

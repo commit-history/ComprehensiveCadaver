@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall156.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Rectus Sheath <br> ½ Internal oblique m. <br> Transversus abdominis m.",
+  "labels": [
+    {
+      "text": "Posterior Rectus Sheath",
+      "note": "",
+      "details": [
+        "½ Internal oblique m.",
+        "Transversus abdominis m."
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

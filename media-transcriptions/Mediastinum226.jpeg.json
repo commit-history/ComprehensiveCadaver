@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum226.jpeg",
+  "type": "answer",
+  "answer_en": "Azygos v. <br> T12",
+  "labels": [
+    {
+      "text": "Azygos v.",
+      "note": "",
+      "details": [
+        "T12"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

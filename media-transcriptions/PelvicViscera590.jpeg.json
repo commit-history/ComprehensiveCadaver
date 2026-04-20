@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera590.jpeg",
+  "type": "answer",
+  "answer_en": "Uterus <br> Paramesonephric ducts (Müllerian ducts)",
+  "labels": [
+    {
+      "text": "Uterus",
+      "note": "",
+      "details": [
+        "Paramesonephric ducts (Müllerian ducts)"
+      ]
+    }
+  ],
+  "title": "AP View of Female* Internal Genital Organs",
+  "subtitle": "(Hysterosalpingogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from https://www.dannytucker.net/information/hsg-hycosy; *Sex assigned at birth"
+}

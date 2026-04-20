@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera90.jpeg",
+  "type": "answer",
+  "answer_en": "Ovarian Ligament",
+  "labels": [
+    {
+      "text": "Ovarian Ligament",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

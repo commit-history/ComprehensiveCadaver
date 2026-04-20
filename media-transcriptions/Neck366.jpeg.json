@@ -1,0 +1,18 @@
+{
+  "file": "Neck366.jpeg",
+  "type": "answer",
+  "answer_en": "Right Common Carotid a. <br> Right 3rd aortic arch",
+  "labels": [
+    {
+      "text": "Right Common Carotid a.",
+      "note": "",
+      "details": [
+        "Right 3rd aortic arch"
+      ]
+    }
+  ],
+  "title": "AP View of Great Vessels",
+  "subtitle": "(Angiogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Imaging Atlas of Human Anatomy (6th Ed.). © 2021, Elsevier Limited. All rights reserved."
+}

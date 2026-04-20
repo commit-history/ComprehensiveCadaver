@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyUL382.jpeg",
+  "type": "answer",
+  "answer_en": "Medial Epicondyle of Humerus <br> Flexor carpi radialis m. <br> Palmaris longus m. <br> Flexor carpi ulnaris m. <br> Flexor digitorum superficialis m.",
+  "labels": [
+    {
+      "text": "Medial Epicondyle of Humerus",
+      "note": "",
+      "details": [
+        "Flexor carpi radialis m.",
+        "Palmaris longus m.",
+        "Flexor carpi ulnaris m.",
+        "Flexor digitorum superficialis m."
+      ]
+    }
+  ],
+  "title": "Posterior View of Distal Humerus (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

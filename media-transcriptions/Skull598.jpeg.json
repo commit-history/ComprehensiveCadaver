@@ -1,0 +1,19 @@
+{
+  "file": "Skull598.jpeg",
+  "type": "answer",
+  "answer_en": "Pharyngeal Canal (Palatovaginal Canal) <br> Pharyngeal n. (branch of CN V2) <br> Pharyngeal a.",
+  "labels": [
+    {
+      "text": "Pharyngeal Canal",
+      "note": "(Palatovaginal Canal)",
+      "details": [
+        "Pharyngeal n. (branch of CN V2)",
+        "Pharyngeal a."
+      ]
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

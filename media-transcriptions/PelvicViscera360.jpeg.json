@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera360.jpeg",
+  "type": "answer",
+  "answer_en": "Uterus <br> Anteverted and anteflexed",
+  "labels": [
+    {
+      "text": "Uterus",
+      "note": "",
+      "details": [
+        "Anteverted and anteflexed"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "Skull368.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Nasal Concha <br> (Superior Turbinate)",
+  "labels": [
+    {
+      "text": "Superior Nasal Concha",
+      "note": "",
+      "details": [
+        "(Superior Turbinate)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

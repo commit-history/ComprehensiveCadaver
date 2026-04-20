@@ -1,0 +1,18 @@
+{
+  "file": "PelvicDiaphragm254.jpeg",
+  "type": "answer",
+  "answer_en": "Coccygeus m. (Ischiococcygeus m.) <br> Ventral rami of S4-S5",
+  "labels": [
+    {
+      "text": "Coccygeus m.",
+      "note": "(Ischiococcygeus m.)",
+      "details": [
+        "Ventral rami of S4-S5"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

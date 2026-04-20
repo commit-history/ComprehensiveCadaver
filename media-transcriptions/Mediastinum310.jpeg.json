@@ -1,0 +1,20 @@
+{
+  "file": "Mediastinum310.jpeg",
+  "type": "answer",
+  "answer_en": "Right Subclavian a. <br> Right 4th aortic arch <br> Right 7th intersegmental a. <br> Right dorsal aorta",
+  "labels": [
+    {
+      "text": "Right Subclavian a.",
+      "note": "",
+      "details": [
+        "Right 4th aortic arch",
+        "Right 7th intersegmental a.",
+        "Right dorsal aorta"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

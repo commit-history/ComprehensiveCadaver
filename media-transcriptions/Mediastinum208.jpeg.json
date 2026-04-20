@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum208.jpeg",
+  "type": "answer",
+  "answer_en": "Descending Thoracic Aorta <br> T12",
+  "labels": [
+    {
+      "text": "Descending Thoracic Aorta",
+      "note": "",
+      "details": [
+        "T12"
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung and Pleura Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

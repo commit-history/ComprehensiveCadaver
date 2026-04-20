@@ -1,0 +1,19 @@
+{
+  "file": "PostAbdominalWall218.jpeg",
+  "type": "answer",
+  "answer_en": "Quadratus Lumborum m. <br> Subcostal n. <br> Ventral rami of L1-L4",
+  "labels": [
+    {
+      "text": "Quadratus Lumborum m.",
+      "note": "",
+      "details": [
+        "Subcostal n.",
+        "Ventral rami of L1-L4"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

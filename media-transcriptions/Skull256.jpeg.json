@@ -1,0 +1,16 @@
+{
+  "file": "Skull256.jpeg",
+  "type": "answer",
+  "answer_en": "Squamous Part of Temporal Bone (Right Side)",
+  "labels": [
+    {
+      "text": "Squamous Part of Temporal Bone",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Skull",
+  "subtitle": "Right Side",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complex Anatomy by Elviot © 2023 DMedVisual"
+}

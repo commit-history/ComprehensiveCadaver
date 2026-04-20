@@ -1,0 +1,20 @@
+{
+  "file": "Back212.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Scapulae m. <br> Elevation and downward rotation of the scapula at the scapulothoracic joint <br> Lateral flexion of the neck at the cervical spine (when contracting unilaterally) <br> Extension of the neck at the cervical spine (when contracting bilaterally)",
+  "labels": [
+    {
+      "text": "Levator Scapulae m.",
+      "note": "",
+      "details": [
+        "Elevation and downward rotation of the scapula at the scapulothoracic joint",
+        "Lateral flexion of the neck at the cervical spine (when contracting unilaterally)",
+        "Extension of the neck at the cervical spine (when contracting bilaterally)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back (Right Side)",
+  "subtitle": "(Trapezius m. Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

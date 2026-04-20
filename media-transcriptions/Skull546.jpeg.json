@@ -1,0 +1,20 @@
+{
+  "file": "Skull546.jpeg",
+  "type": "answer",
+  "answer_en": "Foramen Magnum <br> Spinal cord and meninges <br> Accessory n. (CN XI) <br> Vertebral a.",
+  "labels": [
+    {
+      "text": "Foramen Magnum",
+      "note": "",
+      "details": [
+        "Spinal cord and meninges",
+        "Accessory n. (CN XI)",
+        "Vertebral a."
+      ]
+    }
+  ],
+  "title": "Superior View of Skull",
+  "subtitle": "(Skull Cap Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

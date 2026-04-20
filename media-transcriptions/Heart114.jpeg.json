@@ -1,0 +1,16 @@
+{
+  "file": "Heart114.jpeg",
+  "type": "answer",
+  "answer_en": "Left Ventricle",
+  "labels": [
+    {
+      "text": "Left Ventricle",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Heart (Left Side)",
+  "subtitle": "(Pulmonary Trunk Reflected Anteriorly)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

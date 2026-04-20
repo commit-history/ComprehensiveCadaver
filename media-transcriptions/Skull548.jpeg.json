@@ -1,0 +1,19 @@
+{
+  "file": "Skull548.jpeg",
+  "type": "answer",
+  "answer_en": "Incisive Foramen <br> Nasopalatine n. (branch of CN V2) <br> Sphenopalatine a.",
+  "labels": [
+    {
+      "text": "Incisive Foramen",
+      "note": "",
+      "details": [
+        "Nasopalatine n. (branch of CN V2)",
+        "Sphenopalatine a."
+      ]
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical. @MarkAAbbott1"
+}

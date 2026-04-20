@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera592.jpeg",
+  "type": "answer",
+  "answer_en": "Uterine Tube** (Oviduct; Fallopian Tube) <br> Paramesonephric duct (Müllerian duct)",
+  "labels": [
+    {
+      "text": "Uterine Tube**",
+      "note": "(Oviduct; Fallopian Tube)",
+      "details": [
+        "Paramesonephric duct (Müllerian duct)"
+      ]
+    }
+  ],
+  "title": "AP View of Female* Internal Genital Organs",
+  "subtitle": "(Hysterosalpingogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from https://www.dannytucker.net/information/hsg-hycosy; **Spillage of dye at the fimbriae indicates that the uterine tubes are both patent (open).; *Sex assigned at birth"
+}

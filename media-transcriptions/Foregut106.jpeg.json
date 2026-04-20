@@ -1,0 +1,16 @@
+{
+  "file": "Foregut106.jpeg",
+  "type": "answer",
+  "answer_en": "Stomach (Retracted)",
+  "labels": [
+    {
+      "text": "Stomach",
+      "note": "(Retracted)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Portal Triad",
+  "subtitle": "(Duodenum Cut and Liver Retracted)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

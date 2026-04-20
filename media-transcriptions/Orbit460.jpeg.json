@@ -1,0 +1,19 @@
+{
+  "file": "Orbit460.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Rectus m. (Cut) <br> Origin: Common tendinous ring <br> Insertion: Superior surface of sclera",
+  "labels": [
+    {
+      "text": "Superior Rectus m.",
+      "note": "(Cut)",
+      "details": [
+        "Origin: Common tendinous ring",
+        "Insertion: Superior surface of sclera"
+      ]
+    }
+  ],
+  "title": "Superior View of Orbit (Right Side)",
+  "subtitle": "(Neurovasculature Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). Copyright © 2016 Schattauer GmbH and Wolters Kluwer"
+}

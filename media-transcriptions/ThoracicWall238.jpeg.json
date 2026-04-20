@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall238.jpeg",
+  "type": "answer",
+  "answer_en": "Horizontal and oblique fissures <br> separating lung into three lobes",
+  "labels": [
+    {
+      "text": "Horizontal and oblique fissures",
+      "note": "",
+      "details": [
+        "separating lung into three lobes"
+      ]
+    }
+  ],
+  "title": "Lateral View of Right Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

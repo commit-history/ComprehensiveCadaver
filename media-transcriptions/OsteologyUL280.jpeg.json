@@ -1,0 +1,41 @@
+{
+  "file": "OsteologyUL280.jpeg",
+  "type": "answer",
+  "answer_en": "Scapula <br> Acromion Process <br> Coracoid Process <br> Glenoid Cavity <br> Medial Border of Scapula <br> Lateral Border of Scapula",
+  "labels": [
+    {
+      "text": "Scapula",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Acromion Process",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Coracoid Process",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Glenoid Cavity",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Medial Border of Scapula",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Lateral Border of Scapula",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Shoulder Joint (Left Side)",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

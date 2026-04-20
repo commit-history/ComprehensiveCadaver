@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera280.jpeg",
+  "type": "answer",
+  "answer_en": "Ampulla of Vas Deferens (Cut) <br> (Ampulla of Ductus Deferens)",
+  "labels": [
+    {
+      "text": "Ampulla of Vas Deferens",
+      "note": "(Cut)",
+      "details": [
+        "(Ampulla of Ductus Deferens)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Bladder, Prostate Gland, and Seminal Vesicle (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

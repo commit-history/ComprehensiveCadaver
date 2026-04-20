@@ -1,0 +1,19 @@
+{
+  "file": "Face396.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Anguli Oris m. <br> Origin: Canine fossa of maxilla <br> Insertion: Angle of mouth (modiolus)",
+  "labels": [
+    {
+      "text": "Levator Anguli Oris m.",
+      "note": "",
+      "details": [
+        "Origin: Canine fossa of maxilla",
+        "Insertion: Angle of mouth (modiolus)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

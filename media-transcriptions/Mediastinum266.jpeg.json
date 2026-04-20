@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum266.jpeg",
+  "type": "answer",
+  "answer_en": "Trachea <br> Primary lung bud <br> (Foregut endoderm)",
+  "labels": [
+    {
+      "text": "Trachea",
+      "note": "",
+      "details": [
+        "Primary lung bud",
+        "(Foregut endoderm)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Right Side)",
+  "subtitle": "(Right Lung and Pleura Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

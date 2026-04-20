@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum252.jpeg",
+  "type": "answer",
+  "answer_en": "Main Bronchus (Primary Bronchus) <br> Primary bronchial buds <br> (Foregut endoderm)",
+  "labels": [
+    {
+      "text": "Main Bronchus",
+      "note": "(Primary Bronchus)",
+      "details": [
+        "Primary bronchial buds",
+        "(Foregut endoderm)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

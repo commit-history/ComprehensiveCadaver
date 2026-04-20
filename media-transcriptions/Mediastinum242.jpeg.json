@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum242.jpeg",
+  "type": "answer",
+  "answer_en": "Ligamentum Arteriosum <br> Ductus arteriosus <br> (Left 6th aortic arch)",
+  "labels": [
+    {
+      "text": "Ligamentum Arteriosum",
+      "note": "",
+      "details": [
+        "Ductus arteriosus",
+        "(Left 6th aortic arch)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from All-in-One Anatomy Exam Review: Volume 2. © 2016 Suárez-Quian and Vilensky"
+}

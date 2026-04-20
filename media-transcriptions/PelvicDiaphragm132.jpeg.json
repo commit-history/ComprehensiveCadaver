@@ -1,0 +1,16 @@
+{
+  "file": "PelvicDiaphragm132.jpeg",
+  "type": "answer",
+  "answer_en": "Middle Rectal a. **",
+  "labels": [
+    {
+      "text": "Middle Rectal a.",
+      "note": "**",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1\nModified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox.\n**Variation arising from inferior vesical a. instead of directly from anterior division of internal iliac a.\n*Sex assigned at birth"
+}

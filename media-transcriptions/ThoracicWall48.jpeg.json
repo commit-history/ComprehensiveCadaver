@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall48.jpeg",
+  "type": "answer",
+  "answer_en": "Apex of Right Lung",
+  "labels": [
+    {
+      "text": "Apex of Right Lung",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Right Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

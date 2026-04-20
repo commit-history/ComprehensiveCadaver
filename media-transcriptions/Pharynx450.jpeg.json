@@ -1,0 +1,18 @@
+{
+  "file": "Pharynx450.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Meatus <br> Receives drainage from the nasolacrimal duct",
+  "labels": [
+    {
+      "text": "Inferior Meatus",
+      "note": "",
+      "details": [
+        "Receives drainage from the nasolacrimal duct"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Nasal Cavity (Right Side)",
+  "subtitle": "(Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

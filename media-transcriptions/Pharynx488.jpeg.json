@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx488.jpeg",
+  "type": "answer",
+  "answer_en": "Palatopharyngeus m. <br> Origin: Horizontal plate of palatine bone, and palatine aponeurosis of soft palate <br> Insertion: Lamina of thyroid cartilage, and pharyngeal mucosa",
+  "labels": [
+    {
+      "text": "Palatopharyngeus m.",
+      "note": "",
+      "details": [
+        "Origin: Horizontal plate of palatine bone, and palatine aponeurosis of soft palate",
+        "Insertion: Lamina of thyroid cartilage, and pharyngeal mucosa"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "(Pharyngeal Constrictor mm. Cut and Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

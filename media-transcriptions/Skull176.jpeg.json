@@ -1,0 +1,16 @@
+{
+  "file": "Skull176.jpeg",
+  "type": "answer",
+  "answer_en": "Frontal Bone (Right Side)",
+  "labels": [
+    {
+      "text": "Frontal Bone",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Orbit",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complex Anatomy by Elvirec. © 2023 Medialab."
+}

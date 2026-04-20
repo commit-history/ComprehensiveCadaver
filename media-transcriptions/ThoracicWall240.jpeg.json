@@ -1,0 +1,25 @@
+{
+  "file": "ThoracicWall240.jpeg",
+  "type": "answer",
+  "answer_en": "Pulmonary aa. anterior to bronchi <br> (RALS: Right anterior, Left superior) <br> Horizontal and oblique fissures <br> separating lung into three lobes",
+  "labels": [
+    {
+      "text": "Pulmonary aa. anterior to bronchi",
+      "note": "",
+      "details": [
+        "(RALS: Right anterior, Left superior)"
+      ]
+    },
+    {
+      "text": "Horizontal and oblique fissures",
+      "note": "",
+      "details": [
+        "separating lung into three lobes"
+      ]
+    }
+  ],
+  "title": "Medial View of Right Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

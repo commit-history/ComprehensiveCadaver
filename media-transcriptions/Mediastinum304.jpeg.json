@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum304.jpeg",
+  "type": "answer",
+  "answer_en": "Right Main Bronchus (Right Primary Bronchus) <br> Primary bronchial buds <br> (Foregut endoderm)",
+  "labels": [
+    {
+      "text": "Right Main Bronchus",
+      "note": "(Right Primary Bronchus)",
+      "details": [
+        "Primary bronchial buds",
+        "(Foregut endoderm)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

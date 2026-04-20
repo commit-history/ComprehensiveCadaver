@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall144.jpeg",
+  "type": "answer",
+  "answer_en": "Lobar Bronchus <br> (Secondary Bronchus)",
+  "labels": [
+    {
+      "text": "Lobar Bronchus",
+      "note": "",
+      "details": [
+        "(Secondary Bronchus)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Bronchial Tree",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

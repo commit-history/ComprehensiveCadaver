@@ -1,0 +1,20 @@
+{
+  "file": "Vertebra376.jpeg",
+  "type": "answer",
+  "answer_en": "Axis (C2 Vertebra) <br> Dens <br> Body <br> Spinous Process",
+  "labels": [
+    {
+      "text": "Axis (C2 Vertebra)",
+      "note": "",
+      "details": [
+        "Dens",
+        "Body",
+        "Spinous Process"
+      ]
+    }
+  ],
+  "title": "Lateral View of Cervical Spine",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

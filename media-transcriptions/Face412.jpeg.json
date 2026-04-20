@@ -1,0 +1,19 @@
+{
+  "file": "Face412.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Labii Superioris Alaeque Nasi m. <br> Origin: Frontal process of maxilla <br> Insertion: Skin of ala of nose and upper lip",
+  "labels": [
+    {
+      "text": "Levator Labii Superioris Alaeque Nasi m.",
+      "note": "",
+      "details": [
+        "Origin: Frontal process of maxilla",
+        "Insertion: Skin of ala of nose and upper lip"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

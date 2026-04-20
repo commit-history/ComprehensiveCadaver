@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx496.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Veli Palatini m. <br> Origin: Petrous part of temporal bone, and cartilaginous portion of pharyngotympanic tube (Eustachian tube; auditory tube) <br> Insertion: Palatine aponeurosis of soft palate",
+  "labels": [
+    {
+      "text": "Levator Veli Palatini m.",
+      "note": "",
+      "details": [
+        "Origin: Petrous part of temporal bone, and cartilaginous portion of pharyngotympanic tube (Eustachian tube; auditory tube)",
+        "Insertion: Palatine aponeurosis of soft palate"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Pharynx (Right Side)",
+  "subtitle": "(Tongue and Nasal Conchae Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

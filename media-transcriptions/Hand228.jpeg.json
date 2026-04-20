@@ -1,0 +1,19 @@
+{
+  "file": "Hand228.jpeg",
+  "type": "answer",
+  "answer_en": "Palmar Interossei m. <br> Adduction and flexion of digits 2, 4, and 5 at the metacarpophalangeal joints <br> Extension of digits 2, 4, and 5 at the interphalangeal joints",
+  "labels": [
+    {
+      "text": "Palmar Interossei m.",
+      "note": "",
+      "details": [
+        "Adduction and flexion of digits 2, 4, and 5 at the metacarpophalangeal joints",
+        "Extension of digits 2, 4, and 5 at the interphalangeal joints"
+      ]
+    }
+  ],
+  "title": "Palmar Surface of Hand (Right Side)",
+  "subtitle": "",
+  "orientation": "Distal (top), Proximal (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

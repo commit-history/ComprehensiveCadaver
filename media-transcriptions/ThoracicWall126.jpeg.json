@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall126.jpeg",
+  "type": "answer",
+  "answer_en": "Left Pulmonary a.",
+  "labels": [
+    {
+      "text": "Left Pulmonary a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

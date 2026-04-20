@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum182.jpeg",
+  "type": "answer",
+  "answer_en": "Innermost Intercostal m. <br> Depression of the ribs at the costovertebral joints (during forced expiration) <br> Provides structural support to intercostal spaces",
+  "labels": [
+    {
+      "text": "Innermost Intercostal m.",
+      "note": "",
+      "details": [
+        "Depression of the ribs at the costovertebral joints (during forced expiration)",
+        "Provides structural support to intercostal spaces"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

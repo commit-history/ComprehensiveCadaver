@@ -1,0 +1,20 @@
+{
+  "file": "Heart392.jpeg",
+  "type": "answer",
+  "answer_en": "Leaflets of Left Atrioventricular Valve <br> (Bicuspid Valve; Mitral Valve) <br> Atrioventricular cushions <br> (Endocardial cushions)",
+  "labels": [
+    {
+      "text": "Leaflets of Left Atrioventricular Valve",
+      "note": "",
+      "details": [
+        "(Bicuspid Valve; Mitral Valve)",
+        "Atrioventricular cushions",
+        "(Endocardial cushions)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Walls of Atria, Ventricles, and Ascending Aorta Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

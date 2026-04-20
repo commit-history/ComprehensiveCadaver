@@ -1,0 +1,27 @@
+{
+  "file": "OsteologyUL406.jpeg",
+  "type": "answer",
+  "answer_en": "Glenoid fossa <br> located laterally <br> (articulates with head of humerus) <br> Subscapular fossa <br> located anteriorly <br> (spine of scapula not visible)",
+  "labels": [
+    {
+      "text": "Glenoid fossa",
+      "note": "",
+      "details": [
+        "located laterally",
+        "(articulates with head of humerus)"
+      ]
+    },
+    {
+      "text": "Subscapular fossa",
+      "note": "",
+      "details": [
+        "located anteriorly",
+        "(spine of scapula not visible)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Scapula (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

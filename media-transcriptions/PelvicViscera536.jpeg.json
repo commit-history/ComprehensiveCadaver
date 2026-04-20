@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera536.jpeg",
+  "type": "answer",
+  "answer_en": "Testis <br> Epiblast",
+  "labels": [
+    {
+      "text": "Testis",
+      "note": "",
+      "details": [
+        "Epiblast"
+      ]
+    }
+  ],
+  "title": "Lateral View of Isolated Male* Genital Organs",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

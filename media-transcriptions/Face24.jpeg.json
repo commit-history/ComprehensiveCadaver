@@ -1,0 +1,16 @@
+{
+  "file": "Face24.jpeg",
+  "type": "answer",
+  "answer_en": "Zygomaticus Minor m.",
+  "labels": [
+    {
+      "text": "Zygomaticus Minor m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

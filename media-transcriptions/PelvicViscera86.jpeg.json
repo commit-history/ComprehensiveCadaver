@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera86.jpeg",
+  "type": "answer",
+  "answer_en": "Uterine Tube <br> (Oviduct; Fallopian Tube)",
+  "labels": [
+    {
+      "text": "Uterine Tube",
+      "note": "",
+      "details": [
+        "(Oviduct; Fallopian Tube)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall186.jpeg",
+  "type": "answer",
+  "answer_en": "External Oblique m. <br> Origin: External surfaces of ribs 5-12 <br> Insertion: Linea alba, pubic tubercle, and anterior half of iliac crest",
+  "labels": [
+    {
+      "text": "External Oblique m.",
+      "note": "",
+      "details": [
+        "Origin: External surfaces of ribs 5-12",
+        "Insertion: Linea alba, pubic tubercle, and anterior half of iliac crest"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Anterior Rectus Sheath Removed on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

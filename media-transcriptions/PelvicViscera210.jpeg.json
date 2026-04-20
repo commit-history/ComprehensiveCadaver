@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera210.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Urethral Orifice",
+  "labels": [
+    {
+      "text": "Internal Urethral Orifice",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Bladder and Prostate Gland",
+  "subtitle": "(Bladder and Prostate Opened)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

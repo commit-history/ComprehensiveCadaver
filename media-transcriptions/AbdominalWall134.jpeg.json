@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall134.jpeg",
+  "type": "answer",
+  "answer_en": "External Oblique m. <br> Lateral flexion and contralateral rotation of the trunk at the thoracic and lumbar spine <br> Tenses the anterior wall and assists in compressing the contents of the abdomen (required during straining)",
+  "labels": [
+    {
+      "text": "External Oblique m.",
+      "note": "",
+      "details": [
+        "Lateral flexion and contralateral rotation of the trunk at the thoracic and lumbar spine",
+        "Tenses the anterior wall and assists in compressing the contents of the abdomen (required during straining)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Anterior Rectus Sheath Removed on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

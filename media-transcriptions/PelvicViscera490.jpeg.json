@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera490.jpeg",
+  "type": "answer",
+  "answer_en": "Membranous Urethra <br> Pelvic part of urogenital sinus",
+  "labels": [
+    {
+      "text": "Membranous Urethra",
+      "note": "",
+      "details": [
+        "Pelvic part of urogenital sinus"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

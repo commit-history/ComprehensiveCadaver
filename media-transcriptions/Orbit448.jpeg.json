@@ -1,0 +1,19 @@
+{
+  "file": "Orbit448.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Rectus m. <br> Origin: Common tendinous ring <br> Insertion: Inferior surface of sclera",
+  "labels": [
+    {
+      "text": "Inferior Rectus m.",
+      "note": "",
+      "details": [
+        "Origin: Common tendinous ring",
+        "Insertion: Inferior surface of sclera"
+      ]
+    }
+  ],
+  "title": "Superior View of Orbit (Right Side)",
+  "subtitle": "(Deep Layer; Vasculature Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

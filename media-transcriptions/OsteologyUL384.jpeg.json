@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL384.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Supracondylar Ridge <br> Brachioradialis m. <br> Extensor carpi radialis longus m.",
+  "labels": [
+    {
+      "text": "Lateral Supracondylar Ridge",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Brachioradialis m.",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Extensor carpi radialis longus m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Distal Humerus (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 DMHMedical."
+}

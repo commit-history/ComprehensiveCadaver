@@ -1,0 +1,18 @@
+{
+  "file": "Skull518.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Limb of Stapes <br> Anterior Crus of Stapes",
+  "labels": [
+    {
+      "text": "Anterior Limb of Stapes",
+      "note": "",
+      "details": [
+        "Anterior Crus of Stapes"
+      ]
+    }
+  ],
+  "title": "Anterior View of Stapes",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

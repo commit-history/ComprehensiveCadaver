@@ -1,0 +1,20 @@
+{
+  "file": "PelvicDiaphragm326.jpeg",
+  "type": "answer",
+  "answer_en": "Obturator Internus <br> m. <br> Origin: Internal surface of obturator membrane <br> Insertion: Greater trochanter of femur",
+  "labels": [
+    {
+      "text": "Obturator Internus",
+      "note": "",
+      "details": [
+        "m.",
+        "Origin: Internal surface of obturator membrane",
+        "Insertion: Greater trochanter of femur"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Pelvis (Right Side)",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall150.jpeg",
+  "type": "answer",
+  "answer_en": "Left Superior Lobar Bronchus (Left Superior Secondary Bronchus)",
+  "labels": [
+    {
+      "text": "Left Superior Lobar Bronchus",
+      "note": "(Left Superior Secondary Bronchus)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Bronchial Tree",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Face404.jpeg",
+  "type": "answer",
+  "answer_en": "Frontalis m. (Frontal Belly of Occipitofrontalis m.) <br> Origin: Skin of eyebrows and root of nose <br> Insertion: Epicranial aponeurosis",
+  "labels": [
+    {
+      "text": "Frontalis m.",
+      "note": "(Frontal Belly of Occipitofrontalis m.)",
+      "details": [
+        "Origin: Skin of eyebrows and root of nose",
+        "Insertion: Epicranial aponeurosis"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

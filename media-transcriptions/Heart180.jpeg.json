@@ -1,0 +1,16 @@
+{
+  "file": "Heart180.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Interventricular a. (Left Anterior Descending a.)",
+  "labels": [
+    {
+      "text": "Anterior Interventricular a.",
+      "note": "(Left Anterior Descending a.)",
+      "details": []
+    }
+  ],
+  "title": "Right Anterior Oblique (RAO) Caudal View",
+  "subtitle": "(Left Coronary Angiogram)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from WikiDoc.org. © C. Michael Gibson, M.S., M.D."
+}

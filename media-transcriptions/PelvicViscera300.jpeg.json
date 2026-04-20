@@ -1,0 +1,23 @@
+{
+  "file": "PelvicViscera300.jpeg",
+  "type": "answer",
+  "answer_en": "Uterine Tube** <br> (Oviduct; Fallopian Tube) <br> **Spillage of dye at the fimbriae indicates that both uterine tubes are patent (open).",
+  "labels": [
+    {
+      "text": "Uterine Tube**",
+      "note": "",
+      "details": [
+        "(Oviduct; Fallopian Tube)"
+      ]
+    },
+    {
+      "text": "**Spillage of dye at the fimbriae indicates that both uterine tubes are patent (open).",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Female* Internal Genital Organs",
+  "subtitle": "(Hysterosalpingogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from https://www.dannytucker.net/information/hsg-hycosy"
+}

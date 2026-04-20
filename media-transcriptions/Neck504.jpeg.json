@@ -1,0 +1,19 @@
+{
+  "file": "Neck504.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Belly of Omohyoid m. <br> Origin: Superior border of scapula near suprascapular notch <br> Insertion: Body of hyoid bone",
+  "labels": [
+    {
+      "text": "Superior Belly of Omohyoid m.",
+      "note": "",
+      "details": [
+        "Origin: Superior border of scapula near suprascapular notch",
+        "Insertion: Body of hyoid bone"
+      ]
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "*The origin of the superior belly specifically is the intermediate tendon of omohyoid m.",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

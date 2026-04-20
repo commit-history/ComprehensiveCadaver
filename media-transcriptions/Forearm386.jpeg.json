@@ -1,0 +1,19 @@
+{
+  "file": "Forearm386.jpeg",
+  "type": "answer",
+  "answer_en": "Brachialis m. <br> Origin: Distal half of humerus <br> Insertion: Coronoid process of ulna, and ulnar tuberosity",
+  "labels": [
+    {
+      "text": "Brachialis m.",
+      "note": "",
+      "details": [
+        "Origin: Distal half of humerus",
+        "Insertion: Coronoid process of ulna, and ulnar tuberosity"
+      ]
+    }
+  ],
+  "title": "Anterior View of Elbow Joint (Right Side)",
+  "subtitle": "(Biceps Brachii m. Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

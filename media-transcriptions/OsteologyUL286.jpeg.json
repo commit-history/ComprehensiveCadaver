@@ -1,0 +1,31 @@
+{
+  "file": "OsteologyUL286.jpeg",
+  "type": "answer",
+  "answer_en": "Ulna <br> Coronoid Process <br> Trochlear Notch <br> Olecranon",
+  "labels": [
+    {
+      "text": "Ulna",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Coronoid Process",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Trochlear Notch",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Olecranon",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Elbow Joint (Left Side)",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

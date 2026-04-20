@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum294.jpeg",
+  "type": "answer",
+  "answer_en": "Accessory Hemiazygos v. <br> Left supracardinal v.",
+  "labels": [
+    {
+      "text": "Accessory Hemiazygos v.",
+      "note": "",
+      "details": [
+        "Left supracardinal v."
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung Removed; Aorta Retracted Medially)",
+  "orientation": "Anterior (top), Inferior (left), Superior (right), Posterior (bottom)",
+  "attribution": "Modified from Gray’s Clinical Photographic Dissector of the Human Body (2nd Ed.). © 2019 by Elsevier Inc."
+}

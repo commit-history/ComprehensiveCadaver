@@ -1,0 +1,19 @@
+{
+  "file": "Forearm416.jpeg",
+  "type": "answer",
+  "answer_en": "Flexor Digitorum Superficialis m. <br> Origin: Medial epicondyle of humerus and coronoid process of ulna (humeroulnar head); proximal half of radius (radial head) <br> Insertion: Middle phalanges of digits 2-5",
+  "labels": [
+    {
+      "text": "Flexor Digitorum Superficialis m.",
+      "note": "",
+      "details": [
+        "Origin: Medial epicondyle of humerus and coronoid process of ulna (humeroulnar head); proximal half of radius (radial head)",
+        "Insertion: Middle phalanges of digits 2-5"
+      ]
+    }
+  ],
+  "title": "Anterior View of Forearm (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

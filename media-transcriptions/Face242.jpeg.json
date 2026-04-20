@@ -1,0 +1,18 @@
+{
+  "file": "Face242.jpeg",
+  "type": "answer",
+  "answer_en": "Risorius m. <br> 2nd pharyngeal arch (innervated by CN VII)",
+  "labels": [
+    {
+      "text": "Risorius m.",
+      "note": "",
+      "details": [
+        "2nd pharyngeal arch (innervated by CN VII)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

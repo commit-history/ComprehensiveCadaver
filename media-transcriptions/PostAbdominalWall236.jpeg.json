@@ -1,0 +1,19 @@
+{
+  "file": "PostAbdominalWall236.jpeg",
+  "type": "answer",
+  "answer_en": "Psoas Major m. <br> Flexion of the thigh at the hip joint <br> Flexion and lateral flexion of the trunk at the lumbar spine",
+  "labels": [
+    {
+      "text": "Psoas Major m.",
+      "note": "",
+      "details": [
+        "Flexion of the thigh at the hip joint",
+        "Flexion and lateral flexion of the trunk at the lumbar spine"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

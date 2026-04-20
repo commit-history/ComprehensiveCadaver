@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum72.jpeg",
+  "type": "answer",
+  "answer_en": "Right Lobar Bronchus <br> (Right Secondary Bronchus)",
+  "labels": [
+    {
+      "text": "Right Lobar Bronchus",
+      "note": "",
+      "details": [
+        "(Right Secondary Bronchus)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Right Side)",
+  "subtitle": "(Right Lung and Pleura Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

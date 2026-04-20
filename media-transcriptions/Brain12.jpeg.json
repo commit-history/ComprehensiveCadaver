@@ -1,0 +1,16 @@
+{
+  "file": "Brain12.jpeg",
+  "type": "answer",
+  "answer_en": "Central Sulcus (Fissure of Rolando)",
+  "labels": [
+    {
+      "text": "Central Sulcus",
+      "note": "(Fissure of Rolando)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Brain (Left Hemisphere)",
+  "subtitle": "Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman.",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

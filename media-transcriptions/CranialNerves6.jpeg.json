@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves6.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Carotid a. (Cut)",
+  "labels": [
+    {
+      "text": "Internal Carotid a.",
+      "note": "(Cut)",
+      "details": []
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

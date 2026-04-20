@@ -1,0 +1,19 @@
+{
+  "file": "Thigh278.jpeg",
+  "type": "answer",
+  "answer_en": "Vastus Lateralis m. <br> Origin: Intertrochanteric line, greater trochanter, gluteal tuberosity, and linea aspera of femur <br> Insertion: Tibial tuberosity via quadriceps tendon and patellar ligament",
+  "labels": [
+    {
+      "text": "Vastus Lateralis m.",
+      "note": "",
+      "details": [
+        "Origin: Intertrochanteric line, greater trochanter, gluteal tuberosity, and linea aspera of femur",
+        "Insertion: Tibial tuberosity via quadriceps tendon and patellar ligament"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Sartorius, Rectus Femoris, Adductor Longus, and Adductor Brevis mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

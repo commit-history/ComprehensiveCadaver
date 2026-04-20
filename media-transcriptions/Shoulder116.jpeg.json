@@ -1,0 +1,19 @@
+{
+  "file": "Shoulder116.jpeg",
+  "type": "answer",
+  "answer_en": "Teres Minor m. (Cut) <br> Origin: Lateral border of scapula <br> Insertion: Greater tubercle of humerus",
+  "labels": [
+    {
+      "text": "Teres Minor m.",
+      "note": "(Cut)",
+      "details": [
+        "Origin: Lateral border of scapula",
+        "Insertion: Greater tubercle of humerus"
+      ]
+    }
+  ],
+  "title": "Posterior View of Scapular Region (Right Side)",
+  "subtitle": "(Supraspinatus, Infraspinatus, and Teres Minor mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

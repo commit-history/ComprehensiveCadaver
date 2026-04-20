@@ -1,0 +1,19 @@
+{
+  "file": "PelvicDiaphragm268.jpeg",
+  "type": "answer",
+  "answer_en": "Obturator Internus <br> m. <br> Lateral rotation of the thigh at the hip joint",
+  "labels": [
+    {
+      "text": "Obturator Internus",
+      "note": "",
+      "details": [
+        "m.",
+        "Lateral rotation of the thigh at the hip joint"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Pelvis (Right Side)",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

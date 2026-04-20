@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves32.jpeg",
+  "type": "answer",
+  "answer_en": "Optic Tract",
+  "labels": [
+    {
+      "text": "Optic Tract",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "(Pons and Medulla Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

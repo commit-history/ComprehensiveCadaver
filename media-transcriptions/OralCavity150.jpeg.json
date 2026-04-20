@@ -1,0 +1,19 @@
+{
+  "file": "OralCavity150.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Belly of Digastric m. <br> Origin: Digastric fossa of mandible <br> Insertion: Body and greater horn of hyoid bone (via intermediate tendon and its fibrous sling)",
+  "labels": [
+    {
+      "text": "Anterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "Origin: Digastric fossa of mandible",
+        "Insertion: Body and greater horn of hyoid bone (via intermediate tendon and its fibrous sling)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Oral Cavity (Right Side)",
+  "subtitle": "(Tongue Reflected Medially)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

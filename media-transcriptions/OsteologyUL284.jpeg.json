@@ -1,0 +1,51 @@
+{
+  "file": "OsteologyUL284.jpeg",
+  "type": "answer",
+  "answer_en": "Humerus <br> Capitulum <br> Trochlea <br> Medial Epicondyle <br> Lateral Epicondyle <br> Radial Fossa <br> Coronoid Fossa <br> Olecranon Fossa",
+  "labels": [
+    {
+      "text": "Humerus",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Capitulum",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Trochlea",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Medial Epicondyle",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Lateral Epicondyle",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Radial Fossa",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Coronoid Fossa",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Olecranon Fossa",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Elbow Joint (Left Side)",
+  "subtitle": "Radiograph",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

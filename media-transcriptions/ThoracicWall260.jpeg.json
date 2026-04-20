@@ -1,0 +1,19 @@
+{
+  "file": "ThoracicWall260.jpeg",
+  "type": "answer",
+  "answer_en": "Trachea <br> Primary lung bud <br> (Foregut endoderm)",
+  "labels": [
+    {
+      "text": "Trachea",
+      "note": "",
+      "details": [
+        "Primary lung bud",
+        "(Foregut endoderm)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Bronchial Tree",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Forearm440.jpeg",
+  "type": "answer",
+  "answer_en": "Extensor Digiti Minimi m. <br> Origin: Lateral epicondyle of humerus <br> Insertion: Extensor expansion of 5th digit",
+  "labels": [
+    {
+      "text": "Extensor Digiti Minimi m.",
+      "note": "",
+      "details": [
+        "Origin: Lateral epicondyle of humerus",
+        "Insertion: Extensor expansion of 5th digit"
+      ]
+    }
+  ],
+  "title": "Posterior View of Forearm (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

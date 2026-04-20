@@ -1,0 +1,19 @@
+{
+  "file": "Skull624.jpeg",
+  "type": "answer",
+  "answer_en": "Pterion <br> A branch of the middle meningeal a. runs beneath the pterion (between the dura mater and the skull) and is vulnerable to injury at this point since the skull is both thin and weak <br> An injured middle meningeal a. is the most common cause of an extradural (epidural) hematoma",
+  "labels": [
+    {
+      "text": "Pterion",
+      "note": "",
+      "details": [
+        "A branch of the middle meningeal a. runs beneath the pterion (between the dura mater and the skull) and is vulnerable to injury at this point since the skull is both thin and weak",
+        "An injured middle meningeal a. is the most common cause of an extradural (epidural) hematoma"
+      ]
+    }
+  ],
+  "title": "Lateral View of Skull (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

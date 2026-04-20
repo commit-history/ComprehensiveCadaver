@@ -1,0 +1,19 @@
+{
+  "file": "Face188.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Labii Superioris Alaeque Nasi m. <br> Dilation of the nostrils <br> Elevation of the upper lip",
+  "labels": [
+    {
+      "text": "Levator Labii Superioris Alaeque Nasi m.",
+      "note": "",
+      "details": [
+        "Dilation of the nostrils",
+        "Elevation of the upper lip"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall200.jpeg",
+  "type": "answer",
+  "answer_en": "Trachea",
+  "labels": [
+    {
+      "text": "Trachea",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Thorax",
+  "subtitle": "(Bronchogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from NetAnatomy. © 2021 Scholar Educational Systems, Inc."
+}

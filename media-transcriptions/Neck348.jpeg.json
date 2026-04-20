@@ -1,0 +1,20 @@
+{
+  "file": "Neck348.jpeg",
+  "type": "answer",
+  "answer_en": "Aortic Arch <br> Left portion of aortic sac <br> Left 4th aortic arch <br> Left dorsal aorta",
+  "labels": [
+    {
+      "text": "Aortic Arch",
+      "note": "",
+      "details": [
+        "Left portion of aortic sac",
+        "Left 4th aortic arch",
+        "Left dorsal aorta"
+      ]
+    }
+  ],
+  "title": "Anterior View of Root of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera444.jpeg",
+  "type": "answer",
+  "answer_en": "Urinary Trigone (Trigone of Bladder) <br> Mesonephric ducts (Wolffian ducts)",
+  "labels": [
+    {
+      "text": "Urinary Trigone",
+      "note": "(Trigone of Bladder)",
+      "details": [
+        "Mesonephric ducts (Wolffian ducts)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Female* Bladder and Urethra",
+  "subtitle": "(Coronal Section)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer; *Sex assigned at birth"
+}

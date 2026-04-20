@@ -1,0 +1,18 @@
+{
+  "file": "Skull520.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Limb of Stapes <br> (Posterior Crus of Stapes)",
+  "labels": [
+    {
+      "text": "Posterior Limb of Stapes",
+      "note": "",
+      "details": [
+        "(Posterior Crus of Stapes)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Stapes",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

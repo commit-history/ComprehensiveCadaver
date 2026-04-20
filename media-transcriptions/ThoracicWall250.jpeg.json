@@ -1,0 +1,19 @@
+{
+  "file": "ThoracicWall250.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Intercostal m. <br> Origin: Inferior borders of ribs 1-11 and their adjacent costal cartilages <br> Insertion: Superior borders of ribs and costal cartilages immediately below origin",
+  "labels": [
+    {
+      "text": "Internal Intercostal m.",
+      "note": "",
+      "details": [
+        "Origin: Inferior borders of ribs 1-11 and their adjacent costal cartilages",
+        "Insertion: Superior borders of ribs and costal cartilages immediately below origin"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Thoracic Wall (Right Side)",
+  "subtitle": "(Pectoralis Major m., Pectoralis Minor m., and Part of 4th Rib Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

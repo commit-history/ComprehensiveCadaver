@@ -1,0 +1,16 @@
+{
+  "file": "Skull110.jpeg",
+  "type": "answer",
+  "answer_en": "Maxillary Sinus",
+  "labels": [
+    {
+      "text": "Maxillary Sinus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Skull",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "Brain2.jpeg",
+  "type": "answer",
+  "answer_en": "Frontal Lobe",
+  "labels": [
+    {
+      "text": "Frontal Lobe",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Brain (Left Hemisphere)",
+  "subtitle": "Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman.",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

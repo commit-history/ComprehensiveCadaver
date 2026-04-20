@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx494.jpeg",
+  "type": "answer",
+  "answer_en": "Tensor Veli Palatini m. <br> Origin: Scaphoid fossa and spine of sphenoid bone, and pharyngotympanic tube (Eustachian tube; auditory tube) <br> Insertion: Palatine aponeurosis of soft palate",
+  "labels": [
+    {
+      "text": "Tensor Veli Palatini m.",
+      "note": "",
+      "details": [
+        "Origin: Scaphoid fossa and spine of sphenoid bone, and pharyngotympanic tube (Eustachian tube; auditory tube)",
+        "Insertion: Palatine aponeurosis of soft palate"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Pharynx (Right Side)",
+  "subtitle": "(Tongue and Nasal Conchae Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

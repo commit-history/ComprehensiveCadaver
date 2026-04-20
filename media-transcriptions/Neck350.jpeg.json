@@ -1,0 +1,18 @@
+{
+  "file": "Neck350.jpeg",
+  "type": "answer",
+  "answer_en": "Brachiocephalic Trunk (Innominate a.) <br> Right aortic sac",
+  "labels": [
+    {
+      "text": "Brachiocephalic Trunk",
+      "note": "(Innominate a.)",
+      "details": [
+        "Right aortic sac"
+      ]
+    }
+  ],
+  "title": "Anterior View of Root of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

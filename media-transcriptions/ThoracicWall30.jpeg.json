@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall30.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Epigastric a.",
+  "labels": [
+    {
+      "text": "Superior Epigastric a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Wall",
+  "subtitle": "(Left Anterior Thoracic Wall Partly Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

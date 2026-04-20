@@ -1,0 +1,20 @@
+{
+  "file": "Skull554.jpeg",
+  "type": "answer",
+  "answer_en": "Foramen Ovale <br> Mandibular n. (CN V3) <br> Lesser petrosal n. (branch of CN IX) <br> Accessory middle meningeal a. (if present)",
+  "labels": [
+    {
+      "text": "Foramen Ovale",
+      "note": "",
+      "details": [
+        "Mandibular n. (CN V3)",
+        "Lesser petrosal n. (branch of CN IX)",
+        "Accessory middle meningeal a. (if present)"
+      ]
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

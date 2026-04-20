@@ -1,0 +1,16 @@
+{
+  "file": "Skull96.jpeg",
+  "type": "answer",
+  "answer_en": "Sagittal Suture",
+  "labels": [
+    {
+      "text": "Sagittal Suture",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Complex Anatomy by Ellevot. © 2023 D3Mediacal."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall252.jpeg",
+  "type": "answer",
+  "answer_en": "Abdominal Aorta <br> T12",
+  "labels": [
+    {
+      "text": "Abdominal Aorta",
+      "note": "",
+      "details": [
+        "T12"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

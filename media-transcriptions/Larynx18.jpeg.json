@@ -1,0 +1,16 @@
+{
+  "file": "Larynx18.jpeg",
+  "type": "answer",
+  "answer_en": "Laryngeal Prominence",
+  "labels": [
+    {
+      "text": "Laryngeal Prominence",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Thyroid Cartilage (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "OralCavity80.jpeg",
+  "type": "answer",
+  "answer_en": "Geniohyoid m. <br> Elevation of the hyoid <br> Depression of mandible",
+  "labels": [
+    {
+      "text": "Geniohyoid m.",
+      "note": "",
+      "details": [
+        "Elevation of the hyoid",
+        "Depression of mandible"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Oral Cavity (Right Side)",
+  "subtitle": "(Tongue Reflected Medially)",
+  "orientation": "Superior, Inferior, Anterior, Posterior",
+  "attribution": "@MarkAAbbott1 Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

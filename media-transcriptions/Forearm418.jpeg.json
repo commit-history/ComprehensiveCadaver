@@ -1,0 +1,19 @@
+{
+  "file": "Forearm418.jpeg",
+  "type": "answer",
+  "answer_en": "Pronator Teres m. <br> Origin: Medial supracondylar ridge of humerus (humeral head); coronoid process of ulna (ulnar head) <br> Insertion: Anterolateral surface of radius",
+  "labels": [
+    {
+      "text": "Pronator Teres m.",
+      "note": "",
+      "details": [
+        "Origin: Medial supracondylar ridge of humerus (humeral head); coronoid process of ulna (ulnar head)",
+        "Insertion: Anterolateral surface of radius"
+      ]
+    }
+  ],
+  "title": "Anterior View of Forearm (Right Side)",
+  "subtitle": "(Majority of Superficial and Middle Layers Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

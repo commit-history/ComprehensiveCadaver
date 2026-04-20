@@ -1,0 +1,19 @@
+{
+  "file": "Thigh180.jpeg",
+  "type": "answer",
+  "answer_en": "Pectineus m. (Cut) <br> Femoral n. <br> Obturator n. (occasionally)",
+  "labels": [
+    {
+      "text": "Pectineus m.",
+      "note": "(Cut)",
+      "details": [
+        "Femoral n.",
+        "Obturator n. (occasionally)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Adductor Longus m. Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

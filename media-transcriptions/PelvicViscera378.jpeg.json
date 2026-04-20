@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera378.jpeg",
+  "type": "answer",
+  "answer_en": "Fimbriae of Uterine Tube (Oviduct; Fallopian Tube) <br> Paramesonephric duct (Müllerian duct)",
+  "labels": [
+    {
+      "text": "Fimbriae of Uterine Tube",
+      "note": "(Oviduct; Fallopian Tube)",
+      "details": [
+        "Paramesonephric duct (Müllerian duct)"
+      ]
+    }
+  ],
+  "title": "Superior View of Female* Pelvic Cavity",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Posterior (top), Anterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

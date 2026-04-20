@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera152.jpeg",
+  "type": "answer",
+  "answer_en": "Rectum",
+  "labels": [
+    {
+      "text": "Rectum",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill.\n@MarkAAbbott1"
+}

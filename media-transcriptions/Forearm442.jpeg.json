@@ -1,0 +1,19 @@
+{
+  "file": "Forearm442.jpeg",
+  "type": "answer",
+  "answer_en": "Anconeus m. <br> Origin: Lateral epicondyle of humerus <br> Insertion: Olecranon process of ulna",
+  "labels": [
+    {
+      "text": "Anconeus m.",
+      "note": "",
+      "details": [
+        "Origin: Lateral epicondyle of humerus",
+        "Insertion: Olecranon process of ulna"
+      ]
+    }
+  ],
+  "title": "Posterior View of Forearm (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

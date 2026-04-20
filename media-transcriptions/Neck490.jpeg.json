@@ -1,0 +1,19 @@
+{
+  "file": "Neck490.jpeg",
+  "type": "answer",
+  "answer_en": "Sternocleidomastoid m. <br> Origin: Anterior surface of manubrium (sternal head); medial one-third of clavicle (clavicular head) <br> Insertion: Mastoid process of temporal bone, and superior nuchal line of occipital bone",
+  "labels": [
+    {
+      "text": "Sternocleidomastoid m.",
+      "note": "",
+      "details": [
+        "Origin: Anterior surface of manubrium (sternal head); medial one-third of clavicle (clavicular head)",
+        "Insertion: Mastoid process of temporal bone, and superior nuchal line of occipital bone"
+      ]
+    }
+  ],
+  "title": "Lateral View of Neck (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

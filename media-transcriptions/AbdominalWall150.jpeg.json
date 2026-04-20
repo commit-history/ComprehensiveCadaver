@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall150.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Rectus Sheath <br> External oblique m. <br> 1/2 Internal oblique m.",
+  "labels": [
+    {
+      "text": "Anterior Rectus Sheath",
+      "note": "",
+      "details": [
+        "External oblique m.",
+        "1/2 Internal oblique m."
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

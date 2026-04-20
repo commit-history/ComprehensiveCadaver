@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera44.jpeg",
+  "type": "answer",
+  "answer_en": "Cervix",
+  "labels": [
+    {
+      "text": "Cervix",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill.\n@MarkAAbbott1"
+}

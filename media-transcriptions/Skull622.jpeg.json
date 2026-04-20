@@ -1,0 +1,19 @@
+{
+  "file": "Skull622.jpeg",
+  "type": "answer",
+  "answer_en": "Alveolar Canal <br> Posterior superior alveolar n. (branch of CN V₂) <br> Posterior superior alveolar a.",
+  "labels": [
+    {
+      "text": "Alveolar Canal",
+      "note": "",
+      "details": [
+        "Posterior superior alveolar n. (branch of CN V₂)",
+        "Posterior superior alveolar a."
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Skull (Right Side)",
+  "subtitle": "(Zygomatic Bone and Mandible Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

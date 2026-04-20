@@ -1,0 +1,18 @@
+{
+  "file": "Pharynx386.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Belly of Digastric m. <br> Facial n. (CN VII)",
+  "labels": [
+    {
+      "text": "Posterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "Facial n. (CN VII)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

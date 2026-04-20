@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall196.jpeg",
+  "type": "answer",
+  "answer_en": "Transversus Abdominis m. (Not visible on right side) <br> Origin: Internal surfaces of costal cartilages of ribs 7-12, thoracolumbar fascia, and anterior two-thirds of iliac crest <br> Insertion: Linea alba and pubic crest",
+  "labels": [
+    {
+      "text": "Transversus Abdominis m.",
+      "note": "(Not visible on right side)",
+      "details": [
+        "Origin: Internal surfaces of costal cartilages of ribs 7-12, thoracolumbar fascia, and anterior two-thirds of iliac crest",
+        "Insertion: Linea alba and pubic crest"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

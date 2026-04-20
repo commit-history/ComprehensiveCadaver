@@ -1,0 +1,18 @@
+{
+  "file": "Face298.jpeg",
+  "type": "answer",
+  "answer_en": "Corrugator Supercilii m. <br> Temporal and zygomatic branches of facial n. (CN VII)",
+  "labels": [
+    {
+      "text": "Corrugator Supercilii m.",
+      "note": "",
+      "details": [
+        "Temporal and zygomatic branches of facial n. (CN VII)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

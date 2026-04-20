@@ -1,0 +1,16 @@
+{
+  "file": "Skull326.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Orbital Fissure (Right Side)",
+  "labels": [
+    {
+      "text": "Inferior Orbital Fissure",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Anterolateral View of Skull",
+  "subtitle": "(Zygomatic Bone and Mandible Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 3D4Medical"
+}

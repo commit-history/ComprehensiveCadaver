@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves270.jpeg",
+  "type": "answer",
+  "answer_en": "Vagus n. (CN X) <br> Motor (SVE and GVE) <br> Sensory (GSA, GVA, and SVA)",
+  "labels": [
+    {
+      "text": "Vagus n. (CN X)",
+      "note": "",
+      "details": [
+        "Motor (SVE and GVE)",
+        "Sensory (GSA, GVA, and SVA)"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brainstem",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Nolte’s The Human Brain. © Elsevier 2020."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Face378.jpeg",
+  "type": "answer",
+  "answer_en": "Orbicularis Oris m. <br> Origin: Medial aspects of maxilla and mandible, perioral skin and muscles, and angle of mouth (modiolus) <br> Insertion: Skin and mucous membrane of lips",
+  "labels": [
+    {
+      "text": "Orbicularis Oris m.",
+      "note": "",
+      "details": [
+        "Origin: Medial aspects of maxilla and mandible, perioral skin and muscles, and angle of mouth (modiolus)",
+        "Insertion: Skin and mucous membrane of lips"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

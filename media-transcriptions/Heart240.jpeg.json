@@ -1,0 +1,16 @@
+{
+  "file": "Heart240.jpeg",
+  "type": "answer",
+  "answer_en": "Septal Papillary mm.",
+  "labels": [
+    {
+      "text": "Septal Papillary mm.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Wall of Right Atrium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

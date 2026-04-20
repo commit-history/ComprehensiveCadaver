@@ -1,0 +1,19 @@
+{
+  "file": "Thigh168.jpeg",
+  "type": "answer",
+  "answer_en": "Adductor Magnus m. <br> Obturator n. <br> Tibial division of sciatic n.",
+  "labels": [
+    {
+      "text": "Adductor Magnus m.",
+      "note": "",
+      "details": [
+        "Obturator n.",
+        "Tibial division of sciatic n."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Sartorius, Rectus Femoris, Adductor Longus, and Adductor Brevis mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

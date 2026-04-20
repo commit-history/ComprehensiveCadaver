@@ -1,0 +1,16 @@
+{
+  "file": "Brain110.jpeg",
+  "type": "answer",
+  "answer_en": "Uncus",
+  "labels": [
+    {
+      "text": "Uncus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Inferior View of Brain",
+  "subtitle": "(Cerebellum and Brainstem Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Brain-Inter-Atlas: Interactive Atlas of Anatomy. https://sites.uclouvain.be/braininteratlas/en"
+}

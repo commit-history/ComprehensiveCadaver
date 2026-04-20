@@ -1,0 +1,19 @@
+{
+  "file": "Orbit502.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Rectus m. <br> Origin: Common tendinous ring <br> Insertion: Lateral surface of sclera",
+  "labels": [
+    {
+      "text": "Lateral Rectus m.",
+      "note": "",
+      "details": [
+        "Origin: Common tendinous ring",
+        "Insertion: Lateral surface of sclera"
+      ]
+    }
+  ],
+  "title": "Transverse Section (CT Scan)",
+  "subtitle": "(Soft Tissues Window)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

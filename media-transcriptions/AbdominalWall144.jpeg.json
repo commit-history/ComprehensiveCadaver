@@ -1,0 +1,18 @@
+{
+  "file": "AbdominalWall144.jpeg",
+  "type": "answer",
+  "answer_en": "Transversus Abdominis m. (Not visible on right side) <br> Tenses the anterior wall and assists in compressing the contents of the abdomen (required during straining)",
+  "labels": [
+    {
+      "text": "Transversus Abdominis m.",
+      "note": "(Not visible on right side)",
+      "details": [
+        "Tenses the anterior wall and assists in compressing the contents of the abdomen (required during straining)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

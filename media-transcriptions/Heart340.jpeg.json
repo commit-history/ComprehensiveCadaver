@@ -1,0 +1,32 @@
+{
+  "file": "Heart340.jpeg",
+  "type": "answer",
+  "answer_en": "Right dominancy since posterior interventricular a. <br> (right posterior descending a.) is arising from right coronary a. <br> Right Anterior Oblique (RAO) View <br> (Right Coronary Angiogram) <br> Right Anterior Oblique (RAO) Caudal View <br> (Left Coronary Angiogram)",
+  "labels": [
+    {
+      "text": "Right dominancy since posterior interventricular a.",
+      "note": "",
+      "details": [
+        "(right posterior descending a.) is arising from right coronary a."
+      ]
+    },
+    {
+      "text": "Right Anterior Oblique (RAO) View",
+      "note": "",
+      "details": [
+        "(Right Coronary Angiogram)"
+      ]
+    },
+    {
+      "text": "Right Anterior Oblique (RAO) Caudal View",
+      "note": "",
+      "details": [
+        "(Left Coronary Angiogram)"
+      ]
+    }
+  ],
+  "title": "",
+  "subtitle": "",
+  "orientation": "",
+  "attribution": "Modified from Imaging Atlas of Human Anatomy (6th Ed.). © 2021, Elsevier Limited. All rights reserved."
+}

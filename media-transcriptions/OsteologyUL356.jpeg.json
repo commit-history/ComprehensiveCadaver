@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL356.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Border of Scapula (Right Side) <br> Teres minor m. <br> Teres major m.",
+  "labels": [
+    {
+      "text": "Lateral Border of Scapula",
+      "note": "(Right Side)",
+      "details": []
+    },
+    {
+      "text": "Teres minor m.",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Teres major m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Scapula",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier, © 2023 3D4Medical."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "OsteologyUL288.jpeg",
+  "type": "answer",
+  "answer_en": "Radius (Left Side) <br> Radial head <br> Neck",
+  "labels": [
+    {
+      "text": "Radius",
+      "note": "(Left Side)",
+      "details": [
+        "Radial head",
+        "Neck"
+      ]
+    }
+  ],
+  "title": "AP View of Elbow Joint",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

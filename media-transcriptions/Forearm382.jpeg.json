@@ -1,0 +1,19 @@
+{
+  "file": "Forearm382.jpeg",
+  "type": "answer",
+  "answer_en": "Brachioradialis m. <br> Origin: Lateral supracondylar ridge of humerus <br> Insertion: Distal radius",
+  "labels": [
+    {
+      "text": "Brachioradialis m.",
+      "note": "",
+      "details": [
+        "Origin: Lateral supracondylar ridge of humerus",
+        "Insertion: Distal radius"
+      ]
+    }
+  ],
+  "title": "Anterior View of Elbow Joint (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

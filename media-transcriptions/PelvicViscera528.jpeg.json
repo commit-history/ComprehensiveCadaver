@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera528.jpeg",
+  "type": "answer",
+  "answer_en": "Pectinate Line <br> Above Line: Hindgut endoderm <br> Below Line: Surface ectoderm around the proctodeum",
+  "labels": [
+    {
+      "text": "Pectinate Line",
+      "note": "",
+      "details": [
+        "Above Line: Hindgut endoderm",
+        "Below Line: Surface ectoderm around the proctodeum"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Anal Canal (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

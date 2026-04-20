@@ -1,0 +1,18 @@
+{
+  "file": "Skull608.jpeg",
+  "type": "answer",
+  "answer_en": "Condyloid Canal <br> Emissary vv.",
+  "labels": [
+    {
+      "text": "Condyloid Canal",
+      "note": "",
+      "details": [
+        "Emissary vv."
+      ]
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

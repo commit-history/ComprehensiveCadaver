@@ -1,0 +1,16 @@
+{
+  "file": "AbdomenCT270.jpeg",
+  "type": "answer",
+  "answer_en": "Common Iliac v.",
+  "labels": [
+    {
+      "text": "Common Iliac v.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Axial View of Abdomen",
+  "subtitle": "(Iodine Contrasted CT Scan)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall314.jpeg",
+  "type": "answer",
+  "answer_en": "Renal Plexus and Aorticorenal Ganglion <br> Least splanchnic n.",
+  "labels": [
+    {
+      "text": "Renal Plexus and Aorticorenal Ganglion",
+      "note": "",
+      "details": [
+        "Least splanchnic n."
+      ]
+    }
+  ],
+  "title": "Lateral View of Posterior Abdominal Wall",
+  "subtitle": "(Veins Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Superior (left), Inferior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum172.jpeg",
+  "type": "answer",
+  "answer_en": "Innermost Intercostal m. <br> Intercostal nn.",
+  "labels": [
+    {
+      "text": "Innermost Intercostal m.",
+      "note": "",
+      "details": [
+        "Intercostal nn."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

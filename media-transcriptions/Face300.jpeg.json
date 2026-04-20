@@ -1,0 +1,18 @@
+{
+  "file": "Face300.jpeg",
+  "type": "answer",
+  "answer_en": "Nasalis m. <br> Zygomatic and buccal branches of facial n. (CN VII)",
+  "labels": [
+    {
+      "text": "Nasalis m.",
+      "note": "",
+      "details": [
+        "Zygomatic and buccal branches of facial n. (CN VII)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

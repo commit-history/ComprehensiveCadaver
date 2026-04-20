@@ -1,0 +1,16 @@
+{
+  "file": "Brain30.jpeg",
+  "type": "answer",
+  "answer_en": "Insula (Insular Lobe)",
+  "labels": [
+    {
+      "text": "Insula",
+      "note": "(Insular Lobe)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Brain (Left Hemisphere)",
+  "subtitle": "(Lateral Sulcus/Sylvian Fissure Opened)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

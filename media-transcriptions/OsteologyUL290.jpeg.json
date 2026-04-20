@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL290.jpeg",
+  "type": "answer",
+  "answer_en": "Humerus <br> Capitulum (Lateral condyle) <br> Trochlea (Medial condyle)",
+  "labels": [
+    {
+      "text": "Humerus",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Capitulum",
+      "note": "(Lateral condyle)",
+      "details": []
+    },
+    {
+      "text": "Trochlea",
+      "note": "(Medial condyle)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Elbow Joint",
+  "subtitle": "Radiograph",
+  "orientation": "",
+  "attribution": "@MarkAAbbott"
+}

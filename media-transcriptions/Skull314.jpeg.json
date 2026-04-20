@@ -1,0 +1,16 @@
+{
+  "file": "Skull314.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Nuchal Line (Mandible Removed)",
+  "labels": [
+    {
+      "text": "Inferior Nuchal Line",
+      "note": "(Mandible Removed)",
+      "details": []
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "",
+  "orientation": "Anterior (top), Right (left), Lateral (right), Posterior (bottom)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 3D4Medical."
+}

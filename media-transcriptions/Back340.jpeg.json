@@ -1,0 +1,19 @@
+{
+  "file": "Back340.jpeg",
+  "type": "answer",
+  "answer_en": "Multifidus m. <br> Origin: Superior articular processes of C4-C7, transverse processes of thoracic vertebrae, mammillary processes of lumbar vertebrae, posterior superior iliac spine, and posterior surface of ilium <br> Insertion: Spinous processes of vertebrae 2-4 levels above origin",
+  "labels": [
+    {
+      "text": "Multifidus m.",
+      "note": "",
+      "details": [
+        "Origin: Superior articular processes of C4-C7, transverse processes of thoracic vertebrae, mammillary processes of lumbar vertebrae, posterior superior iliac spine, and posterior surface of ilium",
+        "Insertion: Spinous processes of vertebrae 2-4 levels above origin"
+      ]
+    }
+  ],
+  "title": "Posterior View",
+  "subtitle": "(Erector Spinae mm. Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

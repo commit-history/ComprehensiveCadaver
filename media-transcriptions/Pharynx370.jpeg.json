@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx370.jpeg",
+  "type": "answer",
+  "answer_en": "Vagus n. (CN X) <br> Motor (SVE and GVE) <br> Sensory (GSA, GVA, and SVA)",
+  "labels": [
+    {
+      "text": "Vagus n. (CN X)",
+      "note": "",
+      "details": [
+        "Motor (SVE and GVE)",
+        "Sensory (GSA, GVA, and SVA)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

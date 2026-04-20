@@ -1,0 +1,19 @@
+{
+  "file": "Heart400.jpeg",
+  "type": "answer",
+  "answer_en": "Muscular Interventricular Septum <br> Primitive ventricle <br> (Primordial ventricle)",
+  "labels": [
+    {
+      "text": "Muscular Interventricular Septum",
+      "note": "",
+      "details": [
+        "Primitive ventricle",
+        "(Primordial ventricle)"
+      ]
+    }
+  ],
+  "title": "Coronal Section of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

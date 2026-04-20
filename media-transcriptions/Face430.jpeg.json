@@ -1,0 +1,19 @@
+{
+  "file": "Face430.jpeg",
+  "type": "answer",
+  "answer_en": "Depressor Anguli Oris m. <br> Origin: Mental tubercle and oblique line of mandible <br> Insertion: Angle of mouth (modiolus)",
+  "labels": [
+    {
+      "text": "Depressor Anguli Oris m.",
+      "note": "",
+      "details": [
+        "Origin: Mental tubercle and oblique line of mandible",
+        "Insertion: Angle of mouth (modiolus)"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

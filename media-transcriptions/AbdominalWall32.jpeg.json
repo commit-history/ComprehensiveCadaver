@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall32.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Abdominis m. (Cut and reflected on right side)",
+  "labels": [
+    {
+      "text": "Rectus Abdominis m.",
+      "note": "(Cut and reflected on right side)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Right Side)",
+  "orientation": "Right (cut), Left (reflected)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas EBA 3.0 © 2016 Gauthier-Gagnard and Wolters Kluwer"
+}

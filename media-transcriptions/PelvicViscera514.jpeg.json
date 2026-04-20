@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera514.jpeg",
+  "type": "answer",
+  "answer_en": "Testis <br> Genital ridge (Gonadal ridge)",
+  "labels": [
+    {
+      "text": "Testis",
+      "note": "",
+      "details": [
+        "Genital ridge (Gonadal ridge)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Male* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "AbdominalWall136.jpeg",
+  "type": "answer",
+  "answer_en": "Pyramidalis m. (Not visible on left side) <br> Tenses the linea alba",
+  "labels": [
+    {
+      "text": "Pyramidalis m.",
+      "note": "(Not visible on left side)",
+      "details": [
+        "Tenses the linea alba"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Anterior Rectus Sheath Removed on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

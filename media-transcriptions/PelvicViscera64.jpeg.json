@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera64.jpeg",
+  "type": "answer",
+  "answer_en": "Uterus",
+  "labels": [
+    {
+      "text": "Uterus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

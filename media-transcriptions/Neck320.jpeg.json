@@ -1,0 +1,18 @@
+{
+  "file": "Neck320.jpeg",
+  "type": "answer",
+  "answer_en": "Cricothyroid m. <br> Lengthens the vocal cords to increase tension (which results in higher pitch)",
+  "labels": [
+    {
+      "text": "Cricothyroid m.",
+      "note": "",
+      "details": [
+        "Lengthens the vocal cords to increase tension (which results in higher pitch)"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Neck (Right Side)",
+  "subtitle": "(Infrahyoid Muscles Reflected/Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

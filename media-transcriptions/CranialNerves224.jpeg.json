@@ -1,0 +1,18 @@
+{
+  "file": "CranialNerves224.jpeg",
+  "type": "answer",
+  "answer_en": "Oculomotor n. (CN III) <br> Superior orbital fissure",
+  "labels": [
+    {
+      "text": "Oculomotor n. (CN III)",
+      "note": "",
+      "details": [
+        "Superior orbital fissure"
+      ]
+    }
+  ],
+  "title": "Superior View of Skull Base (Dura Dissected)",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Figueiredo et al. (2009). Surgical nuances of giant paraclinoid aneurysms. Neurosurgical review. 33. 27-36."
+}

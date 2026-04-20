@@ -1,0 +1,16 @@
+{
+  "file": "PostAbdominalWall216.jpeg",
+  "type": "answer",
+  "answer_en": "Ureter",
+  "labels": [
+    {
+      "text": "Ureter",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View",
+  "subtitle": "(Retrograde Pyelogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from from Anatomy: A Regional Atlas of the Human Body (6th Ed.). © 2011 Lippincott Williams & Wilkins, a Wolters Kluwer business."
+}

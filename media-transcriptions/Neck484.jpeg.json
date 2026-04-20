@@ -1,0 +1,19 @@
+{
+  "file": "Neck484.jpeg",
+  "type": "answer",
+  "answer_en": "Ansa Cervicalis <br> Superior root arises from C1 <br> Inferior root arises from C2-C3",
+  "labels": [
+    {
+      "text": "Ansa Cervicalis",
+      "note": "",
+      "details": [
+        "Superior root arises from C1",
+        "Inferior root arises from C2-C3"
+      ]
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

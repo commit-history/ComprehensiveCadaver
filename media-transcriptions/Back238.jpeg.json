@@ -1,0 +1,19 @@
+{
+  "file": "Back238.jpeg",
+  "type": "answer",
+  "answer_en": "Erector Spinae m. <br> Extension of the trunk at the thoracic and lumbar spine (when contracting bilaterally) <br> Lateral flexion of the trunk at the thoracic and lumbar spine (when contracting unilaterally)",
+  "labels": [
+    {
+      "text": "Erector Spinae m.",
+      "note": "",
+      "details": [
+        "Extension of the trunk at the thoracic and lumbar spine (when contracting bilaterally)",
+        "Lateral flexion of the trunk at the thoracic and lumbar spine (when contracting unilaterally)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

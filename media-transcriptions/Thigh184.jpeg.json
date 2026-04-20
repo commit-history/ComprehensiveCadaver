@@ -1,0 +1,19 @@
+{
+  "file": "Thigh184.jpeg",
+  "type": "answer",
+  "answer_en": "Adductor Magnus m. <br> Obturator n. <br> Tibial division of sciatic n.",
+  "labels": [
+    {
+      "text": "Adductor Magnus m.",
+      "note": "",
+      "details": [
+        "Obturator n.",
+        "Tibial division of sciatic n."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Adductor Longus m. Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "Larynx16.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Horn of Thyroid Cartilage (Inferior Cornu)",
+  "labels": [
+    {
+      "text": "Inferior Horn of Thyroid Cartilage",
+      "note": "(Inferior Cornu)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Thyroid Cartilage (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior, Inferior, Posterior, Anterior",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

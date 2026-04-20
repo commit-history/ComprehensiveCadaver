@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves280.jpeg",
+  "type": "answer",
+  "answer_en": "Trigeminal n. (CN V) <br> Motor (SVE) <br> Sensory (GSA)",
+  "labels": [
+    {
+      "text": "Trigeminal n. (CN V)",
+      "note": "",
+      "details": [
+        "Motor (SVE)",
+        "Sensory (GSA)"
+      ]
+    }
+  ],
+  "title": "Superior View of Skull Base (with Dura)",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "PelvicDiaphragm246.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Ani m. <br> (Iliococcygeus, Pubococcygeus, and Puborectalis mm.) <br> N. to levator ani*",
+  "labels": [
+    {
+      "text": "Levator Ani m.",
+      "note": "",
+      "details": [
+        "(Iliococcygeus, Pubococcygeus, and Puborectalis mm.)",
+        "N. to levator ani*"
+      ]
+    }
+  ],
+  "title": "Superior View of Pelvic Cavity",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Posterior (top), Anterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill. *Puborectalis m. may also be supplied by inferior rectal n. (inferior anal n.) and/or perineal branches of pudendal n."
+}

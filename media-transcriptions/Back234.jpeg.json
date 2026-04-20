@@ -1,0 +1,18 @@
+{
+  "file": "Back234.jpeg",
+  "type": "answer",
+  "answer_en": "Serratus Posterior Superior m. (Removed on Right Side) <br> Elevation of the ribs at the costovertebral joints (during forced inspiration)",
+  "labels": [
+    {
+      "text": "Serratus Posterior Superior m.",
+      "note": "(Removed on Right Side)",
+      "details": [
+        "Elevation of the ribs at the costovertebral joints (during forced inspiration)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

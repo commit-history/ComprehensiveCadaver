@@ -1,0 +1,19 @@
+{
+  "file": "Face146.jpeg",
+  "type": "answer",
+  "answer_en": "Procerus m. <br> Depression of the medial angle of the eyebrow <br> Wrinkling of the skin covering the bridge of the nose",
+  "labels": [
+    {
+      "text": "Procerus m.",
+      "note": "",
+      "details": [
+        "Depression of the medial angle of the eyebrow",
+        "Wrinkling of the skin covering the bridge of the nose"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

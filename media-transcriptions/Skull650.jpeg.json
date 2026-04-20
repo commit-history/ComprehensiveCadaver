@@ -1,0 +1,19 @@
+{
+  "file": "Skull650.jpeg",
+  "type": "answer",
+  "answer_en": "Stapes <br> 2nd pharyngeal arch <br> (Reichert's cartilage)",
+  "labels": [
+    {
+      "text": "Stapes",
+      "note": "",
+      "details": [
+        "2nd pharyngeal arch",
+        "(Reichert's cartilage)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Ossicles",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Skull592.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Ethmoidal Foramen <br> Anterior ethmoidal n. (branch of CN V1) <br> Anterior ethmoidal a.",
+  "labels": [
+    {
+      "text": "Anterior Ethmoidal Foramen",
+      "note": "",
+      "details": [
+        "Anterior ethmoidal n. (branch of CN V1)",
+        "Anterior ethmoidal a."
+      ]
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

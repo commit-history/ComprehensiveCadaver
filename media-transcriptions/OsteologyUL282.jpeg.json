@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL282.jpeg",
+  "type": "answer",
+  "answer_en": "Humerus <br> Lesser Tubercle <br> Surgical Neck",
+  "labels": [
+    {
+      "text": "Humerus",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Lesser Tubercle",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Surgical Neck",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Shoulder Joint (Left Side)",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

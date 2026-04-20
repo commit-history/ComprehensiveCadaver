@@ -1,0 +1,16 @@
+{
+  "file": "Skull76.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Nasal Concha (Inferior Turbinate)",
+  "labels": [
+    {
+      "text": "Inferior Nasal Concha",
+      "note": "(Inferior Turbinate)",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Spectrum Removed)",
+  "orientation": "Superior (top), Anterior (front), Inferior (bottom)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 3D4Medical."
+}

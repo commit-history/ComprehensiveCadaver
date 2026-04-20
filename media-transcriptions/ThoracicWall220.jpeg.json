@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall220.jpeg",
+  "type": "answer",
+  "answer_en": "Parietal Pleura (Costal Pleura) <br> Intercostal nn.",
+  "labels": [
+    {
+      "text": "Parietal Pleura",
+      "note": "(Costal Pleura)",
+      "details": [
+        "Intercostal nn."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Wall",
+  "subtitle": "(Left Anterior Thoracic Wall Partly Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

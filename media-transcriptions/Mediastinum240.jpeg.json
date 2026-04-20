@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum240.jpeg",
+  "type": "answer",
+  "answer_en": "Left Pulmonary a. <br> Left 6th aortic arch",
+  "labels": [
+    {
+      "text": "Left Pulmonary a.",
+      "note": "",
+      "details": [
+        "Left 6th aortic arch"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from All-in-One Anatomy Exam Review: Volume 2. © 2016 Suárez-Quian and Vilensky"
+}

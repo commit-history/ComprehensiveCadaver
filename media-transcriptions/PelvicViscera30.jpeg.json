@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera30.jpeg",
+  "type": "answer",
+  "answer_en": "Urethra",
+  "labels": [
+    {
+      "text": "Urethra",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill.; *Sex assigned at birth"
+}

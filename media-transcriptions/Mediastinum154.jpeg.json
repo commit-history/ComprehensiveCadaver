@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum154.jpeg",
+  "type": "answer",
+  "answer_en": "Esophagus (Cut)",
+  "labels": [
+    {
+      "text": "Esophagus",
+      "note": "(Cut)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

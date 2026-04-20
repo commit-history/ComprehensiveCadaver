@@ -1,0 +1,16 @@
+{
+  "file": "SpinalCord2.jpeg",
+  "type": "answer",
+  "answer_en": "Dura Mater (Reflected)",
+  "labels": [
+    {
+      "text": "Dura Mater",
+      "note": "(Reflected)",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Spinal Cord",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

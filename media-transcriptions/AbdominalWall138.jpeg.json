@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall138.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Abdominis m. (Cut and reflected on right side) <br> Flexion of the trunk at the thoracic and lumbar spine <br> Tenses the anterior wall and assists in compressing the contents of the abdomen (increases intra-abdominal pressure)",
+  "labels": [
+    {
+      "text": "Rectus Abdominis m.",
+      "note": "(Cut and reflected on right side)",
+      "details": [
+        "Flexion of the trunk at the thoracic and lumbar spine",
+        "Tenses the anterior wall and assists in compressing the contents of the abdomen (increases intra-abdominal pressure)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

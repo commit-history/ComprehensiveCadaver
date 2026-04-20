@@ -1,0 +1,19 @@
+{
+  "file": "Thigh260.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Femoris m. <br> Origin: Anterior inferior iliac spine (AIIS) <br> Insertion: Tibial tuberosity via quadriceps tendon and patellar ligament",
+  "labels": [
+    {
+      "text": "Rectus Femoris m.",
+      "note": "",
+      "details": [
+        "Origin: Anterior inferior iliac spine (AIIS)",
+        "Insertion: Tibial tuberosity via quadriceps tendon and patellar ligament"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

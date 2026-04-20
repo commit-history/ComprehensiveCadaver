@@ -1,0 +1,18 @@
+{
+  "file": "Skull562.jpeg",
+  "type": "answer",
+  "answer_en": "Stylomastoid Foramen <br> Facial n. (CN VII)",
+  "labels": [
+    {
+      "text": "Stylomastoid Foramen",
+      "note": "",
+      "details": [
+        "Facial n. (CN VII)"
+      ]
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

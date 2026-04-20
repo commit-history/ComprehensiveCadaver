@@ -1,0 +1,20 @@
+{
+  "file": "OsteologyUL376.jpeg",
+  "type": "answer",
+  "answer_en": "Greater Tubercle (Right Side) <br> Supraspinatus m. <br> Infraspinatus m. <br> Teres minor m.",
+  "labels": [
+    {
+      "text": "Greater Tubercle",
+      "note": "(Right Side)",
+      "details": [
+        "Supraspinatus m.",
+        "Infraspinatus m.",
+        "Teres minor m."
+      ]
+    }
+  ],
+  "title": "Posterior View of Proximal Humerus",
+  "subtitle": "(Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 DM6Medical."
+}

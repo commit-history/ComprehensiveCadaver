@@ -1,0 +1,19 @@
+{
+  "file": "AntLeg152.jpeg",
+  "type": "answer",
+  "answer_en": "Tibialis Anterior m. <br> Origin: Lateral surface of tibia and interosseous membrane <br> Insertion: Medial cuneiform and base of 1st metatarsal",
+  "labels": [
+    {
+      "text": "Tibialis Anterior m.",
+      "note": "",
+      "details": [
+        "Origin: Lateral surface of tibia and interosseous membrane",
+        "Insertion: Medial cuneiform and base of 1st metatarsal"
+      ]
+    }
+  ],
+  "title": "Anterior View of Leg (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

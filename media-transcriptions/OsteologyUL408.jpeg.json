@@ -1,0 +1,23 @@
+{
+  "file": "OsteologyUL408.jpeg",
+  "type": "answer",
+  "answer_en": "Spine of scapula located posteriorly (two fossae instead of one) <br> Glenoid fossa located laterally <br> articulates with head of humerus",
+  "labels": [
+    {
+      "text": "Spine of scapula",
+      "note": "located posteriorly (two fossae instead of one)",
+      "details": []
+    },
+    {
+      "text": "Glenoid fossa",
+      "note": "located laterally",
+      "details": [
+        "articulates with head of humerus"
+      ]
+    }
+  ],
+  "title": "Posterior View of Scapula",
+  "subtitle": "(Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2023 Elsevier."
+}

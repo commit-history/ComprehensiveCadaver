@@ -1,0 +1,18 @@
+{
+  "file": "Larynx168.jpeg",
+  "type": "answer",
+  "answer_en": "Cricothyroid m. <br> Lengthens the vocal cords to increase tension (which results in higher pitch)",
+  "labels": [
+    {
+      "text": "Cricothyroid m.",
+      "note": "",
+      "details": [
+        "Lengthens the vocal cords to increase tension (which results in higher pitch)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Larynx",
+  "subtitle": "(Thyrohyoid m. Removed on Left Side)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from All-in-One Anatomy Exam Review: Volume 7. © 2017 Suárez-Quian and Vilensky"
+}

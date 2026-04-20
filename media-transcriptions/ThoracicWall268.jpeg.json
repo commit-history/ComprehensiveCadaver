@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall268.jpeg",
+  "type": "answer",
+  "answer_en": "Right Pulmonary a. <br> 6th aortic arch",
+  "labels": [
+    {
+      "text": "Right Pulmonary a.",
+      "note": "",
+      "details": [
+        "6th aortic arch"
+      ]
+    }
+  ],
+  "title": "Medial View of Right Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

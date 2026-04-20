@@ -1,0 +1,19 @@
+{
+  "file": "Face394.jpeg",
+  "type": "answer",
+  "answer_en": "Zygomaticus Major m. <br> Origin: Lateral surface of zygomatic bone <br> Insertion: Angle of mouth (modiolus)",
+  "labels": [
+    {
+      "text": "Zygomaticus Major m.",
+      "note": "",
+      "details": [
+        "Origin: Lateral surface of zygomatic bone",
+        "Insertion: Angle of mouth (modiolus)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

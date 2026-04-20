@@ -1,0 +1,19 @@
+{
+  "file": "Face358.jpeg",
+  "type": "answer",
+  "answer_en": "Parotid Gland <br> Parotid Fascia: Great auricular n. <br> Gland and Capsule: Auriculotemporal n. (branch of CN V3)",
+  "labels": [
+    {
+      "text": "Parotid Gland",
+      "note": "",
+      "details": [
+        "Parotid Fascia: Great auricular n.",
+        "Gland and Capsule: Auriculotemporal n. (branch of CN V3)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

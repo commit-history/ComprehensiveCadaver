@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum180.jpeg",
+  "type": "answer",
+  "answer_en": "Parietal Pleura (Costal Pleura) <br> Intercostal nn.",
+  "labels": [
+    {
+      "text": "Parietal Pleura",
+      "note": "(Costal Pleura)",
+      "details": [
+        "Intercostal nn."
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung Removed; Aorta Retracted Medially)",
+  "orientation": "Anterior (top), Inferior (left), Superior (right), Posterior (bottom)",
+  "attribution": "Modified from Gray’s Clinical Photographic Dissector of the Human Body (2nd Ed.). © 2019 by Elsevier Inc."
+}

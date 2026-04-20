@@ -1,0 +1,18 @@
+{
+  "file": "Larynx120.jpeg",
+  "type": "answer",
+  "answer_en": "Oblique Arytenoid m. <br> (Interarytenoid m.)",
+  "labels": [
+    {
+      "text": "Oblique Arytenoid m.",
+      "note": "",
+      "details": [
+        "(Interarytenoid m.)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Larynx (Right Side)",
+  "subtitle": "(Right Half of Thyroid Cartilage Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

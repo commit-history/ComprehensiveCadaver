@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall24.jpeg",
+  "type": "answer",
+  "answer_en": "Arcuate Line",
+  "labels": [
+    {
+      "text": "Arcuate Line",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis Cut and Reflected on Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (BLA 3) © 2016 Gauthier and Wilson Hower"
+}

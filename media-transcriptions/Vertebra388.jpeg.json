@@ -1,0 +1,26 @@
+{
+  "file": "Vertebra388.jpeg",
+  "type": "answer",
+  "answer_en": "T1 Vertebra <br> Body <br> Spinous Process",
+  "labels": [
+    {
+      "text": "T1 Vertebra",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Body",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Spinous Process",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Cervical Spine",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

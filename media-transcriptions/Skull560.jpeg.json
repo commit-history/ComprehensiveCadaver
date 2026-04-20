@@ -1,0 +1,21 @@
+{
+  "file": "Skull560.jpeg",
+  "type": "answer",
+  "answer_en": "Jugular Foramen <br> Glossopharyngeal n. (CN IX) <br> Vagus n. (CN X) <br> Accessory n. (CN XI) <br> Internal jugular v.",
+  "labels": [
+    {
+      "text": "Jugular Foramen",
+      "note": "",
+      "details": [
+        "Glossopharyngeal n. (CN IX)",
+        "Vagus n. (CN X)",
+        "Accessory n. (CN XI)",
+        "Internal jugular v."
+      ]
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

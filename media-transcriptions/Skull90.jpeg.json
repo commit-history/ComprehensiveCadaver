@@ -1,0 +1,16 @@
+{
+  "file": "Skull90.jpeg",
+  "type": "answer",
+  "answer_en": "Squamosal Suture (Right Side)",
+  "labels": [
+    {
+      "text": "Squamosal Suture",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Skull",
+  "subtitle": "(Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 3D4Medical."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall64.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Rectus Sheath",
+  "labels": [
+    {
+      "text": "Posterior Rectus Sheath",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Forearm412.jpeg",
+  "type": "answer",
+  "answer_en": "Palmaris Longus m. (Cut) <br> Origin: Medial epicondyle of humerus <br> Insertion: Palmar aponeurosis and flexor retinaculum",
+  "labels": [
+    {
+      "text": "Palmaris Longus m.",
+      "note": "(Cut)",
+      "details": [
+        "Origin: Medial epicondyle of humerus",
+        "Insertion: Palmar aponeurosis and flexor retinaculum"
+      ]
+    }
+  ],
+  "title": "Anterior View of Forearm (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

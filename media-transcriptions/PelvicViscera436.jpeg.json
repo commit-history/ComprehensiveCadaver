@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera436.jpeg",
+  "type": "answer",
+  "answer_en": "Ovarian Ligament <br> Gubernaculum <br> (Caudal genital ligament)",
+  "labels": [
+    {
+      "text": "Ovarian Ligament",
+      "note": "",
+      "details": [
+        "Gubernaculum",
+        "(Caudal genital ligament)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved. *Sex assigned at birth"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Back334.jpeg",
+  "type": "answer",
+  "answer_en": "Serratus Posterior Superior m. (Removed on Right Side) <br> Origin: Nuchal ligament, and spinous processes of C7-T3 <br> Insertion: Superior borders of ribs 2-5",
+  "labels": [
+    {
+      "text": "Serratus Posterior Superior m.",
+      "note": "(Removed on Right Side)",
+      "details": [
+        "Origin: Nuchal ligament, and spinous processes of C7-T3",
+        "Insertion: Superior borders of ribs 2-5"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

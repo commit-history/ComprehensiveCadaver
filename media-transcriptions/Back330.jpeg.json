@@ -1,0 +1,19 @@
+{
+  "file": "Back330.jpeg",
+  "type": "answer",
+  "answer_en": "Splenius Cervicis m. (Reflected on Right Side) <br> Origin: Spinous processes of T3-T6 <br> Insertion: Transverse processes of C1-C3",
+  "labels": [
+    {
+      "text": "Splenius Cervicis m.",
+      "note": "(Reflected on Right Side)",
+      "details": [
+        "Origin: Spinous processes of T3-T6",
+        "Insertion: Transverse processes of C1-C3"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

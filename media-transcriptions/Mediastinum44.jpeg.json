@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum44.jpeg",
+  "type": "answer",
+  "answer_en": "Thoracic Duct",
+  "labels": [
+    {
+      "text": "Thoracic Duct",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

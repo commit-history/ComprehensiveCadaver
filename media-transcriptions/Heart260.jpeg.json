@@ -1,0 +1,18 @@
+{
+  "file": "Heart260.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Papillary m. <br> (Anterolateral Papillary m.)",
+  "labels": [
+    {
+      "text": "Anterior Papillary m.",
+      "note": "",
+      "details": [
+        "(Anterolateral Papillary m.)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Walls of Atria, Ventricles, and Ascending Aorta Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

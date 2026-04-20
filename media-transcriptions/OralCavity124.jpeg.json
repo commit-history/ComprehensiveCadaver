@@ -1,0 +1,18 @@
+{
+  "file": "OralCavity124.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Belly of Digastric m. <br> N. to mylohyoid (branch of CN V3)",
+  "labels": [
+    {
+      "text": "Anterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "N. to mylohyoid (branch of CN V3)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Oral Cavity (Right Side)",
+  "subtitle": "(Tongue Reflected Medially)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

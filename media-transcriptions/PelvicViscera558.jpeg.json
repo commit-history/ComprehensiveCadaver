@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera558.jpeg",
+  "type": "answer",
+  "answer_en": "Ampulla of Vas Deferens (Ampulla of Ductus Deferens) <br> Mesonephric duct (Wolffian duct)",
+  "labels": [
+    {
+      "text": "Ampulla of Vas Deferens",
+      "note": "(Ampulla of Ductus Deferens)",
+      "details": [
+        "Mesonephric duct (Wolffian duct)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Male* Pelvic Cavity",
+  "subtitle": "(Rectum and Posterior Wall of Pelvis Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved. *Sex assigned at birth"
+}

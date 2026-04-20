@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera364.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Ani m. <br> Origin: Body of pubis, tendinous arch of levator ani, and ischial spine <br> Insertion: Coccyx, anococcygeal ligament, perineal body, and walls of the prostate/vagina, rectum, and anal canal",
+  "labels": [
+    {
+      "text": "Levator Ani m.",
+      "note": "",
+      "details": [
+        "Origin: Body of pubis, tendinous arch of levator ani, and ischial spine",
+        "Insertion: Coccyx, anococcygeal ligament, perineal body, and walls of the prostate/vagina, rectum, and anal canal"
+      ]
+    }
+  ],
+  "title": "Lateral View of Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

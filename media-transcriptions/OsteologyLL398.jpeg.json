@@ -1,0 +1,16 @@
+{
+  "file": "OsteologyLL398.jpeg",
+  "type": "answer",
+  "answer_en": "Ischial Tuberosity <br> Semitendinosus m. <br> Semimembranosus m. <br> Long head of biceps femoris m. <br> Adductor magnus m.",
+  "labels": [
+    {
+      "text": "Ischial Tuberosity",
+      "note": "",
+      "details": ["Semitendinosus m.", "Semimembranosus m.", "Long head of biceps femoris m.", "Adductor magnus m."]
+    }
+  ],
+  "title": "Posterior View of Os Coxa (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "CranialNerves192.jpeg",
+  "type": "answer",
+  "answer_en": "Facial n. (CN VII) <br> Internal acoustic meatus (Internal auditory meatus)",
+  "labels": [
+    {
+      "text": "Facial n. (CN VII)",
+      "note": "",
+      "details": [
+        "Internal acoustic meatus (Internal auditory meatus)"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brainstem",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Nolte’s The Human Brain. © Elsevier 2020."
+}

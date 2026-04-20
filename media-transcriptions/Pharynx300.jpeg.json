@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx300.jpeg",
+  "type": "answer",
+  "answer_en": "Musculus Uvulae m. <br> 4th pharyngeal arch <br> (innervated by CN X)",
+  "labels": [
+    {
+      "text": "Musculus Uvulae m.",
+      "note": "",
+      "details": [
+        "4th pharyngeal arch",
+        "(innervated by CN X)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "(Pharyngeal Constrictor mm. Cut and Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

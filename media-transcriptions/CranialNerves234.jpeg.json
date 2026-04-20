@@ -1,0 +1,18 @@
+{
+  "file": "CranialNerves234.jpeg",
+  "type": "answer",
+  "answer_en": "Optic n. (CN II) (Cut) <br> Sensory (SSA)",
+  "labels": [
+    {
+      "text": "Optic n. (CN II)",
+      "note": "(Cut)",
+      "details": [
+        "Sensory (SSA)"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "(Pons and Medulla Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

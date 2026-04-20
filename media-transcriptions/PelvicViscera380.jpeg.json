@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera380.jpeg",
+  "type": "answer",
+  "answer_en": "Ovary <br> Genital ridge <br> (Gonadal ridge)",
+  "labels": [
+    {
+      "text": "Ovary",
+      "note": "",
+      "details": [
+        "Genital ridge",
+        "(Gonadal ridge)"
+      ]
+    }
+  ],
+  "title": "Superior View of Female* Pelvic Cavity",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Posterior (top), Anterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

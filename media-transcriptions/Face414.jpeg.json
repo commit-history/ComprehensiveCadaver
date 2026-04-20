@@ -1,0 +1,19 @@
+{
+  "file": "Face414.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Labii Superioris m. <br> Origin: Zygomatic process of maxilla and maxillary process of zygomatic bone <br> Insertion: Subcutaneous tissue of upper lip",
+  "labels": [
+    {
+      "text": "Levator Labii Superioris m.",
+      "note": "",
+      "details": [
+        "Origin: Zygomatic process of maxilla and maxillary process of zygomatic bone",
+        "Insertion: Subcutaneous tissue of upper lip"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Hand226.jpeg",
+  "type": "answer",
+  "answer_en": "Dorsal Interossei m. <br> Abduction and flexion of digits 2-4 at the metacarpophalangeal joints <br> Extension of digits 2-4 at the interphalangeal joints",
+  "labels": [
+    {
+      "text": "Dorsal Interossei m.",
+      "note": "",
+      "details": [
+        "Abduction and flexion of digits 2-4 at the metacarpophalangeal joints",
+        "Extension of digits 2-4 at the interphalangeal joints"
+      ]
+    }
+  ],
+  "title": "Palmar Surface of Hand (Right Side)",
+  "subtitle": "",
+  "orientation": "Distal (top), Proximal (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

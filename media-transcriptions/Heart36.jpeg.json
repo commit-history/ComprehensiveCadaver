@@ -1,0 +1,16 @@
+{
+  "file": "Heart36.jpeg",
+  "type": "answer",
+  "answer_en": "Left Auricle",
+  "labels": [
+    {
+      "text": "Left Auricle",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

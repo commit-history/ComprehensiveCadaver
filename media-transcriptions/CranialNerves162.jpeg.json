@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves162.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Cerebral a.",
+  "labels": [
+    {
+      "text": "Posterior Cerebral a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Skull",
+  "subtitle": "(Angiogram)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from NetAnatomy. © 2021 Scholar Educational Systems, Inc."
+}

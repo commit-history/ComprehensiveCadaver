@@ -1,0 +1,18 @@
+{
+  "file": "Heart288.jpeg",
+  "type": "answer",
+  "answer_en": "Septal Leaflet of Right Atrioventricular Valve <br> (Tricuspid Valve)",
+  "labels": [
+    {
+      "text": "Septal Leaflet of Right Atrioventricular Valve",
+      "note": "",
+      "details": [
+        "(Tricuspid Valve)"
+      ]
+    }
+  ],
+  "title": "Superior View of Heart",
+  "subtitle": "(Atria Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "AbdomenCT138.jpeg",
+  "type": "answer",
+  "answer_en": "Pancreas (Head and Uncincate Process)",
+  "labels": [
+    {
+      "text": "Pancreas",
+      "note": "(Head and Uncincate Process)",
+      "details": []
+    }
+  ],
+  "title": "Axial View of Abdomen",
+  "subtitle": "(Iodine Contrasted CT Scan)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

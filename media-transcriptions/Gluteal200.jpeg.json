@@ -1,0 +1,19 @@
+{
+  "file": "Gluteal200.jpeg",
+  "type": "answer",
+  "answer_en": "Gluteus Medius m. <br> Origin: Posterior surface of ilium between anterior and posterior gluteal lines <br> Insertion: Greater trochanter of femur",
+  "labels": [
+    {
+      "text": "Gluteus Medius m.",
+      "note": "",
+      "details": [
+        "Origin: Posterior surface of ilium between anterior and posterior gluteal lines",
+        "Insertion: Greater trochanter of femur"
+      ]
+    }
+  ],
+  "title": "Posterior View of Gluteal Region (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

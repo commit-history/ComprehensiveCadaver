@@ -1,0 +1,18 @@
+{
+  "file": "PelvicDiaphragm288.jpeg",
+  "type": "answer",
+  "answer_en": "Sciatic n. <br> Arises from L4-S3",
+  "labels": [
+    {
+      "text": "Sciatic n.",
+      "note": "",
+      "details": [
+        "Arises from L4-S3"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Pelvis (Right Side)",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Superior, Inferior, Anterior, Posterior",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

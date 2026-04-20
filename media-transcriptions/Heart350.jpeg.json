@@ -1,0 +1,18 @@
+{
+  "file": "Heart350.jpeg",
+  "type": "answer",
+  "answer_en": "Ascending Aorta <br> Truncus arteriosus",
+  "labels": [
+    {
+      "text": "Ascending Aorta",
+      "note": "",
+      "details": [
+        "Truncus arteriosus"
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "PelvicDiaphragm324.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Ani m. (Iliococcygeus, Pubococcygeus, and Puborectalis mm.) <br> Origin: Body of pubis, tendinous arch of levator ani, and ischial spine <br> Insertion: Coccyx, anococcygeal ligament, perineal body, and walls of the prostate/vagina, rectum, and anal canal",
+  "labels": [
+    {
+      "text": "Levator Ani m.",
+      "note": "(Iliococcygeus, Pubococcygeus, and Puborectalis mm.)",
+      "details": [
+        "Origin: Body of pubis, tendinous arch of levator ani, and ischial spine",
+        "Insertion: Coccyx, anococcygeal ligament, perineal body, and walls of the prostate/vagina, rectum, and anal canal"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Pelvis (Right Side)",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

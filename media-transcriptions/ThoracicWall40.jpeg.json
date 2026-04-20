@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall40.jpeg",
+  "type": "answer",
+  "answer_en": "Trachea",
+  "labels": [
+    {
+      "text": "Trachea",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Heart and Great Vessels Removed, and Lungs Dissected)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

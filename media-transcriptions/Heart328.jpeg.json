@@ -1,0 +1,18 @@
+{
+  "file": "Heart328.jpeg",
+  "type": "answer",
+  "answer_en": "Moderator Band (Septomarginal Trabecula) <br> Part of the right bundle branch of the atrioventricular bundle (to the anterior papillary m.)",
+  "labels": [
+    {
+      "text": "Moderator Band",
+      "note": "(Septomarginal Trabecula)",
+      "details": [
+        "Part of the right bundle branch of the atrioventricular bundle (to the anterior papillary m.)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Wall of Right Atrium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "Face364.jpeg",
+  "type": "answer",
+  "answer_en": "Parotid Gland <br> Otic ganglion",
+  "labels": [
+    {
+      "text": "Parotid Gland",
+      "note": "",
+      "details": [
+        "Otic ganglion"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

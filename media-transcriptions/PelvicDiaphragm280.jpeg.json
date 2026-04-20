@@ -1,0 +1,18 @@
+{
+  "file": "PelvicDiaphragm280.jpeg",
+  "type": "answer",
+  "answer_en": "Piriformis m. <br> Lateral rotation of the thigh at the hip joint",
+  "labels": [
+    {
+      "text": "Piriformis m.",
+      "note": "",
+      "details": [
+        "Lateral rotation of the thigh at the hip joint"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "(Rectum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved.\n*Sex assigned at birth\n@MarkAAbbott1"
+}

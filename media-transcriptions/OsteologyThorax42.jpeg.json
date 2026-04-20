@@ -1,0 +1,16 @@
+{
+  "file": "OsteologyThorax42.jpeg",
+  "type": "answer",
+  "answer_en": "Head of Rib (Right Side)",
+  "labels": [
+    {
+      "text": "Head of Rib",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Rib",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2023 3D4Medical."
+}

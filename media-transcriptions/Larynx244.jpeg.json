@@ -1,0 +1,19 @@
+{
+  "file": "Larynx244.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Cricoarytenoid m. <br> Origin: Superior margin of arch of cricoid cartilage <br> Insertion: Vocal process of arytenoid cartilage",
+  "labels": [
+    {
+      "text": "Lateral Cricoarytenoid m.",
+      "note": "",
+      "details": [
+        "Origin: Superior margin of arch of cricoid cartilage",
+        "Insertion: Vocal process of arytenoid cartilage"
+      ]
+    }
+  ],
+  "title": "Lateral View of Larynx (Right Side)",
+  "subtitle": "(Right Half of Thyroid Cartilage Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

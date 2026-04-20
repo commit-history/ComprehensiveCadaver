@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera322.jpeg",
+  "type": "answer",
+  "answer_en": "Urinary Bladder",
+  "labels": [
+    {
+      "text": "Urinary Bladder",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section of Male* Pelvis",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1\nModified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved.\n*Sex assigned at birth"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Vertebra378.jpeg",
+  "type": "answer",
+  "answer_en": "C3 Vertebra <br> Body <br> Spinous Process",
+  "labels": [
+    {
+      "text": "C3 Vertebra",
+      "note": "",
+      "details": [
+        "Body",
+        "Spinous Process"
+      ]
+    }
+  ],
+  "title": "Lateral View of Cervical Spine",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "Skull606.jpeg",
+  "type": "answer",
+  "answer_en": "Condyloid Canal <br> Emissary vv.",
+  "labels": [
+    {
+      "text": "Condyloid Canal",
+      "note": "",
+      "details": [
+        "Emissary vv."
+      ]
+    }
+  ],
+  "title": "Superior View of Skull",
+  "subtitle": "(Skull Cap Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

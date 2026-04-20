@@ -1,0 +1,19 @@
+{
+  "file": "Heart396.jpeg",
+  "type": "answer",
+  "answer_en": "Interatrial Septum <br> Septum primum <br> Septum secundum",
+  "labels": [
+    {
+      "text": "Interatrial Septum",
+      "note": "",
+      "details": [
+        "Septum primum",
+        "Septum secundum"
+      ]
+    }
+  ],
+  "title": "Coronal Section of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

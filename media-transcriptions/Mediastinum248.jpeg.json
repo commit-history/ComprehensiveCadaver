@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum248.jpeg",
+  "type": "answer",
+  "answer_en": "Descending Thoracic Aorta <br> Left dorsal aorta",
+  "labels": [
+    {
+      "text": "Descending Thoracic Aorta",
+      "note": "",
+      "details": [
+        "Left dorsal aorta"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

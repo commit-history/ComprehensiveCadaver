@@ -1,0 +1,19 @@
+{
+  "file": "Face406.jpeg",
+  "type": "answer",
+  "answer_en": "Depressor Supercilii m. <br> Origin: Frontal process of maxilla <br> Insertion: Skin of eyebrow",
+  "labels": [
+    {
+      "text": "Depressor Supercilii m.",
+      "note": "",
+      "details": [
+        "Origin: Frontal process of maxilla",
+        "Insertion: Skin of eyebrow"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

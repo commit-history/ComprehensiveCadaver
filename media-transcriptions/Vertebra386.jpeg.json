@@ -1,0 +1,26 @@
+{
+  "file": "Vertebra386.jpeg",
+  "type": "answer",
+  "answer_en": "C7 Vertebra (Vertebra Prominens) <br> Body <br> Spinous Process",
+  "labels": [
+    {
+      "text": "C7 Vertebra",
+      "note": "(Vertebra Prominens)",
+      "details": []
+    },
+    {
+      "text": "Body",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Spinous Process",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Cervical Spine",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

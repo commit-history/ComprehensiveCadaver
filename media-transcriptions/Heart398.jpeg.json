@@ -1,0 +1,20 @@
+{
+  "file": "Heart398.jpeg",
+  "type": "answer",
+  "answer_en": "Membranous Interventricular Septum <br> Right bulbar ridge <br> Left bulbar ridge <br> Atrioventricular cushions (Endocardial cushions)",
+  "labels": [
+    {
+      "text": "Membranous Interventricular Septum",
+      "note": "",
+      "details": [
+        "Right bulbar ridge",
+        "Left bulbar ridge",
+        "Atrioventricular cushions (Endocardial cushions)"
+      ]
+    }
+  ],
+  "title": "Coronal Section of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

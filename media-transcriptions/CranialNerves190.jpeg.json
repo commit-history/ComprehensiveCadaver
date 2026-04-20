@@ -1,0 +1,18 @@
+{
+  "file": "CranialNerves190.jpeg",
+  "type": "answer",
+  "answer_en": "Abducens n. (CN VI) (Abducent n.) <br> Superior orbital fissure",
+  "labels": [
+    {
+      "text": "Abducens n. (CN VI)",
+      "note": "(Abducent n.)",
+      "details": [
+        "Superior orbital fissure"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brainstem",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Nolte’s The Human Brain. © Elsevier 2020."
+}

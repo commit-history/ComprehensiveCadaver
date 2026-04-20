@@ -1,0 +1,16 @@
+{
+  "file": "Face6.jpeg",
+  "type": "answer",
+  "answer_en": "Nasalis m.",
+  "labels": [
+    {
+      "text": "Nasalis m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

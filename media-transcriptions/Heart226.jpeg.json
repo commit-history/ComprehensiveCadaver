@@ -1,0 +1,18 @@
+{
+  "file": "Heart226.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Leaflet of Right Atrioventricular Valve <br> (Tricuspid Valve)",
+  "labels": [
+    {
+      "text": "Anterior Leaflet of Right Atrioventricular Valve",
+      "note": "",
+      "details": [
+        "(Tricuspid Valve)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Walls of Right Atrium and Ventricle Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

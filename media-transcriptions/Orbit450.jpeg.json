@@ -1,0 +1,19 @@
+{
+  "file": "Orbit450.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Oblique m. (Cut and Reflected) <br> Origin: Body of sphenoid bone <br> Insertion: Superolateral surface of posterior quadrant of sclera",
+  "labels": [
+    {
+      "text": "Superior Oblique m.",
+      "note": "(Cut and Reflected)",
+      "details": [
+        "Origin: Body of sphenoid bone",
+        "Insertion: Superolateral surface of posterior quadrant of sclera"
+      ]
+    }
+  ],
+  "title": "Superior View of Orbit (Right Side)",
+  "subtitle": "(Deep Layer; Vasculature Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

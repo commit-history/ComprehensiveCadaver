@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL416.jpeg",
+  "type": "answer",
+  "answer_en": "Olecranon process <br> located superiorly and directed posteriorly <br> (trochlear notch not visible) <br> Styloid process <br> located medially",
+  "labels": [
+    {
+      "text": "Olecranon process",
+      "note": "",
+      "details": [
+        "located superiorly and directed posteriorly",
+        "(trochlear notch not visible)"
+      ]
+    },
+    {
+      "text": "Styloid process",
+      "note": "",
+      "details": [
+        "located medially"
+      ]
+    }
+  ],
+  "title": "Posterior View of Ulna (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

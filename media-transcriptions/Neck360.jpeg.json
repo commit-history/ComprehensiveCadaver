@@ -1,0 +1,20 @@
+{
+  "file": "Neck360.jpeg",
+  "type": "answer",
+  "answer_en": "Aortic Arch <br> Left portion of aortic sac <br> Left 4th aortic arch <br> Left dorsal aorta",
+  "labels": [
+    {
+      "text": "Aortic Arch",
+      "note": "",
+      "details": [
+        "Left portion of aortic sac",
+        "Left 4th aortic arch",
+        "Left dorsal aorta"
+      ]
+    }
+  ],
+  "title": "AP View of Great Vessels",
+  "subtitle": "(Angiogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Imaging Atlas of Human Anatomy (6th Ed.). © 2021, Elsevier Limited. All rights reserved."
+}

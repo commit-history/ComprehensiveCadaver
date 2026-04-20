@@ -1,0 +1,19 @@
+{
+  "file": "Skull576.jpeg",
+  "type": "answer",
+  "answer_en": "Mandibular Foramen <br> Inferior alveolar n. (branch of CN V3) <br> Inferior alveolar a.",
+  "labels": [
+    {
+      "text": "Mandibular Foramen",
+      "note": "",
+      "details": [
+        "Inferior alveolar n. (branch of CN V3)",
+        "Inferior alveolar a."
+      ]
+    }
+  ],
+  "title": "Posterior View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

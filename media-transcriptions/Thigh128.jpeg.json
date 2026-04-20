@@ -1,0 +1,16 @@
+{
+  "file": "Thigh128.jpeg",
+  "type": "answer",
+  "answer_en": "Deep Femoral a.",
+  "labels": [
+    {
+      "text": "Deep Femoral a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Trans View of Femoral Triangle",
+  "subtitle": "(Ultrasound)",
+  "orientation": "Superficial (top), Deep (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Essential Ultrasound Anatomy (1st Ed.). © 2020 Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum184.jpeg",
+  "type": "answer",
+  "answer_en": "Innermost Intercostal m. <br> Origin: Inferior borders and internal surfaces of ribs 1-11 <br> Insertion: Superior borders and internal surfaces of ribs immediately below origin",
+  "labels": [
+    {
+      "text": "Innermost Intercostal m.",
+      "note": "",
+      "details": [
+        "Origin: Inferior borders and internal surfaces of ribs 1-11",
+        "Insertion: Superior borders and internal surfaces of ribs immediately below origin"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

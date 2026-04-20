@@ -1,0 +1,16 @@
+{
+  "file": "Skull68.jpeg",
+  "type": "answer",
+  "answer_en": "Temporal Bone",
+  "labels": [
+    {
+      "text": "Temporal Bone",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2023 3D4Medical."
+}

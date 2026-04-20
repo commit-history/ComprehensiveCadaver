@@ -1,0 +1,16 @@
+{
+  "file": "PelvicDiaphragm38.jpeg",
+  "type": "answer",
+  "answer_en": "Lumbosacral Trunk",
+  "labels": [
+    {
+      "text": "Lumbosacral Trunk",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

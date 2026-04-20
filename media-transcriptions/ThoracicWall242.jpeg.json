@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall242.jpeg",
+  "type": "answer",
+  "answer_en": "No horizontal fissure so only two lobes are present",
+  "labels": [
+    {
+      "text": "No horizontal fissure so only two lobes are present",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

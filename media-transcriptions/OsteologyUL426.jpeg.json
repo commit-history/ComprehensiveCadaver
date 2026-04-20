@@ -1,0 +1,23 @@
+{
+  "file": "OsteologyUL426.jpeg",
+  "type": "answer",
+  "answer_en": "Subscapular fossa located anteriorly <br> Glenoid fossa located laterally <br> articulates with head of humerus",
+  "labels": [
+    {
+      "text": "Subscapular fossa",
+      "note": "located anteriorly",
+      "details": []
+    },
+    {
+      "text": "Glenoid fossa",
+      "note": "located laterally",
+      "details": [
+        "articulates with head of humerus"
+      ]
+    }
+  ],
+  "title": "Anterior View of Scapula (Left Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complex Anatomy by Ellicott. © 2023 DMAbdullah."
+}

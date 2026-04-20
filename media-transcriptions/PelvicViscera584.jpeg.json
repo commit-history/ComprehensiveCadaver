@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera584.jpeg",
+  "type": "answer",
+  "answer_en": "Ampulla of Vas Deferens (Ampulla of Ductus Deferens) <br> Mesonephric duct (Wolffian duct)",
+  "labels": [
+    {
+      "text": "Ampulla of Vas Deferens",
+      "note": "(Ampulla of Ductus Deferens)",
+      "details": [
+        "Mesonephric duct (Wolffian duct)"
+      ]
+    }
+  ],
+  "title": "AP View of Male* Internal Genital Organs",
+  "subtitle": "(Contrast Injected Into Vas Deferens)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from NetAnatomy. © 2021 Scholar Educational Systems, Inc."
+}

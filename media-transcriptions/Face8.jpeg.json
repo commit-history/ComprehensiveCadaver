@@ -1,0 +1,16 @@
+{
+  "file": "Face8.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Labii Superioris Alaeque Nasi m.",
+  "labels": [
+    {
+      "text": "Levator Labii Superioris Alaeque Nasi m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

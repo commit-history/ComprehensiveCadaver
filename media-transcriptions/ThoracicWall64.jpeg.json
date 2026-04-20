@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall64.jpeg",
+  "type": "answer",
+  "answer_en": "Hilum of Right Lung",
+  "labels": [
+    {
+      "text": "Hilum of Right Lung",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Right Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

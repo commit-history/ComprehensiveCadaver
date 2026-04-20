@@ -1,0 +1,27 @@
+{
+  "file": "OsteologyUL412.jpeg",
+  "type": "answer",
+  "answer_en": "Head of humerus <br> located superiorly <br> directed medially (articulates with the glenoid fossa of the scapula) <br> Olecranon fossa <br> located posteriorly <br> (there are two fossae anteriorly)",
+  "labels": [
+    {
+      "text": "Head of humerus",
+      "note": "",
+      "details": [
+        "located superiorly",
+        "directed medially (articulates with the glenoid fossa of the scapula)"
+      ]
+    },
+    {
+      "text": "Olecranon fossa",
+      "note": "",
+      "details": [
+        "located posteriorly",
+        "(there are two fossae anteriorly)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Humerus (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

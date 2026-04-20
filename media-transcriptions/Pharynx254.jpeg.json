@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx254.jpeg",
+  "type": "answer",
+  "answer_en": "Tensor Veli Palatini m. <br> Tenses the soft palate <br> Opens the pharyngotympanic tube (Eustachian tube; auditory tube)",
+  "labels": [
+    {
+      "text": "Tensor Veli Palatini m.",
+      "note": "",
+      "details": [
+        "Tenses the soft palate",
+        "Opens the pharyngotympanic tube (Eustachian tube; auditory tube)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Pharynx (Right Side)",
+  "subtitle": "(Tongue and Nasal Conchae Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

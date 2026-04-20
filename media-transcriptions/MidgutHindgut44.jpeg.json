@@ -1,0 +1,18 @@
+{
+  "file": "MidgutHindgut44.jpeg",
+  "type": "answer",
+  "answer_en": "Intestinal a. (Cut) <br> (Jejunal and Ileal a.)",
+  "labels": [
+    {
+      "text": "Intestinal a.",
+      "note": "(Cut)",
+      "details": [
+        "(Jejunal and Ileal a.)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Cavity",
+  "subtitle": "(Small Intestine and Mesentery Removed, and Transverse Colon Reflected Superiorly)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

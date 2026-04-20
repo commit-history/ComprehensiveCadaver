@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera476.jpeg",
+  "type": "answer",
+  "answer_en": "Prostate Gland <br> Pelvic part of urogenital sinus",
+  "labels": [
+    {
+      "text": "Prostate Gland",
+      "note": "",
+      "details": [
+        "Pelvic part of urogenital sinus"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill.; *Sex assigned at birth"
+}

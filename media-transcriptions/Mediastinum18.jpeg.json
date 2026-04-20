@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum18.jpeg",
+  "type": "answer",
+  "answer_en": "Phrenic n.",
+  "labels": [
+    {
+      "text": "Phrenic n.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from All-in-One Anatomy Exam Review: Volume 2. © 2016 Suárez-Quian and Vilensky"
+}

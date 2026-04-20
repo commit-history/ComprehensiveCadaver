@@ -1,0 +1,18 @@
+{
+  "file": "Foregut240.jpeg",
+  "type": "answer",
+  "answer_en": "Liver <br> Septum transversum",
+  "labels": [
+    {
+      "text": "Liver",
+      "note": "",
+      "details": [
+        "Septum transversum"
+      ]
+    }
+  ],
+  "title": "Anterior View of Upper Abdominal Organs",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

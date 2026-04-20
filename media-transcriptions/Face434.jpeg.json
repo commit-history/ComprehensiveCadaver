@@ -1,0 +1,19 @@
+{
+  "file": "Face434.jpeg",
+  "type": "answer",
+  "answer_en": "Stylohyoid m. <br> Origin: Styloid process of temporal bone <br> Insertion: Body of hyoid bone",
+  "labels": [
+    {
+      "text": "Stylohyoid m.",
+      "note": "",
+      "details": [
+        "Origin: Styloid process of temporal bone",
+        "Insertion: Body of hyoid bone"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "(Parotid Gland Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

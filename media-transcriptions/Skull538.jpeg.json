@@ -1,0 +1,18 @@
+{
+  "file": "Skull538.jpeg",
+  "type": "answer",
+  "answer_en": "Carotid Canal <br> Internal carotid a.",
+  "labels": [
+    {
+      "text": "Carotid Canal",
+      "note": "",
+      "details": [
+        "Internal carotid a."
+      ]
+    }
+  ],
+  "title": "Superior View of Skull",
+  "subtitle": "(Skull Cap Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

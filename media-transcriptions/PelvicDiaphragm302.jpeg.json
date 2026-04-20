@@ -1,0 +1,19 @@
+{
+  "file": "PelvicDiaphragm302.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Hypogastric Plexus <br> Sympathetic: Hypogastric n. and sacral splanchnic nn. <br> Parasympathetic: Pelvic splanchnic nn.",
+  "labels": [
+    {
+      "text": "Inferior Hypogastric Plexus",
+      "note": "",
+      "details": [
+        "Sympathetic: Hypogastric n. and sacral splanchnic nn.",
+        "Parasympathetic: Pelvic splanchnic nn."
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

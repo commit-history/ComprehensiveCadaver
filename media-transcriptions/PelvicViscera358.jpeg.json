@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera358.jpeg",
+  "type": "answer",
+  "answer_en": "Rectouterine Pouch (Pouch of Douglas Posterior Cul-de-Sac) <br> Accessible for transvaginal drainage via the posterior fornix",
+  "labels": [
+    {
+      "text": "Rectouterine Pouch",
+      "note": "(Pouch of Douglas Posterior Cul-de-Sac)",
+      "details": [
+        "Accessible for transvaginal drainage via the posterior fornix"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

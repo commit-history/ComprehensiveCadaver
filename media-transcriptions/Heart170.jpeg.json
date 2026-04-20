@@ -1,0 +1,16 @@
+{
+  "file": "Heart170.jpeg",
+  "type": "answer",
+  "answer_en": "Right Coronary a.",
+  "labels": [
+    {
+      "text": "Right Coronary a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Right Anterior Oblique (RAO) View",
+  "subtitle": "(Right Coronary Angiogram)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Imaging Atlas of Human Anatomy (6th Ed.). © 2021, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves12.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Cerebral a.",
+  "labels": [
+    {
+      "text": "Posterior Cerebral a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

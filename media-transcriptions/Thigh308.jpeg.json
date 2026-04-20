@@ -1,0 +1,19 @@
+{
+  "file": "Thigh308.jpeg",
+  "type": "answer",
+  "answer_en": "Adductor Magnus m. <br> Origin: Inferior pubic ramus, ischial ramus, and ischial tuberosity <br> Insertion: Gluteal tuberosity, linea aspera, medial supracondylar line, and adductor tubercle of femur",
+  "labels": [
+    {
+      "text": "Adductor Magnus m.",
+      "note": "",
+      "details": [
+        "Origin: Inferior pubic ramus, ischial ramus, and ischial tuberosity",
+        "Insertion: Gluteal tuberosity, linea aspera, medial supracondylar line, and adductor tubercle of femur"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Adductor Longus m. Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

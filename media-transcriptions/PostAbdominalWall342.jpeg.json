@@ -1,0 +1,19 @@
+{
+  "file": "PostAbdominalWall342.jpeg",
+  "type": "answer",
+  "answer_en": "Diaphragm <br> Origin: Posterior aspect of xiphoid process, internal surfaces of lower costal cartilages and ribs 7-12, medial and lateral arcuate ligaments, vertebral bodies of L1-L3, and anterior longitudinal ligament <br> Insertion: Central tendon of diaphragm",
+  "labels": [
+    {
+      "text": "Diaphragm",
+      "note": "",
+      "details": [
+        "Origin: Posterior aspect of xiphoid process, internal surfaces of lower costal cartilages and ribs 7-12, medial and lateral arcuate ligaments, vertebral bodies of L1-L3, and anterior longitudinal ligament",
+        "Insertion: Central tendon of diaphragm"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

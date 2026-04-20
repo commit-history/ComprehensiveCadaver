@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera178.jpeg",
+  "type": "answer",
+  "answer_en": "Ampulla of Vas Deferens (Cut) <br> (Ampulla of Ductus Deferens)",
+  "labels": [
+    {
+      "text": "Ampulla of Vas Deferens (Cut)",
+      "note": "",
+      "details": [
+        "(Ampulla of Ductus Deferens)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

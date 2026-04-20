@@ -1,0 +1,19 @@
+{
+  "file": "Shoulder112.jpeg",
+  "type": "answer",
+  "answer_en": "Supraspinatus m. (Cut) <br> Origin: Supraspinous fossa of scapula <br> Insertion: Greater tubercle of humerus",
+  "labels": [
+    {
+      "text": "Supraspinatus m.",
+      "note": "(Cut)",
+      "details": [
+        "Origin: Supraspinous fossa of scapula",
+        "Insertion: Greater tubercle of humerus"
+      ]
+    }
+  ],
+  "title": "Posterior View of Scapular Region (Right Side)",
+  "subtitle": "(Supraspinatus, Infraspinatus, and Teres Minor mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Skull614.jpeg",
+  "type": "answer",
+  "answer_en": "Pterygoid Canal (Vidian Canal) <br> N. of the pterygoid canal (Vidian n.) <br> A. of the pterygoid canal",
+  "labels": [
+    {
+      "text": "Pterygoid Canal",
+      "note": "(Vidian Canal)",
+      "details": [
+        "N. of the pterygoid canal (Vidian n.)",
+        "A. of the pterygoid canal"
+      ]
+    }
+  ],
+  "title": "Superior View of Skull",
+  "subtitle": "(Skull Cap Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

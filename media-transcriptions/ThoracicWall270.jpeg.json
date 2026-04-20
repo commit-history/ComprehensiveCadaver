@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall270.jpeg",
+  "type": "answer",
+  "answer_en": "Left Pulmonary a. <br> 6th aortic arch",
+  "labels": [
+    {
+      "text": "Left Pulmonary a.",
+      "note": "",
+      "details": [
+        "6th aortic arch"
+      ]
+    }
+  ],
+  "title": "Medial View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

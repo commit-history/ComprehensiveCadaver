@@ -1,0 +1,19 @@
+{
+  "file": "Neck292.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Belly of Digastric m. <br> Elevation of the hyoid bone <br> Depression of the mandible",
+  "labels": [
+    {
+      "text": "Anterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "Elevation of the hyoid bone",
+        "Depression of the mandible"
+      ]
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

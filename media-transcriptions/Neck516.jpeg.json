@@ -1,0 +1,19 @@
+{
+  "file": "Neck516.jpeg",
+  "type": "answer",
+  "answer_en": "Omohyoid m. <br> Origin: Superior border of scapula near suprascapular notch <br> Insertion: Body of hyoid bone",
+  "labels": [
+    {
+      "text": "Omohyoid m.",
+      "note": "",
+      "details": [
+        "Origin: Superior border of scapula near suprascapular notch",
+        "Insertion: Body of hyoid bone"
+      ]
+    }
+  ],
+  "title": "Lateral View of Neck (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "Face158.jpeg",
+  "type": "answer",
+  "answer_en": "Platysma m. <br> Tenses the skin of the neck",
+  "labels": [
+    {
+      "text": "Platysma m.",
+      "note": "",
+      "details": [
+        "Tenses the skin of the neck"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

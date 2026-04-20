@@ -1,0 +1,16 @@
+{
+  "file": "Face128.jpeg",
+  "type": "answer",
+  "answer_en": "Facial a.",
+  "labels": [
+    {
+      "text": "Facial a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "(Parotid Gland Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

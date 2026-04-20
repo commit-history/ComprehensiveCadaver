@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall346.jpeg",
+  "type": "answer",
+  "answer_en": "Adrenal Gland (Suprarenal Gland) <br> Neural crest cells",
+  "labels": [
+    {
+      "text": "Adrenal Gland",
+      "note": "(Suprarenal Gland)",
+      "details": [
+        "Neural crest cells"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

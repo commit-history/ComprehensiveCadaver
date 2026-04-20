@@ -1,0 +1,16 @@
+{
+  "file": "Heart236.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Papillary m.",
+  "labels": [
+    {
+      "text": "Anterior Papillary m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Wall of Right Atrium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

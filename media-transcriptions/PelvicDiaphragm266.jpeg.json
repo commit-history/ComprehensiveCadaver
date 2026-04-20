@@ -1,0 +1,22 @@
+{
+  "file": "PelvicDiaphragm266.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Ani m. <br> (Iliococcygeus, Pubococcygeus, and Puborectalis mm.) <br> Provides structural support to adjacent pelvic structures <br> Resists increases in intra-abdominal pressure <br> Maintains fecal continence <br> Aids in ejaculation",
+  "labels": [
+    {
+      "text": "Levator Ani m.",
+      "note": "",
+      "details": [
+        "(Iliococcygeus, Pubococcygeus, and Puborectalis mm.)",
+        "Provides structural support to adjacent pelvic structures",
+        "Resists increases in intra-abdominal pressure",
+        "Maintains fecal continence",
+        "Aids in ejaculation"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Pelvis (Right Side)",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

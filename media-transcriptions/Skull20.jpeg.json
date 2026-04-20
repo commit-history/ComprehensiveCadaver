@@ -1,0 +1,16 @@
+{
+  "file": "Skull20.jpeg",
+  "type": "answer",
+  "answer_en": "Occipital Bone (Right Side)",
+  "labels": [
+    {
+      "text": "Occipital Bone",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 3D4Medical."
+}

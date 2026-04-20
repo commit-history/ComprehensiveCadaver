@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera340.jpeg",
+  "type": "answer",
+  "answer_en": "Testis",
+  "labels": [
+    {
+      "text": "Testis",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section of Male* Pelvis",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved. *Sex assigned at birth"
+}

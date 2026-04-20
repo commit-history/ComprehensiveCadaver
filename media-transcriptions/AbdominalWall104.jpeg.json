@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall104.jpeg",
+  "type": "answer",
+  "answer_en": "Median Umbilical Ligament",
+  "labels": [
+    {
+      "text": "Median Umbilical Ligament",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Abdominal Wall",
+  "subtitle": "(Abdominal Viscera, Transversalis Fascia and Parietal Peritoneum Removed, and Abdominal Wall Reflected Anteriorly)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from All-in-One Anatomy Exam Review: Volume 3. © 2018 Suárez-Quian and Vilensky"
+}

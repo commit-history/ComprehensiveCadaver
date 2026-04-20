@@ -1,0 +1,19 @@
+{
+  "file": "Forearm380.jpeg",
+  "type": "answer",
+  "answer_en": "Biceps Brachii m. (Bicipital Aponeurosis Cut) <br> Origin: Supraglenoid tubercle of scapula (long head); coracoid process of scapula (short head) <br> Insertion: Radial tuberosity, and antebrachial fascia via the bicipital aponeurosis",
+  "labels": [
+    {
+      "text": "Biceps Brachii m.",
+      "note": "(Bicipital Aponeurosis Cut)",
+      "details": [
+        "Origin: Supraglenoid tubercle of scapula (long head); coracoid process of scapula (short head)",
+        "Insertion: Radial tuberosity, and antebrachial fascia via the bicipital aponeurosis"
+      ]
+    }
+  ],
+  "title": "Anterior View of Elbow Joint (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

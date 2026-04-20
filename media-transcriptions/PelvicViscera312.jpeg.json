@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera312.jpeg",
+  "type": "answer",
+  "answer_en": "Sigmoid Colon",
+  "labels": [
+    {
+      "text": "Sigmoid Colon",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section of Female* Pelvis",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

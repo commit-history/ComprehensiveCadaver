@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx280.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Belly of Digastric m. <br> 2nd pharyngeal arch <br> (innervated by CN VII)",
+  "labels": [
+    {
+      "text": "Posterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "2nd pharyngeal arch",
+        "(innervated by CN VII)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

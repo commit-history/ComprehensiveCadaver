@@ -1,0 +1,16 @@
+{
+  "file": "OsteologyLL400.jpeg",
+  "type": "answer",
+  "answer_en": "Greater Trochanter <br> Gluteus medius m. <br> Gluteus minimus m. <br> Piriformis m. <br> Superior gemellus m. <br> Obturator internus m. <br> Inferior gemellus m.",
+  "labels": [
+    {
+      "text": "Greater Trochanter",
+      "note": "",
+      "details": ["Gluteus medius m.", "Gluteus minimus m.", "Piriformis m.", "Superior gemellus m.", "Obturator internus m.", "Inferior gemellus m."]
+    }
+  ],
+  "title": "Anterior View of Proximal Femur (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

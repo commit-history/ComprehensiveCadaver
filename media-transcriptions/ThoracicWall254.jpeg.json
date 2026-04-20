@@ -1,0 +1,19 @@
+{
+  "file": "ThoracicWall254.jpeg",
+  "type": "answer",
+  "answer_en": "Innermost Intercostal m. <br> Origin: Inferior borders and internal surfaces of ribs 1-11 <br> Insertion: Superior borders and internal surfaces of ribs immediately below origin",
+  "labels": [
+    {
+      "text": "Innermost Intercostal m.",
+      "note": "",
+      "details": [
+        "Origin: Inferior borders and internal surfaces of ribs 1-11",
+        "Insertion: Superior borders and internal surfaces of ribs immediately below origin"
+      ]
+    }
+  ],
+  "title": "Posterior (Internal) View of Anterior Thoracic Wall",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

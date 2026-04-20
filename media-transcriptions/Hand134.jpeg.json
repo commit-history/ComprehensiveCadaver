@@ -1,0 +1,18 @@
+{
+  "file": "Hand134.jpeg",
+  "type": "answer",
+  "answer_en": "Flexor Pollicis Brevis m. <br> Recurrent branch of median n.*",
+  "labels": [
+    {
+      "text": "Flexor Pollicis Brevis m.",
+      "note": "",
+      "details": [
+        "Recurrent branch of median n.*"
+      ]
+    }
+  ],
+  "title": "Palmar Surface of Hand (Right Side)",
+  "subtitle": "*The deep head may also be innervated by the deep branch of ulnar n.",
+  "orientation": "Distal (top), Proximal (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

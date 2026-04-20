@@ -1,0 +1,16 @@
+{
+  "file": "Skull10.jpeg",
+  "type": "answer",
+  "answer_en": "Nasal Bone",
+  "labels": [
+    {
+      "text": "Nasal Bone",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (right), Left (left)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2023 3D4Medical."
+}

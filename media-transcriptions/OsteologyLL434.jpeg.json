@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyLL434.jpeg",
+  "type": "answer",
+  "answer_en": "Head of femur located superiorly and directed medially (articulates with acetabulum) <br> Shaft of femur smooth on anterior surface",
+  "labels": [
+    {
+      "text": "Head of femur located superiorly and directed medially",
+      "note": "articulates with acetabulum",
+      "details": []
+    },
+    {
+      "text": "Shaft of femur smooth on anterior surface",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Femur (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

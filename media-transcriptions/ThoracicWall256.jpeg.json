@@ -1,0 +1,19 @@
+{
+  "file": "ThoracicWall256.jpeg",
+  "type": "answer",
+  "answer_en": "Transversus Thoracis m. <br> Origin: Posterolateral surface of body and xiphoid process of sternum <br> Insertion: Internal surfaces of costal cartilages of ribs 2-6",
+  "labels": [
+    {
+      "text": "Transversus Thoracis m.",
+      "note": "",
+      "details": [
+        "Origin: Posterolateral surface of body and xiphoid process of sternum",
+        "Insertion: Internal surfaces of costal cartilages of ribs 2-6"
+      ]
+    }
+  ],
+  "title": "Posterior (Internal) View of Anterior Thoracic Wall",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

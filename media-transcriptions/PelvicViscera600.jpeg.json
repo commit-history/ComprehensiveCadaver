@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera600.jpeg",
+  "type": "answer",
+  "answer_en": "Rectum <br> Hindgut endoderm",
+  "labels": [
+    {
+      "text": "Rectum",
+      "note": "",
+      "details": [
+        "Hindgut endoderm"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Female* Pelvis",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved.\n@MarkAAbbott1\n*Sex assigned at birth"
+}

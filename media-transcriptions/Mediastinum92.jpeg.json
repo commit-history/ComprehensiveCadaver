@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum92.jpeg",
+  "type": "answer",
+  "answer_en": "Phrenic n.",
+  "labels": [
+    {
+      "text": "Phrenic n.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung and Pleura Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

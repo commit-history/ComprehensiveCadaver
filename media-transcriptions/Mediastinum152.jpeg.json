@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum152.jpeg",
+  "type": "answer",
+  "answer_en": "Descending Thoracic a.",
+  "labels": [
+    {
+      "text": "Descending Thoracic a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

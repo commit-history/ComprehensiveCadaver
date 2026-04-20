@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL418.jpeg",
+  "type": "answer",
+  "answer_en": "Radial tuberosity <br> located superiorly <br> and directed medially <br> Smooth concave distal end <br> directed anteriorly",
+  "labels": [
+    {
+      "text": "Radial tuberosity",
+      "note": "",
+      "details": [
+        "located superiorly",
+        "and directed medially"
+      ]
+    },
+    {
+      "text": "Smooth concave distal end",
+      "note": "",
+      "details": [
+        "directed anteriorly"
+      ]
+    }
+  ],
+  "title": "Anterior View of Radius (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

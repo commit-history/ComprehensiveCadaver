@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum230.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Vena Cava <br> T8",
+  "labels": [
+    {
+      "text": "Inferior Vena Cava",
+      "note": "",
+      "details": [
+        "T8"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "Skull430.jpeg",
+  "type": "answer",
+  "answer_en": "Body of Mandible",
+  "labels": [
+    {
+      "text": "Body of Mandible",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

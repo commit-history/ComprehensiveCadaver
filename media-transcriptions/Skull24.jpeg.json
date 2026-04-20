@@ -1,0 +1,16 @@
+{
+  "file": "Skull24.jpeg",
+  "type": "answer",
+  "answer_en": "Frontal Bone",
+  "labels": [
+    {
+      "text": "Frontal Bone",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Skull (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

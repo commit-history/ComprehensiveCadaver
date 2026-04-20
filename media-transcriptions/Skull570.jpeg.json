@@ -1,0 +1,20 @@
+{
+  "file": "Skull570.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Orbital Fissure <br> Zygomatic n. (branch of CN V2) <br> Infraorbital n. (branch of CN V2) <br> Infraorbital a.",
+  "labels": [
+    {
+      "text": "Inferior Orbital Fissure",
+      "note": "",
+      "details": [
+        "Zygomatic n. (branch of CN V2)",
+        "Infraorbital n. (branch of CN V2)",
+        "Infraorbital a."
+      ]
+    }
+  ],
+  "title": "Anterior View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

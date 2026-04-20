@@ -1,0 +1,19 @@
+{
+  "file": "PelvicDiaphragm284.jpeg",
+  "type": "answer",
+  "answer_en": "Coccygeus m. (Ischiococcygeus m.) <br> Provides structural support to adjacent pelvic structures <br> Flexes the coccyx at the sacrococcygeal joint",
+  "labels": [
+    {
+      "text": "Coccygeus m.",
+      "note": "(Ischiococcygeus m.)",
+      "details": [
+        "Provides structural support to adjacent pelvic structures",
+        "Flexes the coccyx at the sacrococcygeal joint"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "(Organs Removed and Levator Ani m. Dissected)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc.\n*Sex assigned at birth\n@MarkAAbbott1"
+}

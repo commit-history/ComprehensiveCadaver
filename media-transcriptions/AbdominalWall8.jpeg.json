@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall8.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Rectus Sheath (Removed on right side)",
+  "labels": [
+    {
+      "text": "Anterior Rectus Sheath",
+      "note": "(Removed on right side)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Anterior Rectus Sheath Removed on right side)",
+  "orientation": "",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (3rd Ed.) © 2016 Schaumester Giddens and Wolters Kluwer"
+}

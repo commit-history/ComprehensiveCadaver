@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera298.jpeg",
+  "type": "answer",
+  "answer_en": "Uterus",
+  "labels": [
+    {
+      "text": "Uterus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Female* Internal Genital Organs",
+  "subtitle": "(Hysterosalpingogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1\nModified from https://www.dannytucker.net/information/hsg-hycosy\n*Sex assigned at birth"
+}

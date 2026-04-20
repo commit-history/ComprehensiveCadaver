@@ -1,0 +1,18 @@
+{
+  "file": "Heart364.jpeg",
+  "type": "answer",
+  "answer_en": "Coronary Sinus <br> Left horn of sinus venosus (Left sinus horn)",
+  "labels": [
+    {
+      "text": "Coronary Sinus",
+      "note": "",
+      "details": [
+        "Left horn of sinus venosus (Left sinus horn)"
+      ]
+    }
+  ],
+  "title": "Posteroinferior View of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

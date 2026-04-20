@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves18.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Cerebellar a.",
+  "labels": [
+    {
+      "text": "Superior Cerebellar a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

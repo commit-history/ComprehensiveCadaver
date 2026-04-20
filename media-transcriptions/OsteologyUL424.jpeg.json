@@ -1,0 +1,33 @@
+{
+  "file": "OsteologyUL424.jpeg",
+  "type": "answer",
+  "answer_en": "Sternal end of clavicle (round end) <br> located medially <br> Convex surface near sternal end <br> located anteriorly <br> Conoid tubercle <br> located inferiorly <br> (inferior surface is rough)",
+  "labels": [
+    {
+      "text": "Sternal end of clavicle",
+      "note": "(round end)",
+      "details": [
+        "located medially"
+      ]
+    },
+    {
+      "text": "Convex surface near sternal end",
+      "note": "",
+      "details": [
+        "located anteriorly"
+      ]
+    },
+    {
+      "text": "Conoid tubercle",
+      "note": "",
+      "details": [
+        "located inferiorly",
+        "(inferior surface is rough)"
+      ]
+    }
+  ],
+  "title": "Inferior View of Clavicle (Left Side)",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

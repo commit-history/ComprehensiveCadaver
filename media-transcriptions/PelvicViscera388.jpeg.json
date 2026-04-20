@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera388.jpeg",
+  "type": "answer",
+  "answer_en": "Ovary <br> Epiblast",
+  "labels": [
+    {
+      "text": "Ovary",
+      "note": "",
+      "details": [
+        "Epiblast"
+      ]
+    }
+  ],
+  "title": "Superior View of Female* Pelvic Cavity",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Posterior (top), Anterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved. @MarkAAbbott1"
+}

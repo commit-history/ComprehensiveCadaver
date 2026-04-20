@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum134.jpeg",
+  "type": "answer",
+  "answer_en": "Thymus",
+  "labels": [
+    {
+      "text": "Thymus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

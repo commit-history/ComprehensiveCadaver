@@ -1,0 +1,19 @@
+{
+  "file": "Back154.jpeg",
+  "type": "answer",
+  "answer_en": "Serratus Posterior Inferior m. (Removed on Right Side) <br> Intercostal nn. (T9-T11) <br> Subcostal n. (T12)",
+  "labels": [
+    {
+      "text": "Serratus Posterior Inferior m.",
+      "note": "(Removed on Right Side)",
+      "details": [
+        "Intercostal nn. (T9-T11)",
+        "Subcostal n. (T12)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

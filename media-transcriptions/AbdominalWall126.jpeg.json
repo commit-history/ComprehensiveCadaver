@@ -1,0 +1,21 @@
+{
+  "file": "AbdominalWall126.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Oblique m. <br> Intercostal nn. (T7-T11) (Thoracoabdominal nn.) <br> Subcostal n. <br> Ilioinguinal n. <br> Iliohypogastric n.",
+  "labels": [
+    {
+      "text": "Internal Oblique m.",
+      "note": "",
+      "details": [
+        "Intercostal nn. (T7-T11) (Thoracoabdominal nn.)",
+        "Subcostal n.",
+        "Ilioinguinal n.",
+        "Iliohypogastric n."
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

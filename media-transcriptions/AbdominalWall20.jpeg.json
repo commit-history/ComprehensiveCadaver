@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall20.jpeg",
+  "type": "answer",
+  "answer_en": "External Oblique m. (Reflected)",
+  "labels": [
+    {
+      "text": "External Oblique m.",
+      "note": "(Reflected)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Reents: Abdominis M. Cut and Reflected on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (right), Left (left)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas 8th Ed. © 2016 Schaumann, Ginsburg and Wilson Kluwer"
+}

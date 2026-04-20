@@ -1,0 +1,16 @@
+{
+  "file": "Neck86.jpeg",
+  "type": "answer",
+  "answer_en": "Costocervical Trunk (Cut)",
+  "labels": [
+    {
+      "text": "Costocervical Trunk",
+      "note": "(Cut)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Root of Neck (Right Side)",
+  "subtitle": "(Anterior Scalene m. Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

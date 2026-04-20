@@ -1,0 +1,19 @@
+{
+  "file": "Orbit436.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Rectus m. (Reflected) <br> Origin: Common tendinous ring <br> Insertion: Superior surface of sclera",
+  "labels": [
+    {
+      "text": "Superior Rectus m.",
+      "note": "(Reflected)",
+      "details": [
+        "Origin: Common tendinous ring",
+        "Insertion: Superior surface of sclera"
+      ]
+    }
+  ],
+  "title": "Superior View of Orbit (Right Side)",
+  "subtitle": "(Middle Layer)",
+  "orientation": "Anterior (top), Posterior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

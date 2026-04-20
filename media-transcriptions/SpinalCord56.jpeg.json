@@ -1,0 +1,18 @@
+{
+  "file": "SpinalCord56.jpeg",
+  "type": "answer",
+  "answer_en": "Subarachnoid Space <br> (Filled with Cerebrospinal Fluid)",
+  "labels": [
+    {
+      "text": "Subarachnoid Space",
+      "note": "",
+      "details": [
+        "(Filled with Cerebrospinal Fluid)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Lumbar Spine",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

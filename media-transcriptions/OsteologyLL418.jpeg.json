@@ -1,0 +1,16 @@
+{
+  "file": "OsteologyLL418.jpeg",
+  "type": "answer",
+  "answer_en": "Linea Aspera <br> Vastus medialis m. <br> Vastus lateralis m. <br> Short head of biceps femoris m.",
+  "labels": [
+    {
+      "text": "Linea Aspera",
+      "note": "",
+      "details": ["Vastus medialis m.", "Vastus lateralis m.", "Short head of biceps femoris m."]
+    }
+  ],
+  "title": "Posterior View of Distal Femur (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

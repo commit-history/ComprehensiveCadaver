@@ -1,0 +1,20 @@
+{
+  "file": "Neck352.jpeg",
+  "type": "answer",
+  "answer_en": "Right Subclavian a. <br> Right 4th aortic arch <br> Right 7th intersegmental a. <br> Right dorsal aorta",
+  "labels": [
+    {
+      "text": "Right Subclavian a.",
+      "note": "",
+      "details": [
+        "Right 4th aortic arch",
+        "Right 7th intersegmental a.",
+        "Right dorsal aorta"
+      ]
+    }
+  ],
+  "title": "Anterior View of Root of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "ThoraxCT128.jpeg",
+  "type": "answer",
+  "answer_en": "Left Main Bronchus <br> (Left Primary Bronchus)",
+  "labels": [
+    {
+      "text": "Left Main Bronchus",
+      "note": "",
+      "details": [
+        "(Left Primary Bronchus)"
+      ]
+    }
+  ],
+  "title": "Axial View of Thorax",
+  "subtitle": "(Iodine Contrasted CT Scan – Lung Window)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

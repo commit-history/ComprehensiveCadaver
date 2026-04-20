@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall224.jpeg",
+  "type": "answer",
+  "answer_en": "Iliacus m. <br> Femoral n.",
+  "labels": [
+    {
+      "text": "Iliacus m.",
+      "note": "",
+      "details": [
+        "Femoral n."
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Face420.jpeg",
+  "type": "answer",
+  "answer_en": "Depressor Labii Inferioris m. <br> Origin: Oblique line of mandible <br> Insertion: Middle portion of lower lip",
+  "labels": [
+    {
+      "text": "Depressor Labii Inferioris m.",
+      "note": "",
+      "details": [
+        "Origin: Oblique line of mandible",
+        "Insertion: Middle portion of lower lip"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved. @MarkAAbbott1"
+}

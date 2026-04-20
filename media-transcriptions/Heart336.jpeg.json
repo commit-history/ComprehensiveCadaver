@@ -1,0 +1,18 @@
+{
+  "file": "Heart336.jpeg",
+  "type": "answer",
+  "answer_en": "Left dominancy since posterior interventricular a. <br> (right posterior descending a.) is arising from left coronary a.",
+  "labels": [
+    {
+      "text": "Left dominancy since posterior interventricular a.",
+      "note": "",
+      "details": [
+        "(right posterior descending a.) is arising from left coronary a."
+      ]
+    }
+  ],
+  "title": "Posteroinferior View of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Khwansang and Chentanez (2019). Anatomic variations of coronary arteries: origins, branching patterns, and abnormalities."
+}

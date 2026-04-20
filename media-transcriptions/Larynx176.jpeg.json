@@ -1,0 +1,18 @@
+{
+  "file": "Larynx176.jpeg",
+  "type": "answer",
+  "answer_en": "Oblique Arytenoid m. (Interarytenoid m.) <br> Adducts the vocal cords (closes the rima glottitis)",
+  "labels": [
+    {
+      "text": "Oblique Arytenoid m.",
+      "note": "(Interarytenoid m.)",
+      "details": [
+        "Adducts the vocal cords (closes the rima glottitis)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Larynx (Right Side)",
+  "subtitle": "(Right Half of Thyroid Cartilage Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

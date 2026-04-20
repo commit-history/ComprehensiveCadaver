@@ -1,0 +1,22 @@
+{
+  "file": "Pharynx436.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Cervical Ganglion and Cervical Sympathetic Chain <br> (Sympathetic Trunk) <br> Horner’s syndrome: <br> Ipsilateral ptosis <br> Ipsilateral miosis <br> Ipsilateral facial anhidrosis",
+  "labels": [
+    {
+      "text": "Superior Cervical Ganglion and Cervical Sympathetic Chain",
+      "note": "",
+      "details": [
+        "(Sympathetic Trunk)",
+        "Horner’s syndrome:",
+        "Ipsilateral ptosis",
+        "Ipsilateral miosis",
+        "Ipsilateral facial anhidrosis"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves286.jpeg",
+  "type": "answer",
+  "answer_en": "Glossopharyngeal n. (CN IX) <br> Motor (SVE and GVE) <br> Sensory (GSA, GVA, and SVA)",
+  "labels": [
+    {
+      "text": "Glossopharyngeal n. (CN IX)",
+      "note": "",
+      "details": [
+        "Motor (SVE and GVE)",
+        "Sensory (GSA, GVA, and SVA)"
+      ]
+    }
+  ],
+  "title": "Superior View of Skull Base (with Dura)",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

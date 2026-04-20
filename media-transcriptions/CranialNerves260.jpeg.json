@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves260.jpeg",
+  "type": "answer",
+  "answer_en": "Trigeminal n. (CN V) <br> Motor (SVE) <br> Sensory (GSA)",
+  "labels": [
+    {
+      "text": "Trigeminal n. (CN V)",
+      "note": "",
+      "details": [
+        "Motor (SVE)",
+        "Sensory (GSA)"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brainstem",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Nolte’s The Human Brain. © Elsevier 2020."
+}

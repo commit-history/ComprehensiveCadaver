@@ -1,0 +1,16 @@
+{
+  "file": "Skull112.jpeg",
+  "type": "answer",
+  "answer_en": "Frontal Sinus",
+  "labels": [
+    {
+      "text": "Frontal Sinus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "AP View of Skull",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAAbbott"
+}

@@ -1,0 +1,23 @@
+{
+  "file": "OsteologyUL380.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Epicondyle of Humerus <br> Anconeus m. <br> Extensor carpi radialis brevis m. <br> Extensor digitorum m. <br> Extensor digiti minimi m. <br> Extensor carpi ulnaris m. <br> Supinator m.",
+  "labels": [
+    {
+      "text": "Lateral Epicondyle of Humerus",
+      "note": "",
+      "details": [
+        "Anconeus m.",
+        "Extensor carpi radialis brevis m.",
+        "Extensor digitorum m.",
+        "Extensor digiti minimi m.",
+        "Extensor carpi ulnaris m.",
+        "Supinator m."
+      ]
+    }
+  ],
+  "title": "Posterior View of Distal Humerus (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

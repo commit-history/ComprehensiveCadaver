@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera500.jpeg",
+  "type": "answer",
+  "answer_en": "Ampulla of Vas Deferens (Cut) (Ampulla of Ductus Deferens) <br> Mesonephric duct (Wolffian duct)",
+  "labels": [
+    {
+      "text": "Ampulla of Vas Deferens (Cut)",
+      "note": "(Ampulla of Ductus Deferens)",
+      "details": [
+        "Mesonephric duct (Wolffian duct)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox.\n@MarkAAbbott1"
+}

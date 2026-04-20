@@ -1,0 +1,16 @@
+{
+  "file": "Face28.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Anguli Oris m.",
+  "labels": [
+    {
+      "text": "Levator Anguli Oris m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

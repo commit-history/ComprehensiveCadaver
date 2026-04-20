@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyLL448.jpeg",
+  "type": "answer",
+  "answer_en": "Head of femur located superiorly and directed medially (articulates with acetabulum) <br> Shaft of femur rough on posterior surface (due to gluteal tuberosity, pectineal line, linea aspera, medial supracondylar line, and lateral supracondylar line)",
+  "labels": [
+    {
+      "text": "Head of femur located superiorly and directed medially",
+      "note": "articulates with acetabulum",
+      "details": []
+    },
+    {
+      "text": "Shaft of femur rough on posterior surface",
+      "note": "due to gluteal tuberosity, pectineal line, linea aspera, medial supracondylar line, and lateral supracondylar line",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Femur (Left Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

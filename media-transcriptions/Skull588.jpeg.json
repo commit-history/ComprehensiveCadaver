@@ -1,0 +1,20 @@
+{
+  "file": "Skull588.jpeg",
+  "type": "answer",
+  "answer_en": "Incisive Canal <br> Nasopalatine n. (branch of CN V2) <br> Sphenopalatine a. <br> Greater palatine a.",
+  "labels": [
+    {
+      "text": "Incisive Canal",
+      "note": "",
+      "details": [
+        "Nasopalatine n. (branch of CN V2)",
+        "Sphenopalatine a.",
+        "Greater palatine a."
+      ]
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

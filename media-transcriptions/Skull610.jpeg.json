@@ -1,0 +1,19 @@
+{
+  "file": "Skull610.jpeg",
+  "type": "answer",
+  "answer_en": "Pterygomaxillary Fissure <br> Terminal branches of maxillary a. <br> Posterior superior alveolar n. (branch of CN V2)",
+  "labels": [
+    {
+      "text": "Pterygomaxillary Fissure",
+      "note": "",
+      "details": [
+        "Terminal branches of maxillary a.",
+        "Posterior superior alveolar n. (branch of CN V2)"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Skull (Right Side)",
+  "subtitle": "(Zygomatic Bone and Mandible Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

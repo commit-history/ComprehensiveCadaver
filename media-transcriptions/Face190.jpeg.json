@@ -1,0 +1,18 @@
+{
+  "file": "Face190.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Labii Superioris m. <br> Elevation of the upper lip",
+  "labels": [
+    {
+      "text": "Levator Labii Superioris m.",
+      "note": "",
+      "details": [
+        "Elevation of the upper lip"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

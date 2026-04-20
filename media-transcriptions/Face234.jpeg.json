@@ -1,0 +1,18 @@
+{
+  "file": "Face234.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Labii Superioris m. <br> 2nd pharyngeal arch (innervated by CN VII)",
+  "labels": [
+    {
+      "text": "Levator Labii Superioris m.",
+      "note": "",
+      "details": [
+        "2nd pharyngeal arch (innervated by CN VII)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

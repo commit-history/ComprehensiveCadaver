@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall20.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Thoracic a. (Internal Mammary a.)",
+  "labels": [
+    {
+      "text": "Internal Thoracic a.",
+      "note": "(Internal Mammary a.)",
+      "details": []
+    }
+  ],
+  "title": "Posterior (Internal) View of Anterior Thoracic Wall",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

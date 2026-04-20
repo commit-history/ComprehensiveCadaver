@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera496.jpeg",
+  "type": "answer",
+  "answer_en": "Urinary Bladder <br> Upper part of urogenital sinus",
+  "labels": [
+    {
+      "text": "Urinary Bladder",
+      "note": "",
+      "details": [
+        "Upper part of urogenital sinus"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox.; *Sex assigned at birth"
+}

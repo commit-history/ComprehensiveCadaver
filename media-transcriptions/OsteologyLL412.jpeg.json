@@ -1,0 +1,16 @@
+{
+  "file": "OsteologyLL412.jpeg",
+  "type": "answer",
+  "answer_en": "Gluteal Tuberosity <br> Gluteus maximus m. <br> Adductor magnus m.",
+  "labels": [
+    {
+      "text": "Gluteal Tuberosity",
+      "note": "",
+      "details": ["Gluteus maximus m.", "Adductor magnus m."]
+    }
+  ],
+  "title": "Posterior View of Proximal Femur (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

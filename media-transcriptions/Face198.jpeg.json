@@ -1,0 +1,19 @@
+{
+  "file": "Face198.jpeg",
+  "type": "answer",
+  "answer_en": "Orbicularis Oculi m. <br> Closes the eyelids (palpebral part does so gently, orbital part does so tightly) <br> Compresses the lacrimal sac (lacrimal part)",
+  "labels": [
+    {
+      "text": "Orbicularis Oculi m.",
+      "note": "",
+      "details": [
+        "Closes the eyelids (palpebral part does so gently, orbital part does so tightly)",
+        "Compresses the lacrimal sac (lacrimal part)"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

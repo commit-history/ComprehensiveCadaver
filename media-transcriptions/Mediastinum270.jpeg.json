@@ -1,0 +1,19 @@
+{
+  "file": "Mediastinum270.jpeg",
+  "type": "answer",
+  "answer_en": "Azygos v. <br> Right posterior cardinal v. <br> Right supracardinal v.",
+  "labels": [
+    {
+      "text": "Azygos v.",
+      "note": "",
+      "details": [
+        "Right posterior cardinal v.",
+        "Right supracardinal v."
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Right Side)",
+  "subtitle": "(Right Lung and Pleura Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

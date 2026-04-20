@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall132.jpeg",
+  "type": "answer",
+  "answer_en": "Left Lobar Bronchus (Left Secondary Bronchus)",
+  "labels": [
+    {
+      "text": "Left Lobar Bronchus",
+      "note": "(Left Secondary Bronchus)",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Left Lung",
+  "subtitle": "(Partially Dissected)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

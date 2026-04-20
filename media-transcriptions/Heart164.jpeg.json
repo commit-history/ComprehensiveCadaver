@@ -1,0 +1,16 @@
+{
+  "file": "Heart164.jpeg",
+  "type": "answer",
+  "answer_en": "Left Coronary a.",
+  "labels": [
+    {
+      "text": "Left Coronary a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Superior View of Heart",
+  "subtitle": "(Atria Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

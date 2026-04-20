@@ -1,0 +1,34 @@
+{
+  "file": "OsteologyUL440.jpeg",
+  "type": "answer",
+  "answer_en": "Radial tuberosity <br> located superiorly <br> directed medially <br> Rough convex distal end <br> directed posteriorly <br> [Dorsal (Lister’s) tubercle located posteriorly] <br> Ulnar notch <br> located medially",
+  "labels": [
+    {
+      "text": "Radial tuberosity",
+      "note": "",
+      "details": [
+        "located superiorly",
+        "directed medially"
+      ]
+    },
+    {
+      "text": "Rough convex distal end",
+      "note": "",
+      "details": [
+        "directed posteriorly",
+        "[Dorsal (Lister’s) tubercle located posteriorly]"
+      ]
+    },
+    {
+      "text": "Ulnar notch",
+      "note": "",
+      "details": [
+        "located medially"
+      ]
+    }
+  ],
+  "title": "Posterior View of Radius (Left Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

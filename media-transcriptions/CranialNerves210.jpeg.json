@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves210.jpeg",
+  "type": "answer",
+  "answer_en": "Facial n. (CN VII) <br> Internal acoustic meatus <br> (Internal auditory meatus)",
+  "labels": [
+    {
+      "text": "Facial n. (CN VII)",
+      "note": "",
+      "details": [
+        "Internal acoustic meatus",
+        "(Internal auditory meatus)"
+      ]
+    }
+  ],
+  "title": "Superior View of Skull Base (with Dura)",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

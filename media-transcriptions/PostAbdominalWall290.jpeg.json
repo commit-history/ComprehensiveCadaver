@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall290.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Vena Cava (Cut) <br> T8",
+  "labels": [
+    {
+      "text": "Inferior Vena Cava",
+      "note": "(Cut)",
+      "details": [
+        "T8"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

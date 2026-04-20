@@ -1,0 +1,19 @@
+{
+  "file": "Back346.jpeg",
+  "type": "answer",
+  "answer_en": "Splenius Capitis m. (Removed on Right Side) <br> Origin: Nuchal ligament and spinous processes C7-T3 <br> Insertion: Superior nuchal line of occipital bone, and mastoid process of temporal bone",
+  "labels": [
+    {
+      "text": "Splenius Capitis m.",
+      "note": "(Removed on Right Side)",
+      "details": [
+        "Origin: Nuchal ligament and spinous processes C7-T3",
+        "Insertion: Superior nuchal line of occipital bone, and mastoid process of temporal bone"
+      ]
+    }
+  ],
+  "title": "Posterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from All-in-One Anatomy Exam Review: Volume 1. © 2016 Suárez-Quian and Vilensky"
+}

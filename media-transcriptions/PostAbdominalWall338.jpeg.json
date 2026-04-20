@@ -1,0 +1,19 @@
+{
+  "file": "PostAbdominalWall338.jpeg",
+  "type": "answer",
+  "answer_en": "Psoas Major m. <br> Origin: Transverse processes of L1-L5, and vertebral bodies of T12-L5 <br> Insertion: Lesser trochanter of femur",
+  "labels": [
+    {
+      "text": "Psoas Major m.",
+      "note": "",
+      "details": [
+        "Origin: Transverse processes of L1-L5, and vertebral bodies of T12-L5",
+        "Insertion: Lesser trochanter of femur"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

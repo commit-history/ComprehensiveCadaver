@@ -1,0 +1,19 @@
+{
+  "file": "Heart378.jpeg",
+  "type": "answer",
+  "answer_en": "Leaflets of Right Atrioventricular Valve (Tricuspid Valve) <br> Atrioventricular cushions <br> (Endocardial cushions)",
+  "labels": [
+    {
+      "text": "Leaflets of Right Atrioventricular Valve",
+      "note": "(Tricuspid Valve)",
+      "details": [
+        "Atrioventricular cushions",
+        "(Endocardial cushions)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Heart (Right Side)",
+  "subtitle": "(Right Atrium Opened)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

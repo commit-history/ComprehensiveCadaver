@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum32.jpeg",
+  "type": "answer",
+  "answer_en": "Main Bronchus (Primary Bronchus)",
+  "labels": [
+    {
+      "text": "Main Bronchus",
+      "note": "(Primary Bronchus)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Face372.jpeg",
+  "type": "answer",
+  "answer_en": "Corrugator Supercilii m. <br> Origin: Medial portion of superciliary arch <br> Insertion: Skin of eyebrow",
+  "labels": [
+    {
+      "text": "Corrugator Supercilii m.",
+      "note": "",
+      "details": [
+        "Origin: Medial portion of superciliary arch",
+        "Insertion: Skin of eyebrow"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

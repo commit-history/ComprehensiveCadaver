@@ -1,0 +1,16 @@
+{
+  "file": "Skull180.jpeg",
+  "type": "answer",
+  "answer_en": "Ethmoid Bone (Right Side)",
+  "labels": [
+    {
+      "text": "Ethmoid Bone",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Orbit",
+  "subtitle": "(Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Complex Anatomy by Elvire. © 2023 3D4Medical."
+}

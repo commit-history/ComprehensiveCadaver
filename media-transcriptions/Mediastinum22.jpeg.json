@@ -1,0 +1,16 @@
+{
+  "file": "Mediastinum22.jpeg",
+  "type": "answer",
+  "answer_en": "Left Recurrent Laryngeal n.",
+  "labels": [
+    {
+      "text": "Left Recurrent Laryngeal n.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from All-in-One Anatomy Exam Review: Volume 2. © 2016 Suárez-Quian and Vilensky"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "Neck256.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Thyroid a.",
+  "labels": [
+    {
+      "text": "Superior Thyroid a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

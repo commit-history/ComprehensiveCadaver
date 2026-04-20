@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera570.jpeg",
+  "type": "answer",
+  "answer_en": "Urinary Bladder <br> Upper part of urogenital sinus",
+  "labels": [
+    {
+      "text": "Urinary Bladder",
+      "note": "",
+      "details": [
+        "Upper part of urogenital sinus"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Bladder, Prostate Gland, and Seminal Vesicle (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

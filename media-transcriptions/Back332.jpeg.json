@@ -1,0 +1,19 @@
+{
+  "file": "Back332.jpeg",
+  "type": "answer",
+  "answer_en": "Splenius Capitis m. (Reflected on Right Side) <br> Origin: Nuchal ligament and spinous processes of C7-T3 <br> Insertion: Superior nuchal line of occipital bone, and mastoid process of temporal bone",
+  "labels": [
+    {
+      "text": "Splenius Capitis m.",
+      "note": "(Reflected on Right Side)",
+      "details": [
+        "Origin: Nuchal ligament and spinous processes of C7-T3",
+        "Insertion: Superior nuchal line of occipital bone, and mastoid process of temporal bone"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Back360.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Capitis Posterior Major m. <br> Origin: Spinous process of axis (C2) <br> Insertion: Inferior nuchal line of occipital bone",
+  "labels": [
+    {
+      "text": "Rectus Capitis Posterior Major m.",
+      "note": "",
+      "details": [
+        "Origin: Spinous process of axis (C2)",
+        "Insertion: Inferior nuchal line of occipital bone"
+      ]
+    }
+  ],
+  "title": "Posterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

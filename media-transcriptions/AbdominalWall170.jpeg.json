@@ -1,0 +1,18 @@
+{
+  "file": "AbdominalWall170.jpeg",
+  "type": "answer",
+  "answer_en": "Superficial Inguinal Ring <br> External oblique m.",
+  "labels": [
+    {
+      "text": "Superficial Inguinal Ring",
+      "note": "",
+      "details": [
+        "External oblique m."
+      ]
+    }
+  ],
+  "title": "Anterior View of Male* Inguinal Region (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

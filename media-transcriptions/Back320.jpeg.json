@@ -1,0 +1,19 @@
+{
+  "file": "Back320.jpeg",
+  "type": "answer",
+  "answer_en": "Latissimus Dorsi m. <br> Origin: Spinous processes of T7-T12, spinous processes of L1-L5 via thoracolumbar fascia, ribs 9-12, iliac crest, and inferior angle of scapula <br> Insertion: Intertubercular sulcus of humerus",
+  "labels": [
+    {
+      "text": "Latissimus Dorsi m.",
+      "note": "",
+      "details": [
+        "Origin: Spinous processes of T7-T12, spinous processes of L1-L5 via thoracolumbar fascia, ribs 9-12, iliac crest, and inferior angle of scapula",
+        "Insertion: Intertubercular sulcus of humerus"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back (Right Side)",
+  "subtitle": "(Trapezius m. Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

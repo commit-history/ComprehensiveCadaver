@@ -1,0 +1,16 @@
+{
+  "file": "Heart142.jpeg",
+  "type": "answer",
+  "answer_en": "Left Ventricle",
+  "labels": [
+    {
+      "text": "Left Ventricle",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posteroinferior View of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

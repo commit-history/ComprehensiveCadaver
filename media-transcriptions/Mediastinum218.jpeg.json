@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum218.jpeg",
+  "type": "answer",
+  "answer_en": "Descending Thoracic Aorta (Retracted Medially) <br> T12",
+  "labels": [
+    {
+      "text": "Descending Thoracic Aorta",
+      "note": "(Retracted Medially)",
+      "details": [
+        "T12"
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung Removed; Aorta Retracted Medially)",
+  "orientation": "Anterior (top), Posterior (bottom), Inferior (left), Superior (right)",
+  "attribution": "Modified from Gray’s Clinical Photographic Dissector of the Human Body (2nd Ed.). © 2019 by Elsevier Inc."
+}

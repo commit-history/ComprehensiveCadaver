@@ -1,0 +1,19 @@
+{
+  "file": "Back202.jpeg",
+  "type": "answer",
+  "answer_en": "Long Head of Triceps Brachii m. <br> Extension of the forearm at the elbow joint <br> Extension and adduction of the arm at the shoulder joint",
+  "labels": [
+    {
+      "text": "Long Head of Triceps Brachii m.",
+      "note": "",
+      "details": [
+        "Extension of the forearm at the elbow joint",
+        "Extension and adduction of the arm at the shoulder joint"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

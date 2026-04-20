@@ -1,0 +1,19 @@
+{
+  "file": "Neck522.jpeg",
+  "type": "answer",
+  "answer_en": "Cricothyroid m. <br> Origin: Anterolateral part of cricoid cartilage <br> Insertion: Inferior margin and inferior horn of thyroid cartilage",
+  "labels": [
+    {
+      "text": "Cricothyroid m.",
+      "note": "",
+      "details": [
+        "Origin: Anterolateral part of cricoid cartilage",
+        "Insertion: Inferior margin and inferior horn of thyroid cartilage"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Neck (Right Side)",
+  "subtitle": "(Infrahyoid Muscles Reflected/Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

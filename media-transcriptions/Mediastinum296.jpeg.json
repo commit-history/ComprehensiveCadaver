@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum296.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Intercostal v. <br> Supracardinal vv.",
+  "labels": [
+    {
+      "text": "Posterior Intercostal v.",
+      "note": "",
+      "details": [
+        "Supracardinal vv."
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung Removed; Aorta Retracted Medially)",
+  "orientation": "Anterior (top), Inferior (left), Superior (right), Posterior (bottom)",
+  "attribution": "Modified from Gray’s Clinical Photographic Dissector of the Human Body (2nd Ed.). © 2019 by Elsevier Inc."
+}

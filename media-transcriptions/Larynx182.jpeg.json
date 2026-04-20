@@ -1,0 +1,18 @@
+{
+  "file": "Larynx182.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Cricoarytenoid m. <br> Adducts the vocal cords (closes the rima glottitis)",
+  "labels": [
+    {
+      "text": "Lateral Cricoarytenoid m.",
+      "note": "",
+      "details": [
+        "Adducts the vocal cords (closes the rima glottitis)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Larynx (Right Side)",
+  "subtitle": "(Right Half of Thyroid Cartilage Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

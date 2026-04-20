@@ -1,0 +1,19 @@
+{
+  "file": "Face370.jpeg",
+  "type": "answer",
+  "answer_en": "Procerus m. <br> Origin: Fascia covering nasal bone, and lateral nasal cartilage <br> Insertion: Skin of forehead",
+  "labels": [
+    {
+      "text": "Procerus m.",
+      "note": "",
+      "details": [
+        "Origin: Fascia covering nasal bone, and lateral nasal cartilage",
+        "Insertion: Skin of forehead"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

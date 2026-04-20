@@ -1,0 +1,19 @@
+{
+  "file": "Skull640.jpeg",
+  "type": "answer",
+  "answer_en": "Body of Hyoid Bone <br> Upper Half: 2nd pharyngeal arch (Reichert’s cartilage) <br> Lower Half: 3rd pharyngeal arch",
+  "labels": [
+    {
+      "text": "Body of Hyoid Bone",
+      "note": "",
+      "details": [
+        "Upper Half: 2nd pharyngeal arch (Reichert’s cartilage)",
+        "Lower Half: 3rd pharyngeal arch"
+      ]
+    }
+  ],
+  "title": "Lateral View of Hyoid Bone (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

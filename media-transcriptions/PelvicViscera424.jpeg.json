@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera424.jpeg",
+  "type": "answer",
+  "answer_en": "Uterus <br> Paramesonephric ducts (Müllerian ducts)",
+  "labels": [
+    {
+      "text": "Uterus",
+      "note": "",
+      "details": [
+        "Paramesonephric ducts (Müllerian ducts)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

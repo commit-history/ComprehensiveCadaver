@@ -1,0 +1,18 @@
+{
+  "file": "Face192.jpeg",
+  "type": "answer",
+  "answer_en": "Levator Anguli Oris m. <br> Elevation of the angle of the mouth",
+  "labels": [
+    {
+      "text": "Levator Anguli Oris m.",
+      "note": "",
+      "details": [
+        "Elevation of the angle of the mouth"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

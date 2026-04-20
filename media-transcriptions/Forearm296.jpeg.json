@@ -1,0 +1,19 @@
+{
+  "file": "Forearm296.jpeg",
+  "type": "answer",
+  "answer_en": "Pronator Teres m. <br> Pronation of the forearm at the proximal radioulnar joint <br> Flexion of the forearm at the elbow joint",
+  "labels": [
+    {
+      "text": "Pronator Teres m.",
+      "note": "",
+      "details": [
+        "Pronation of the forearm at the proximal radioulnar joint",
+        "Flexion of the forearm at the elbow joint"
+      ]
+    }
+  ],
+  "title": "Anterior View of Elbow Joint (Right Side)",
+  "subtitle": "(Biceps Brachii m. Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

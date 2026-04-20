@@ -1,0 +1,18 @@
+{
+  "file": "Skull556.jpeg",
+  "type": "answer",
+  "answer_en": "Foramen Spinosum <br> Middle meningeal a.",
+  "labels": [
+    {
+      "text": "Foramen Spinosum",
+      "note": "",
+      "details": [
+        "Middle meningeal a."
+      ]
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

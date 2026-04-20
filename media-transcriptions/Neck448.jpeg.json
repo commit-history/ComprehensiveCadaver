@@ -1,0 +1,21 @@
+{
+  "file": "Neck448.jpeg",
+  "type": "answer",
+  "answer_en": "Sternocleidomastoid m. (Cut and Reflected) <br> Accessory n. (CN XI)",
+  "labels": [
+    {
+      "text": "Sternocleidomastoid m.",
+      "note": "(Cut and Reflected)",
+      "details": []
+    },
+    {
+      "text": "Accessory n. (CN XI)",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Neck (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

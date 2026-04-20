@@ -1,0 +1,16 @@
+{
+  "file": "Skull80.jpeg",
+  "type": "answer",
+  "answer_en": "Mandible",
+  "labels": [
+    {
+      "text": "Mandible",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 3D4Medical."
+}

@@ -1,0 +1,21 @@
+{
+  "file": "Forearm212.jpeg",
+  "type": "answer",
+  "answer_en": "Biceps Brachii m. (Bicipital Aponeurosis Cut) <br> Musculocutaneous n.",
+  "labels": [
+    {
+      "text": "Biceps Brachii m.",
+      "note": "(Bicipital Aponeurosis Cut)",
+      "details": []
+    },
+    {
+      "text": "Musculocutaneous n.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Elbow Joint (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

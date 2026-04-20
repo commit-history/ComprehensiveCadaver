@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx248.jpeg",
+  "type": "answer",
+  "answer_en": "Palatopharyngeus m. <br> Elevation of the pharynx <br> Tenses the soft palate",
+  "labels": [
+    {
+      "text": "Palatopharyngeus m.",
+      "note": "",
+      "details": [
+        "Elevation of the pharynx",
+        "Tenses the soft palate"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "(Pharyngeal Constrictor mm. Cut and Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

@@ -1,0 +1,16 @@
+{
+  "file": "Larynx134.jpeg",
+  "type": "answer",
+  "answer_en": "Epiglottis",
+  "labels": [
+    {
+      "text": "Epiglottis",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Larynx",
+  "subtitle": "(Trachea and Posterior Wall of Larynx Bisected and Retracted)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from All-in-One Anatomy Exam Review: Volume 7. © 2017 Suárez-Quian and Vilensky"
+}

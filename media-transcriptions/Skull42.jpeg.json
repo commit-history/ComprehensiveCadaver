@@ -1,0 +1,16 @@
+{
+  "file": "Skull42.jpeg",
+  "type": "answer",
+  "answer_en": "Palatine Bone",
+  "labels": [
+    {
+      "text": "Palatine Bone",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Right (right), Left (left), Posterior (bottom)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

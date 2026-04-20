@@ -1,0 +1,16 @@
+{
+  "file": "Skull480.jpeg",
+  "type": "answer",
+  "answer_en": "Lesser Horn of Hyoid Bone (Lesser Cornu)",
+  "labels": [
+    {
+      "text": "Lesser Horn of Hyoid Bone",
+      "note": "(Lesser Cornu)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Hyoid Bone",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

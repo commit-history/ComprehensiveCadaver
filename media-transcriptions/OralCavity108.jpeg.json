@@ -1,0 +1,18 @@
+{
+  "file": "OralCavity108.jpeg",
+  "type": "answer",
+  "answer_en": "Body of Tongue (Anterior 2/3) <br> Lingual n. (branch of CN V3)",
+  "labels": [
+    {
+      "text": "Body of Tongue",
+      "note": "(Anterior 2/3)",
+      "details": [
+        "Lingual n. (branch of CN V3)"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Oral Cavity (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

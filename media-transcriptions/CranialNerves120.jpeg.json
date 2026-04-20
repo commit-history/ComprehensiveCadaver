@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves120.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Sagittal Sinus",
+  "labels": [
+    {
+      "text": "Inferior Sagittal Sinus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Dural Folds (Left Side)",
+  "subtitle": "(Brain Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

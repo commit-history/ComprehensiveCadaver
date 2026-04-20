@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall118.jpeg",
+  "type": "answer",
+  "answer_en": "Cardiac Impression of Left Lung",
+  "labels": [
+    {
+      "text": "Cardiac Impression of Left Lung",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall270.jpeg",
+  "type": "answer",
+  "answer_en": "Subcostal n. <br> Arises from T12",
+  "labels": [
+    {
+      "text": "Subcostal n.",
+      "note": "",
+      "details": [
+        "Arises from T12"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill.\n@MarkAAbbott1"
+}

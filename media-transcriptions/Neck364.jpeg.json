@@ -1,0 +1,20 @@
+{
+  "file": "Neck364.jpeg",
+  "type": "answer",
+  "answer_en": "Right Subclavian a. <br> Right 4th aortic arch <br> Right 7th intersegmental a. <br> Right dorsal aorta",
+  "labels": [
+    {
+      "text": "Right Subclavian a.",
+      "note": "",
+      "details": [
+        "Right 4th aortic arch",
+        "Right 7th intersegmental a.",
+        "Right dorsal aorta"
+      ]
+    }
+  ],
+  "title": "AP View of Great Vessels",
+  "subtitle": "(Angiogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Imaging Atlas of Human Anatomy (6th Ed.). © 2021, Elsevier Limited. All rights reserved."
+}

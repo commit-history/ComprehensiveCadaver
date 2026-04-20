@@ -1,0 +1,18 @@
+{
+  "file": "Shoulder84.jpeg",
+  "type": "answer",
+  "answer_en": "Medial Head of Triceps Brachii m. <br> Radial n.",
+  "labels": [
+    {
+      "text": "Medial Head of Triceps Brachii m.",
+      "note": "",
+      "details": [
+        "Radial n."
+      ]
+    }
+  ],
+  "title": "Posterior View of Arm (Right Side)",
+  "subtitle": "(Deltoid m. Reflected and Lateral Head of Triceps Brachii m. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

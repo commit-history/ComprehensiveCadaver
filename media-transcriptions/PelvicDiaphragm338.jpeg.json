@@ -1,0 +1,19 @@
+{
+  "file": "PelvicDiaphragm338.jpeg",
+  "type": "answer",
+  "answer_en": "Piriformis m. <br> Origin: Anterior surface of sacrum <br> Insertion: Greater trochanter of femur",
+  "labels": [
+    {
+      "text": "Piriformis m.",
+      "note": "",
+      "details": [
+        "Origin: Anterior surface of sacrum",
+        "Insertion: Greater trochanter of femur"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "(Rectum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved.\n*Sex assigned at birth\n@MarkAAbbott1"
+}

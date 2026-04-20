@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx470.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Pharyngeal Constrictor m. <br> Origin: Oblique line and inferior horns of thyroid cartilage, and lateral aspect of cricoid cartilage <br> Insertion: Pharyngeal raphe*",
+  "labels": [
+    {
+      "text": "Inferior Pharyngeal Constrictor m.",
+      "note": "",
+      "details": [
+        "Origin: Oblique line and inferior horns of thyroid cartilage, and lateral aspect of cricoid cartilage",
+        "Insertion: Pharyngeal raphe*"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "*Cricopharyngeal part encircles pharyngo-esophageal junction without forming a raphe",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

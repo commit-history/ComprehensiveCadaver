@@ -1,0 +1,18 @@
+{
+  "file": "Face368.jpeg",
+  "type": "answer",
+  "answer_en": "N. to Thyrohyoid <br> Arises from C1",
+  "labels": [
+    {
+      "text": "N. to Thyrohyoid",
+      "note": "",
+      "details": [
+        "Arises from C1"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "(Parotid Gland Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

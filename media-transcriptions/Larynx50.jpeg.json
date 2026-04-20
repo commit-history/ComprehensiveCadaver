@@ -1,0 +1,16 @@
+{
+  "file": "Larynx50.jpeg",
+  "type": "answer",
+  "answer_en": "Median Cricothyroid Ligament",
+  "labels": [
+    {
+      "text": "Median Cricothyroid Ligament",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Laryngeal Skeleton",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,22 @@
+{
+  "file": "Skull568.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Orbital Fissure <br> Oculomotor n. (CN III) <br> Trochlear n. (CN IV) <br> Ophthalmic n. (CN V1) <br> Abducens n. (CN VI) <br> Ophthalmic vv.",
+  "labels": [
+    {
+      "text": "Superior Orbital Fissure",
+      "note": "",
+      "details": [
+        "Oculomotor n. (CN III)",
+        "Trochlear n. (CN IV)",
+        "Ophthalmic n. (CN V1)",
+        "Abducens n. (CN VI)",
+        "Ophthalmic vv."
+      ]
+    }
+  ],
+  "title": "Anterior View of Skull",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

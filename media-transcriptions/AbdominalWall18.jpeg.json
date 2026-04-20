@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall18.jpeg",
+  "type": "answer",
+  "answer_en": "Linea Alba",
+  "labels": [
+    {
+      "text": "Linea Alba",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis Cut and Reflected on Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (BLA 20) © 2016 Schattauer GmbH and Wolters Kluwer"
+}

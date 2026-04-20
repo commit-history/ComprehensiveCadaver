@@ -1,0 +1,19 @@
+{
+  "file": "Back302.jpeg",
+  "type": "answer",
+  "answer_en": "Trapezius m. (Reflected) <br> Origin: Superior nuchal line and external occipital protuberance of occipital bone, nuchal ligament, and spinous processes of C7-T12 <br> Insertion: Lateral third of clavicle, acromion process of scapula, and spine of scapula",
+  "labels": [
+    {
+      "text": "Trapezius m.",
+      "note": "(Reflected)",
+      "details": [
+        "Origin: Superior nuchal line and external occipital protuberance of occipital bone, nuchal ligament, and spinous processes of C7-T12",
+        "Insertion: Lateral third of clavicle, acromion process of scapula, and spine of scapula"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back (Right Side)",
+  "subtitle": "(Trapezius m. Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

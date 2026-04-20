@@ -1,0 +1,16 @@
+{
+  "file": "PelvicViscera148.jpeg",
+  "type": "answer",
+  "answer_en": "Prostate Gland",
+  "labels": [
+    {
+      "text": "Prostate Gland",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Neck498.jpeg",
+  "type": "answer",
+  "answer_en": "Sternohyoid m. <br> Origin: Posterior surface of manubrium, and sternal end of clavicle <br> Insertion: Body of hyoid bone",
+  "labels": [
+    {
+      "text": "Sternohyoid m.",
+      "note": "",
+      "details": [
+        "Origin: Posterior surface of manubrium, and sternal end of clavicle",
+        "Insertion: Body of hyoid bone"
+      ]
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

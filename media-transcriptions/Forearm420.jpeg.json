@@ -1,0 +1,19 @@
+{
+  "file": "Forearm420.jpeg",
+  "type": "answer",
+  "answer_en": "Flexor Digitorum Profundus m. <br> Origin: Coronoid process of ulna, proximal half of ulna, and interosseous membrane <br> Insertion: Distal phalanges of digits 2-5",
+  "labels": [
+    {
+      "text": "Flexor Digitorum Profundus m.",
+      "note": "",
+      "details": [
+        "Origin: Coronoid process of ulna, proximal half of ulna, and interosseous membrane",
+        "Insertion: Distal phalanges of digits 2-5"
+      ]
+    }
+  ],
+  "title": "Anterior View of Forearm (Right Side)",
+  "subtitle": "(Majority of Superficial and Middle Layers Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

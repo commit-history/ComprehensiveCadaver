@@ -1,0 +1,16 @@
+{
+  "file": "Neck250.jpeg",
+  "type": "answer",
+  "answer_en": "Facial v. (Cut)",
+  "labels": [
+    {
+      "text": "Facial v.",
+      "note": "(Cut)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "(Mandible and Zygomatic Bone Partially Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

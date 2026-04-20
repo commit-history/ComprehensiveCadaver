@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall54.jpeg",
+  "type": "answer",
+  "answer_en": "Transversus Abdominis m. (Not visible on right side)",
+  "labels": [
+    {
+      "text": "Transversus Abdominis m.",
+      "note": "(Not visible on right side)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Right (Lateral), Left (Medial), Superior (top), Inferior (bottom)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (BLA 3) © 2016 Schattauer GmbH and Wolters Kluwer"
+}

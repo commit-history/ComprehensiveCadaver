@@ -1,0 +1,19 @@
+{
+  "file": "Thigh210.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Femoris m. (Cut and Reflected Laterally) <br> Flexion of the thigh at the hip joint <br> Extension of the leg at the knee joint",
+  "labels": [
+    {
+      "text": "Rectus Femoris m.",
+      "note": "(Cut and Reflected Laterally)",
+      "details": [
+        "Flexion of the thigh at the hip joint",
+        "Extension of the leg at the knee joint"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Sartorius, Rectus Femoris, Adductor Longus, and Adductor Brevis mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

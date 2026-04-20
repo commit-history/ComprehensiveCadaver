@@ -1,0 +1,20 @@
+{
+  "file": "Skull596.jpeg",
+  "type": "answer",
+  "answer_en": "Sphenopalatine Foramen <br> Nasopalatine n. (branch of CN V2) <br> Posterior lateral nasal nn. (branches of CN V2) <br> Sphenopalatine a.",
+  "labels": [
+    {
+      "text": "Sphenopalatine Foramen",
+      "note": "",
+      "details": [
+        "Nasopalatine n. (branch of CN V2)",
+        "Posterior lateral nasal nn. (branches of CN V2)",
+        "Sphenopalatine a."
+      ]
+    }
+  ],
+  "title": "Sagittal Section (Right Side)",
+  "subtitle": "(Nasal Septum Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Forearm426.jpeg",
+  "type": "answer",
+  "answer_en": "Pronator Quadratus m. <br> Origin: Distal radius <br> Insertion: Distal ulna",
+  "labels": [
+    {
+      "text": "Pronator Quadratus m.",
+      "note": "",
+      "details": [
+        "Origin: Distal radius",
+        "Insertion: Distal ulna"
+      ]
+    }
+  ],
+  "title": "Anterior View of Forearm (Right Side)",
+  "subtitle": "(Superficial and Middle Layers Removed/Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from All-in-One Anatomy Exam Review: Volume 1. © 2016 Suárez-Quian and Vilensky"
+}

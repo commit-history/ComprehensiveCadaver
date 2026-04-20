@@ -1,0 +1,19 @@
+{
+  "file": "Face280.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Belly of Digastric m. <br> 1st pharyngeal arch <br> (innervated by CN V3)",
+  "labels": [
+    {
+      "text": "Anterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "1st pharyngeal arch",
+        "(innervated by CN V3)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "(Parotid Gland Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

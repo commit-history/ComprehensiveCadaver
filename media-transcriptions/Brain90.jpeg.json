@@ -1,0 +1,16 @@
+{
+  "file": "Brain90.jpeg",
+  "type": "answer",
+  "answer_en": "Cingulate Gyrus",
+  "labels": [
+    {
+      "text": "Cingulate Gyrus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Brain (Left Hemisphere)",
+  "subtitle": "(Cerebellum and Brainstem Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from The Human Brain in Photographs and Diagrams. © 2013 by Saunders, an imprint of Elsevier Inc."
+}

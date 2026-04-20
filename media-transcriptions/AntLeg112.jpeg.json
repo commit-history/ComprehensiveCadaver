@@ -1,0 +1,20 @@
+{
+  "file": "AntLeg112.jpeg",
+  "type": "answer",
+  "answer_en": "Tibialis Anterior m. <br> Dorsiflexion of the foot at the ankle joint <br> Inversion of the foot at the subtalar joint <br> Helps support the medial arch of the foot",
+  "labels": [
+    {
+      "text": "Tibialis Anterior m.",
+      "note": "",
+      "details": [
+        "Dorsiflexion of the foot at the ankle joint",
+        "Inversion of the foot at the subtalar joint",
+        "Helps support the medial arch of the foot"
+      ]
+    }
+  ],
+  "title": "Anterior View of Leg (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

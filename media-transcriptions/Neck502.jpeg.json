@@ -1,0 +1,19 @@
+{
+  "file": "Neck502.jpeg",
+  "type": "answer",
+  "answer_en": "Sternothyroid m. <br> Origin: Posterior surface of manubrium <br> Insertion: Body of hyoid bone",
+  "labels": [
+    {
+      "text": "Sternothyroid m.",
+      "note": "",
+      "details": [
+        "Origin: Posterior surface of manubrium",
+        "Insertion: Body of hyoid bone"
+      ]
+    }
+  ],
+  "title": "Anterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

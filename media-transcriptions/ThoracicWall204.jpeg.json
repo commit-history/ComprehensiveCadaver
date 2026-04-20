@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall204.jpeg",
+  "type": "answer",
+  "answer_en": "Right Main Bronchus <br> (Right Primary Bronchus)",
+  "labels": [
+    {
+      "text": "Right Main Bronchus",
+      "note": "",
+      "details": [
+        "(Right Primary Bronchus)"
+      ]
+    }
+  ],
+  "title": "AP View of Thorax",
+  "subtitle": "(Bronchogram)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from NetAnatomy. © 2021 Scholar Educational Systems, Inc."
+}

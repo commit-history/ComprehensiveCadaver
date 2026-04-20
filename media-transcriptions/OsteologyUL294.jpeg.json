@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyUL294.jpeg",
+  "type": "answer",
+  "answer_en": "Radius <br> Radial Tuberosity <br> Neck",
+  "labels": [
+    {
+      "text": "Radius",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Radial Tuberosity",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Neck",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Elbow Joint",
+  "subtitle": "(Radiograph)",
+  "orientation": "",
+  "attribution": "@MarkAAbbott"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "ThoraxCT114.jpeg",
+  "type": "answer",
+  "answer_en": "Esophagus",
+  "labels": [
+    {
+      "text": "Esophagus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Axial View of Thorax",
+  "subtitle": "(Iodine Contrasted CT Scan – Mediastinal Window)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

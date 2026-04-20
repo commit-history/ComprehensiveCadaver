@@ -1,0 +1,26 @@
+{
+  "file": "OsteologyLL442.jpeg",
+  "type": "answer",
+  "answer_en": "Iliac crest located superiorly <br> Acetabulum located laterally (articulates with head of femur) <br> Body of pubis located anteriorly",
+  "labels": [
+    {
+      "text": "Iliac crest located superiorly",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Acetabulum located laterally",
+      "note": "articulates with head of femur",
+      "details": []
+    },
+    {
+      "text": "Body of pubis located anteriorly",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Os Coxa (Left Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

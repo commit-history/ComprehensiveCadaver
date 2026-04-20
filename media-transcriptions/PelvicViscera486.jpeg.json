@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera486.jpeg",
+  "type": "answer",
+  "answer_en": "Corpus Spongiosum <br> Genital tubercle",
+  "labels": [
+    {
+      "text": "Corpus Spongiosum",
+      "note": "",
+      "details": [
+        "Genital tubercle"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

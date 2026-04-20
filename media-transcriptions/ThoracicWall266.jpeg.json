@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall266.jpeg",
+  "type": "answer",
+  "answer_en": "Main Bronchus (Primary Bronchus) <br> Visceral lateral plate mesoderm (splanchnic mesoderm)",
+  "labels": [
+    {
+      "text": "Main Bronchus",
+      "note": "(Primary Bronchus)",
+      "details": [
+        "Visceral lateral plate mesoderm (splanchnic mesoderm)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Bronchial Tree",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

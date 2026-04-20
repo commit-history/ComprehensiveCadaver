@@ -1,0 +1,16 @@
+{
+  "file": "SpinalCord66.jpeg",
+  "type": "answer",
+  "answer_en": "L2 Vertebra (Body and Spinous Process)",
+  "labels": [
+    {
+      "text": "L2 Vertebra",
+      "note": "(Body and Spinous Process)",
+      "details": []
+    }
+  ],
+  "title": "Sagittal Section of Lumbar Spine",
+  "subtitle": "(T2-Weighted MRI)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from e-Anatomy: The Atlas of Imaging. © 2008-2023 IMAIOS SAS. All rights reserved."
+}

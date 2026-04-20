@@ -1,0 +1,19 @@
+{
+  "file": "Back256.jpeg",
+  "type": "answer",
+  "answer_en": "Semispinalis Capitis m. (Removed on Right Side) <br> Extension of the head and vertebral column (when contracting bilaterally) <br> Contralateral rotation of the head and vertebral column (when contracting unilaterally)",
+  "labels": [
+    {
+      "text": "Semispinalis Capitis m.",
+      "note": "(Removed on Right Side)",
+      "details": [
+        "Extension of the head and vertebral column (when contracting bilaterally)",
+        "Contralateral rotation of the head and vertebral column (when contracting unilaterally)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from All-in-One Anatomy Exam Review: Volume 1. © 2016 Suárez-Quian and Vilensky"
+}

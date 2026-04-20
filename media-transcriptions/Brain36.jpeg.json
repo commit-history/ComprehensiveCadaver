@@ -1,0 +1,16 @@
+{
+  "file": "Brain36.jpeg",
+  "type": "answer",
+  "answer_en": "Uncus",
+  "labels": [
+    {
+      "text": "Uncus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Brain (Right Hemisphere)",
+  "subtitle": "(Cerebellum and Brainstem Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from The University of British Columbia. www.neuroanatomy.ca"
+}

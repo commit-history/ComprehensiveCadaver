@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera508.jpeg",
+  "type": "answer",
+  "answer_en": "Seminal Vesicle <br> Mesonephric duct (Wolffian duct)",
+  "labels": [
+    {
+      "text": "Seminal Vesicle",
+      "note": "",
+      "details": [
+        "Mesonephric duct (Wolffian duct)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

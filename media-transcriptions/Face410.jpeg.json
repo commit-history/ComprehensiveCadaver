@@ -1,0 +1,19 @@
+{
+  "file": "Face410.jpeg",
+  "type": "answer",
+  "answer_en": "Nasalis m. <br> Origin: Maxilla <br> Insertion: Fascia covering bridge of nose, and skin overlying major alar cartilage",
+  "labels": [
+    {
+      "text": "Nasalis m.",
+      "note": "",
+      "details": [
+        "Origin: Maxilla",
+        "Insertion: Fascia covering bridge of nose, and skin overlying major alar cartilage"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

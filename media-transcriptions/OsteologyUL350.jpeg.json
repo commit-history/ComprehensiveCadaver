@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyUL350.jpeg",
+  "type": "answer",
+  "answer_en": "Acromion Process (Right Side) <br> Trapezius m.",
+  "labels": [
+    {
+      "text": "Acromion Process",
+      "note": "(Right Side)",
+      "details": []
+    },
+    {
+      "text": "Trapezius m.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Scapula",
+  "subtitle": "(Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Complex Anatomy by Elviot. © 2023 DMAbdullah."
+}

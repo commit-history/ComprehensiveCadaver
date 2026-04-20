@@ -1,0 +1,18 @@
+{
+  "file": "Neck64.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Thoracic a. (Cut) <br> (Internal Mammary a.)",
+  "labels": [
+    {
+      "text": "Internal Thoracic a.",
+      "note": "(Cut)",
+      "details": [
+        "(Internal Mammary a.)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Root of Neck (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

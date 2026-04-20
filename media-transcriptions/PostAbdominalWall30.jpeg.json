@@ -1,0 +1,16 @@
+{
+  "file": "PostAbdominalWall30.jpeg",
+  "type": "answer",
+  "answer_en": "Renal Papilla",
+  "labels": [
+    {
+      "text": "Renal Papilla",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Coronal Section of Kidney",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

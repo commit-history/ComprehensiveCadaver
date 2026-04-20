@@ -1,0 +1,19 @@
+{
+  "file": "Pharynx500.jpeg",
+  "type": "answer",
+  "answer_en": "Palatopharyngeus m. <br> Origin: Horizontal plate of palatine bone, and palatine aponeurosis of soft palate <br> Insertion: Lamina of thyroid cartilage, and pharyngeal mucosa",
+  "labels": [
+    {
+      "text": "Palatopharyngeus m.",
+      "note": "",
+      "details": [
+        "Origin: Horizontal plate of palatine bone, and palatine aponeurosis of soft palate",
+        "Insertion: Lamina of thyroid cartilage, and pharyngeal mucosa"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Pharynx (Right Side)",
+  "subtitle": "(Tongue and Nasal Conchae Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

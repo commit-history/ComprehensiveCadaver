@@ -1,0 +1,19 @@
+{
+  "file": "MidgutHindgut154.jpeg",
+  "type": "answer",
+  "answer_en": "Transverse Colon (Reflected Superiorly) <br> Proximal 2/3: Midgut endoderm <br> Distal 1/3: Hindgut endoderm",
+  "labels": [
+    {
+      "text": "Transverse Colon",
+      "note": "(Reflected Superiorly)",
+      "details": [
+        "Proximal 2/3: Midgut endoderm",
+        "Distal 1/3: Hindgut endoderm"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Cavity",
+  "subtitle": "(Small Intestine and Mesentery Removed, and Transverse Colon Reflected Superiorly)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PostAbdominalWall232.jpeg",
+  "type": "answer",
+  "answer_en": "Diaphragm <br> Phrenic n.",
+  "labels": [
+    {
+      "text": "Diaphragm",
+      "note": "",
+      "details": [
+        "Phrenic n."
+      ]
+    }
+  ],
+  "title": "",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

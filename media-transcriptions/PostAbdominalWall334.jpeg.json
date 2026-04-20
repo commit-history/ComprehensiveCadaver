@@ -1,0 +1,19 @@
+{
+  "file": "PostAbdominalWall334.jpeg",
+  "type": "answer",
+  "answer_en": "Iliacus m. <br> Origin: Iliac crest, iliac fossa, and ala of sacrum <br> Insertion: Lesser trochanter of femur",
+  "labels": [
+    {
+      "text": "Iliacus m.",
+      "note": "",
+      "details": [
+        "Origin: Iliac crest, iliac fossa, and ala of sacrum",
+        "Insertion: Lesser trochanter of femur"
+      ]
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall",
+  "subtitle": "(Organs and Vasculature Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

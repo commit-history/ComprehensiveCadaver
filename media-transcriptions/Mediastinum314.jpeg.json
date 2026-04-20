@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum314.jpeg",
+  "type": "answer",
+  "answer_en": "Left Subclavian a. <br> Left 7th intersegmental a.",
+  "labels": [
+    {
+      "text": "Left Subclavian a.",
+      "note": "",
+      "details": [
+        "Left 7th intersegmental a."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, Pericardium, and Aortic Arch Removed; Esophagus Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

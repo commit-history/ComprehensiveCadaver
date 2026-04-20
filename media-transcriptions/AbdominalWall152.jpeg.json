@@ -1,0 +1,18 @@
+{
+  "file": "AbdominalWall152.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Epigastric a. <br> Direct inguinal hernia",
+  "labels": [
+    {
+      "text": "Inferior Epigastric a.",
+      "note": "",
+      "details": [
+        "Direct inguinal hernia"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

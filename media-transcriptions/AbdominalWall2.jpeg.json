@@ -1,0 +1,16 @@
+{
+  "file": "AbdominalWall2.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Abdominis m. (Not visible on left side)",
+  "labels": [
+    {
+      "text": "Rectus Abdominis m.",
+      "note": "(Not visible on left side)",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Anterior Rectus Sheath Removed on Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (BE2) © 2016 Gauthier-Cadillac and Wolters Kluwer"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum258.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Intercostal v. <br> Supracardinal vv.",
+  "labels": [
+    {
+      "text": "Posterior Intercostal v.",
+      "note": "",
+      "details": [
+        "Supracardinal vv."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Pleura, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

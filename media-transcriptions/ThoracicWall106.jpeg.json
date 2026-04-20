@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall106.jpeg",
+  "type": "answer",
+  "answer_en": "Base of Left Lung (Diaphragmatic Surface)",
+  "labels": [
+    {
+      "text": "Base of Left Lung",
+      "note": "(Diaphragmatic Surface)",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Heart370.jpeg",
+  "type": "answer",
+  "answer_en": "Sinus Venarum <br> Right horn of sinus venosus <br> (Right sinus horn)",
+  "labels": [
+    {
+      "text": "Sinus Venarum",
+      "note": "",
+      "details": [
+        "Right horn of sinus venosus",
+        "(Right sinus horn)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Heart (Right Side)",
+  "subtitle": "(Right Atrium Opened)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from All-in-One Anatomy Exam Review: Volume 2. © 2016 Suárez-Quian and Vilensky"
+}

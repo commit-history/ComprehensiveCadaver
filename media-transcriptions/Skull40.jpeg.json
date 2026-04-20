@@ -1,0 +1,16 @@
+{
+  "file": "Skull40.jpeg",
+  "type": "answer",
+  "answer_en": "Maxilla",
+  "labels": [
+    {
+      "text": "Maxilla",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Inferior View of Skull",
+  "subtitle": "(Mandible Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

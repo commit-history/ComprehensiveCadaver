@@ -1,0 +1,19 @@
+{
+  "file": "AntLeg166.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Head of Gastrocnemius m. <br> Origin: Lateral condyle of femur <br> Insertion: Posterior surface of calcaneus via calcaneal (Achilles) tendon",
+  "labels": [
+    {
+      "text": "Lateral Head of Gastrocnemius m.",
+      "note": "",
+      "details": [
+        "Origin: Lateral condyle of femur",
+        "Insertion: Posterior surface of calcaneus via calcaneal (Achilles) tendon"
+      ]
+    }
+  ],
+  "title": "Lateral View of Leg (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

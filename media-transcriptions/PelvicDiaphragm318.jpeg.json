@@ -1,0 +1,18 @@
+{
+  "file": "PelvicDiaphragm318.jpeg",
+  "type": "answer",
+  "answer_en": "Pudendal n. <br> Arises from S2-S4",
+  "labels": [
+    {
+      "text": "Pudendal n.",
+      "note": "",
+      "details": [
+        "Arises from S2-S4"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "(Organs Removed and Levator Ani m. Dissected)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc.; *Sex assigned at birth"
+}

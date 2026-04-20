@@ -1,0 +1,16 @@
+{
+  "file": "Brain182.jpeg",
+  "type": "answer",
+  "answer_en": "Lateral Ventricle",
+  "labels": [
+    {
+      "text": "Lateral Ventricle",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Subcortical Nuclei (Right Side)",
+  "subtitle": "(Insula and Claustrum Removed; Lateral Ventricle Opened)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman."
+}

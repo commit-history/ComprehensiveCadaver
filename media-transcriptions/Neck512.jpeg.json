@@ -1,0 +1,19 @@
+{
+  "file": "Neck512.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Belly of Digastric m. <br> Origin: Digastric fossa of mandible <br> Insertion: Body and greater horn of hyoid bone (via intermediate tendon and its fibrous sling)",
+  "labels": [
+    {
+      "text": "Anterior Belly of Digastric m.",
+      "note": "",
+      "details": [
+        "Origin: Digastric fossa of mandible",
+        "Insertion: Body and greater horn of hyoid bone (via intermediate tendon and its fibrous sling)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Neck (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

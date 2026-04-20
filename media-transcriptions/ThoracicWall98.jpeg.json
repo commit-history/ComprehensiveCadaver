@@ -1,0 +1,16 @@
+{
+  "file": "ThoracicWall98.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Lobe of Left Lung",
+  "labels": [
+    {
+      "text": "Superior Lobe of Left Lung",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

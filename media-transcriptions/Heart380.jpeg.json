@@ -1,0 +1,19 @@
+{
+  "file": "Heart380.jpeg",
+  "type": "answer",
+  "answer_en": "Anterior Leaflet of Right Atrioventricular Valve (Tricuspid Valve) <br> Atrioventricular cushions <br> (Endocardial cushions)",
+  "labels": [
+    {
+      "text": "Anterior Leaflet of Right Atrioventricular Valve",
+      "note": "(Tricuspid Valve)",
+      "details": [
+        "Atrioventricular cushions",
+        "(Endocardial cushions)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "(Anterior Walls of Right Atrium and Ventricle Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

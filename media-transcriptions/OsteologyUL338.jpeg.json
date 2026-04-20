@@ -1,0 +1,20 @@
+{
+  "file": "OsteologyUL338.jpeg",
+  "type": "answer",
+  "answer_en": "Medial Border of Scapula <br> Rhomboid minor m. (above spine) <br> Rhomboid major m. (below spine) <br> Serratus anterior m. (entire length)",
+  "labels": [
+    {
+      "text": "Medial Border of Scapula",
+      "note": "",
+      "details": [
+        "Rhomboid minor m. (above spine)",
+        "Rhomboid major m. (below spine)",
+        "Serratus anterior m. (entire length)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Scapula (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

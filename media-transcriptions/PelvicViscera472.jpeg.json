@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera472.jpeg",
+  "type": "answer",
+  "answer_en": "Ovarian Ligament <br> Gubernaculum <br> (Caudal genital ligament)",
+  "labels": [
+    {
+      "text": "Ovarian Ligament",
+      "note": "",
+      "details": [
+        "Gubernaculum",
+        "(Caudal genital ligament)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Isolated Female* Genital Organs",
+  "subtitle": "(Anterior Wall of Vagina Partially Opened)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer; *Sex assigned at birth"
+}

@@ -1,0 +1,23 @@
+{
+  "file": "ThoracicWall244.jpeg",
+  "type": "answer",
+  "answer_en": "Pulmonary aa. superior to bronchi <br> (RALS: Right anterior, Left superior) <br> Large cardiac impression; no horizontal fissure so only two lobes are present",
+  "labels": [
+    {
+      "text": "Pulmonary aa. superior to bronchi",
+      "note": "",
+      "details": [
+        "(RALS: Right anterior, Left superior)"
+      ]
+    },
+    {
+      "text": "Large cardiac impression; no horizontal fissure so only two lobes are present",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Medial View of Left Lung",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

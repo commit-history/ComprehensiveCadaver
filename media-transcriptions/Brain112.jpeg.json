@@ -1,0 +1,16 @@
+{
+  "file": "Brain112.jpeg",
+  "type": "answer",
+  "answer_en": "Parahippocampal Gyrus",
+  "labels": [
+    {
+      "text": "Parahippocampal Gyrus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Inferior View of Brain",
+  "subtitle": "(Cerebellum and Brainstem Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from Brain-Inter-Atlas: Interactive Atlas of Anatomy. https://sites.uclouvain.be/braininteratlas/en"
+}

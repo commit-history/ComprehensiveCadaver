@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyLL438.jpeg",
+  "type": "answer",
+  "answer_en": "Tibial tuberosity located superiorly and anteriorly <br> Medial malleolus located inferiorly and medially",
+  "labels": [
+    {
+      "text": "Tibial tuberosity located superiorly and anteriorly",
+      "note": "",
+      "details": []
+    },
+    {
+      "text": "Medial malleolus located inferiorly and medially",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Tibia (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

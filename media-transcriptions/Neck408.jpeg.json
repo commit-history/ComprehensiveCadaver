@@ -1,0 +1,18 @@
+{
+  "file": "Neck408.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Carotid a. <br> Carotid canal",
+  "labels": [
+    {
+      "text": "Internal Carotid a.",
+      "note": "",
+      "details": [
+        "Carotid canal"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face",
+  "subtitle": "(Mandible and Zygomatic Bone Partially Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

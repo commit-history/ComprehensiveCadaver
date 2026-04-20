@@ -1,0 +1,19 @@
+{
+  "file": "Face388.jpeg",
+  "type": "answer",
+  "answer_en": "Orbicularis Oculi m. <br> Origin: Nasal part of frontal bone, frontal process of maxilla, medial palpebral ligament, and lacrimal crest of lacrimal bone <br> Insertion: Skin of orbital region, lateral palpebral raphe, superior and inferior tarsal plates",
+  "labels": [
+    {
+      "text": "Orbicularis Oculi m.",
+      "note": "",
+      "details": [
+        "Origin: Nasal part of frontal bone, frontal process of maxilla, medial palpebral ligament, and lacrimal crest of lacrimal bone",
+        "Insertion: Skin of orbital region, lateral palpebral raphe, superior and inferior tarsal plates"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

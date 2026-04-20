@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum238.jpeg",
+  "type": "answer",
+  "answer_en": "Pulmonary Trunk <br> Truncus arteriosus",
+  "labels": [
+    {
+      "text": "Pulmonary Trunk",
+      "note": "",
+      "details": [
+        "Truncus arteriosus"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thoracic Cavity",
+  "subtitle": "(Lungs, Heart, and Pericardium Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from All-in-One Anatomy Exam Review: Volume 2. © 2016 Suárez-Quian and Vilensky"
+}

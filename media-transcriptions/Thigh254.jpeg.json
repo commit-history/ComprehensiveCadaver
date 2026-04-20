@@ -1,0 +1,19 @@
+{
+  "file": "Thigh254.jpeg",
+  "type": "answer",
+  "answer_en": "Tensor Fasciae Latae m. <br> Origin: Anterior superior iliac spine (ASIS) and iliac crest <br> Insertion: Lateral condyle of tibia (Gerdy’s tubercle) via iliotibial band (tract)",
+  "labels": [
+    {
+      "text": "Tensor Fasciae Latae m.",
+      "note": "",
+      "details": [
+        "Origin: Anterior superior iliac spine (ASIS) and iliac crest",
+        "Insertion: Lateral condyle of tibia (Gerdy’s tubercle) via iliotibial band (tract)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

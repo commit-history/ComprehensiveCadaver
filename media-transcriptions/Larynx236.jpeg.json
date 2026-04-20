@@ -1,0 +1,19 @@
+{
+  "file": "Larynx236.jpeg",
+  "type": "answer",
+  "answer_en": "Posterior Cricoarytenoid m. <br> Origin: Posterior surface of lamina of cricoid cartilage <br> Insertion: Vocal process of arytenoid cartilage",
+  "labels": [
+    {
+      "text": "Posterior Cricoarytenoid m.",
+      "note": "",
+      "details": [
+        "Origin: Posterior surface of lamina of cricoid cartilage",
+        "Insertion: Vocal process of arytenoid cartilage"
+      ]
+    }
+  ],
+  "title": "Posterior View of Larynx",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

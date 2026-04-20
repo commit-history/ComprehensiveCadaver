@@ -1,0 +1,19 @@
+{
+  "file": "OralCavity148.jpeg",
+  "type": "answer",
+  "answer_en": "Geniohyoid m. <br> Origin: Inferior mental spine of mandible <br> Insertion: Body of hyoid bone",
+  "labels": [
+    {
+      "text": "Geniohyoid m.",
+      "note": "",
+      "details": [
+        "Origin: Inferior mental spine of mandible",
+        "Insertion: Body of hyoid bone"
+      ]
+    }
+  ],
+  "title": "Sagittal Section of Oral Cavity (Right Side)",
+  "subtitle": "(Tongue Reflected Medially)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

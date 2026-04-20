@@ -1,0 +1,19 @@
+{
+  "file": "Larynx232.jpeg",
+  "type": "answer",
+  "answer_en": "Oblique Arytenoid m. (Interarytenoid m.) <br> Origin: Muscular process of one arytenoid cartilage <br> Insertion: Apex of muscular process of contralateral arytenoid cartilage and aryepiglottic fold",
+  "labels": [
+    {
+      "text": "Oblique Arytenoid m.",
+      "note": "(Interarytenoid m.)",
+      "details": [
+        "Origin: Muscular process of one arytenoid cartilage",
+        "Insertion: Apex of muscular process of contralateral arytenoid cartilage and aryepiglottic fold"
+      ]
+    }
+  ],
+  "title": "Posterior View of Larynx",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

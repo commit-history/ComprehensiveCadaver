@@ -1,0 +1,16 @@
+{
+  "file": "PelvicDiaphragm64.jpeg",
+  "type": "answer",
+  "answer_en": "Inferior Hypogastric Plexus",
+  "labels": [
+    {
+      "text": "Inferior Hypogastric Plexus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Anterior View of Posterior Abdominal Wall and Pelvic Wall",
+  "subtitle": "(Majority of Organs Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved. @MarkAAbbott1"
+}

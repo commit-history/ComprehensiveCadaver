@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera552.jpeg",
+  "type": "answer",
+  "answer_en": "Glans Penis <br> Genital tubercle",
+  "labels": [
+    {
+      "text": "Glans Penis",
+      "note": "",
+      "details": [
+        "Genital tubercle"
+      ]
+    }
+  ],
+  "title": "Lateral View of Isolated Male* Genital Organs",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

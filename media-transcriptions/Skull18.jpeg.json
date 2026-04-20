@@ -1,0 +1,16 @@
+{
+  "file": "Skull18.jpeg",
+  "type": "answer",
+  "answer_en": "Parietal Bone (Right Side)",
+  "labels": [
+    {
+      "text": "Parietal Bone",
+      "note": "(Right Side)",
+      "details": []
+    }
+  ],
+  "title": "Lateral View of Skull",
+  "subtitle": "(Right Side)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (front), Posterior (back)",
+  "attribution": "Modified from Complex Anatomy by Elviolet © 2023 D3DMedial."
+}

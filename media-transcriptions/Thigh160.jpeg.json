@@ -1,0 +1,19 @@
+{
+  "file": "Thigh160.jpeg",
+  "type": "answer",
+  "answer_en": "Iliopsoas m. <br> Iliacus: Femoral n. <br> Psoas Major: Ventral rami",
+  "labels": [
+    {
+      "text": "Iliopsoas m.",
+      "note": "",
+      "details": [
+        "Iliacus: Femoral n.",
+        "Psoas Major: Ventral rami"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "(Sartorius, Rectus Femoris, Adductor Longus, and Adductor Brevis mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

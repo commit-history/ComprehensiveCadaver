@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall194.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Oblique m. (Removed on right side) <br> Origin: Thoracolumbar fascia and anterior two-thirds of iliac crest <br> Insertion: Inferior borders of ribs 10-12, linea alba, and pubic crest",
+  "labels": [
+    {
+      "text": "Internal Oblique m.",
+      "note": "(Removed on right side)",
+      "details": [
+        "Origin: Thoracolumbar fascia and anterior two-thirds of iliac crest",
+        "Insertion: Inferior borders of ribs 10-12, linea alba, and pubic crest"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Left Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

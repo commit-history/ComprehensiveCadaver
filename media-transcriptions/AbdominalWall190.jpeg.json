@@ -1,0 +1,19 @@
+{
+  "file": "AbdominalWall190.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Abdominis m. (Cut and reflected on right side) <br> Origin: Pubic crest and pubic symphysis <br> Insertion: Xiphoid process and costal cartilages of ribs 5-7",
+  "labels": [
+    {
+      "text": "Rectus Abdominis m.",
+      "note": "(Cut and reflected on right side)",
+      "details": [
+        "Origin: Pubic crest and pubic symphysis",
+        "Insertion: Xiphoid process and costal cartilages of ribs 5-7"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Heart354.jpeg",
+  "type": "answer",
+  "answer_en": "Superior Vena Cava <br> Right common cardinal v. <br> Proximal portion of right anterior cardiac v.",
+  "labels": [
+    {
+      "text": "Superior Vena Cava",
+      "note": "",
+      "details": [
+        "Right common cardinal v.",
+        "Proximal portion of right anterior cardiac v."
+      ]
+    }
+  ],
+  "title": "Anterior View of Heart",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

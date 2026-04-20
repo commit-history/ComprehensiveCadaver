@@ -1,0 +1,18 @@
+{
+  "file": "CranialNerves164.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Carotid a. (Cut) <br> Carotid canal",
+  "labels": [
+    {
+      "text": "Internal Carotid a.",
+      "note": "(Cut)",
+      "details": [
+        "Carotid canal"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "Modified from Atlas of Functional Neuroanatomy. © Walter Hendelman.",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Face180.jpeg",
+  "type": "answer",
+  "answer_en": "Frontalis m. (Frontal Belly of Occipitofrontalis m.) <br> Elevation of the eyebrows <br> Wrinkling of the skin of the forehead",
+  "labels": [
+    {
+      "text": "Frontalis m.",
+      "note": "(Frontal Belly of Occipitofrontalis m.)",
+      "details": [
+        "Elevation of the eyebrows",
+        "Wrinkling of the skin of the forehead"
+      ]
+    }
+  ],
+  "title": "Anterolateral View of Face (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Clinical Atlas of Human Anatomy (8th Ed.). © 2020, Elsevier Limited. All rights reserved."
+}

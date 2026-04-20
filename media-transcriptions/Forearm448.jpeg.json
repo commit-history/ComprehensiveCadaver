@@ -1,0 +1,19 @@
+{
+  "file": "Forearm448.jpeg",
+  "type": "answer",
+  "answer_en": "Abductor Pollicis Longus m. <br> Origin: Posterior surface of proximal half of radius, ulna and interosseus membrane <br> Insertion: Base of 1st metacarpal",
+  "labels": [
+    {
+      "text": "Abductor Pollicis Longus m.",
+      "note": "",
+      "details": [
+        "Origin: Posterior surface of proximal half of radius, ulna and interosseus membrane",
+        "Insertion: Base of 1st metacarpal"
+      ]
+    }
+  ],
+  "title": "Posterior View of Forearm (Right Side)",
+  "subtitle": "(Superficial Muscles Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

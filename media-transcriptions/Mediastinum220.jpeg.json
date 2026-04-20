@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum220.jpeg",
+  "type": "answer",
+  "answer_en": "Hemiazygos v. <br> T12",
+  "labels": [
+    {
+      "text": "Hemiazygos v.",
+      "note": "",
+      "details": [
+        "T12"
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Left Side)",
+  "subtitle": "(Left Lung Removed; Aorta Retracted Medially)",
+  "orientation": "Anterior (top), Posterior (bottom), Inferior (left), Superior (right)",
+  "attribution": "Modified from Gray’s Clinical Photographic Dissector of the Human Body (2nd Ed.). © 2019 by Elsevier Inc."
+}

@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyLL440.jpeg",
+  "type": "answer",
+  "answer_en": "Soleal line located superiorly and posteriorly (tibial tuberosity not visible) <br> Medial malleolus located inferiorly and medially",
+  "labels": [
+    {
+      "text": "Soleal line located superiorly and posteriorly",
+      "note": "tibial tuberosity not visible",
+      "details": []
+    },
+    {
+      "text": "Medial malleolus located inferiorly and medially",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Posterior View of Tibia (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

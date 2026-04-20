@@ -1,0 +1,19 @@
+{
+  "file": "Face380.jpeg",
+  "type": "answer",
+  "answer_en": "Mentalis m. <br> Origin: Incisive fossa of mandible <br> Insertion: Subcutaneous tissue of chin",
+  "labels": [
+    {
+      "text": "Mentalis m.",
+      "note": "",
+      "details": [
+        "Origin: Incisive fossa of mandible",
+        "Insertion: Subcutaneous tissue of chin"
+      ]
+    }
+  ],
+  "title": "Anterior View of Face",
+  "subtitle": "(Left Side = Superficial, Right Side = Deep)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

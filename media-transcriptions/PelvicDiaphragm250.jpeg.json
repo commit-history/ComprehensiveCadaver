@@ -1,0 +1,18 @@
+{
+  "file": "PelvicDiaphragm250.jpeg",
+  "type": "answer",
+  "answer_en": "Piriformis m. <br> N. to piriformis",
+  "labels": [
+    {
+      "text": "Piriformis m.",
+      "note": "",
+      "details": [
+        "N. to piriformis"
+      ]
+    }
+  ],
+  "title": "Superior View of Pelvic Cavity",
+  "subtitle": "(Organs Removed)",
+  "orientation": "Posterior (top), Anterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

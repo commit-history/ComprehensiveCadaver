@@ -1,0 +1,16 @@
+{
+  "file": "Heart296.jpeg",
+  "type": "answer",
+  "answer_en": "Right Coronary a.",
+  "labels": [
+    {
+      "text": "Right Coronary a.",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Superior View of Heart",
+  "subtitle": "(Atria Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

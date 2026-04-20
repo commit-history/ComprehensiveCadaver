@@ -1,0 +1,18 @@
+{
+  "file": "OsteologyUL278.jpeg",
+  "type": "answer",
+  "answer_en": "Clavicle <br> Coracoid Tubercle",
+  "labels": [
+    {
+      "text": "Clavicle",
+      "note": "",
+      "details": [
+        "Coracoid Tubercle"
+      ]
+    }
+  ],
+  "title": "AP View of Shoulder Joint (Left Side)",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott"
+}

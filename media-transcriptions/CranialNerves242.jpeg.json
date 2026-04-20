@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves242.jpeg",
+  "type": "answer",
+  "answer_en": "Trigeminal n. (CN V) <br> Motor (SVE) <br> Sensory (GSA)",
+  "labels": [
+    {
+      "text": "Trigeminal n. (CN V)",
+      "note": "",
+      "details": [
+        "Motor (SVE)",
+        "Sensory (GSA)"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

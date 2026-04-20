@@ -1,0 +1,25 @@
+{
+  "file": "OsteologyUL414.jpeg",
+  "type": "answer",
+  "answer_en": "Trochlear notch located superiorly and directed anteriorly <br> articulates with the trochlea of the humerus <br> Radial notch located laterally <br> articulates with the head of the radius",
+  "labels": [
+    {
+      "text": "Trochlear notch",
+      "note": "located superiorly and directed anteriorly",
+      "details": [
+        "articulates with the trochlea of the humerus"
+      ]
+    },
+    {
+      "text": "Radial notch",
+      "note": "located laterally",
+      "details": [
+        "articulates with the head of the radius"
+      ]
+    }
+  ],
+  "title": "Anterior View of Ulna (Right Side)",
+  "subtitle": "",
+  "orientation": "",
+  "attribution": "Modified from Complete Anatomy by Elsevier © 2023 Elsevier."
+}

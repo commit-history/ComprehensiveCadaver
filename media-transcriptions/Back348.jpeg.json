@@ -1,0 +1,19 @@
+{
+  "file": "Back348.jpeg",
+  "type": "answer",
+  "answer_en": "Rectus Capitis Posterior Minor m. <br> Origin: Posterior arch of atlas (C1) <br> Insertion: Inferior nuchal line of occipital bone",
+  "labels": [
+    {
+      "text": "Rectus Capitis Posterior Minor m.",
+      "note": "",
+      "details": [
+        "Origin: Posterior arch of atlas (C1)",
+        "Insertion: Inferior nuchal line of occipital bone"
+      ]
+    }
+  ],
+  "title": "Posterior View of Neck",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1; Modified from All-in-One Anatomy Exam Review: Volume 1. © 2016 Suárez-Quian and Vilensky"
+}

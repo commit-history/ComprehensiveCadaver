@@ -1,0 +1,18 @@
+{
+  "file": "Mediastinum210.jpeg",
+  "type": "answer",
+  "answer_en": "Phrenic n. <br> Arises from C3-C5",
+  "labels": [
+    {
+      "text": "Phrenic n.",
+      "note": "",
+      "details": [
+        "Arises from C3-C5"
+      ]
+    }
+  ],
+  "title": "Lateral View of Thoracic Cavity (Right Side)",
+  "subtitle": "(Right Lung and Pleura Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

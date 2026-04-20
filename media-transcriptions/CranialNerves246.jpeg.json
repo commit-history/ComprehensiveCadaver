@@ -1,0 +1,19 @@
+{
+  "file": "CranialNerves246.jpeg",
+  "type": "answer",
+  "answer_en": "Facial n. (CN VII) <br> Motor (SVE and GVE) <br> Sensory (GSA and SVA)",
+  "labels": [
+    {
+      "text": "Facial n. (CN VII)",
+      "note": "",
+      "details": [
+        "Motor (SVE and GVE)",
+        "Sensory (GSA and SVA)"
+      ]
+    }
+  ],
+  "title": "Ventral Surface of Brain",
+  "subtitle": "",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

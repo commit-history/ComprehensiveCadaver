@@ -1,0 +1,18 @@
+{
+  "file": "Thigh130.jpeg",
+  "type": "answer",
+  "answer_en": "Tensor Fasciae Latae m. <br> Superior gluteal n.",
+  "labels": [
+    {
+      "text": "Tensor Fasciae Latae m.",
+      "note": "",
+      "details": [
+        "Superior gluteal n."
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

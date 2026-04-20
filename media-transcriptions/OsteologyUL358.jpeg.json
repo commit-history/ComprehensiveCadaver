@@ -1,0 +1,21 @@
+{
+  "file": "OsteologyUL358.jpeg",
+  "type": "answer",
+  "answer_en": "Medial Border of Scapula <br> Levator scapulae m. (above spine) <br> Rhomboid minor m. (adjacent to spine) <br> Rhomboid major m. (below spine) <br> Serratus anterior m. (entire length)",
+  "labels": [
+    {
+      "text": "Medial Border of Scapula",
+      "note": "",
+      "details": [
+        "Levator scapulae m. (above spine)",
+        "Rhomboid minor m. (adjacent to spine)",
+        "Rhomboid major m. (below spine)",
+        "Serratus anterior m. (entire length)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Scapula (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

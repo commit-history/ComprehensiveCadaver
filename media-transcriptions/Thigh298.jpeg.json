@@ -1,0 +1,19 @@
+{
+  "file": "Thigh298.jpeg",
+  "type": "answer",
+  "answer_en": "Sartorius m. <br> Origin: Anterior superior iliac spine (ASIS) <br> Insertion: Medial aspect of proximal tibia",
+  "labels": [
+    {
+      "text": "Sartorius m.",
+      "note": "",
+      "details": [
+        "Origin: Anterior superior iliac spine (ASIS)",
+        "Insertion: Medial aspect of proximal tibia"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

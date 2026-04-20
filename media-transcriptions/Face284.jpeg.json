@@ -1,0 +1,18 @@
+{
+  "file": "Face284.jpeg",
+  "type": "answer",
+  "answer_en": "Facial n. (CN VII) <br> 2nd pharyngeal arch (innervated by CN VII)",
+  "labels": [
+    {
+      "text": "Facial n. (CN VII)",
+      "note": "",
+      "details": [
+        "2nd pharyngeal arch (innervated by CN VII)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Face (Right Side)",
+  "subtitle": "(Parotid Gland Removed)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Atlas of Human Anatomy (1st Ed.). © 2019 Quinn and Flannery."
+}

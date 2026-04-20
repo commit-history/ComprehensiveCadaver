@@ -1,0 +1,19 @@
+{
+  "file": "Back336.jpeg",
+  "type": "answer",
+  "answer_en": "Semispinalis Capitis m. <br> Origin: Articular processes of C4-C7, and transverse processes of T1-T6 <br> Insertion: Occipital bone between superior and inferior nuchal lines",
+  "labels": [
+    {
+      "text": "Semispinalis Capitis m.",
+      "note": "",
+      "details": [
+        "Origin: Articular processes of C4-C7, and transverse processes of T1-T6",
+        "Insertion: Occipital bone between superior and inferior nuchal lines"
+      ]
+    }
+  ],
+  "title": "Posterior View of Back",
+  "subtitle": "(Superficial Muscles Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc."
+}

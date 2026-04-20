@@ -1,0 +1,19 @@
+{
+  "file": "Hand280.jpeg",
+  "type": "answer",
+  "answer_en": "1st Dorsal Interossei m. <br> Origin: Adjacent sides of metacarpals 1-2 <br> Insertion: Base of proximal phalanx and extensor expansion of 2nd digit",
+  "labels": [
+    {
+      "text": "1st Dorsal Interossei m.",
+      "note": "",
+      "details": [
+        "Origin: Adjacent sides of metacarpals 1-2",
+        "Insertion: Base of proximal phalanx and extensor expansion of 2nd digit"
+      ]
+    }
+  ],
+  "title": "Dorsal Surface of Hand (Right Side)",
+  "subtitle": "",
+  "orientation": "Distal (top), Proximal (bottom), Lateral (left), Medial (right)",
+  "attribution": "@MarkAAbbott1; Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

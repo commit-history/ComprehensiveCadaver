@@ -1,0 +1,18 @@
+{
+  "file": "Pharynx404.jpeg",
+  "type": "answer",
+  "answer_en": "Pharyngeal Constrictor mm. (Cut and Reflected) <br> Pharyngeal plexus (branch of CN X)",
+  "labels": [
+    {
+      "text": "Pharyngeal Constrictor mm.",
+      "note": "(Cut and Reflected)",
+      "details": [
+        "Pharyngeal plexus (branch of CN X)"
+      ]
+    }
+  ],
+  "title": "Posterior View of Pharynx",
+  "subtitle": "(Pharyngeal Constrictor mm. Cut and Reflected)",
+  "orientation": "Superior (top), Inferior (bottom), Left (left), Right (right)",
+  "attribution": "Modified from Atlas of Human Anatomy. © 2011 John Wiley & Sons, Inc. All rights reserved."
+}

@@ -1,0 +1,18 @@
+{
+  "file": "PelvicDiaphragm316.jpeg",
+  "type": "answer",
+  "answer_en": "Lumbosacral Trunk <br> Arises from L4-L5",
+  "labels": [
+    {
+      "text": "Lumbosacral Trunk",
+      "note": "",
+      "details": [
+        "Arises from L4-L5"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "(Organs Removed and Levator Ani m. Dissected)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "Modified from Atlas of Clinical Gross Anatomy (2nd Ed.). © 2013 by Saunders, an imprint of Elsevier Inc.; @MarkAAbbott1; *Sex assigned at birth"
+}

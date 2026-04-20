@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera24.jpeg",
+  "type": "answer",
+  "answer_en": "Clitoris <br> (Corpus Cavernosum of Clitoris)",
+  "labels": [
+    {
+      "text": "Clitoris",
+      "note": "",
+      "details": [
+        "(Corpus Cavernosum of Clitoris)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill.; *Sex assigned at birth"
+}

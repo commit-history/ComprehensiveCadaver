@@ -1,0 +1,18 @@
+{
+  "file": "ThoracicWall178.jpeg",
+  "type": "answer",
+  "answer_en": "Right Inferior Lobar Bronchus <br> (Right Inferior Secondary Bronchus)",
+  "labels": [
+    {
+      "text": "Right Inferior Lobar Bronchus",
+      "note": "",
+      "details": [
+        "(Right Inferior Secondary Bronchus)"
+      ]
+    }
+  ],
+  "title": "Anterior View of Bronchial Tree",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

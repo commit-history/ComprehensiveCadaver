@@ -1,0 +1,16 @@
+{
+  "file": "OsteologyLL416.jpeg",
+  "type": "answer",
+  "answer_en": "Linea Aspera <br> Adductor brevis m. <br> Adductor longus m. <br> Adductor magnus m.",
+  "labels": [
+    {
+      "text": "Linea Aspera",
+      "note": "",
+      "details": ["Adductor brevis m.", "Adductor longus m.", "Adductor magnus m."]
+    }
+  ],
+  "title": "Posterior View of Proximal Femur (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 | Modified from Complete Anatomy by Elsevier. \u00a9 2022 3D4Medical."
+}

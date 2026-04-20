@@ -1,0 +1,19 @@
+{
+  "file": "PelvicViscera418.jpeg",
+  "type": "answer",
+  "answer_en": "Anal Canal <br> Upper 2/3: Hindgut endoderm <br> Lower 1/3: Surface ectoderm around the proctodeum",
+  "labels": [
+    {
+      "text": "Anal Canal",
+      "note": "",
+      "details": [
+        "Upper 2/3: Hindgut endoderm",
+        "Lower 1/3: Surface ectoderm around the proctodeum"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox. *Sex assigned at birth"
+}

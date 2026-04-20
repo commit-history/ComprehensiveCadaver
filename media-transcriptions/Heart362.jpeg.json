@@ -1,0 +1,18 @@
+{
+  "file": "Heart362.jpeg",
+  "type": "answer",
+  "answer_en": "Ascending Aorta <br> Truncus arteriosus",
+  "labels": [
+    {
+      "text": "Ascending Aorta",
+      "note": "",
+      "details": [
+        "Truncus arteriosus"
+      ]
+    }
+  ],
+  "title": "Lateral View of Heart (Left Side)",
+  "subtitle": "(Pulmonary Trunk Reflected Anteriorly)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

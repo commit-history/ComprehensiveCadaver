@@ -1,0 +1,16 @@
+{
+  "file": "CranialNerves128.jpeg",
+  "type": "answer",
+  "answer_en": "Straight Sinus",
+  "labels": [
+    {
+      "text": "Straight Sinus",
+      "note": "",
+      "details": []
+    }
+  ],
+  "title": "Lateral View",
+  "subtitle": "(Venogram)",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from @fabiostakeda (Instagram)"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "Skull540.jpeg",
+  "type": "answer",
+  "answer_en": "Internal Acoustic Meatus (Internal Auditory Meatus) <br> Facial n. (CN VII) <br> Vestibulocochlear n. (CN VIII)",
+  "labels": [
+    {
+      "text": "Internal Acoustic Meatus",
+      "note": "(Internal Auditory Meatus)",
+      "details": [
+        "Facial n. (CN VII)",
+        "Vestibulocochlear n. (CN VIII)"
+      ]
+    }
+  ],
+  "title": "Superior View of Skull",
+  "subtitle": "(Skull Cap Removed)",
+  "orientation": "Anterior (top), Posterior (bottom), Left (left), Right (right)",
+  "attribution": "@MarkAAbbott1 Modified from Complete Anatomy by Elsevier. © 2022 3D4Medical."
+}

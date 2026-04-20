@@ -1,0 +1,18 @@
+{
+  "file": "Skull630.jpeg",
+  "type": "answer",
+  "answer_en": "Sphenoid Sinus <br> Drains into the sphenoethmoidal recess",
+  "labels": [
+    {
+      "text": "Sphenoid Sinus",
+      "note": "",
+      "details": [
+        "Drains into the sphenoethmoidal recess"
+      ]
+    }
+  ],
+  "title": "Lateral View of Skull (Right Side)",
+  "subtitle": "(Radiograph)",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1"
+}

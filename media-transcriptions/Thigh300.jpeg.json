@@ -1,0 +1,19 @@
+{
+  "file": "Thigh300.jpeg",
+  "type": "answer",
+  "answer_en": "Pectineus m. <br> Origin: Superior pubic ramus <br> Insertion: Pectineal line of femur",
+  "labels": [
+    {
+      "text": "Pectineus m.",
+      "note": "",
+      "details": [
+        "Origin: Superior pubic ramus",
+        "Insertion: Pectineal line of femur"
+      ]
+    }
+  ],
+  "title": "Anterior View of Thigh (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Lateral (left), Medial (right)",
+  "attribution": "Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

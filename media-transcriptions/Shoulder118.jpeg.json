@@ -1,0 +1,19 @@
+{
+  "file": "Shoulder118.jpeg",
+  "type": "answer",
+  "answer_en": "Teres Major m. <br> Origin: Inferior angle and lateral border of scapula <br> Insertion: Intertubercular sulcus (medial lip) of humerus",
+  "labels": [
+    {
+      "text": "Teres Major m.",
+      "note": "",
+      "details": [
+        "Origin: Inferior angle and lateral border of scapula",
+        "Insertion: Intertubercular sulcus (medial lip) of humerus"
+      ]
+    }
+  ],
+  "title": "Posterior View of Scapular Region (Right Side)",
+  "subtitle": "(Supraspinatus, Infraspinatus, and Teres Minor mm. Cut)",
+  "orientation": "Superior (top), Inferior (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1 Modified from University of Michigan Medical School. © B. Kathleen Alsup & Glenn M. Fox."
+}

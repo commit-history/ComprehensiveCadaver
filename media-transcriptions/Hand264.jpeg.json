@@ -1,0 +1,19 @@
+{
+  "file": "Hand264.jpeg",
+  "type": "answer",
+  "answer_en": "Opponens Pollicis m. <br> Origin: Trapezium and flexor retinaculum <br> Insertion: Body of 1st metacarpal",
+  "labels": [
+    {
+      "text": "Opponens Pollicis m.",
+      "note": "",
+      "details": [
+        "Origin: Trapezium and flexor retinaculum",
+        "Insertion: Body of 1st metacarpal"
+      ]
+    }
+  ],
+  "title": "Palmar Surface of Hand (Right Side)",
+  "subtitle": "(Majority of Thenar and Hypothenar mm. Removed)",
+  "orientation": "Distal (top), Proximal (bottom), Medial (left), Lateral (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy & Physiology Revealed 4.0. © 2022 McGraw Hill."
+}

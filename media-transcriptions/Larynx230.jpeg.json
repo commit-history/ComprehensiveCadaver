@@ -1,0 +1,19 @@
+{
+  "file": "Larynx230.jpeg",
+  "type": "answer",
+  "answer_en": "Cricothyroid m. <br> Origin: Anterolateral part of cricoid cartilage <br> Insertion: Inferior margin and inferior horn of thyroid cartilage",
+  "labels": [
+    {
+      "text": "Cricothyroid m.",
+      "note": "",
+      "details": [
+        "Origin: Anterolateral part of cricoid cartilage",
+        "Insertion: Inferior margin and inferior horn of thyroid cartilage"
+      ]
+    }
+  ],
+  "title": "Anterior View of Larynx",
+  "subtitle": "(Thyrohyoid m. Removed on Left Side)",
+  "orientation": "Superior (top), Inferior (bottom), Right (left), Left (right)",
+  "attribution": "@MarkAAbbott1; Modified from All-in-One Anatomy Exam Review: Volume 7. © 2017 Suárez-Quian and Vilensky"
+}

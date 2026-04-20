@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera438.jpeg",
+  "type": "answer",
+  "answer_en": "Round Ligament of the Uterus <br> Gubernaculum (Caudal genital ligament)",
+  "labels": [
+    {
+      "text": "Round Ligament of the Uterus",
+      "note": "",
+      "details": [
+        "Gubernaculum (Caudal genital ligament)"
+      ]
+    }
+  ],
+  "title": "Medial View of Hemisected Female* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Anterior (left), Posterior (right)",
+  "attribution": "@MarkAAbbott1 Modified from Human Anatomy Color Atlas and Textbook (6th Ed.). © 2017, Elsevier Limited. All rights reserved."
+}

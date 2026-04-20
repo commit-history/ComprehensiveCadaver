@@ -1,0 +1,18 @@
+{
+  "file": "AbdominalWall180.jpeg",
+  "type": "answer",
+  "answer_en": "Ilioinguinal n. (Within inguinal canal) <br> Arises from L1",
+  "labels": [
+    {
+      "text": "Ilioinguinal n.",
+      "note": "(Within inguinal canal)",
+      "details": [
+        "Arises from L1"
+      ]
+    }
+  ],
+  "title": "Anterior View of Abdominal Wall",
+  "subtitle": "(Rectus Abdominis m. Cut and Reflected on Right Side)",
+  "orientation": "Anterior (top), Posterior (bottom), Right (left), Left (right)",
+  "attribution": "Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

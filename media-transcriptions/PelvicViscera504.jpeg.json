@@ -1,0 +1,18 @@
+{
+  "file": "PelvicViscera504.jpeg",
+  "type": "answer",
+  "answer_en": "Rectum <br> Hindgut endoderm",
+  "labels": [
+    {
+      "text": "Rectum",
+      "note": "",
+      "details": [
+        "Hindgut endoderm"
+      ]
+    }
+  ],
+  "title": "Lateral View of Male* Pelvis (Right Side)",
+  "subtitle": "*Sex assigned at birth",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}

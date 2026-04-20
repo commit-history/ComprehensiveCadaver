@@ -1,0 +1,19 @@
+{
+  "file": "AntLeg100.jpeg",
+  "type": "answer",
+  "answer_en": "Tibialis Anterior m. <br> Deep fibular n. <br> (Deep peroneal n.)",
+  "labels": [
+    {
+      "text": "Tibialis Anterior m.",
+      "note": "",
+      "details": [
+        "Deep fibular n.",
+        "(Deep peroneal n.)"
+      ]
+    }
+  ],
+  "title": "Lateral View of Leg (Right Side)",
+  "subtitle": "",
+  "orientation": "Superior (top), Inferior (bottom), Posterior (left), Anterior (right)",
+  "attribution": "@MarkAAbbott1; Modified from Anatomy: A Photographic Atlas (8th Ed.). © 2016 Schattauer GmbH and Wolters Kluwer"
+}
