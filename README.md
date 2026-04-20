@@ -39,6 +39,22 @@ CrowdAnki will update the existing cards with the translated fields while preser
 ```
 if you add `display: none` within the curly brackets `{...}` , the language will be hidden from the card. In the case above, the languages Latin (`lang_la`) and Deutsch (`lang_de`) will display on the card and the languages English (`lang_en`) and Français (`lang_fr`) will be hidden.
 
+## Contributing
+
+If you want to contribute translations or corrections:
+
+1. Make your changes to the cards in Anki.
+2. Export the deck via **File → CrowdAnki: Export deck** and select the **Comprehensive Cadaver** deck.
+3. Choose the top level folder folder in this repository as the export destination (this will overwrite `deck.json` and update the `media` folder).
+4. The media folder is never commited to keep this repository lean.
+5. Commit your changes and open a pull request.
+
+### Rules
+
+- Only modify translation-related fields. Do not change the original English content.
+- Do not rearrange or rename subdecks.
+- Place new media files in `media/`.
+- Describe what you changed in your pull request.
 
 ## Python Setup
 
@@ -150,19 +166,3 @@ The `--fill-german-question` and `--fill-french-question` flags additionally pop
 
 `|` separates labels; `;` separates alternative names or multiple details. In multi-label cards the label-to-detail boundary uses `;` to avoid collision with the label separator.
 
-## Contributing
-
-If you want to contribute translations or corrections:
-
-1. Make your changes to the cards in Anki.
-2. Export the deck via **File → CrowdAnki: Export deck** and select the **Comprehensive Cadaver** deck.
-3. Choose the top level folder folder in this repository as the export destination (this will overwrite `deck.json` and update the `media` folder).
-4. The media folder is never commited to keep this repository lean.
-5. Commit your changes and open a pull request.
-
-### Rules
-
-- Only modify translation-related fields. Do not change the original English content.
-- Do not rearrange or rename subdecks.
-- Place new media files in `media/`.
-- Describe what you changed in your pull request.
