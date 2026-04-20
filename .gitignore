@@ -18,5 +18,6 @@ memory/
 #
 *.DS_Store
 
-# Anki Media
-media/
+# Anki Media (keep folder as placeholder, ignore contents)
+media/*
+!media/README.md
