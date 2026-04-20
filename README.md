@@ -1,33 +1,77 @@
 # Comprehensive Cadaver – Translations
 
-This repository contains translated cards for the [Comprehensive Cadaver](https://www.reddit.com/r/medicalschoolanki/comments/1b5xt0q/comprehensivecadaver_the_ultimate_cadavericbased/) Anki deck, managed with [CrowdAnki](https://github.com/Stvad/CrowdAnki).
+This repository provides multilingual translations for the [Comprehensive Cadaver](https://www.reddit.com/r/medicalschoolanki/comments/1b5xt0q/comprehensivecadaver_the_ultimate_cadavericbased/) Anki deck, a cadaveric-image-based resource widely used by medical students for learning gross anatomy. The original deck covers anatomical structures through photographs of real cadaveric specimens, radiological images, and diagrams.
 
-## Setup
+The translations currently cover **Latin (LA)**, **English (EN)**, **German (DE)**, and **French (FR)**, allowing learners to study in their preferred language or in parallel with the anatomical Latin nomenclature. Translated fields are delivered as a [CrowdAnki](https://github.com/Stvad/CrowdAnki) package that merges with an existing installation of the base deck while preserving your review history and scheduling data.
+
+This repository also contains a transcription pipeline (Python + OpenAI vision) used to extract text from card images and seed the translation fields — see the technical setup section at the end if you are interested in contributing to that workflow.
+
+## 1. Installing the Translations
+
+### 1.1 Prerequisites
 
 1. Install the [CrowdAnki](https://github.com/Stvad/CrowdAnki) add-on for Anki from [AnkiWeb](https://ankiweb.net/shared/info/1788670778).
 2. Install the original [Comprehensive Cadaver](https://www.reddit.com/r/medicalschoolanki/comments/1b5xt0q/comprehensivecadaver_the_ultimate_cadavericbased/) deck in Anki.
 
-## Importing the Translations
-
-After you have the Comprehensive Cadaver deck installed, import the translations using one of the following methods:
-
-### Import from Disk
+### 1.2 Import from Disk
 
 1. Clone or download this repository.
 2. In Anki, go to **File → CrowdAnki: Import from disk**.
-3. Select the repository root folder
-4. Import the cahnges
+3. Select the repository root folder.
+4. Import the changes.
 
-### Import from GitHub
+### 1.3 Import from GitHub
 
 1. In Anki, go to **File → CrowdAnki: Import git repository**.
-2. Enter the repository URL: `https://github.com/commit-history/ComprehensiveCadaver
+2. Enter the repository URL: `https://github.com/commit-history/ComprehensiveCadaver`.
 
 CrowdAnki will update the existing cards with the translated fields while preserving your scheduling data.
 
-## Setting the language
+### 1.4 Media Files
 
-1. Go to `Browse` -> `Cards ...` -> Tab `Styling`. You will find the following lines of code:
+Media files (images, audio) are **not tracked in this repository**. When you install the original [Comprehensive Cadaver](https://www.reddit.com/r/medicalschoolanki/comments/1b5xt0q/comprehensivecadaver_the_ultimate_cadavericbased/) deck (see 1.1), Anki adds the media to your collection —- the translations can be installed on top of the media files.
+
+If you want to populate the `media/` folder in this repository (e.g. for backup or to make it self-contained), export the deck from Anki:
+
+1. In Anki, go to **File → CrowdAnki: Snapshot** (or **CrowdAnki: Export** → choose **CrowdAnki JSON representation**).
+2. Select the **ComprehensiveCadaver** deck.
+3. Point the export destination to the folder containing this repository. CrowdAnki will copy the deck's media files into `media/`.
+
+The files themselves stay ignored by git.
+
+### 1.5 How It Works
+
+The deck uses a single note type, **Image Q/A - ComprehensiveCadaver**, which extends the original Comprehensive Cadaver note with translation, plain-text, and description fields. This repository populates those added fields; the original image-based `Question` and `Answer`, along with `Keywords` and `Source`, are left untouched so your existing cards and review history remain intact on import.
+
+Each note carries the following fields:
+
+| Field              | Description |
+|--------------------|-------------|
+| `Question`         | Original question image reference from the base deck (untouched). |
+| `Question_EN`      | Transcribed question in English, as HTML-formatted text. |
+| `Question_DE`      | Translated question in German, as HTML-formatted text. |
+| `Question_FR`      | Translated question in French, as HTML-formatted text. |
+| `Text_Question_EN` | Plain-text English question, used where HTML rendering isn't available (e.g. TTS, field search). |
+| `Text_Question_DE` | Plain-text German question. |
+| `Text_Question_FR` | Plain-text French question. |
+| `Answer`           | Original answer image reference from the base deck (untouched). |
+| `Answer_LA`        | Latin answer text — see [Answer formatting from labels](#answer-formatting-from-labels). |
+| `Answer_EN`        | English answer text — same formatting. |
+| `Answer_DE`        | German answer text — same formatting. |
+| `Answer_FR`        | French answer text — same formatting. |
+| `Description_EN`   | Optional explanatory text in English, shown below the answer. |
+| `Description_DE`   | Optional explanatory text in German. |
+| `Description_FR`   | Optional explanatory text in French. |
+| `Keywords`         | Original keywords from the base deck (untouched). |
+| `Source`           | Original source reference from the base deck (untouched). |
+
+Only the answer is translated into Latin; the Latin question is carried implicitly by the original `Question` image, which already labels structures using anatomical Latin nomenclature. Which languages actually render on the card is controlled by CSS classes — see [Section 2](#2-setting-the-language).
+
+
+## 2. Setting the Language
+
+1. Go to `Browse` → `Cards ...` → tab `Styling`. You will find the following lines of code:
+
 ```
 .lang_de {}
 
@@ -37,26 +81,31 @@ CrowdAnki will update the existing cards with the translated fields while preser
 
 .lang_la {}
 ```
-if you add `display: none` within the curly brackets `{...}` , the language will be hidden from the card. In the case above, the languages Latin (`lang_la`) and Deutsch (`lang_de`) will display on the card and the languages English (`lang_en`) and Français (`lang_fr`) will be hidden.
 
-## Contributing
+If you add `display: none` within the curly brackets `{...}`, that language will be hidden from the card. In the example above, Latin (`lang_la`) and German (`lang_de`) will display on the card while English (`lang_en`) and French (`lang_fr`) are hidden.
+
+## 3. Contributing
 
 If you want to contribute translations or corrections:
 
 1. Make your changes to the cards in Anki.
 2. Export the deck via **File → CrowdAnki: Export deck** and select the **Comprehensive Cadaver** deck.
 3. Choose folder that contains this repository as the export destination (this will overwrite `deck.json` and update the `media` folder). The repository folder must be named `Comprehensive Cadaver`.
-4. The media folder is never commited to keep this repository lean.
+4. The media folder is never committed to keep this repository lean.
 5. Commit your changes and open a pull request.
 
-### Rules
+### 3.1 Rules
 
 - Only modify translation-related fields. Do not change the original English content.
 - Do not rearrange or rename subdecks.
 - Place new media files in `media/`.
 - Describe what you changed in your pull request.
 
-## Python Setup
+## 4. Technical Setup
+
+The following sections are only relevant if you want to run the transcription pipeline or otherwise work with the Python tooling in this repository. They are **not** required for installing or using the translated deck.
+
+### 4.1 Python Setup
 
 This project uses [uv](https://docs.astral.sh/uv/) to manage Python dependencies.
 
@@ -74,11 +123,11 @@ All Python scripts should then be run with `uv run` to use the managed environme
 uv run python3 transcription/transcribe_images.py "Osteology: Upper Limb"
 ```
 
-## Transcription Pipeline
+### 4.2 Transcription Pipeline
 
 The `transcription/` directory contains scripts for transcribing text from card images and populating fields in `deck.json`. See [`transcription/transcription_schema.md`](transcription/transcription_schema.md) for the full JSON schema and details.
 
-### 1. Generate manifest
+#### 4.2.1 Generate manifest
 
 Build a manifest listing all images to transcribe for one or more decks:
 
@@ -112,7 +161,7 @@ print(f'Total: {len(all_pending)} images saved to /tmp/transcription_manifest.js
 "
 ```
 
-### 2. Run transcription (OpenAI vision API)
+#### 4.2.2 Run transcription (OpenAI vision API)
 
 ```bash
 # Set your OpenAI API key
@@ -129,7 +178,7 @@ The script skips images that already have a `.json` in `media-transcriptions/`, 
 - `MAX_CONCURRENT` — default `15`, reduce to `5` if rate limited
 - `detail` — default `low` (~3K tokens/image), set to `high` for better accuracy at ~13x token cost
 
-### 3. Fill deck.json from transcriptions
+#### 4.2.3 Fill deck.json from transcriptions
 
 ```bash
 # Only fill empty Question_EN and Answer_EN fields (default)
@@ -154,7 +203,7 @@ The script reads each note in `deck.json`, matches the question and answer image
 
 The `--fill-german-question` and `--fill-french-question` flags additionally populate `Question_DE` and `Question_FR` using a built-in vocabulary dictionary (`QUESTIONS_EN_VOCAB`) that maps each unique English question to its German and French translation. To update translations, edit the dictionary directly in the script.
 
-**Answer formatting from labels:**
+##### Answer formatting from labels
 
 | Labels | Details | Result |
 |--------|---------|--------|
@@ -165,4 +214,3 @@ The `--fill-german-question` and `--fill-french-question` flags additionally pop
 | multiple labels, with details | mixed | `Ilium \| AIIS; Rectus femoris m.` |
 
 `|` separates labels; `;` separates alternative names or multiple details. In multi-label cards the label-to-detail boundary uses `;` to avoid collision with the label separator.
-
