@@ -2,9 +2,13 @@
 
 This repository provides multilingual translations for the [Comprehensive Cadaver](https://www.reddit.com/r/medicalschoolanki/comments/1b5xt0q/comprehensivecadaver_the_ultimate_cadavericbased/) Anki deck, a cadaveric-image-based resource widely used by medical students for learning gross anatomy. The original deck covers anatomical structures through photographs of real cadaveric specimens, radiological images, and diagrams.
 
+![answer_de](assets/screens/answer_de.png)
+
 The translations currently cover **Latin (LA)**, **English (EN)**, **German (DE)**, and **French (FR)**, allowing learners to study in their preferred language or in parallel with the anatomical Latin nomenclature. Translated fields are delivered as a [CrowdAnki](https://github.com/Stvad/CrowdAnki) package that merges with an existing installation of the base deck while preserving your review history and scheduling data.
 
-This repository also contains a transcription pipeline (Python + OpenAI vision) used to extract text from card images and seed the translation fields — see the technical setup section at the end if you are interested in contributing to that workflow.
+This repository also contains a transcription pipeline (Python + OpenAI vision) used to extract text from card images and seed the translation fields — see the technical setup section at the end if you are interested in contributing to that workflow. The [TODO.md](TODO) tracks the translation / transcription progress.
+
+Feel free to [contribute](https://github.com/commit-history/ComprehensiveCadaver/edit/main/README.md#3-contributing)!
 
 ## 1. Installing the Translations
 
@@ -21,6 +25,8 @@ This repository also contains a transcription pipeline (Python + OpenAI vision) 
 4. Import the changes.
 
 ### 1.3 Import from GitHub
+
+  <img src="assets/screens/import_from_git_repo.png" alt="answer_de" width="66%">
 
 1. In Anki, go to **File → CrowdAnki: Import git repository**.
 2. Enter the repository URL: `https://github.com/commit-history/ComprehensiveCadaver`.
@@ -70,6 +76,7 @@ Only the answer is translated into Latin; the Latin question is carried implicit
 
 ## 2. Setting the Language
 
+
 1. Go to `Browse` → `Cards ...` → tab `Styling`. You will find the following lines of code:
 
 ```
@@ -83,6 +90,9 @@ Only the answer is translated into Latin; the Latin question is carried implicit
 ```
 
 If you add `display: none` within the curly brackets `{...}`, that language will be hidden from the card. In the example above, Latin (`lang_la`) and German (`lang_de`) will display on the card while English (`lang_en`) and French (`lang_fr`) are hidden.
+
+
+![answer_de](assets/screens/language_setting.png)
 
 ## 3. Contributing
 
