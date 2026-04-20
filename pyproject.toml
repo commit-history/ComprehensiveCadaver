@@ -1,0 +1,8 @@
+[project]
+name = "cc-translations"
+version = "0.1.0"
+description = "Translation and transcription pipeline for the Comprehensive Cadaver Anki deck"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0",
+]
