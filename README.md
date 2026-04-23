@@ -6,9 +6,9 @@ This repository provides multilingual translations for the [Comprehensive Cadave
 
 The translations currently cover **Latin (LA)**, **English (EN)**, **German (DE)**, and **French (FR)**, allowing learners to study in their preferred language or in parallel with the anatomical Latin nomenclature. Translated fields are delivered as a [CrowdAnki](https://github.com/Stvad/CrowdAnki) package that merges with an existing installation of the base deck while preserving your review history and scheduling data.
 
-This repository also contains a transcription pipeline (Python + OpenAI vision) used to extract text from card images and seed the translation fields — see the technical setup section at the end if you are interested in contributing to that workflow. The [TODO.md](TODO) tracks the translation / transcription progress.
+This repository also contains a transcription pipeline (Python + OpenAI vision) used to extract text from card images and seed the translation fields — see the technical setup section at the end if you are interested in contributing to that workflow. See [CONTRIBUTING.md](CONTRIBUTING.md) for the translation progress tracker, open tasks, and contribution workflow.
 
-Feel free to [contribute](https://github.com/commit-history/ComprehensiveCadaver/edit/main/README.md#3-contributing)!
+Feel free to [contribute](CONTRIBUTING.md)!
 
 ## 1. Installing the Translations
 
@@ -96,20 +96,7 @@ If you add `display: none` within the curly brackets `{...}`, that language will
 
 ## 3. Contributing
 
-If you want to contribute translations or corrections:
-
-1. Make your changes to the cards in Anki.
-2. Export the deck via **File → CrowdAnki: Export deck** and select the **Comprehensive Cadaver** deck.
-3. Choose folder that contains this repository as the export destination (this will overwrite `deck.json` and update the `media` folder). The repository folder must be named `Comprehensive Cadaver`.
-4. The media folder is never committed to keep this repository lean.
-5. Commit your changes and open a pull request.
-
-### 3.1 Rules
-
-- Only modify translation-related fields. Do not change the original English content.
-- Do not rearrange or rename subdecks.
-- Place new media files in `media/`.
-- Describe what you changed in your pull request.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution workflow, rules, and the full translation progress tracker.
 
 ## 4. Technical Setup
 
