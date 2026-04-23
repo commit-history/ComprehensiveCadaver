@@ -21,3 +21,4 @@ memory/
 # Anki Media (keep folder as placeholder, ignore contents)
 media/*
 !media/README.md
+.batches/
