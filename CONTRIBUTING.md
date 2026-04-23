@@ -22,8 +22,8 @@ Thanks for helping extend the multilingual Comprehensive Cadaver deck!
 > Regenerate these numbers with `uv run python3 analyze_deck.py` (last update: 2026-04-23).
 
 - **6,065 total cards** across 35 sections (7 regions)
-- **54.2% of translation slots filled** (42,701 / 78,845)
-- **36,144 translation slots remaining**
+- **54.4% of translation slots filled** (42,921 / 78,845)
+- **35,924 translation slots remaining**
 
 ### 2.1 Field Completion Status
 
@@ -33,7 +33,7 @@ Thanks for helping extend the multilingual Comprehensive Cadaver deck!
 | Question_EN            | 6,064  | 1         | ~100%  |
 | Question_DE            | 6,064  | 1         | ~100%  |
 | Question_FR            | 6,064  | 1         | ~100%  |
-| **Text_Question_EN**   | **270**| **5,795** | **4.5%** |
+| **Text_Question_EN**   | **490**| **5,575** | **8.1%** |
 | **Text_Question_DE**   | **0**  | **6,065** | **0.0%** |
 | **Text_Question_FR**   | **0**  | **6,065** | **0.0%** |
 | Answer (image)         | 6,065  | 0         | 100.0% |
@@ -52,10 +52,11 @@ Thanks for helping extend the multilingual Comprehensive Cadaver deck!
 | Section                  | Cards | Status |
 |--------------------------|-------|--------|
 | Osteology: Lower Limb    | 226   | ✅ done |
+| Osteology: Upper Limb    | 220   | ✅ done |
 | Spinal Cord              | 37    | ✅ done |
 | Pilot cards (scattered)  | ~7    | ✅ done |
 
-All other 32 sections are pending for `Text_Question_EN`. Remaining sections for `Text_Question_EN` by size (partial list): Osteology: Skull (325), Pelvic Cavity and Viscera (308), Perineum (306), Neck (292), Pharynx and Nasal Cavity (255), Orbit (251), Anterior Thorax, Axilla, and Anterior Arm (247), Forearm, Cubital Fossa, and Elbow Joint (227), Heart and Great Vessels (200), Osteology: Vertebral Column (194), Posterior Leg and Sole of Foot (187), Scalp, Face, and Parotid Region (187), Back (183), Posterior Abdominal Wall (180), Infratemporal Fossa (173), Pelvic Diaphragm (171), Posterior and Superior Mediastinum (162), CT Scans: Abdomen (163), Anterior Thigh (155), Cranial Nerves (149 remaining), Celiac Trunk (137), Thoracic Wall and Lungs (135), Hip Joint / Gluteal (118), Larynx (122), Anterior Abdominal Wall (95 remaining), Brain (95), Anterior Leg (90), Mesenteric Vessels (81), Oral Cavity (77), CT Scans: Thorax (65), Osteology: Sternum and Ribs (41). `Text_Question_DE` and `Text_Question_FR` are untouched in every section.
+All other 31 sections are pending for `Text_Question_EN`. Remaining sections by size (partial list): Osteology: Skull (325), Pelvic Cavity and Viscera (308), Perineum (306), Neck (292), Pharynx and Nasal Cavity (255), Orbit (251), Anterior Thorax, Axilla, and Anterior Arm (247), Forearm, Cubital Fossa, and Elbow Joint (227), Heart and Great Vessels (200), Osteology: Vertebral Column (194), Posterior Leg and Sole of Foot (187), Scalp, Face, and Parotid Region (187), Back (183), Posterior Abdominal Wall (180), Infratemporal Fossa (173), Pelvic Diaphragm (171), CT Scans: Abdomen (163), Posterior and Superior Mediastinum (162), Anterior Thigh (155), Cranial Nerves (149 remaining), Celiac Trunk (137), Thoracic Wall and Lungs (135), Larynx (122), Hip Joint / Gluteal (118), Anterior Abdominal Wall (95 remaining), Brain (95), Anterior Leg (90), Mesenteric Vessels (81), Oral Cavity (77), CT Scans: Thorax (65), Osteology: Sternum and Ribs (41). `Text_Question_DE` and `Text_Question_FR` are untouched in every section.
 
 ## 3. What Needs To Be Done
 
@@ -68,7 +69,7 @@ All other 32 sections are pending for `Text_Question_EN`. Remaining sections for
 | **A** | `Answer_FR`        | `Answer_EN` (or `Answer_LA`) → French     | 6,063 |
 | **B** | `Description_EN`   | `Description_DE` → English                | 6,065 |
 | **C** | `Description_FR`   | `Description_DE` → French                 | 6,063 |
-| **D** | `Text_Question_EN` | `Description_DE` + `Answer_*` (see `todo_fill_text_question.md`) | 5,795 |
+| **D** | `Text_Question_EN` | `Description_DE` + `Answer_*` (see `todo_fill_text_question.md`) | 5,575 |
 | **E** | `Text_Question_DE` | Mirror of Task D into German              | 6,065 |
 | **F** | `Text_Question_FR` | Mirror of Task D into French              | 6,065 |
 
@@ -134,7 +135,7 @@ Each card is an anatomy flashcard with an image-based question and answer:
 
 ### 4.4 Tasks D / E / F — `Text_Question_*`
 
-See [`todo_fill_text_question.md`](todo_fill_text_question.md) for the full task guide (style, banned wording, agent prompt template, validation, resume instructions). Current state: 270 / 6,065 English questions filled; German and French not started.
+See [`todo_fill_text_question.md`](todo_fill_text_question.md) for the full task guide (style, banned wording, agent prompt template, validation, resume instructions). Current state: 490 / 6,065 English questions filled; German and French not started.
 
 ## 5. Processing Approach
 
