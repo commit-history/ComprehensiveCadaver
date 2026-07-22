@@ -4,7 +4,7 @@ This repository provides multilingual translations for the [Comprehensive Cadave
 
 ![answer_de](assets/screens/answer_de.png)
 
-The translations currently cover **Latin (LA)**, **English (EN)**, **German (DE)**, and **French (FR)**, allowing learners to study in their preferred language or in parallel with the anatomical Latin nomenclature. Translated fields are delivered as a [CrowdAnki](https://github.com/Stvad/CrowdAnki) package that merges with an existing installation of the base deck while preserving your review history and scheduling data.
+The translations currently cover **Latin (LA)**, **English (EN)**, **German (DE)**, **French (FR)**, and **Polish (PL)**, allowing learners to study in their preferred language or in parallel with the anatomical Latin nomenclature. Translated fields are delivered as a [CrowdAnki](https://github.com/Stvad/CrowdAnki) package that merges with an existing installation of the base deck while preserving your review history and scheduling data.
 
 This repository also contains a transcription pipeline (Python + OpenAI vision) used to extract text from card images and seed the translation fields — see the technical setup section at the end if you are interested in contributing to that workflow. See [CONTRIBUTING.md](CONTRIBUTING.md) for the translation progress tracker, open tasks, and contribution workflow.
 
@@ -57,17 +57,21 @@ Each note carries the following fields:
 | `Question_EN`      | Transcribed question in English, as HTML-formatted text. |
 | `Question_DE`      | Translated question in German, as HTML-formatted text. |
 | `Question_FR`      | Translated question in French, as HTML-formatted text. |
+| `Question_PL`      | Translated question in Polish, as HTML-formatted text. |
 | `Text_Question_EN` | Plain-text English question, used where HTML rendering isn't available (e.g. TTS, field search). |
 | `Text_Question_DE` | Plain-text German question. |
 | `Text_Question_FR` | Plain-text French question. |
+| `Text_Question_PL` | Plain-text Polish question. |
 | `Answer`           | Original answer image reference from the base deck (untouched). |
 | `Answer_LA`        | Latin answer text — see [Answer formatting from labels](#answer-formatting-from-labels). |
 | `Answer_EN`        | English answer text — same formatting. |
 | `Answer_DE`        | German answer text — same formatting. |
 | `Answer_FR`        | French answer text — same formatting. |
+| `Answer_PL`        | Polish answer text — same formatting. |
 | `Description_EN`   | Optional explanatory text in English, shown below the answer. |
 | `Description_DE`   | Optional explanatory text in German. |
 | `Description_FR`   | Optional explanatory text in French. |
+| `Description_PL`   | Optional explanatory text in Polish. |
 | `Keywords`         | Original keywords from the base deck (untouched). |
 | `Source`           | Original source reference from the base deck (untouched). |
 
@@ -87,9 +91,11 @@ Only the answer is translated into Latin; the Latin question is carried implicit
 .lang_fr {display: none;}
 
 .lang_la {}
+
+.lang_pl {display: none;}
 ```
 
-If you add `display: none` within the curly brackets `{...}`, that language will be hidden from the card. In the example above, Latin (`lang_la`) and German (`lang_de`) will display on the card while English (`lang_en`) and French (`lang_fr`) are hidden.
+If you add `display: none` within the curly brackets `{...}`, that language will be hidden from the card. In the example above, Latin (`lang_la`) and German (`lang_de`) will display on the card while English (`lang_en`), French (`lang_fr`), and Polish (`lang_pl`) are hidden.
 
 
 ![answer_de](assets/screens/language_setting.png)
