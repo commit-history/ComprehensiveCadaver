@@ -33,17 +33,21 @@ Thanks for helping extend the multilingual Comprehensive Cadaver deck!
 | Question_EN            | 6,064  | 1         | ~100%  |
 | Question_DE            | 6,064  | 1         | ~100%  |
 | Question_FR            | 6,064  | 1         | ~100%  |
+| **Question_PL**        | **0**  | **6,065** | **0.0%** |
 | **Text_Question_EN**   | **531**| **5,534** | **8.8%** |
 | **Text_Question_DE**   | **0**  | **6,065** | **0.0%** |
 | **Text_Question_FR**   | **0**  | **6,065** | **0.0%** |
+| **Text_Question_PL**   | **0**  | **6,065** | **0.0%** |
 | Answer (image)         | 6,065  | 0         | 100.0% |
 | Answer_LA              | 6,064  | 1         | ~100%  |
 | Answer_EN              | 6,050  | 15        | 99.8%  |
 | Answer_DE              | 6,061  | 4         | 99.9%  |
 | **Answer_FR**          | **2**  | **6,063** | **0.0%** |
+| **Answer_PL**          | **0**  | **6,065** | **0.0%** |
 | **Description_EN**     | **0**  | **6,065** | **0.0%** |
 | Description_DE         | 6,060  | 5         | 99.9%  |
 | **Description_FR**     | **2**  | **6,063** | **0.0%** |
+| **Description_PL**     | **0**  | **6,065** | **0.0%** |
 | Keywords               | 6,065  | 0         | 100.0% |
 | Source                 | 6,065  | 0         | 100.0% |
 
@@ -68,11 +72,14 @@ All other 30 sections are pending for `Text_Question_EN`. Remaining sections by 
 | Task | Missing Field       | Source to translate from                   | Approx. Count |
 |------|---------------------|--------------------------------------------|---------------|
 | **A** | `Answer_FR`        | `Answer_EN` (or `Answer_LA`) → French     | 6,063 |
+| **A'** | `Answer_PL`       | `Answer_EN` (or `Answer_LA`) → Polish     | 6,065 |
 | **B** | `Description_EN`   | `Description_DE` → English                | 6,065 |
+| **B'** | `Description_PL`  | `Description_DE` → Polish                 | 6,065 |
 | **C** | `Description_FR`   | `Description_DE` → French                 | 6,063 |
 | **D** | `Text_Question_EN` | `Description_DE` + `Answer_*` (see `todo_fill_text_question.md`) | 5,534 |
 | **E** | `Text_Question_DE` | Mirror of Task D into German              | 6,065 |
 | **F** | `Text_Question_FR` | Mirror of Task D into French              | 6,065 |
+| **F'** | `Text_Question_PL` | Mirror of Task D into Polish              | 6,065 |
 
 The full style guide, agent workflow, validation rules, and scaling approach for Task D live in [`todo_fill_text_question.md`](todo_fill_text_question.md). Use it as the handoff document for any new batch.
 
@@ -92,12 +99,12 @@ Find them with: `uv run python3 analyze_deck.py -v`
 
 Each card is an anatomy flashcard with an image-based question and answer:
 
-- **Question** / **Question_EN** / **Question_DE** / **Question_FR**: The question prompt in the original language, English, German, and French. Usually short (e.g. "Identify the tagged structure.").
-- **Text_Question_EN** / **Text_Question_DE** / **Text_Question_FR**: A descriptive, image-independent variant of the question. The full style guide lives in [`todo_fill_text_question.md`](todo_fill_text_question.md).
+- **Question** / **Question_EN** / **Question_DE** / **Question_FR** / **Question_PL**: The question prompt in the original language, English, German, French, and Polish. Usually short (e.g. "Identify the tagged structure.").
+- **Text_Question_EN** / **Text_Question_DE** / **Text_Question_FR** / **Text_Question_PL**: A descriptive, image-independent variant of the question. The full style guide lives in [`todo_fill_text_question.md`](todo_fill_text_question.md).
 - **Answer** (index 7): An image showing the answer (HTML `<img>` tag).
 - **Answer_LA**: The anatomical term in Latin (the standard international nomenclature, *Terminologia Anatomica*).
-- **Answer_EN** / **Answer_DE** / **Answer_FR**: The common name for the structure in English, German, and French.
-- **Description_EN** / **Description_DE** / **Description_FR**: A detailed anatomical description — origin, insertion, innervation, blood supply, relations, clinical significance. Written in rich HTML with `<em>` tags for anatomical terms.
+- **Answer_EN** / **Answer_DE** / **Answer_FR** / **Answer_PL**: The common name for the structure in English, German, French, and Polish.
+- **Description_EN** / **Description_DE** / **Description_FR** / **Description_PL**: A detailed anatomical description — origin, insertion, innervation, blood supply, relations, clinical significance. Written in rich HTML with `<em>` tags for anatomical terms.
 - **Keywords**: Semicolon-separated keywords for search.
 - **Source**: Attribution for the image.
 
@@ -134,9 +141,23 @@ Each card is an anatomy flashcard with an image-based question and answer:
 - **Rules**: same as Task B but translating to French. Inside `<em>` tags, use standard French anatomical terms.
 - **Example (FR)**: `L'<em>artère épigastrique inférieure</em> naît de l'<em>artère iliaque externe</em>…`
 
-### 4.4 Tasks D / E / F — `Text_Question_*`
+### 4.3a Task A' — Generate `Answer_PL` (Polish answer term)
 
-See [`todo_fill_text_question.md`](todo_fill_text_question.md) for the full task guide (style, banned wording, agent prompt template, validation, resume instructions). Current state: 531 / 6,065 English questions filled; German and French not started.
+- **Input**: `Answer_LA`, `Answer_EN`
+- **Output**: Standard Polish anatomical term
+- **Rules**: same as Task A (4.1) but translating to Polish. Use Polish anatomical terminology from medical glossaries.
+- **Example (PL)**: `arteria epigastrica inferior` / `Inferior Epigastric a.` → **`tętnica nadbrzuszna dolna`**
+
+### 4.3b Task B' — Generate `Description_PL` (Polish description)
+
+- **Input**: `Description_DE`, `Answer_LA`, `Answer_EN`
+- **Output**: Polish anatomical description
+- **Rules**: same as Task B but translating to Polish. Inside `<em>` tags, use standard Polish anatomical terms.
+- **Example (PL)**: `<em>Tętnica nadbrzuszna dolna</em> pochodzi z <em>tętnicy biodrowej zewnętrznej</em>…`
+
+### 4.4 Tasks D / E / F / F' — `Text_Question_*`
+
+See [`todo_fill_text_question.md`](todo_fill_text_question.md) for the full task guide (style, banned wording, agent prompt template, validation, resume instructions). Current state: 531 / 6,065 English questions filled; German, French, and Polish not started.
 
 ## 5. Processing Approach
 
