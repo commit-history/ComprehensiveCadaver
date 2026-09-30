@@ -75,15 +75,33 @@ Each note carries the following fields:
 | `Keywords`         | Original keywords from the base deck (untouched). |
 | `Source`           | Original source reference from the base deck (untouched). |
 
-Only the answer is translated into Latin; the Latin question is carried implicitly by the original `Question` image, which already labels structures using anatomical Latin nomenclature. Which languages actually render on the card is controlled by CSS classes — see [Section 2](#2-setting-the-language).
+Only the answer is translated into Latin; the Latin question is carried implicitly by the original `Question` image, which already labels structures using anatomical Latin nomenclature. Which languages actually render on the card is controlled by an **interactive language toggle** or **CSS classes** — see [Section 2](#2-language-selection) below.
 
 
-## 2. Setting the Language
+## 2. Language Selection
+
+### 2.1 Interactive Language Toggle (Recommended)
+
+The deck includes an interactive language toggle modal that lets you select which languages to display on each card. Your preference is saved automatically and persists across all cards in your study session.
+
+**How to use:**
+1. Click the 💬 button in the bottom-right corner of any card.
+2. Check or uncheck the languages you want to see.
+3. Click **Close** to apply your selection.
+4. Your preference is saved automatically for next time.
+
+![language_toggle](assets/screens/language_toggle.png)
+
+The language indicator (→ LA DE FR) at the top-right of each question shows which languages are currently enabled. The toggle works seamlessly on both desktop and mobile (iOS Anki app).
+
+### 2.2 CSS Fallback Option
+
+If you prefer to set languages once without the interactive toggle, or if you use an older version of Anki, you can configure languages manually via CSS
 
 
 1. Go to `Browse` → `Cards ...` → tab `Styling`. You will find the following lines of code:
 
-```
+```css
 .lang_de {}
 
 .lang_en {display: none;}
@@ -97,6 +115,7 @@ Only the answer is translated into Latin; the Latin question is carried implicit
 
 If you add `display: none` within the curly brackets `{...}`, that language will be hidden from the card. In the example above, Latin (`lang_la`) and German (`lang_de`) will display on the card while English (`lang_en`), French (`lang_fr`), and Polish (`lang_pl`) are hidden.
 
+This CSS-based approach is useful if you want a fixed language setup that doesn't change per card, or if your Anki client doesn't support the interactive toggle.
 
 ![answer_de](assets/screens/language_setting.png)
 
