@@ -53,11 +53,15 @@
     <div class="container">
         <h1>Paper.js Polygon Editor</h1>
         <div class="controls">
-            <button id="drawBtn" class="active">Draw Polygon</button>
-            <button id="editBtn">Edit Mode</button>
+            <button id="drawBtn">Draw Polygon</button>
+            <button id="editBtn" class="active">Edit Mode</button>
             <button id="clearBtn">Clear All</button>
         </div>
-        <div id="status">Click to add polygon points. Double-click to finish.</div>
+        <div id="colorControls" style="display: none; position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 1000;">
+            <label>Color: <input type="color" id="colorPicker"></label>
+            <label style="margin-left: 10px;">Opacity: <input type="range" id="opacitySlider" min="0" max="1" step="0.1" style="width: 100px;"></label>
+        </div>
+        <div id="status">Edit mode: Click polygon to select, drag to move.</div>
         <canvas id="canvas" width="800" height="600"></canvas>
     </div>
 
@@ -67,7 +71,7 @@
         paper.setup('canvas');
 
         let isDrawing = false;
-        let isEditing = false;
+        let isEditing = true; // Start in edit mode by default
         let currentPolygon = null;
         let points = [];
         let polygons = [];
@@ -77,11 +81,23 @@
         let draggingEdgeIndex = -1;
         let createdPointThisDrag = false;
         let lastClickPoint = null;
+        let handleCircles = []; // Large handle circles for visualization
+        let selectedPointIndices = []; // Indices of selected points
+        let polygonJustSelected = false; // Track if polygon was just selected this click
+        let lastColor = '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0'); // Remember last color
+        let lastOpacity = 0.5; // Remember last opacity
 
         const drawBtn = document.getElementById('drawBtn');
         const editBtn = document.getElementById('editBtn');
         const clearBtn = document.getElementById('clearBtn');
         const status = document.getElementById('status');
+        const colorControls = document.getElementById('colorControls');
+        const colorPicker = document.getElementById('colorPicker');
+        const opacitySlider = document.getElementById('opacitySlider');
+
+        // Initialize color controls with remembered values
+        colorPicker.value = lastColor;
+        opacitySlider.value = lastOpacity;
 
         // Draw mode
         drawBtn.addEventListener('click', function() {
@@ -90,7 +106,20 @@
             drawBtn.classList.toggle('active');
             editBtn.classList.remove('active');
             points = [];
-            status.textContent = isDrawing ? 'Drawing mode: Click to add points, double-click to finish' : 'Click "Draw Polygon" to draw';
+
+            // Deselect any selected polygon when exiting draw mode
+            if (!isDrawing && selectedPath) {
+                selectedPath.strokeColor = null;
+                hideHandles();
+                selectedPath = null;
+                selectedPoint = null;
+                selectedPointIndices = [];
+                colorPicker.blur();
+                colorControls.style.display = 'none';
+                paper.view.update();
+            }
+
+            status.textContent = isDrawing ? 'Drawing mode: Click to add points, right-click or ESC to finish' : 'Click "Draw Polygon" to draw';
         });
 
         // Edit mode
@@ -111,7 +140,37 @@
             isEditing = false;
             drawBtn.classList.remove('active');
             editBtn.classList.remove('active');
+            selectedPath = null;
+            colorControls.style.display = 'none';
             status.textContent = 'Canvas cleared';
+        });
+
+        // Color picker
+        colorPicker.addEventListener('input', function() {
+            lastColor = colorPicker.value; // Remember the color
+            if (selectedPath) {
+                const hex = colorPicker.value;
+                const r = parseInt(hex.substr(1, 2), 16) / 255;
+                const g = parseInt(hex.substr(3, 2), 16) / 255;
+                const b = parseInt(hex.substr(5, 2), 16) / 255;
+                const opacity = parseFloat(opacitySlider.value);
+                selectedPath.fillColor = new paper.Color(r, g, b, opacity);
+                paper.view.update();
+            }
+        });
+
+        // Opacity slider
+        opacitySlider.addEventListener('input', function() {
+            lastOpacity = parseFloat(opacitySlider.value); // Remember the opacity
+            if (selectedPath) {
+                const hex = colorPicker.value;
+                const r = parseInt(hex.substr(1, 2), 16) / 255;
+                const g = parseInt(hex.substr(3, 2), 16) / 255;
+                const b = parseInt(hex.substr(5, 2), 16) / 255;
+                const opacity = parseFloat(opacitySlider.value);
+                selectedPath.fillColor = new paper.Color(r, g, b, opacity);
+                paper.view.update();
+            }
         });
 
         // Canvas click handler
@@ -133,58 +192,190 @@
                     console.log(`  Distance from previous: ${Math.round(distance)}px`);
                 }
 
-                // Draw a small circle at the click point
-                const circle = new paper.Path.Circle({
+                // Draw a handle at the click point (like edit mode)
+                const isLatest = points.length > 0; // This is the latest point
+                const handleRect = new paper.Path.Rectangle({
                     center: event.point,
-                    radius: 6,
-                    fillColor: 'red',
-                    strokeColor: 'darkred',
+                    size: isLatest ? [8, 8] : [5, 5],
+                    fillColor: isLatest ? '#0064c8' : 'white',
+                    strokeColor: '#0064c8',
                     strokeWidth: 1
                 });
 
                 // Draw line from previous point
                 if (points.length > 1) {
                     const line = new paper.Path.Line(points[points.length - 2], points[points.length - 1]);
-                    line.strokeColor = 'blue';
-                    line.strokeWidth = 2;
+                    line.strokeColor = 'black';
+                    line.strokeWidth = 1;
                 }
 
-                status.textContent = `Drawing: ${points.length} points (double-click to finish)`;
+                // Update all previous points to non-selected state
+                if (points.length > 1) {
+                    const children = paper.project.activeLayer.children;
+                    let handleCount = 0;
+                    for (let i = children.length - 1; i >= 0; i--) {
+                        const child = children[i];
+                        if (child.isDrawHandle) {
+                            handleCount++;
+                            if (handleCount > 1) { // Skip the latest handle
+                                child.size = new paper.Size(5, 5);
+                                child.fillColor = 'white';
+                            }
+                        }
+                    }
+                }
+
+                handleRect.isDrawHandle = true;
+
+                // Draw preview outline if we have 3+ points
+                if (points.length >= 3) {
+                    // Remove old preview outline
+                    const children = paper.project.activeLayer.children;
+                    for (let i = children.length - 1; i >= 0; i--) {
+                        if (children[i].isPreviewOutline) {
+                            children[i].remove();
+                        }
+                    }
+
+                    // Draw new preview outline
+                    const outline = new paper.Path(points);
+                    outline.closed = true;
+                    outline.strokeColor = 'black';
+                    outline.strokeWidth = 1;
+                    outline.fillColor = null;
+                    outline.isPreviewOutline = true;
+                    outline.sendToBack();
+                }
+
+                status.textContent = `Drawing: ${points.length} points (right-click or ESC to finish)`;
             } else if (isEditing) {
                 // Hit test to select polygon or point
                 const hitResult = paper.project.hitTest(event.point, {
                     fill: true,
                     segments: true,
                     stroke: true,
-                    tolerance: 5
+                    tolerance: 15
                 });
 
-                if (hitResult && hitResult.item.polygonData) {
+                // Check for segment click first (works with or without polygon selected)
+                // Also check for shift+click near segments
+                let segmentHit = hitResult && hitResult.type === 'segment' && hitResult.item.polygonData;
+
+                // If shift+click on polygon, try to find nearest segment
+                if (!segmentHit && event.shiftKey && hitResult && hitResult.item.polygonData) {
+                    const poly = hitResult.item;
+                    let minDist = 15; // tolerance
+                    let nearestSegment = null;
+
+                    poly.segments.forEach((seg, idx) => {
+                        const dist = event.point.getDistance(seg.point);
+                        if (dist < minDist) {
+                            minDist = dist;
+                            nearestSegment = { segment: seg, index: idx, item: poly };
+                        }
+                    });
+
+                    if (nearestSegment) {
+                        hitResult = nearestSegment;
+                        segmentHit = true;
+                    }
+                }
+
+                if (segmentHit) {
+                    if (selectedPath !== hitResult.item) {
+                        selectedPath = hitResult.item;
+                        selectedPath.strokeColor = 'black';
+                        selectedPath.strokeWidth = 1;
+                    }
+
+                    const segmentIndex = hitResult.index !== undefined ? hitResult.index : hitResult.segment.index;
+
+                    if (event.shiftKey) {
+                        // Shift+click: toggle selection
+                        const idx = selectedPointIndices.indexOf(segmentIndex);
+                        if (idx >= 0) {
+                            selectedPointIndices.splice(idx, 1);
+                        } else {
+                            selectedPointIndices.push(segmentIndex);
+                        }
+                    } else {
+                        // Regular click: select only this point
+                        selectedPointIndices = [segmentIndex];
+                    }
+
+                    selectedPoint = hitResult.segment;
+                    isDraggingPoint = true;
+                    showHandles(selectedPath);
+                    status.textContent = `Selected ${selectedPointIndices.length} point(s) - drag to move`;
+                    draggingEdgeIndex = -1;
+                } else if (hitResult && hitResult.item.polygonData) {
+                    // Polygon hit but not segment
+                    // If switching to a different polygon, hide the old one's outline
+                    if (selectedPath && selectedPath !== hitResult.item) {
+                        selectedPath.strokeColor = null;
+                        hideHandles();
+                        selectedPointIndices = [];
+                        polygonJustSelected = true; // Reset for new polygon
+                    }
+
                     selectedPath = hitResult.item;
-                    selectedPath.selected = true;
+                    selectedPath.strokeColor = 'black';
+                    selectedPath.strokeWidth = 1;
                     draggingEdgeIndex = -1;
 
-                    // If clicking a segment, select it
-                    if (hitResult.type === 'segment') {
-                        selectedPoint = hitResult.segment;
-                        isDraggingPoint = true;
-                        status.textContent = 'Selected point - drag to move';
-                    } else if (hitResult.type === 'stroke') {
+                    // Update color controls
+                    if (selectedPath.fillColor) {
+                        const rgb = selectedPath.fillColor;
+                        const hex = '#' + [rgb.red, rgb.green, rgb.blue].map(x => {
+                            const hex = Math.round(x * 255).toString(16);
+                            return hex.length === 1 ? '0' + hex : hex;
+                        }).join('');
+                        colorPicker.value = hex;
+                        opacitySlider.value = rgb.alpha || 0.5;
+                    }
+                    colorControls.style.display = 'block';
+
+                    if (hitResult.type === 'stroke') {
                         // Clicked on edge - mark it for adding a point
                         draggingEdgeIndex = Math.floor(hitResult.location.index);
                         isDraggingPoint = false;
                         status.textContent = 'Drag to add point on edge';
                         console.log('Edge selected at index:', draggingEdgeIndex);
                     } else {
+                        // Polygon selected, no specific point clicked
                         isDraggingPoint = false;
-                        status.textContent = 'Polygon selected - drag to move';
+                        const isNewPolygon = !polygonJustSelected && selectedPointIndices.length === 0;
+
+                        if (isNewPolygon) {
+                            // First click on this polygon - just show handlers
+                            selectedPointIndices = [];
+                            showHandles(selectedPath);
+                            status.textContent = 'Polygon selected - click again to select all points';
+                            polygonJustSelected = true;
+                        } else if (selectedPointIndices.length === 0) {
+                            // Second click - select all
+                            selectedPointIndices = selectedPath.segments.map((_, idx) => idx);
+                            showHandles(selectedPath);
+                            status.textContent = `Selected all ${selectedPointIndices.length} points - click again to deselect`;
+                        } else {
+                            // Third click - deselect all
+                            selectedPointIndices = [];
+                            showHandles(selectedPath);
+                            status.textContent = 'All points deselected - click to select all';
+                            polygonJustSelected = true;
+                        }
                     }
                 } else if (selectedPath) {
-                    selectedPath.selected = false;
+                    selectedPath.strokeColor = null;
+                    hideHandles();
                     selectedPath = null;
                     selectedPoint = null;
+                    selectedPointIndices = [];
+                    polygonJustSelected = false;
                     isDraggingPoint = false;
                     draggingEdgeIndex = -1;
+                    colorPicker.blur();
+                    colorControls.style.display = 'none';
                 }
             }
         };
@@ -202,6 +393,23 @@
                     const edgeIndex = Math.floor(hitResult.location.index);
                     const newSegment = new paper.Segment(event.point);
                     selectedPath.insert(edgeIndex + 1, newSegment);
+
+                    // Create handle for new point
+                    const handleRect = new paper.Path.Rectangle({
+                        center: event.point,
+                        size: [5, 5],
+                        fillColor: 'white',
+                        strokeColor: '#0064c8',
+                        strokeWidth: 1,
+                        evented: false,
+                        selectable: false
+                    });
+                    handleRect.isHandle = true;
+                    handleCircles.splice(edgeIndex + 1, 0, handleRect);
+
+                    selectedPointIndices = [edgeIndex + 1]; // Select the new point
+                    showHandles(selectedPath);
+
                     status.textContent = 'Point created on edge';
                     console.log('Point created at edge index:', edgeIndex);
                 }
@@ -250,43 +458,141 @@
         paper.view.onMouseDrag = function(event) {
             if (isEditing && selectedPath) {
                 if (isDraggingPoint && selectedPoint) {
-                    // Move the point
-                    selectedPoint.point = event.point;
-                    status.textContent = 'Moving point...';
+                    // Move all selected points
+                    const draggedIdx = selectedPoint.index;
+                    const pointsToMove = selectedPointIndices.length > 0 ? selectedPointIndices : [draggedIdx];
+
+                    pointsToMove.forEach(idx => {
+                        selectedPath.segments[idx].point = selectedPath.segments[idx].point.add(event.delta);
+                        if (handleCircles[idx]) {
+                            handleCircles[idx].position = selectedPath.segments[idx].point;
+                        }
+                    });
+
+                    status.textContent = `Moving ${pointsToMove.length} point(s)...`;
                 } else if (draggingEdgeIndex >= 0 && !createdPointThisDrag) {
                     // We're dragging an edge - add a point at the current drag location
                     const newSegment = new paper.Segment(event.point);
                     selectedPath.insert(draggingEdgeIndex + 1, newSegment);
 
+                    // Create handle for new point
+                    const handleRect = new paper.Path.Rectangle({
+                        center: event.point,
+                        size: [5, 5],
+                        fillColor: 'white',
+                        strokeColor: '#0064c8',
+                        strokeWidth: 1,
+                        evented: false,
+                        selectable: false
+                    });
+                    handleRect.isHandle = true;
+                    handleCircles.splice(draggingEdgeIndex + 1, 0, handleRect);
+
                     // Switch to dragging the newly created point
                     selectedPoint = newSegment;
+                    selectedPointIndices = [draggingEdgeIndex + 1]; // Select the new point
                     isDraggingPoint = true;
                     draggingEdgeIndex = -1;
                     createdPointThisDrag = true;
+                    showHandles(selectedPath);
                     status.textContent = 'Created point - dragging...';
                 } else if (isDraggingPoint && selectedPoint) {
                     // Continue moving the point we just created
                     selectedPoint.point = event.point;
+
+                    // Update corresponding handle circle
+                    const idx = selectedPoint.index;
+                    if (handleCircles[idx]) {
+                        handleCircles[idx].position = event.point;
+                    }
+
                     status.textContent = 'Moving point...';
                 } else if (!createdPointThisDrag) {
-                    // Move entire polygon (only if we didn't just create a point)
+                    // Check if this is a meaningful drag to select all points
+                    if (selectedPointIndices.length === 0 && (Math.abs(event.delta.x) > 3 || Math.abs(event.delta.y) > 3)) {
+                        // Significant drag detected - select all points
+                        selectedPointIndices = selectedPath.segments.map((_, idx) => idx);
+                        showHandles(selectedPath);
+                    }
+
+                    // Move entire polygon
                     selectedPath.translate(event.delta);
-                    status.textContent = 'Moving polygon...';
+
+                    // Move all handle circles with polygon
+                    handleCircles.forEach(circle => circle.translate(event.delta));
+
+                    status.textContent = selectedPointIndices.length > 0 ? `Moving ${selectedPointIndices.length} point(s)...` : 'Drag to select all points';
                 }
             }
         };
+
+        // Create rectangular handles for selected polygon vertices
+        function showHandles(polygon) {
+            hideHandles();
+
+            polygon.segments.forEach((segment, idx) => {
+                const isSelected = selectedPointIndices.includes(idx);
+                const rect = new paper.Path.Rectangle({
+                    center: segment.point,
+                    size: isSelected ? [8, 8] : [5, 5],
+                    fillColor: isSelected ? '#0064c8' : 'white',
+                    strokeColor: '#0064c8',
+                    strokeWidth: 1,
+                    evented: false,
+                    selectable: false
+                });
+                rect.isHandle = true;
+                rect.pointIndex = idx;
+                rect.sendToBack();
+                handleCircles.push(rect);
+            });
+
+            paper.view.update();
+        }
+
+        function hideHandles() {
+            handleCircles.forEach(circle => circle.remove());
+            handleCircles = [];
+            paper.view.update();
+        }
 
         // Keyboard handler
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && isDrawing && points.length >= 3) {
                 finishPolygon();
-            } else if (e.key === 'Delete' && selectedPath) {
-                selectedPath.remove();
-                polygons = polygons.filter(p => p !== selectedPath);
-                selectedPath = null;
-                selectedPoint = null;
-                paper.view.update();
-                status.textContent = 'Polygon deleted';
+            } else if (e.key === 'Delete' || e.key === 'Backspace') {
+                if (selectedPath) {
+                    if (selectedPointIndices.length > 0) {
+                        // Check how many points would remain
+                        const remainingPoints = selectedPath.segments.length - selectedPointIndices.length;
+
+                        if (remainingPoints >= 3) {
+                            // Delete selected points, polygon remains
+                            const indices = [...selectedPointIndices].sort((a, b) => b - a);
+                            indices.forEach(idx => {
+                                selectedPath.removeSegment(idx);
+                            });
+
+                            selectedPointIndices = [];
+                            showHandles(selectedPath);
+                            paper.view.update();
+                            status.textContent = 'Point(s) deleted. Drag to select all points';
+                        } else {
+                            // Would leave fewer than 3 points - delete entire polygon
+                            hideHandles();
+                            selectedPath.remove();
+                            polygons = polygons.filter(p => p !== selectedPath);
+                            selectedPath = null;
+                            selectedPoint = null;
+                            selectedPointIndices = [];
+                            paper.view.update();
+                            status.textContent = 'Polygon deleted';
+                        }
+                    } else {
+                        // No points selected - nothing to delete
+                        status.textContent = 'Select points to delete or drag to select all';
+                    }
+                }
             }
         });
 
@@ -296,23 +602,54 @@
                 return;
             }
 
-            // Remove preview circles and lines
-            paper.project.activeLayer.removeChildren();
+            // Remove only preview elements (circles, lines, outline), not finished polygons
+            const children = paper.project.activeLayer.children;
+            for (let i = children.length - 1; i >= 0; i--) {
+                const child = children[i];
+                // Remove preview items (handles and outlines)
+                if (child.isDrawHandle || child.isPreviewOutline) {
+                    child.remove();
+                }
+                // Also remove lines that are not part of a finished polygon
+                else if (!child.polygonData && child instanceof paper.Path && child.segments.length === 2) {
+                    child.remove();
+                }
+            }
 
-            // Create the actual polygon
+            // Create the actual polygon with style from selected or most recent polygon
             const polygon = new paper.Path(points);
             polygon.closed = true;
-            polygon.fillColor = new paper.Color(Math.random(), Math.random(), Math.random(), 0.5);
-            polygon.strokeColor = 'black';
-            polygon.strokeWidth = 2;
+
+            // Get style from most recently selected polygon, or fall back to last drawn polygon
+            let styleSource = selectedPath;
+            if (!styleSource && polygons.length > 0) {
+                styleSource = polygons[polygons.length - 1];
+            }
+
+            if (styleSource && styleSource.fillColor) {
+                polygon.fillColor = styleSource.fillColor.clone();
+            } else {
+                // Use the last remembered color and opacity
+                const hex = lastColor;
+                const r = parseInt(hex.substr(1, 2), 16) / 255;
+                const g = parseInt(hex.substr(3, 2), 16) / 255;
+                const b = parseInt(hex.substr(5, 2), 16) / 255;
+                polygon.fillColor = new paper.Color(r, g, b, lastOpacity);
+            }
+
+            polygon.strokeColor = null;
             polygon.polygonData = { points: points.length };
 
             polygons.push(polygon);
             points = [];
+
+            // Exit draw mode and enter edit mode
             isDrawing = false;
             drawBtn.classList.remove('active');
+            isEditing = true;
+            editBtn.classList.add('active');
 
-            status.textContent = `Polygon created with ${polygon.segments.length} points. Click "Edit Mode" to edit.`;
+            status.textContent = `Polygon created. Click to edit.`;
             paper.view.update();
         }
 
