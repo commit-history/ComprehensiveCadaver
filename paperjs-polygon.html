@@ -139,6 +139,29 @@
         const lineEndSelect = document.getElementById('lineEndSelect');
 
         let isDrawingLine = false;
+        let lastMousePosition = null;
+        const snapAngles = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330];
+
+        function snapToNearestAngle(angle) {
+            // Normalize angle to 0-360
+            angle = ((angle % 360) + 360) % 360;
+
+            // Find nearest snap angle
+            let minDiff = 180;
+            let nearestAngle = 0;
+
+            for (let snap of snapAngles) {
+                let diff = Math.abs(angle - snap);
+                if (diff > 180) diff = 360 - diff; // Handle wrap-around
+
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    nearestAngle = snap;
+                }
+            }
+
+            return nearestAngle;
+        }
 
         // Initialize color controls with remembered values
         colorPicker.value = lastColor;
@@ -154,15 +177,25 @@
             editBtn.classList.remove('active');
             points = [];
 
-            // Deselect any selected polygon when exiting draw mode
-            if (!isDrawing && selectedPath) {
-                selectedPath.strokeColor = null;
-                hideHandles();
-                selectedPath = null;
-                selectedPoint = null;
-                selectedPointIndices = [];
-                colorPicker.blur();
-                colorControls.style.display = 'none';
+            // Clean up preview elements when exiting draw mode
+            if (!isDrawing) {
+                const children = paper.project.activeLayer.children;
+                for (let i = children.length - 1; i >= 0; i--) {
+                    if (children[i].isPreviewOutline || children[i].isPreviewLine || children[i].isPreviewFace || children[i].isDrawHandle) {
+                        children[i].remove();
+                    }
+                }
+
+                // Deselect any selected polygon
+                if (selectedPath) {
+                    selectedPath.strokeColor = null;
+                    hideHandles();
+                    selectedPath = null;
+                    selectedPoint = null;
+                    selectedPointIndices = [];
+                    colorPicker.blur();
+                    colorControls.style.display = 'none';
+                }
                 paper.view.update();
             }
 
@@ -179,15 +212,25 @@
             editBtn.classList.remove('active');
             points = [];
 
-            // Deselect any selected polygon when exiting draw mode
-            if (!isDrawingLine && selectedPath) {
-                selectedPath.strokeColor = null;
-                hideHandles();
-                selectedPath = null;
-                selectedPoint = null;
-                selectedPointIndices = [];
-                colorPicker.blur();
-                colorControls.style.display = 'none';
+            // Clean up preview elements when exiting line draw mode
+            if (!isDrawingLine) {
+                const children = paper.project.activeLayer.children;
+                for (let i = children.length - 1; i >= 0; i--) {
+                    if (children[i].isPreviewOutline || children[i].isPreviewLine || children[i].isPreviewFace || children[i].isDrawHandle) {
+                        children[i].remove();
+                    }
+                }
+
+                // Deselect any selected polygon
+                if (selectedPath) {
+                    selectedPath.strokeColor = null;
+                    hideHandles();
+                    selectedPath = null;
+                    selectedPoint = null;
+                    selectedPointIndices = [];
+                    colorPicker.blur();
+                    colorControls.style.display = 'none';
+                }
                 paper.view.update();
             }
 
@@ -276,21 +319,42 @@
                     return;
                 }
 
-                points.push(event.point.clone());
+                let pointToAdd = event.point.clone();
+
+                // Apply angle snapping if shift is held and we have a previous point
+                if (event.modifiers.shift && points.length > 0) {
+                    const prevPoint = points[points.length - 1];
+                    const dx = pointToAdd.x - prevPoint.x;
+                    const dy = pointToAdd.y - prevPoint.y;
+                    let angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+                    if (angle < 0) angle += 360;
+
+                    const snapAngle = snapToNearestAngle(angle);
+                    const snapAngleRad = snapAngle * Math.PI / 180;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    pointToAdd = new paper.Point(
+                        prevPoint.x + distance * Math.cos(snapAngleRad),
+                        prevPoint.y + distance * Math.sin(snapAngleRad)
+                    );
+                }
+
+                points.push(pointToAdd);
                 lastClickPoint = event.point.clone();
 
                 // Log the point position and distance from previous point
-                console.log(`Point ${points.length}: (${Math.round(event.point.x)}, ${Math.round(event.point.y)})`);
+                console.log(`Point ${points.length}: (${Math.round(pointToAdd.x)}, ${Math.round(pointToAdd.y)})`);
                 if (points.length > 1) {
                     const prevPoint = points[points.length - 2];
-                    const distance = event.point.getDistance(prevPoint);
+                    const distance = pointToAdd.getDistance(prevPoint);
                     console.log(`  Distance from previous: ${Math.round(distance)}px`);
                 }
 
                 // Draw a handle at the click point (like edit mode)
                 const isLatest = points.length > 0; // This is the latest point
                 const handleRect = new paper.Path.Rectangle({
-                    center: event.point,
+                    center: pointToAdd,
                     size: isLatest ? [8, 8] : [5, 5],
                     fillColor: isLatest ? '#0064c8' : 'white',
                     strokeColor: '#0064c8',
@@ -322,8 +386,9 @@
 
                 handleRect.isDrawHandle = true;
 
-                // Draw preview outline if we have 3+ points
-                if (points.length >= 3) {
+                // Draw preview outline if we have 2+ points (for lines) or 3+ points (for polygons)
+                const minPreviewPoints = isDrawingLine ? 2 : 3;
+                if (points.length >= minPreviewPoints) {
                     // Remove old preview outline
                     const children = paper.project.activeLayer.children;
                     for (let i = children.length - 1; i >= 0; i--) {
@@ -332,9 +397,9 @@
                         }
                     }
 
-                    // Draw new preview outline
+                    // Draw new preview outline (open path, never closed during draw)
                     const outline = new paper.Path(points);
-                    outline.closed = true;
+                    outline.closed = false;
                     outline.strokeColor = 'black';
                     outline.strokeWidth = 1;
                     outline.fillColor = null;
@@ -576,6 +641,67 @@
             }
         };
 
+        // Mouse move handler for draw mode cursor preview
+        paper.view.onMouseMove = function(event) {
+            if (isDrawing && points.length > 0) {
+                // Remove old preview elements
+                const children = paper.project.activeLayer.children;
+                for (let i = children.length - 1; i >= 0; i--) {
+                    if (children[i].isPreviewLine || children[i].isPreviewFace) {
+                        children[i].remove();
+                    }
+                }
+
+                // Draw preview line from last point to cursor
+                const lastPoint = points[points.length - 1];
+                let cursorPoint = event.point.clone();
+
+                // Apply angle snapping to the preview if shift is held
+                if (event.modifiers.shift) {
+                    const dx = cursorPoint.x - lastPoint.x;
+                    const dy = cursorPoint.y - lastPoint.y;
+                    let angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+                    if (angle < 0) angle += 360;
+
+                    const snapAngle = snapToNearestAngle(angle);
+                    const snapAngleRad = snapAngle * Math.PI / 180;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    cursorPoint = new paper.Point(
+                        lastPoint.x + distance * Math.cos(snapAngleRad),
+                        lastPoint.y + distance * Math.sin(snapAngleRad)
+                    );
+                }
+
+                // Draw preview face for polygons (filled area with all points + cursor)
+                if (!isDrawingLine && points.length >= 2) {
+                    const previewPoints = [...points, cursorPoint];
+                    const face = new paper.Path(previewPoints);
+                    face.closed = true;
+                    // Use the current polygon color with opacity
+                    const r = parseInt(lastColor.substr(1, 2), 16) / 255;
+                    const g = parseInt(lastColor.substr(3, 2), 16) / 255;
+                    const b = parseInt(lastColor.substr(5, 2), 16) / 255;
+                    face.fillColor = new paper.Color(r, g, b, lastOpacity);
+                    face.strokeColor = null;
+                    face.isPreviewFace = true;
+                    face.evented = false;
+                    face.selectable = false;
+                    face.sendToBack();
+                }
+
+                const previewLine = new paper.Path.Line(lastPoint, cursorPoint);
+                previewLine.strokeColor = '#ff6600';
+                previewLine.strokeWidth = 2;
+                previewLine.dashArray = [5, 5];
+                previewLine.isPreviewLine = true;
+                previewLine.evented = false;
+                previewLine.selectable = false;
+                backgroundRaster.sendToBack();
+            }
+        };
+
         // Mouse drag handler
         paper.view.onMouseDrag = function(event) {
             if (isEditing && selectedPath) {
@@ -600,16 +726,16 @@
                                 const neighborIndex = idx === 0 ? 1 : numSegments - 2;
                                 const neighborPoint = segments[neighborIndex].point;
 
-                                // Calculate angle from neighbor to current position
-                                const dx = newPoint.x - neighborPoint.x;
-                                const dy = newPoint.y - neighborPoint.y;
+                                // Calculate angle from neighbor to ACTUAL MOUSE POSITION
+                                const dx = event.point.x - neighborPoint.x;
+                                const dy = event.point.y - neighborPoint.y;
                                 let angle = Math.atan2(dy, dx) * 180 / Math.PI;
 
                                 // Normalize to 0-360
                                 if (angle < 0) angle += 360;
 
-                                // Snap to nearest 15-degree increment with tolerance
-                                const snapAngle = Math.round(angle / 15) * 15;
+                                // Snap to nearest angle (30, 45, 60, 90, etc.)
+                                const snapAngle = snapToNearestAngle(angle);
                                 const snapAngleRad = snapAngle * Math.PI / 180;
 
                                 // Calculate distance
@@ -682,8 +808,8 @@
                             // Normalize to 0-360
                             if (angle < 0) angle += 360;
 
-                            // Snap to nearest 15-degree increment
-                            const snapAngle = Math.round(angle / 15) * 15;
+                            // Snap to nearest angle (30, 45, 60, 90, etc.)
+                            const snapAngle = snapToNearestAngle(angle);
                             const snapAngleRad = snapAngle * Math.PI / 180;
 
                             // Calculate distance
@@ -814,8 +940,8 @@
             const children = paper.project.activeLayer.children;
             for (let i = children.length - 1; i >= 0; i--) {
                 const child = children[i];
-                // Remove preview items (handles and outlines)
-                if (child.isDrawHandle || child.isPreviewOutline) {
+                // Remove preview items (handles, outlines, lines, faces)
+                if (child.isDrawHandle || child.isPreviewOutline || child.isPreviewLine || child.isPreviewFace) {
                     child.remove();
                 }
                 // Also remove lines that are not part of a finished polygon
