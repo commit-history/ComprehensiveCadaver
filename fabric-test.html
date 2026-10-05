@@ -80,10 +80,6 @@
             canvas.setActiveObject(polygon);
             canvas.renderAll();
 
-            // Store initial position to track movement
-            polygon._initialLeft = polygon.left;
-            polygon._initialTop = polygon.top;
-
             log('POLYGON CREATED: left=' + Math.round(polygon.left) + ' top=' + Math.round(polygon.top) + ' p0=(' + Math.round(polygon.points[0].x) + ',' + Math.round(polygon.points[0].y) + ')');
 
             drawingPolygon = false;
@@ -120,18 +116,13 @@
         }
 
         function findNearestVertex(polygon, clickPoint) {
-            const dx = polygon.left - polygon._initialLeft;
-            const dy = polygon.top - polygon._initialTop;
-            log('VERTEX: dx=' + Math.round(dx) + ' dy=' + Math.round(dy) + ' init=(' + Math.round(polygon._initialLeft) + ',' + Math.round(polygon._initialTop) + ') now=(' + Math.round(polygon.left) + ',' + Math.round(polygon.top) + ')');
-
             let minDist = Infinity;
             let closestIdx = -1;
 
             for (let i = 0; i < polygon.points.length; i++) {
                 const pt = polygon.points[i];
-                const adj = { x: pt.x + dx, y: pt.y + dy };
-                const dist = Math.hypot(clickPoint.x - adj.x, clickPoint.y - adj.y);
-                log('v' + i + ': pt=' + Math.round(pt.x) + ',' + Math.round(pt.y) + ' adj=' + Math.round(adj.x) + ',' + Math.round(adj.y) + ' click=' + Math.round(clickPoint.x) + ',' + Math.round(clickPoint.y) + ' dist=' + Math.round(dist));
+                const dist = Math.hypot(clickPoint.x - pt.x, clickPoint.y - pt.y);
+                log('v' + i + ': pt=' + Math.round(pt.x) + ',' + Math.round(pt.y) + ' click=' + Math.round(clickPoint.x) + ',' + Math.round(clickPoint.y) + ' dist=' + Math.round(dist));
                 if (dist < minDist) {
                     minDist = dist;
                     closestIdx = i;
@@ -154,10 +145,6 @@
         }
 
         function detectEdgeClick(polygon, clickPoint) {
-            // Calculate how much the polygon has moved since creation
-            const dx = polygon.left - polygon._initialLeft;
-            const dy = polygon.top - polygon._initialTop;
-
             let minDist = Infinity;
             let closestEdgeIdx = -1;
             let closestPoint = null;
@@ -165,11 +152,8 @@
             for (let i = 0; i < polygon.points.length; i++) {
                 const p1 = polygon.points[i];
                 const p2 = polygon.points[(i + 1) % polygon.points.length];
-                // Adjust edge points by polygon movement
-                const p1Adj = { x: p1.x + dx, y: p1.y + dy };
-                const p2Adj = { x: p2.x + dx, y: p2.y + dy };
 
-                const closestPt = closestPointOnLineSegment(clickPoint, p1Adj, p2Adj);
+                const closestPt = closestPointOnLineSegment(clickPoint, p1, p2);
                 const dist = Math.hypot(clickPoint.x - closestPt.x, clickPoint.y - closestPt.y);
 
                 if (dist < minDist) {
@@ -180,9 +164,7 @@
             }
 
             if (minDist < 20 && closestEdgeIdx >= 0) {
-                // closestPoint is in adjusted/moved space, convert back to original
-                const unadjusted = { x: closestPoint.x - dx, y: closestPoint.y - dy };
-                addVertexOnEdge(polygon, closestEdgeIdx, unadjusted);
+                addVertexOnEdge(polygon, closestEdgeIdx, closestPoint);
             }
         }
 
@@ -262,14 +244,9 @@
 
         canvas.on('object:moving', (e) => {
             const obj = e.target;
-            if (obj?.type === 'polygon') {
-                if (!obj.__corner) {
-                    // Polygon is being dragged as a whole
-                    log('DRAG poly: left=' + Math.round(obj.left) + ' top=' + Math.round(obj.top) + ' p0=(' + Math.round(obj.points[0].x) + ',' + Math.round(obj.points[0].y) + ')');
-                } else {
-                    const match = obj.__corner.match(/p(\d+)/);
-                    if (match) status(`Moving vertex ${match[1]}`);
-                }
+            if (obj?.type === 'polygon' && obj.__corner) {
+                const match = obj.__corner.match(/p(\d+)/);
+                if (match) status(`Moving vertex ${match[1]}`);
             }
         });
 
