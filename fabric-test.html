@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fabric.js Polygon Editor</title>
+    <script src="node_modules/fabric/dist/index.min.js"></script>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial; background: #ccc; }
+        #canvas { border: 3px solid red; display: block; background: white; margin: 10px 0; }
+        #status { padding: 10px; background: #e3f2fd; border-radius: 4px; margin-bottom: 10px; font-weight: bold; }
+        button { padding: 8px 16px; margin-right: 8px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Polygon Editor</h1>
+    <div id="status">Ready</div>
+    <div style="margin: 10px 0;">
+        <button onclick="startPolygon()">Start Polygon</button>
+        <button onclick="finishPolygon()">Finish Polygon</button>
+        <button onclick="clearAll()">Clear All</button>
+    </div>
+    <canvas id="canvas" width="600" height="400"></canvas>
+
+    <script>
+        const canvas = new fabric.Canvas('canvas', {
+            width: 600,
+            height: 400,
+            backgroundColor: 'white'
+        });
+
+        let drawingPolygon = false;
+        let polygonPoints = [];
+        let selectedVertexIndex = -1;
+        let selectedPolygon = null;
+        let skipNextClick = false;
+
+        function status(msg) {
+            document.getElementById('status').textContent = msg;
+        }
+
+        function startPolygon() {
+            drawingPolygon = true;
+            polygonPoints = [];
+            status('Drawing: Click canvas to add points');
+        }
+
+        function finishPolygon() {
+            if (polygonPoints.length < 3) {
+                alert('Need 3+ points');
+                return;
+            }
+
+            canvas.getObjects().forEach((obj) => {
+                if (obj instanceof fabric.Circle || obj instanceof fabric.Line) {
+                    canvas.remove(obj);
+                }
+            });
+
+            const polygon = new fabric.Polygon(
+                polygonPoints.map(([x, y]) => ({ x, y })),
+                {
+                    fill: 'rgba(255, 255, 0, 0.5)',
+                    stroke: '#ff0000',
+                    strokeWidth: 3,
+                    selectable: true,
+                    objectCaching: false
+                }
+            );
+
+            polygon.controls = fabric.controlsUtils.createPolyControls(polygon);
+            polygon.hasBorders = false;
+
+            canvas.add(polygon);
+            canvas.setActiveObject(polygon);
+            canvas.renderAll();
+
+            drawingPolygon = false;
+            polygonPoints = [];
+            skipNextClick = true;
+            status('Polygon created! Click vertex to select (delete with Del), click edge to add');
+        }
+
+        function clearAll() {
+            canvas.clear();
+            polygonPoints = [];
+            drawingPolygon = false;
+            selectedVertexIndex = -1;
+            selectedPolygon = null;
+            skipNextClick = false;
+            status('Cleared');
+        }
+
+        function closestPointOnLineSegment(point, lineStart, lineEnd) {
+            const dx = lineEnd.x - lineStart.x;
+            const dy = lineEnd.y - lineStart.y;
+            const lenSq = dx * dx + dy * dy;
+            let t = 0;
+
+            if (lenSq !== 0) {
+                const dotProduct = (point.x - lineStart.x) * dx + (point.y - lineStart.y) * dy;
+                t = Math.max(0, Math.min(1, dotProduct / lenSq));
+            }
+
+            return {
+                x: lineStart.x + t * dx,
+                y: lineStart.y + t * dy
+            };
+        }
+
+        function findNearestVertex(polygon, clickPoint) {
+            let minDist = Infinity;
+            let closestIdx = -1;
+
+            for (let i = 0; i < polygon.points.length; i++) {
+                const pt = polygon.points[i];
+                const dist = Math.hypot(clickPoint.x - pt.x, clickPoint.y - pt.y);
+                if (dist < minDist) {
+                    minDist = dist;
+                    closestIdx = i;
+                }
+            }
+
+            return { index: closestIdx, distance: minDist };
+        }
+
+        function detectClick(polygon, clickPoint) {
+            // Check if clicking near a vertex
+            const vertex = findNearestVertex(polygon, clickPoint);
+            if (vertex.distance < 20) {
+                selectVertex(polygon, vertex.index);
+                return;
+            }
+
+            // Otherwise check for edge
+            detectEdgeClick(polygon, clickPoint);
+        }
+
+        function detectEdgeClick(polygon, clickPoint) {
+            let minDist = Infinity;
+            let closestEdgeIdx = -1;
+            let closestPoint = null;
+
+            for (let i = 0; i < polygon.points.length; i++) {
+                const p1 = polygon.points[i];
+                const p2 = polygon.points[(i + 1) % polygon.points.length];
+
+                const closestPt = closestPointOnLineSegment(clickPoint, p1, p2);
+                const dist = Math.hypot(clickPoint.x - closestPt.x, clickPoint.y - closestPt.y);
+
+                if (dist < minDist) {
+                    minDist = dist;
+                    closestEdgeIdx = i;
+                    closestPoint = closestPt;
+                }
+            }
+
+            if (minDist < 20 && closestEdgeIdx >= 0) {
+                addVertexOnEdge(polygon, closestEdgeIdx, closestPoint);
+            }
+        }
+
+        function selectVertex(polygon, idx) {
+            selectedVertexIndex = idx;
+            selectedPolygon = polygon;
+            status(`Selected vertex ${idx} - press Delete to remove`);
+        }
+
+        function deleteSelectedVertex() {
+            if (selectedVertexIndex < 0 || !selectedPolygon) return;
+            if (selectedPolygon.points.length <= 3) {
+                status('❌ Need at least 3 vertices');
+                return;
+            }
+
+            selectedPolygon.points.splice(selectedVertexIndex, 1);
+            selectedPolygon.controls = fabric.controlsUtils.createPolyControls(selectedPolygon);
+            selectedPolygon.setCoords();
+            selectedVertexIndex = -1;
+            canvas.discardActiveObject();
+            canvas.renderAll();
+            canvas.setActiveObject(selectedPolygon);
+            canvas.renderAll();
+            status('✓ Vertex deleted');
+        }
+
+        function addVertexOnEdge(polygon, edgeIdx, clickPoint) {
+            polygon.points.splice(edgeIdx + 1, 0, clickPoint);
+            polygon.controls = fabric.controlsUtils.createPolyControls(polygon);
+            polygon.setCoords();
+            canvas.discardActiveObject();
+            canvas.renderAll();
+            canvas.setActiveObject(polygon);
+            canvas.renderAll();
+            status('✓ Vertex added at click point');
+        }
+
+        canvas.on('mouse:down', (e) => {
+            const pointer = canvas.getPointer(e.e);
+
+            if (drawingPolygon) {
+                polygonPoints.push([pointer.x, pointer.y]);
+
+                const circle = new fabric.Circle({
+                    left: pointer.x, top: pointer.y, radius: 5,
+                    fill: 'red', selectable: false, evented: false,
+                    originX: 'center', originY: 'center'
+                });
+                canvas.add(circle);
+
+                if (polygonPoints.length > 1) {
+                    const prev = polygonPoints[polygonPoints.length - 2];
+                    const line = new fabric.Line([prev[0], prev[1], pointer.x, pointer.y], {
+                        stroke: 'red', strokeWidth: 2, selectable: false, evented: false
+                    });
+                    canvas.add(line);
+                }
+
+                canvas.renderAll();
+                status(`Drawing: ${polygonPoints.length} points`);
+                return;
+            }
+
+            // Skip first click after finishing polygon
+            if (skipNextClick) {
+                skipNextClick = false;
+                return;
+            }
+
+            const obj = canvas.getActiveObject();
+            if (obj && obj.type === 'polygon') {
+                detectClick(obj, pointer);
+            }
+        });
+
+        canvas.on('object:moving', (e) => {
+            const obj = e.target;
+            if (obj?.type === 'polygon' && obj.__corner) {
+                const match = obj.__corner.match(/p(\d+)/);
+                if (match) status(`Moving vertex ${match[1]}`);
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if ((e.key === 'Delete' || e.key === 'Backspace') && selectedVertexIndex >= 0) {
+                e.preventDefault();
+                deleteSelectedVertex();
+            }
+        });
+    </script>
+</body>
+</html>
