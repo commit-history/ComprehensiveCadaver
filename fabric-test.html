@@ -80,7 +80,7 @@
             canvas.setActiveObject(polygon);
             canvas.renderAll();
 
-            log('POLYGON CREATED: left=' + Math.round(polygon.left) + ' top=' + Math.round(polygon.top) + ' p0=(' + Math.round(polygon.points[0].x) + ',' + Math.round(polygon.points[0].y) + ')');
+            log('POLYGON CREATED: left=' + Math.round(polygon.left) + ' top=' + Math.round(polygon.top) + ' angle=' + Math.round(polygon.angle) + ' p0=(' + Math.round(polygon.points[0].x) + ',' + Math.round(polygon.points[0].y) + ')');
 
             drawingPolygon = false;
             polygonPoints = [];
@@ -116,13 +116,21 @@
         }
 
         function findNearestVertex(polygon, clickPoint) {
+            // Calculate offset dynamically from bounding box
+            // This works whether polygon was dragged or vertices were moved
+            const minX = Math.min(...polygon.points.map(p => p.x));
+            const minY = Math.min(...polygon.points.map(p => p.y));
+            const dx = polygon.left - minX;
+            const dy = polygon.top - minY;
+
             let minDist = Infinity;
             let closestIdx = -1;
 
             for (let i = 0; i < polygon.points.length; i++) {
                 const pt = polygon.points[i];
-                const dist = Math.hypot(clickPoint.x - pt.x, clickPoint.y - pt.y);
-                log('v' + i + ': pt=' + Math.round(pt.x) + ',' + Math.round(pt.y) + ' click=' + Math.round(clickPoint.x) + ',' + Math.round(clickPoint.y) + ' dist=' + Math.round(dist));
+                const ptAdjusted = { x: pt.x + dx, y: pt.y + dy };
+                const dist = Math.hypot(clickPoint.x - ptAdjusted.x, clickPoint.y - ptAdjusted.y);
+                log('v' + i + ': pt=' + Math.round(pt.x) + ',' + Math.round(pt.y) + ' adj=' + Math.round(ptAdjusted.x) + ',' + Math.round(ptAdjusted.y) + ' click=' + Math.round(clickPoint.x) + ',' + Math.round(clickPoint.y) + ' dist=' + Math.round(dist));
                 if (dist < minDist) {
                     minDist = dist;
                     closestIdx = i;
@@ -145,15 +153,22 @@
         }
 
         function detectEdgeClick(polygon, clickPoint) {
+            // Calculate offset dynamically from bounding box
+            // This works whether polygon was dragged or vertices were moved
+            const minX = Math.min(...polygon.points.map(p => p.x));
+            const minY = Math.min(...polygon.points.map(p => p.y));
+            const dx = polygon.left - minX;
+            const dy = polygon.top - minY;
+
             let minDist = Infinity;
             let closestEdgeIdx = -1;
             let closestPoint = null;
 
             for (let i = 0; i < polygon.points.length; i++) {
-                const p1 = polygon.points[i];
-                const p2 = polygon.points[(i + 1) % polygon.points.length];
+                const p1Adj = { x: polygon.points[i].x + dx, y: polygon.points[i].y + dy };
+                const p2Adj = { x: polygon.points[(i + 1) % polygon.points.length].x + dx, y: polygon.points[(i + 1) % polygon.points.length].y + dy };
 
-                const closestPt = closestPointOnLineSegment(clickPoint, p1, p2);
+                const closestPt = closestPointOnLineSegment(clickPoint, p1Adj, p2Adj);
                 const dist = Math.hypot(clickPoint.x - closestPt.x, clickPoint.y - closestPt.y);
 
                 if (dist < minDist) {
@@ -164,7 +179,9 @@
             }
 
             if (minDist < 20 && closestEdgeIdx >= 0) {
-                addVertexOnEdge(polygon, closestEdgeIdx, closestPoint);
+                // Convert back to original canvas space
+                const pointInOriginalSpace = { x: closestPoint.x - dx, y: closestPoint.y - dy };
+                addVertexOnEdge(polygon, closestEdgeIdx, pointInOriginalSpace);
             }
         }
 
@@ -237,7 +254,8 @@
 
             const obj = canvas.getActiveObject();
             if (obj && obj.type === 'polygon') {
-                log('=== CLICK canvas (' + Math.round(pointer.x) + ',' + Math.round(pointer.y) + ') poly.left=' + Math.round(obj.left) + ' top=' + Math.round(obj.top));
+                log('=== CLICK angle=' + Math.round(obj.angle) + ' scaleX=' + obj.scaleX.toFixed(2) + ' scaleY=' + obj.scaleY.toFixed(2));
+                log('click canvas (' + Math.round(pointer.x) + ',' + Math.round(pointer.y) + ') poly.left=' + Math.round(obj.left) + ' top=' + Math.round(obj.top));
                 detectClick(obj, pointer);
             }
         });
