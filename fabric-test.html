@@ -224,6 +224,16 @@
             const pointer = canvas.getPointer(e.e);
 
             if (drawingPolygon) {
+                // Check if clicking near first point to finish
+                if (polygonPoints.length >= 3) {
+                    const firstPt = polygonPoints[0];
+                    const dist = Math.hypot(pointer.x - firstPt[0], pointer.y - firstPt[1]);
+                    if (dist < 20) {
+                        finishPolygon();
+                        return;
+                    }
+                }
+
                 polygonPoints.push([pointer.x, pointer.y]);
 
                 const circle = new fabric.Circle({
@@ -242,7 +252,7 @@
                 }
 
                 canvas.renderAll();
-                status(`Drawing: ${polygonPoints.length} points`);
+                status(`Drawing: ${polygonPoints.length} points (click first point or press ESC to finish)`);
                 return;
             }
 
@@ -268,7 +278,29 @@
             }
         });
 
+        // Finish polygon on right-click
+        document.addEventListener('contextmenu', (e) => {
+            if (drawingPolygon && polygonPoints.length >= 3) {
+                e.preventDefault();
+                finishPolygon();
+                return false;
+            }
+        }, true); // Use capture phase to catch it first
+
+        canvas.getElement().addEventListener('contextmenu', (e) => {
+            if (drawingPolygon && polygonPoints.length >= 3) {
+                e.preventDefault();
+                finishPolygon();
+                return false;
+            }
+        });
+
         document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && drawingPolygon && polygonPoints.length >= 3) {
+                e.preventDefault();
+                finishPolygon();
+                return;
+            }
             if ((e.key === 'Delete' || e.key === 'Backspace') && selectedVertexIndex >= 0) {
                 e.preventDefault();
                 deleteSelectedVertex();
