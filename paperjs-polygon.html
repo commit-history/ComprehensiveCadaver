@@ -70,6 +70,24 @@
         // Set up Paper.js
         paper.setup('canvas');
 
+        // Load background image
+        let backgroundRaster = null;
+        const img = new Image();
+        img.src = 'assets/example_img.png';
+        img.onload = function() {
+            const canvas = document.getElementById('canvas');
+            canvas.width = canvas.parentElement.offsetWidth - 4;
+            canvas.height = canvas.width / (img.width / img.height);
+            paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+
+            backgroundRaster = new paper.Raster(img);
+            backgroundRaster.fitBounds(paper.view.bounds);
+            backgroundRaster.evented = false;
+            backgroundRaster.selectable = false;
+            backgroundRaster.sendToBack();
+            paper.view.update();
+        };
+
         let isDrawing = false;
         let isEditing = true; // Start in edit mode by default
         let currentPolygon = null;
@@ -546,6 +564,11 @@
                 rect.sendToBack();
                 handleCircles.push(rect);
             });
+
+            // Keep image at the very back
+            if (backgroundRaster) {
+                backgroundRaster.sendToBack();
+            }
 
             paper.view.update();
         }
