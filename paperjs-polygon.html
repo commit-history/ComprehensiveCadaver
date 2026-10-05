@@ -61,6 +61,26 @@
         <div id="colorControls" style="display: none; position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 1000;">
             <label>Color: <input type="color" id="colorPicker"></label>
             <label id="opacityLabel" style="margin-left: 10px;">Opacity: <input type="range" id="opacitySlider" min="0" max="1" step="0.1" style="width: 100px;"></label>
+            <div id="lineEndControls" style="display: none; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 10px;">
+                <div>
+                    <label>Start: <select id="lineStartSelect" style="width: 80px;">
+                        <option value="none">None</option>
+                        <option value="arrow">Arrow</option>
+                        <option value="circle">Circle</option>
+                        <option value="diamond">Diamond</option>
+                        <option value="square">Square</option>
+                    </select></label>
+                </div>
+                <div style="margin-top: 8px;">
+                    <label>End: <select id="lineEndSelect" style="width: 80px;">
+                        <option value="none">None</option>
+                        <option value="arrow">Arrow</option>
+                        <option value="circle">Circle</option>
+                        <option value="diamond">Diamond</option>
+                        <option value="square">Square</option>
+                    </select></label>
+                </div>
+            </div>
         </div>
         <div id="status">Edit mode: Click polygon to select, drag to move.</div>
         <canvas id="canvas" width="800" height="600"></canvas>
@@ -114,6 +134,9 @@
         const colorControls = document.getElementById('colorControls');
         const colorPicker = document.getElementById('colorPicker');
         const opacitySlider = document.getElementById('opacitySlider');
+        const lineEndControls = document.getElementById('lineEndControls');
+        const lineStartSelect = document.getElementById('lineStartSelect');
+        const lineEndSelect = document.getElementById('lineEndSelect');
 
         let isDrawingLine = false;
 
@@ -218,13 +241,29 @@
         // Opacity slider
         opacitySlider.addEventListener('input', function() {
             lastOpacity = parseFloat(opacitySlider.value); // Remember the opacity
-            if (selectedPath) {
+            if (selectedPath && !selectedPath.polygonData.isLine) {
                 const hex = colorPicker.value;
                 const r = parseInt(hex.substr(1, 2), 16) / 255;
                 const g = parseInt(hex.substr(3, 2), 16) / 255;
                 const b = parseInt(hex.substr(5, 2), 16) / 255;
                 const opacity = parseFloat(opacitySlider.value);
                 selectedPath.fillColor = new paper.Color(r, g, b, opacity);
+                paper.view.update();
+            }
+        });
+
+        // Line start select
+        lineStartSelect.addEventListener('change', function() {
+            if (selectedPath && selectedPath.polygonData.isLine) {
+                selectedPath.polygonData.lineStart = lineStartSelect.value;
+                paper.view.update();
+            }
+        });
+
+        // Line end select
+        lineEndSelect.addEventListener('change', function() {
+            if (selectedPath && selectedPath.polygonData.isLine) {
+                selectedPath.polygonData.lineEnd = lineEndSelect.value;
                 paper.view.update();
             }
         });
@@ -385,7 +424,7 @@
 
                     // Update color controls
                     if (selectedPath.polygonData.isLine) {
-                        // Line: show stroke color only
+                        // Line: show stroke color and line ending controls
                         const rgb = selectedPath.strokeColor;
                         const hex = '#' + [rgb.red, rgb.green, rgb.blue].map(x => {
                             const hex = Math.round(x * 255).toString(16);
@@ -393,6 +432,11 @@
                         }).join('');
                         colorPicker.value = hex;
                         document.getElementById('opacityLabel').style.display = 'none';
+                        lineEndControls.style.display = 'block';
+
+                        // Set line ending styles
+                        lineStartSelect.value = selectedPath.polygonData.lineStart || 'none';
+                        lineEndSelect.value = selectedPath.polygonData.lineEnd || 'none';
                     } else {
                         // Polygon: show fill color and opacity
                         if (selectedPath.fillColor) {
@@ -405,6 +449,7 @@
                             opacitySlider.value = rgb.alpha || 0.5;
                         }
                         document.getElementById('opacityLabel').style.display = 'block';
+                        lineEndControls.style.display = 'none';
                     }
                     colorControls.style.display = 'block';
 
@@ -540,9 +585,47 @@
                     const pointsToMove = selectedPointIndices.length > 0 ? selectedPointIndices : [draggedIdx];
 
                     pointsToMove.forEach(idx => {
-                        selectedPath.segments[idx].point = selectedPath.segments[idx].point.add(event.delta);
+                        let newPoint = selectedPath.segments[idx].point.add(event.delta);
+
+                        // Angle snapping with shift for endpoints (only if single point selected)
+                        if (event.modifiers.shift && pointsToMove.length === 1) {
+                            const segments = selectedPath.segments;
+                            const numSegments = segments.length;
+
+                            // Check if point has only 1 neighbor (is an endpoint)
+                            const isEndpoint = (idx === 0 || idx === numSegments - 1) && !selectedPath.closed;
+
+                            if (isEndpoint) {
+                                // Get the neighbor point
+                                const neighborIndex = idx === 0 ? 1 : numSegments - 2;
+                                const neighborPoint = segments[neighborIndex].point;
+
+                                // Calculate angle from neighbor to current position
+                                const dx = newPoint.x - neighborPoint.x;
+                                const dy = newPoint.y - neighborPoint.y;
+                                let angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+                                // Normalize to 0-360
+                                if (angle < 0) angle += 360;
+
+                                // Snap to nearest 15-degree increment with tolerance
+                                const snapAngle = Math.round(angle / 15) * 15;
+                                const snapAngleRad = snapAngle * Math.PI / 180;
+
+                                // Calculate distance
+                                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                                // Set new point at snapped angle
+                                newPoint = new paper.Point(
+                                    neighborPoint.x + distance * Math.cos(snapAngleRad),
+                                    neighborPoint.y + distance * Math.sin(snapAngleRad)
+                                );
+                            }
+                        }
+
+                        selectedPath.segments[idx].point = newPoint;
                         if (handleCircles[idx]) {
-                            handleCircles[idx].position = selectedPath.segments[idx].point;
+                            handleCircles[idx].position = newPoint;
                         }
                     });
 
@@ -575,13 +658,52 @@
                     showHandles(selectedPath);
                     status.textContent = 'Created point - dragging...';
                 } else if (isDraggingPoint && selectedPoint) {
-                    // Continue moving the point we just created
-                    selectedPoint.point = event.point;
+                    let finalPoint = event.point;
+
+                    // Angle snapping with shift for endpoints (points with only 1 neighbor)
+                    if (event.modifiers.shift) {
+                        const pointIndex = selectedPoint.index;
+                        const segments = selectedPath.segments;
+                        const numSegments = segments.length;
+
+                        // Check if point has only 1 neighbor (is an endpoint)
+                        const isEndpoint = (pointIndex === 0 || pointIndex === numSegments - 1) && !selectedPath.closed;
+
+                        if (isEndpoint) {
+                            // Get the neighbor point
+                            const neighborIndex = pointIndex === 0 ? 1 : numSegments - 2;
+                            const neighborPoint = segments[neighborIndex].point;
+
+                            // Calculate angle from neighbor to current position
+                            const dx = event.point.x - neighborPoint.x;
+                            const dy = event.point.y - neighborPoint.y;
+                            let angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+                            // Normalize to 0-360
+                            if (angle < 0) angle += 360;
+
+                            // Snap to nearest 15-degree increment
+                            const snapAngle = Math.round(angle / 15) * 15;
+                            const snapAngleRad = snapAngle * Math.PI / 180;
+
+                            // Calculate distance
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+
+                            // Set final point at snapped angle
+                            finalPoint = new paper.Point(
+                                neighborPoint.x + distance * Math.cos(snapAngleRad),
+                                neighborPoint.y + distance * Math.sin(snapAngleRad)
+                            );
+                        }
+                    }
+
+                    // Continue moving the point
+                    selectedPoint.point = finalPoint;
 
                     // Update corresponding handle circle
                     const idx = selectedPoint.index;
                     if (handleCircles[idx]) {
-                        handleCircles[idx].position = event.point;
+                        handleCircles[idx].position = finalPoint;
                     }
 
                     status.textContent = 'Moving point...';
@@ -649,9 +771,10 @@
                     if (selectedPointIndices.length > 0) {
                         // Check how many points would remain
                         const remainingPoints = selectedPath.segments.length - selectedPointIndices.length;
+                        const minPoints = selectedPath.polygonData.isLine ? 2 : 3;
 
-                        if (remainingPoints >= 3) {
-                            // Delete selected points, polygon remains
+                        if (remainingPoints >= minPoints) {
+                            // Delete selected points, polygon/line remains
                             const indices = [...selectedPointIndices].sort((a, b) => b - a);
                             indices.forEach(idx => {
                                 selectedPath.removeSegment(idx);
@@ -662,7 +785,7 @@
                             paper.view.update();
                             status.textContent = 'Point(s) deleted. Drag to select all points';
                         } else {
-                            // Would leave fewer than 3 points - delete entire polygon
+                            // Would leave fewer than minimum points - delete entire object
                             hideHandles();
                             selectedPath.remove();
                             polygons = polygons.filter(p => p !== selectedPath);
@@ -670,7 +793,7 @@
                             selectedPoint = null;
                             selectedPointIndices = [];
                             paper.view.update();
-                            status.textContent = 'Polygon deleted';
+                            status.textContent = selectedPath?.polygonData?.isLine ? 'Line deleted' : 'Polygon deleted';
                         }
                     } else {
                         // No points selected - nothing to delete
@@ -715,7 +838,12 @@
                 polygon.fillColor = null;
                 polygon.strokeColor = 'black';
                 polygon.strokeWidth = 2;
-                polygon.polygonData = { points: points.length, isLine: true };
+                polygon.polygonData = {
+                    points: points.length,
+                    isLine: true,
+                    lineStart: 'none',
+                    lineEnd: 'arrow'
+                };
             } else {
                 if (styleSource && styleSource.fillColor) {
                     polygon.fillColor = styleSource.fillColor.clone();
