@@ -54,12 +54,13 @@
         <h1>Paper.js Polygon Editor</h1>
         <div class="controls">
             <button id="drawBtn">Draw Polygon</button>
+            <button id="drawLineBtn">Draw Line</button>
             <button id="editBtn" class="active">Edit Mode</button>
             <button id="clearBtn">Clear All</button>
         </div>
         <div id="colorControls" style="display: none; position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 1000;">
             <label>Color: <input type="color" id="colorPicker"></label>
-            <label style="margin-left: 10px;">Opacity: <input type="range" id="opacitySlider" min="0" max="1" step="0.1" style="width: 100px;"></label>
+            <label id="opacityLabel" style="margin-left: 10px;">Opacity: <input type="range" id="opacitySlider" min="0" max="1" step="0.1" style="width: 100px;"></label>
         </div>
         <div id="status">Edit mode: Click polygon to select, drag to move.</div>
         <canvas id="canvas" width="800" height="600"></canvas>
@@ -106,12 +107,15 @@
         let lastOpacity = 0.5; // Remember last opacity
 
         const drawBtn = document.getElementById('drawBtn');
+        const drawLineBtn = document.getElementById('drawLineBtn');
         const editBtn = document.getElementById('editBtn');
         const clearBtn = document.getElementById('clearBtn');
         const status = document.getElementById('status');
         const colorControls = document.getElementById('colorControls');
         const colorPicker = document.getElementById('colorPicker');
         const opacitySlider = document.getElementById('opacitySlider');
+
+        let isDrawingLine = false;
 
         // Initialize color controls with remembered values
         colorPicker.value = lastColor;
@@ -120,8 +124,10 @@
         // Draw mode
         drawBtn.addEventListener('click', function() {
             isDrawing = !isDrawing;
+            isDrawingLine = false;
             isEditing = false;
             drawBtn.classList.toggle('active');
+            drawLineBtn.classList.remove('active');
             editBtn.classList.remove('active');
             points = [];
 
@@ -138,6 +144,31 @@
             }
 
             status.textContent = isDrawing ? 'Drawing mode: Click to add points, right-click or ESC to finish' : 'Click "Draw Polygon" to draw';
+        });
+
+        // Draw line mode (reuses polygon logic, just stops after 2 points)
+        drawLineBtn.addEventListener('click', function() {
+            isDrawingLine = !isDrawingLine;
+            isDrawing = isDrawingLine;
+            isEditing = false;
+            drawLineBtn.classList.toggle('active');
+            drawBtn.classList.toggle('active', isDrawingLine);
+            editBtn.classList.remove('active');
+            points = [];
+
+            // Deselect any selected polygon when exiting draw mode
+            if (!isDrawingLine && selectedPath) {
+                selectedPath.strokeColor = null;
+                hideHandles();
+                selectedPath = null;
+                selectedPoint = null;
+                selectedPointIndices = [];
+                colorPicker.blur();
+                colorControls.style.display = 'none';
+                paper.view.update();
+            }
+
+            status.textContent = isDrawingLine ? 'Drawing line: Click 2 points, right-click or ESC to finish' : 'Click "Draw Line" to draw';
         });
 
         // Edit mode
@@ -165,14 +196,21 @@
 
         // Color picker
         colorPicker.addEventListener('input', function() {
-            lastColor = colorPicker.value; // Remember the color
+            const hex = colorPicker.value;
+            const r = parseInt(hex.substr(1, 2), 16) / 255;
+            const g = parseInt(hex.substr(3, 2), 16) / 255;
+            const b = parseInt(hex.substr(5, 2), 16) / 255;
+
             if (selectedPath) {
-                const hex = colorPicker.value;
-                const r = parseInt(hex.substr(1, 2), 16) / 255;
-                const g = parseInt(hex.substr(3, 2), 16) / 255;
-                const b = parseInt(hex.substr(5, 2), 16) / 255;
-                const opacity = parseFloat(opacitySlider.value);
-                selectedPath.fillColor = new paper.Color(r, g, b, opacity);
+                if (selectedPath.polygonData.isLine) {
+                    // Update stroke color for lines
+                    selectedPath.strokeColor = new paper.Color(r, g, b);
+                } else {
+                    // Update fill color for polygons
+                    lastColor = hex;
+                    const opacity = parseFloat(opacitySlider.value);
+                    selectedPath.fillColor = new paper.Color(r, g, b, opacity);
+                }
                 paper.view.update();
             }
         });
@@ -327,29 +365,46 @@
                     status.textContent = `Selected ${selectedPointIndices.length} point(s) - drag to move`;
                     draggingEdgeIndex = -1;
                 } else if (hitResult && hitResult.item.polygonData) {
-                    // Polygon hit but not segment
+                    // Polygon or line hit but not segment
                     // If switching to a different polygon, hide the old one's outline
                     if (selectedPath && selectedPath !== hitResult.item) {
-                        selectedPath.strokeColor = null;
+                        if (!selectedPath.polygonData.isLine) {
+                            selectedPath.strokeColor = null;
+                        }
                         hideHandles();
                         selectedPointIndices = [];
                         polygonJustSelected = true; // Reset for new polygon
                     }
 
                     selectedPath = hitResult.item;
-                    selectedPath.strokeColor = 'black';
-                    selectedPath.strokeWidth = 1;
+                    if (!selectedPath.polygonData.isLine) {
+                        selectedPath.strokeColor = 'black';
+                        selectedPath.strokeWidth = 1;
+                    }
                     draggingEdgeIndex = -1;
 
                     // Update color controls
-                    if (selectedPath.fillColor) {
-                        const rgb = selectedPath.fillColor;
+                    if (selectedPath.polygonData.isLine) {
+                        // Line: show stroke color only
+                        const rgb = selectedPath.strokeColor;
                         const hex = '#' + [rgb.red, rgb.green, rgb.blue].map(x => {
                             const hex = Math.round(x * 255).toString(16);
                             return hex.length === 1 ? '0' + hex : hex;
                         }).join('');
                         colorPicker.value = hex;
-                        opacitySlider.value = rgb.alpha || 0.5;
+                        document.getElementById('opacityLabel').style.display = 'none';
+                    } else {
+                        // Polygon: show fill color and opacity
+                        if (selectedPath.fillColor) {
+                            const rgb = selectedPath.fillColor;
+                            const hex = '#' + [rgb.red, rgb.green, rgb.blue].map(x => {
+                                const hex = Math.round(x * 255).toString(16);
+                                return hex.length === 1 ? '0' + hex : hex;
+                            }).join('');
+                            colorPicker.value = hex;
+                            opacitySlider.value = rgb.alpha || 0.5;
+                        }
+                        document.getElementById('opacityLabel').style.display = 'block';
                     }
                     colorControls.style.display = 'block';
 
@@ -384,7 +439,10 @@
                         }
                     }
                 } else if (selectedPath) {
-                    selectedPath.strokeColor = null;
+                    // Only hide stroke for polygons, not lines
+                    if (!selectedPath.polygonData.isLine) {
+                        selectedPath.strokeColor = null;
+                    }
                     hideHandles();
                     selectedPath = null;
                     selectedPoint = null;
@@ -436,7 +494,8 @@
 
         // Right-click handler - finish drawing (like ESC)
         document.getElementById('canvas').addEventListener('contextmenu', function(event) {
-            if (isDrawing && points.length >= 3) {
+            const minPoints = isDrawingLine ? 2 : 3;
+            if (isDrawing && points.length >= minPoints) {
                 event.preventDefault();
                 finishPolygon();
             }
@@ -488,8 +547,9 @@
                     });
 
                     status.textContent = `Moving ${pointsToMove.length} point(s)...`;
-                } else if (draggingEdgeIndex >= 0 && !createdPointThisDrag) {
-                    // We're dragging an edge - add a point at the current drag location
+                } else if (draggingEdgeIndex >= 0 && !createdPointThisDrag && !selectedPath.polygonData.isLine) {
+                    // We're dragging a polygon edge - add a point at the current drag location
+                    // (Lines don't get new points when dragging edges, they just translate)
                     const newSegment = new paper.Segment(event.point);
                     selectedPath.insert(draggingEdgeIndex + 1, newSegment);
 
@@ -581,7 +641,8 @@
 
         // Keyboard handler
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && isDrawing && points.length >= 3) {
+            const minPoints = isDrawingLine ? 2 : 3;
+            if (e.key === 'Escape' && isDrawing && points.length >= minPoints) {
                 finishPolygon();
             } else if (e.key === 'Delete' || e.key === 'Backspace') {
                 if (selectedPath) {
@@ -620,8 +681,9 @@
         });
 
         function finishPolygon() {
-            if (points.length < 3) {
-                status.textContent = 'Need at least 3 points!';
+            const minPoints = isDrawingLine ? 2 : 3;
+            if (points.length < minPoints) {
+                status.textContent = isDrawingLine ? 'Need at least 2 points!' : 'Need at least 3 points!';
                 return;
             }
 
@@ -639,9 +701,9 @@
                 }
             }
 
-            // Create the actual polygon with style from selected or most recent polygon
+            // Create the actual polygon or line
             const polygon = new paper.Path(points);
-            polygon.closed = true;
+            polygon.closed = !isDrawingLine; // Lines are open paths
 
             // Get style from most recently selected polygon, or fall back to last drawn polygon
             let styleSource = selectedPath;
@@ -649,30 +711,38 @@
                 styleSource = polygons[polygons.length - 1];
             }
 
-            if (styleSource && styleSource.fillColor) {
-                polygon.fillColor = styleSource.fillColor.clone();
+            if (isDrawingLine) {
+                polygon.fillColor = null;
+                polygon.strokeColor = 'black';
+                polygon.strokeWidth = 2;
+                polygon.polygonData = { points: points.length, isLine: true };
             } else {
-                // Use the last remembered color and opacity
-                const hex = lastColor;
-                const r = parseInt(hex.substr(1, 2), 16) / 255;
-                const g = parseInt(hex.substr(3, 2), 16) / 255;
-                const b = parseInt(hex.substr(5, 2), 16) / 255;
-                polygon.fillColor = new paper.Color(r, g, b, lastOpacity);
+                if (styleSource && styleSource.fillColor) {
+                    polygon.fillColor = styleSource.fillColor.clone();
+                } else {
+                    // Use the last remembered color and opacity
+                    const hex = lastColor;
+                    const r = parseInt(hex.substr(1, 2), 16) / 255;
+                    const g = parseInt(hex.substr(3, 2), 16) / 255;
+                    const b = parseInt(hex.substr(5, 2), 16) / 255;
+                    polygon.fillColor = new paper.Color(r, g, b, lastOpacity);
+                }
+                polygon.strokeColor = null;
+                polygon.polygonData = { points: points.length };
             }
-
-            polygon.strokeColor = null;
-            polygon.polygonData = { points: points.length };
 
             polygons.push(polygon);
             points = [];
 
             // Exit draw mode and enter edit mode
             isDrawing = false;
+            isDrawingLine = false;
             drawBtn.classList.remove('active');
+            drawLineBtn.classList.remove('active');
             isEditing = true;
             editBtn.classList.add('active');
 
-            status.textContent = `Polygon created. Click to edit.`;
+            status.textContent = `${isDrawingLine ? 'Line' : 'Polygon'} created. Click to edit.`;
             paper.view.update();
         }
 
