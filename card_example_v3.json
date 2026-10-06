@@ -1,0 +1,154 @@
+{
+  "id": "AbdomenCeliac_Anterior",
+  "title": "Celiac Trunk",
+  "deck": "Abdomen",
+  "subdeck": "Vessels",
+  "tags": [
+    "artery",
+    "vessel",
+    "abdominal",
+    "vascular"
+  ],
+  "image": {
+    "path": "images/abdomen/celiac_anterior.jpg",
+    "width": 800,
+    "height": 600
+  },
+  "view": "Anterior",
+  "credits": {
+    "source": "Comprehensive Cadaver",
+    "authors": [
+      "Cadaveric specimen"
+    ],
+    "copyright": "Educational use"
+  },
+  "cards": [
+    {
+      "side": "front",
+      "text": {
+        "EN": "Identify the vessel highlighted on the anterior view of the abdomen",
+        "DE": "Identifizieren Sie das hervorgehobene Blutgefäß auf der vorderen Ansicht des Abdomens",
+        "FR": "Identifier le vaisseau mis en évidence sur la vue antérieure de l'abdomen",
+        "PL": "Zidentyfikuj naczynia podświetlone na widoku przedniego brzucha",
+        "LA": "Identifica vas luminis in prospectiva anteriore abdominis"
+      }
+    },
+    {
+      "side": "back",
+      "text": {
+        "EN": "Celiac Trunk (Truncus coeliacus) - branches into left gastric, splenic, and common hepatic arteries",
+        "DE": "Zöliakalstamm - verzweigt sich in linke Magengefäße, Milzgefäße und gemeinsame Lebergefäße",
+        "FR": "Tronc coeliaque - se divise en artères gastrique gauche, splénique et hépatique commune",
+        "PL": "Pień trzewny - rozgałęzia się na arteria żołądkowa lewa, splenic i hepatica",
+        "LA": "Truncus coeliacus - rami in arteria gastrica sinistra, lienalis, et hepatica communis"
+      },
+      "annotations": [
+        {
+          "type": "label",
+          "text": {
+            "EN": "Celiac Trunk",
+            "DE": "Zöliakalstamm",
+            "FR": "Tronc coeliaque",
+            "LA": "Truncus coeliacus"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 320,
+              "y": 140
+            },
+            "bottomRight": {
+              "x": 480,
+              "y": 180
+            }
+          },
+          "color": "FF0000",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "align": "center"
+        },
+        {
+          "type": "label",
+          "text": {
+            "EN": "Left Gastric A.",
+            "DE": "Linke Magena.",
+            "LA": "A. gastrica sinistra"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 250,
+              "y": 200
+            },
+            "bottomRight": {
+              "x": 360,
+              "y": 230
+            }
+          },
+          "color": "FF3333",
+          "fontSize": 12
+        },
+        {
+          "type": "label",
+          "text": {
+            "EN": "Splenic A.",
+            "DE": "Milzarterie",
+            "LA": "A. lienalis"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 380,
+              "y": 200
+            },
+            "bottomRight": {
+              "x": 480,
+              "y": 230
+            }
+          },
+          "color": "FF3333",
+          "fontSize": 12
+        },
+        {
+          "type": "arrow",
+          "origin": {
+            "x": 400,
+            "y": 160
+          },
+          "target": {
+            "x": 400,
+            "y": 300
+          },
+          "text": {
+            "EN": "Branches",
+            "DE": "Äste"
+          },
+          "color": "FF6666",
+          "strokeWidth": 2
+        },
+        {
+          "type": "overlay",
+          "nodes": [
+            {
+              "x": 300,
+              "y": 130
+            },
+            {
+              "x": 500,
+              "y": 140
+            },
+            {
+              "x": 520,
+              "y": 320
+            },
+            {
+              "x": 280,
+              "y": 310
+            }
+          ],
+          "color": "FF0000",
+          "opacity": 0.15,
+          "strokeColor": "FF0000",
+          "strokeWidth": 2
+        }
+      ]
+    }
+  ]
+}

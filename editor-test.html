@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Test</title>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial; background: #ccc; }
+        canvas { background: white; border: 3px solid red; display: block; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <h1>Canvas Test - Check if anything appears below:</h1>
+    <canvas id="c" width="400" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('c');
+        console.log('Canvas found:', !!canvas);
+        console.log('Canvas:', canvas);
+
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            console.log('Context:', ctx);
+
+            // Draw blue rectangle
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(50, 50, 100, 100);
+            console.log('Drew blue rectangle');
+
+            // Draw red circle
+            ctx.fillStyle = 'red';
+            ctx.beginPath();
+            ctx.arc(200, 150, 50, 0, Math.PI * 2);
+            ctx.fill();
+            console.log('Drew red circle');
+
+            // Draw text
+            ctx.fillStyle = 'black';
+            ctx.font = '16px Arial';
+            ctx.fillText('If you see this, canvas works!', 50, 250);
+            console.log('Drew text');
+        }
+    </script>
+</body>
+</html>

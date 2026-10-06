@@ -39,6 +39,8 @@
             cursor: crosshair;
             display: block;
             margin: 20px 0;
+            max-width: 100%;
+            height: auto;
         }
         #status {
             padding: 10px;
@@ -57,6 +59,8 @@
             <button id="drawLineBtn">Draw Line</button>
             <button id="editBtn" class="active">Edit Mode</button>
             <button id="clearBtn">Clear All</button>
+            <button id="imagePickerBtn">Load Background Image</button>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
         </div>
         <div id="colorControls" style="display: none; position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 1000;">
             <label>Color: <input type="color" id="colorPicker"></label>
@@ -217,6 +221,8 @@
 
             if (shape) {
                 shape.strokeColor = null;
+                shape.evented = false;
+                shape.selectable = false;
                 group.addChild(shape);
             }
         }
@@ -366,6 +372,7 @@
                 if (selectedPath.polygonData.isLine) {
                     // Update stroke color for lines
                     selectedPath.strokeColor = new paper.Color(r, g, b);
+                    renderLineEnds(selectedPath);
                 } else {
                     // Update fill color for polygons
                     lastColor = hex;
@@ -407,6 +414,95 @@
                 paper.view.update();
             }
         });
+
+        // Image picker
+        const imagePickerBtn = document.getElementById('imagePickerBtn');
+        const imageInput = document.getElementById('imageInput');
+
+        imagePickerBtn.addEventListener('click', function() {
+            imageInput.click();
+        });
+
+        imageInput.addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                handleImageFile(e.target.files[0]);
+            }
+        });
+
+        async function handleImageFile(file) {
+            const fileName = file.name;
+
+            // Try to find the image in media, assets, or images folders
+            const possiblePaths = [
+                `media/${fileName}`,
+                `assets/${fileName}`,
+                `images/${fileName}`
+            ];
+
+            // Check which paths exist by trying to load them
+            for (const path of possiblePaths) {
+                try {
+                    const response = await fetch(path, { method: 'HEAD' });
+                    if (response.ok) {
+                        loadBackgroundImage(path);
+                        status.textContent = 'Background image loaded: ' + path;
+                        return;
+                    }
+                } catch (e) {
+                    // Continue to next path
+                }
+            }
+
+            // Image not found in standard locations
+            const addToAssets = confirm(
+                `Image "${fileName}" not found in media, assets, or images folders.\n\n` +
+                'Would you like to:\n' +
+                '- OK: Add to assets folder\n' +
+                '- Cancel: Enter custom path'
+            );
+
+            if (addToAssets) {
+                // Try loading from assets (user can manually add the file there)
+                const assetPath = `assets/${fileName}`;
+                loadBackgroundImage(assetPath);
+                status.textContent = 'Please add ' + fileName + ' to assets folder. Attempting to load from: ' + assetPath;
+            } else {
+                // Let user enter custom path
+                const customPath = prompt('Enter relative path to image:', fileName);
+                if (customPath && customPath.trim()) {
+                    loadBackgroundImage(customPath.trim());
+                    status.textContent = 'Background image loaded: ' + customPath;
+                }
+            }
+        }
+
+        function loadBackgroundImage(imagePath) {
+            // Remove old background raster if it exists
+            if (backgroundRaster) {
+                backgroundRaster.remove();
+            }
+
+            const img = new Image();
+            img.onload = function() {
+                // Calculate available width from container
+                const container = document.querySelector('.container');
+                const containerWidth = container ? container.offsetWidth : window.innerWidth - 40;
+
+                // Scale to fit container width
+                canvas.width = Math.min(containerWidth, img.width);
+                canvas.height = canvas.width / (img.width / img.height);
+                paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+
+                // Create and fit raster
+                backgroundRaster = new paper.Raster(img);
+                backgroundRaster.fitBounds(paper.view.bounds);
+                backgroundRaster.evented = false;
+                backgroundRaster.selectable = false;
+                backgroundRaster.sendToBack();
+                paper.view.update();
+            };
+            img.src = imagePath;
+        }
 
         // Canvas click handler
         paper.view.onMouseDown = function(event) {
@@ -1020,13 +1116,20 @@
                         } else {
                             // Would leave fewer than minimum points - delete entire object
                             hideHandles();
+
+                            // Remove line end markers if they exist
+                            if (selectedPath.lineEndGroup) {
+                                selectedPath.lineEndGroup.remove();
+                            }
+
                             selectedPath.remove();
                             polygons = polygons.filter(p => p !== selectedPath);
+                            const wasLine = selectedPath?.polygonData?.isLine;
                             selectedPath = null;
                             selectedPoint = null;
                             selectedPointIndices = [];
                             paper.view.update();
-                            status.textContent = selectedPath?.polygonData?.isLine ? 'Line deleted' : 'Polygon deleted';
+                            status.textContent = wasLine ? 'Line deleted' : 'Polygon deleted';
                         }
                     } else {
                         // No points selected - nothing to delete

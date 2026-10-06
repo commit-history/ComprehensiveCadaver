@@ -1,0 +1,346 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Anatomical Card Definition (v3)",
+  "description": "Schema for defining annotated anatomical cards with view axes, tags, and deck organization",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "deck",
+    "subdeck",
+    "image",
+    "view",
+    "cards"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique card identifier (e.g. 'AbdomenCeliac_Anterior')",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Structure name (e.g. 'Celiac Trunk', 'Brachial Plexus')"
+    },
+    "deck": {
+      "type": "string",
+      "description": "Top-level deck name (e.g. 'Abdomen', 'Upper Limb', 'Head and Neck')"
+    },
+    "subdeck": {
+      "type": "string",
+      "description": "Subdeck within the deck (e.g. 'Vessels', 'Nerves', 'Osteology')"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Searchable tags for filtering (e.g. 'artery', 'nerve', 'muscle', 'bone')",
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        "artery",
+        "vein",
+        "nerve",
+        "muscle",
+        "bone",
+        "organ",
+        "vessel",
+        "lymph"
+      ]
+    },
+    "image": {
+      "type": "object",
+      "description": "Image metadata",
+      "required": ["path", "width", "height"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Path to image file (relative to repo root)"
+        },
+        "width": {
+          "type": "integer",
+          "description": "Image width in pixels"
+        },
+        "height": {
+          "type": "integer",
+          "description": "Image height in pixels"
+        }
+      }
+    },
+    "view": {
+      "type": "string",
+      "description": "Anatomical view axis (directional orientation)",
+      "enum": [
+        "Anterior",
+        "Posterior",
+        "Superior",
+        "Inferior",
+        "Left",
+        "Right",
+        "Medial",
+        "Lateral",
+        "Axial",
+        "Sagittal",
+        "Coronal",
+        "Transverse",
+        "Dorsal",
+        "Ventral",
+        "Deep",
+        "Superficial"
+      ]
+    },
+    "credits": {
+      "type": "object",
+      "description": "Attribution information",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "copyright": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "cards": {
+      "type": "array",
+      "description": "Array with exactly 2 elements: front question card and back answer card",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["side", "text"],
+        "properties": {
+          "side": {
+            "type": "string",
+            "enum": ["front", "back"],
+            "description": "Card side: 'front' is question, 'back' is answer"
+          },
+          "text": {
+            "type": "object",
+            "description": "Translated text (only translations present on back)",
+            "properties": {
+              "EN": {
+                "type": "string"
+              },
+              "DE": {
+                "type": "string"
+              },
+              "FR": {
+                "type": "string"
+              },
+              "PL": {
+                "type": "string"
+              },
+              "LA": {
+                "type": "string"
+              }
+            }
+          },
+          "annotations": {
+            "type": "array",
+            "description": "Visual annotations on the image (back card only)",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "title": "Label Annotation",
+                  "required": ["type", "text"],
+                  "properties": {
+                    "type": {
+                      "const": "label"
+                    },
+                    "text": {
+                      "type": "object",
+                      "description": "Label text in multiple languages",
+                      "properties": {
+                        "EN": {
+                          "type": "string"
+                        },
+                        "DE": {
+                          "type": "string"
+                        },
+                        "FR": {
+                          "type": "string"
+                        },
+                        "PL": {
+                          "type": "string"
+                        },
+                        "LA": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "bounds": {
+                      "type": "object",
+                      "description": "Bounding box for text (text auto-scales to fit)",
+                      "required": ["topLeft", "bottomRight"],
+                      "properties": {
+                        "topLeft": {
+                          "type": "object",
+                          "required": ["x", "y"],
+                          "properties": {
+                            "x": {
+                              "type": "number"
+                            },
+                            "y": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "bottomRight": {
+                          "type": "object",
+                          "required": ["x", "y"],
+                          "properties": {
+                            "x": {
+                              "type": "number"
+                            },
+                            "y": {
+                              "type": "number"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "color": {
+                      "type": "string",
+                      "description": "Text color (hex, e.g. 'FF0000')",
+                      "pattern": "^[0-9A-Fa-f]{6}$"
+                    },
+                    "fontSize": {
+                      "type": "number",
+                      "description": "Base font size in pixels"
+                    },
+                    "fontWeight": {
+                      "type": "string",
+                      "enum": ["normal", "bold"]
+                    },
+                    "align": {
+                      "type": "string",
+                      "enum": ["left", "center", "right"]
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "title": "Arrow Annotation",
+                  "required": ["type", "origin", "target"],
+                  "properties": {
+                    "type": {
+                      "const": "arrow"
+                    },
+                    "origin": {
+                      "type": "object",
+                      "description": "Arrow start point",
+                      "required": ["x", "y"],
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "target": {
+                      "type": "object",
+                      "description": "Arrow end point",
+                      "required": ["x", "y"],
+                      "properties": {
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "text": {
+                      "type": "object",
+                      "description": "Optional label text on arrow",
+                      "properties": {
+                        "EN": {
+                          "type": "string"
+                        },
+                        "DE": {
+                          "type": "string"
+                        },
+                        "FR": {
+                          "type": "string"
+                        },
+                        "PL": {
+                          "type": "string"
+                        },
+                        "LA": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "color": {
+                      "type": "string",
+                      "pattern": "^[0-9A-Fa-f]{6}$"
+                    },
+                    "strokeWidth": {
+                      "type": "number"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "title": "Overlay Annotation",
+                  "required": ["type", "nodes"],
+                  "properties": {
+                    "type": {
+                      "const": "overlay"
+                    },
+                    "nodes": {
+                      "type": "array",
+                      "description": "Polygon vertices (minimum 3 for triangle)",
+                      "minItems": 3,
+                      "items": {
+                        "type": "object",
+                        "required": ["x", "y"],
+                        "properties": {
+                          "x": {
+                            "type": "number"
+                          },
+                          "y": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "color": {
+                      "type": "string",
+                      "pattern": "^[0-9A-Fa-f]{6}$"
+                    },
+                    "opacity": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "Fill opacity (0.0 = transparent, 1.0 = opaque)"
+                    },
+                    "strokeColor": {
+                      "type": "string",
+                      "pattern": "^[0-9A-Fa-f]{6}$"
+                    },
+                    "strokeWidth": {
+                      "type": "number"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

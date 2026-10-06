@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card Annotation Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: white;
+            border-right: 1px solid #ddd;
+            padding: 16px;
+            overflow-y: auto;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .canvas-area {
+            flex: 1;
+            background: #eee;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        canvas {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: crosshair;
+        }
+
+        .sidebar h2 {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #666;
+            margin: 16px 0 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background: #f0f0f0;
+        }
+
+        button.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
+
+        .status {
+            padding: 12px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Tools</h2>
+            <button id="toolSelect" class="active">Select</button>
+            <button id="toolPolygon">Polygon</button>
+            <button id="toolRect">Rectangle</button>
+            <button id="btnSave">💾 Save</button>
+            <div class="status" id="status" style="display: none;"></div>
+        </div>
+
+        <div class="main">
+            <div class="header">Simple Annotation Editor</div>
+            <div class="canvas-area">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000/api';
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        let currentCard = null;
+        let activeTool = 'select';
+        let drawing = false;
+        let points = [];
+        let imageData = null;
+
+        // Initialize
+        async function init() {
+            canvas.width = 800;
+            canvas.height = 600;
+
+            // Test: draw a blue rectangle
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(100, 100, 200, 150);
+
+            console.log('Canvas initialized, size:', canvas.width, 'x', canvas.height);
+
+            // Load first card
+            try {
+                const decks = await fetch(`${API_BASE}/decks`).then(r => r.json());
+                const cardId = decks.decks[0].subdecks[0].cardIds[0];
+                const card = await fetch(`${API_BASE}/card?id=${cardId}`).then(r => r.json());
+                currentCard = card;
+
+                // Load image
+                const img = new Image();
+                img.onload = function() {
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img, 0, 0);
+                    console.log('Image loaded and drawn');
+                };
+                img.src = '/' + card.image.path;
+            } catch (e) {
+                console.error('Error:', e);
+                // Just keep the blue rectangle as test
+            }
+        }
+
+        // Tool selection
+        document.getElementById('toolSelect').onclick = () => selectTool('select');
+        document.getElementById('toolPolygon').onclick = () => selectTool('polygon');
+        document.getElementById('toolRect').onclick = () => selectTool('rect');
+
+        function selectTool(tool) {
+            activeTool = tool;
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            document.getElementById('tool' + tool.charAt(0).toUpperCase() + tool.slice(1)).classList.add('active');
+            console.log('Tool selected:', tool);
+        }
+
+        // Canvas drawing
+        canvas.onmousedown = (e) => {
+            if (activeTool === 'select') return;
+
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            console.log('Click at:', x, y, 'tool:', activeTool);
+
+            if (activeTool === 'rect') {
+                // Draw rectangle
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 3;
+                ctx.strokeRect(x - 50, y - 50, 100, 100);
+                console.log('Rectangle drawn at', x, y);
+            } else if (activeTool === 'polygon') {
+                // Add point
+                points.push([x, y]);
+                console.log('Polygon point', points.length, ':', x, y);
+
+                // Draw point
+                ctx.fillStyle = 'red';
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Draw line to previous point
+                if (points.length > 1) {
+                    const prev = points[points.length - 2];
+                    ctx.strokeStyle = 'red';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(prev[0], prev[1]);
+                    ctx.lineTo(x, y);
+                    ctx.stroke();
+                }
+
+                // Finish on double-click
+                if (e.detail === 2 && points.length >= 3) {
+                    console.log('Polygon finished with', points.length, 'points');
+                    points = [];
+                }
+            }
+        };
+
+        document.getElementById('btnSave').onclick = () => {
+            if (currentCard) {
+                fetch(`${API_BASE}/card`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(currentCard)
+                }).then(r => {
+                    const status = document.getElementById('status');
+                    status.textContent = 'Saved!';
+                    status.style.display = 'block';
+                    setTimeout(() => status.style.display = 'none', 2000);
+                });
+            }
+        };
+
+        init();
+    </script>
+</body>
+</html>

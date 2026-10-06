@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric.js Annotation Editor</title>
+    <script src="node_modules/fabric/dist/index.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            padding: 16px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .canvas-container {
+            flex: 1;
+            overflow: auto;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        canvas {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Sidebar sections */
+        .sidebar-section {
+            margin-bottom: 24px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .card-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .card-item {
+            padding: 12px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .card-item:hover {
+            background: #e8f4f8;
+        }
+
+        .card-item.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
+
+        /* Tools */
+        .tools {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: #f0f0f0;
+            border-color: #999;
+        }
+
+        button.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
+
+        /* Side toggle */
+        .side-toggle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+        }
+
+        .side-toggle button {
+            padding: 8px;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        /* Status */
+        .status {
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .status.success {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status.error {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        /* Properties panel */
+        .properties {
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+        }
+
+        .property-group {
+            margin-bottom: 12px;
+        }
+
+        .property-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #666;
+        }
+
+        .property-group input,
+        .property-group select {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h2>Cards</h2>
+                <div class="card-selector" id="cardSelector"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Tools</h2>
+                <div class="tools">
+                    <button id="toolPolygon" class="tool-btn">📐 Polygon</button>
+                    <button id="toolArrow" class="tool-btn">➜ Arrow</button>
+                    <button id="toolLine" class="tool-btn">📏 Line</button>
+                    <button id="toolText" class="tool-btn">T Text</button>
+                    <button id="toolSelect" class="tool-btn active">✓ Select</button>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Side</h2>
+                <div class="side-toggle">
+                    <button id="sideFront">Front</button>
+                    <button id="sideBack" class="active">Back</button>
+                </div>
+            </div>
+
+            <div class="properties">
+                <div class="property-group">
+                    <label>Stroke Color</label>
+                    <input type="color" id="strokeColor" value="#ff0000">
+                </div>
+                <div class="property-group">
+                    <label>Stroke Width</label>
+                    <input type="range" id="strokeWidth" min="1" max="20" value="2">
+                </div>
+                <div class="property-group">
+                    <label>Fill Color</label>
+                    <input type="color" id="fillColor" value="#ffff0055">
+                </div>
+            </div>
+
+            <div id="status"></div>
+        </div>
+
+        <!-- Main -->
+        <div class="main">
+            <div class="header">
+                <h1>Annotation Editor</h1>
+                <button onclick="saveCard()" style="margin-left: auto;">💾 Save</button>
+            </div>
+            <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="fabric-adapter.js"></script>
+    <script src="fabric-main.js"></script>
+</body>
+</html>

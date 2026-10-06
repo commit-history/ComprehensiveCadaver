@@ -1,0 +1,245 @@
+{
+  "id": "AbdomenCeliac_Anterior",
+  "title": "Celiac Trunk",
+  "deck": "Abdomen",
+  "subdeck": "Vessels",
+  "tags": [
+    "artery",
+    "vessel",
+    "abdominal",
+    "vascular"
+  ],
+  "image": {
+    "path": "images/abdomen/celiac_anterior.jpg",
+    "width": 800,
+    "height": 600
+  },
+  "view": "Anterior",
+  "credits": {
+    "source": "Comprehensive Cadaver",
+    "authors": [
+      "Cadaveric specimen"
+    ],
+    "copyright": "Educational use"
+  },
+  "cards": [
+    {
+      "side": "front",
+      "text": {},
+      "annotations": [
+        {
+          "type": "arrow",
+          "origin": {
+            "x": 607,
+            "y": 392
+          },
+          "target": {
+            "x": 418,
+            "y": 298
+          },
+          "color": "ff6666",
+          "strokeWidth": 2
+        },
+        {
+          "type": "label",
+          "text": {
+            "EN": "asdasd"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 447,
+              "y": 227
+            },
+            "bottomRight": {
+              "x": 547,
+              "y": 257
+            }
+          },
+          "color": "ff0000",
+          "fontSize": 14
+        }
+      ]
+    },
+    {
+      "side": "back",
+      "text": {},
+      "annotations": [
+        {
+          "type": "label",
+          "text": {
+            "EN": "Celiac Trunk",
+            "DE": "Z\u00f6liakalstamm",
+            "FR": "Tronc coeliaque",
+            "LA": "Truncus coeliacus"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 320,
+              "y": 140
+            },
+            "bottomRight": {
+              "x": 480,
+              "y": 180
+            }
+          },
+          "color": "FF0000",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "align": "center"
+        },
+        {
+          "type": "label",
+          "text": {
+            "EN": "Left Gastric A.",
+            "DE": "Linke Magena.",
+            "LA": "A. gastrica sinistra"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 250,
+              "y": 200
+            },
+            "bottomRight": {
+              "x": 360,
+              "y": 230
+            }
+          },
+          "color": "FF3333",
+          "fontSize": 12
+        },
+        {
+          "type": "label",
+          "text": {
+            "EN": "Splenic A.",
+            "DE": "Milzarterie",
+            "LA": "A. lienalis"
+          },
+          "bounds": {
+            "topLeft": {
+              "x": 380,
+              "y": 200
+            },
+            "bottomRight": {
+              "x": 480,
+              "y": 230
+            }
+          },
+          "color": "FF3333",
+          "fontSize": 12
+        },
+        {
+          "type": "arrow",
+          "origin": {
+            "x": 400,
+            "y": 160
+          },
+          "target": {
+            "x": 400,
+            "y": 300
+          },
+          "text": {
+            "EN": "Branches",
+            "DE": "\u00c4ste"
+          },
+          "color": "FF6666",
+          "strokeWidth": 2
+        },
+        {
+          "type": "overlay",
+          "nodes": [
+            {
+              "x": 300,
+              "y": 130
+            },
+            {
+              "x": 500,
+              "y": 140
+            },
+            {
+              "x": 520,
+              "y": 320
+            },
+            {
+              "x": 280,
+              "y": 310
+            }
+          ],
+          "color": "FF0000",
+          "opacity": 0.15,
+          "strokeColor": "FF0000",
+          "strokeWidth": 2
+        }
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "ann_1791186971878",
+      "kind": "polygon",
+      "sides": [
+        "back"
+      ],
+      "points": [
+        [
+          145.5,
+          100.5
+        ],
+        [
+          67.5,
+          196.5
+        ],
+        [
+          74.5,
+          311.5
+        ],
+        [
+          195.5,
+          356.5
+        ]
+      ],
+      "fill": "rgba(255, 255, 0, 0.3)",
+      "stroke": "#ff0000",
+      "width": 3
+    },
+    {
+      "id": "ann_1791186979010",
+      "kind": "polygon",
+      "sides": [
+        "back"
+      ],
+      "points": [
+        [
+          191.5,
+          102.5
+        ],
+        [
+          68.5,
+          38.5
+        ],
+        [
+          1.5,
+          210.5
+        ],
+        [
+          243.5,
+          131.5
+        ],
+        [
+          315.5,
+          217.5
+        ],
+        [
+          352.5,
+          111.5
+        ],
+        [
+          256.5,
+          1.5
+        ]
+      ],
+      "fill": "rgba(255, 255, 0, 0.3)",
+      "stroke": "#ff0000",
+      "width": 3
+    }
+  ]
+}

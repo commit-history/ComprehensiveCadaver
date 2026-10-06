@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+
+        /* Sidebar Sections */
+        .sidebar-section {
+            margin-bottom: 24px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .deck-tree {
+            list-style: none;
+        }
+
+        .deck-item {
+            margin-bottom: 4px;
+        }
+
+        .deck-item > button {
+            width: 100%;
+            padding: 8px;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .deck-item > button:hover {
+            background: #f0f0f0;
+        }
+
+        .deck-item > button.active {
+            background: #e8f4f8;
+            color: #0066cc;
+            font-weight: 600;
+        }
+
+        .subdeck-list {
+            margin-left: 16px;
+            list-style: none;
+            display: none;
+        }
+
+        .subdeck-list.expanded {
+            display: block;
+        }
+
+        .card-list {
+            list-style: none;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .card-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background 0.2s;
+        }
+
+        .card-item:hover {
+            background: #f8f8f8;
+        }
+
+        .card-item.active {
+            background: #e8f4f8;
+            font-weight: 600;
+        }
+
+        /* Form */
+        .form-section {
+            background: #fff;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid #ddd;
+        }
+
+        .form-section h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 13px;
+            resize: vertical;
+        }
+
+        .form-group textarea {
+            min-height: 80px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        }
+
+        .tags-input {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 36px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #e8f4f8;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .tag button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font-weight: bold;
+            color: #666;
+        }
+
+        .tag button:hover {
+            color: #000;
+        }
+
+        .tags-input input {
+            border: none;
+            flex: 1;
+            min-width: 80px;
+            padding: 4px 0;
+            font-size: 13px;
+        }
+
+        .tags-input input:focus {
+            outline: none;
+        }
+
+        /* Language Tabs */
+        .language-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .language-tab {
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            margin-bottom: -1px;
+        }
+
+        .language-tab:hover {
+            color: #333;
+        }
+
+        .language-tab.active {
+            color: #0066cc;
+            border-bottom-color: #0066cc;
+        }
+
+        .language-content {
+            display: none;
+        }
+
+        .language-content.active {
+            display: block;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 8px;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #0066cc;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0052a3;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .status {
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .status.success {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status.error {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .status.info {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        /* Image Preview */
+        .image-preview {
+            max-width: 400px;
+            max-height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 8px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f0f0f0;
+            border-top: 3px solid #0066cc;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 1200px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Side Selector */
+        .side-selector {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .side-btn {
+            flex: 1;
+            padding: 12px;
+            background: #f0f0f0;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .side-btn.active {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+        }
+
+        /* Image Annotation Canvas */
+        .image-canvas-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .image-canvas-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .canvas-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: crosshair;
+        }
+
+        /* Annotation List */
+        .annotations-list {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 12px;
+        }
+
+        .annotation-item {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .annotation-item:last-child {
+            border-bottom: none;
+        }
+
+        .annotation-item-info {
+            flex: 1;
+        }
+
+        .annotation-item-type {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .annotation-item-text {
+            color: #666;
+            font-size: 11px;
+        }
+
+        .annotation-item-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .annotation-item-actions button {
+            padding: 4px 8px;
+            font-size: 11px;
+        }
+
+        /* Annotation Tool Panel */
+        .annotation-tool {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 12px;
+            margin-top: 12px;
+        }
+
+        .annotation-tool h3 {
+            font-size: 12px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .tool-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .tool-row.full {
+            grid-template-columns: 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h2>Decks</h2>
+                <ul class="deck-tree" id="deckTree"></ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Cards</h2>
+                <ul class="card-list" id="cardList"></ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="header">
+                <h1>Card Editor</h1>
+                <div style="margin-left: auto;" id="headerStatus"></div>
+            </div>
+
+            <div class="content" id="content">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading decks...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000/api';
+        let decksData = null;
+        let currentCard = null;
+        let currentDeck = null;
+        let currentSubdeck = null;
+        let currentSide = 'front';
+        let currentAnnotationId = null;
+        let imageCanvas = null;
+        let canvasCtx = null;
+
+        async function loadDecks() {
+            try {
+                const response = await fetch(`${API_BASE}/decks`);
+                decksData = await response.json();
+                renderDeckTree();
+            } catch (error) {
+                showStatus('Error loading decks: ' + error.message, 'error', 'header');
+            }
+        }
+
+        function renderDeckTree() {
+            const deckTree = document.getElementById('deckTree');
+            deckTree.innerHTML = '';
+
+            decksData.decks.forEach(deck => {
+                const deckItem = document.createElement('li');
+                deckItem.className = 'deck-item';
+
+                const deckButton = document.createElement('button');
+                deckButton.textContent = `▼ ${deck.name}`;
+                deckButton.onclick = () => toggleDeck(deckButton, deck);
+
+                const subdeckList = document.createElement('ul');
+                subdeckList.className = 'subdeck-list expanded';
+
+                deck.subdecks.forEach(subdeck => {
+                    const subdeckItem = document.createElement('li');
+                    subdeckItem.className = 'deck-item';
+
+                    const subdeckButton = document.createElement('button');
+                    subdeckButton.textContent = `${subdeck.name} (${subdeck.cardIds.length})`;
+                    subdeckButton.onclick = () => loadCards(deck.name, subdeck.name);
+
+                    subdeckItem.appendChild(subdeckButton);
+                    subdeckList.appendChild(subdeckItem);
+                });
+
+                deckItem.appendChild(deckButton);
+                deckItem.appendChild(subdeckList);
+                deckTree.appendChild(deckItem);
+            });
+        }
+
+        function toggleDeck(button, deck) {
+            const list = button.nextElementSibling;
+            list.classList.toggle('expanded');
+            button.textContent = list.classList.contains('expanded') ? `▼ ${deck.name}` : `▶ ${deck.name}`;
+        }
+
+        async function loadCards(deck, subdeck) {
+            currentDeck = deck;
+            currentSubdeck = subdeck;
+
+            try {
+                const response = await fetch(`${API_BASE}/cards?deck=${encodeURIComponent(deck)}&subdeck=${encodeURIComponent(subdeck)}`);
+                const cards = await response.json();
+
+                renderCardList(cards);
+                if (cards.length > 0) {
+                    loadCard(cards[0].id);
+                }
+            } catch (error) {
+                showStatus('Error loading cards: ' + error.message, 'error', 'header');
+            }
+        }
+
+        function renderCardList(cards) {
+            const cardList = document.getElementById('cardList');
+            cardList.innerHTML = '';
+
+            cards.forEach(card => {
+                const li = document.createElement('li');
+                li.className = 'card-item';
+                li.textContent = card.title;
+                li.onclick = () => loadCard(card.id);
+                cardList.appendChild(li);
+            });
+        }
+
+        async function loadCard(cardId) {
+            try {
+                const response = await fetch(`${API_BASE}/card?id=${cardId}`);
+                currentCard = await response.json();
+                renderCardForm();
+                highlightCard(cardId);
+            } catch (error) {
+                showStatus('Error loading card: ' + error.message, 'error', 'header');
+            }
+        }
+
+        function renderCardForm() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <form onsubmit="saveCard(event)" id="cardForm">
+                    <div class="two-column">
+                        <!-- Left Column: Metadata -->
+                        <div>
+                            <div class="form-section">
+                                <h2>Card Metadata</h2>
+                                <div class="form-group">
+                                    <label>Card ID</label>
+                                    <input type="text" id="cardId" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>Title</label>
+                                    <input type="text" id="title">
+                                </div>
+                                <div class="form-group">
+                                    <label>View</label>
+                                    <select id="view">
+                                        <option value="Anterior">Anterior</option>
+                                        <option value="Posterior">Posterior</option>
+                                        <option value="Superior">Superior</option>
+                                        <option value="Inferior">Inferior</option>
+                                        <option value="Left">Left</option>
+                                        <option value="Right">Right</option>
+                                        <option value="Medial">Medial</option>
+                                        <option value="Lateral">Lateral</option>
+                                        <option value="Axial">Axial</option>
+                                        <option value="Sagittal">Sagittal</option>
+                                        <option value="Coronal">Coronal</option>
+                                        <option value="Transverse">Transverse</option>
+                                        <option value="Dorsal">Dorsal</option>
+                                        <option value="Ventral">Ventral</option>
+                                        <option value="Deep">Deep</option>
+                                        <option value="Superficial">Superficial</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tags</label>
+                                    <div class="tags-input" id="tagsInput">
+                                        <input type="text" placeholder="Add tags..." id="tagInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-section">
+                                <h2>Side</h2>
+                                <div class="side-selector">
+                                    <button type="button" class="side-btn active" onclick="switchSide('front')">Front Side</button>
+                                    <button type="button" class="side-btn" onclick="switchSide('back')">Back Side</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Text Content -->
+                        <div>
+                            <div class="form-section">
+                                <h2>Front Side</h2>
+                                <div class="language-tabs" id="frontTabs"></div>
+                                <div id="frontContent"></div>
+                            </div>
+                            <div class="form-section">
+                                <h2>Back Side</h2>
+                                <div class="language-tabs" id="backTabs"></div>
+                                <div id="backContent"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full Width Image Section -->
+                    <div class="form-section full-width">
+                        <h2>Image & Annotations</h2>
+                        <div style="text-align: center;">
+                            <div id="imagePreviewContainer" style="display: inline-block; max-width: 100%;"></div>
+                        </div>
+
+                        <div class="form-section" style="background: #f9f9f9; border: none; padding: 12px; margin-top: 16px;">
+                            <h3 style="font-size: 13px; margin-bottom: 12px;">Annotations</h3>
+                            <div class="form-group">
+                                <label>Add Annotation</label>
+                                <select id="annotationType" onchange="updateAnnotationTool()">
+                                    <option value="">Select type...</option>
+                                    <option value="label">Label (Text)</option>
+                                    <option value="arrow">Arrow</option>
+                                    <option value="overlay">Overlay (Region)</option>
+                                </select>
+                            </div>
+                            <div id="annotationTool"></div>
+                            <div id="annotationsList" class="annotations-list"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-section full-width">
+                        <div class="button-group">
+                            <button type="submit" class="btn-primary">Save Card</button>
+                            <button type="button" class="btn-secondary" onclick="resetForm()">Reset</button>
+                        </div>
+                        <div id="saveStatus"></div>
+                    </div>
+                </form>
+            `;
+
+            // Populate metadata
+            const cardIdEl = document.getElementById('cardId');
+            const titleEl = document.getElementById('title');
+            const viewEl = document.getElementById('view');
+            const imagePathEl = document.getElementById('imagePath');
+
+            if (cardIdEl) cardIdEl.value = currentCard.id;
+            if (titleEl) titleEl.value = currentCard.title;
+            if (viewEl) viewEl.value = currentCard.view;
+            if (imagePathEl) imagePathEl.value = currentCard.image.path;
+
+            // Populate image with canvas for annotations
+            const previewContainer = document.getElementById('imagePreviewContainer');
+            const img = new Image();
+            img.onload = function() {
+                previewContainer.innerHTML = `
+                    <div class="image-canvas-container">
+                        <img src="/${currentCard.image.path}" alt="Card image" id="cardImage" style="max-width: 100%; max-height: 500px; display: block;">
+                        <canvas id="annotationCanvas" class="canvas-overlay"></canvas>
+                    </div>
+                `;
+
+                // Wait for image to render, then set canvas
+                setTimeout(() => {
+                    const canvas = document.getElementById('annotationCanvas');
+                    const cardImg = document.getElementById('cardImage');
+
+                    if (canvas && cardImg) {
+                        // Set canvas to match displayed image dimensions
+                        canvas.width = cardImg.offsetWidth;
+                        canvas.height = cardImg.offsetHeight;
+                        canvas.style.width = cardImg.offsetWidth + 'px';
+                        canvas.style.height = cardImg.offsetHeight + 'px';
+
+                        drawAnnotations();
+                    }
+                }, 100);
+            };
+            img.src = `/${currentCard.image.path}`;
+
+            // Render annotations list
+            renderAnnotationsList();
+
+            // Populate tags
+            const tagsInput = document.getElementById('tagsInput');
+            const tagInput = document.getElementById('tagInput');
+            if (tagsInput && tagInput) {
+                tagsInput.innerHTML = '';
+                currentCard.tags.forEach(tag => {
+                    const tagEl = document.createElement('span');
+                    tagEl.className = 'tag';
+                    tagEl.innerHTML = `${tag} <button type="button" onclick="removeTag(this)">×</button>`;
+                    tagsInput.appendChild(tagEl);
+                });
+                tagsInput.appendChild(tagInput);
+                tagInput.onkeydown = (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        addTag(tagInput.value);
+                        tagInput.value = '';
+                    }
+                };
+            }
+
+            // Populate language tabs and content
+            renderLanguageTabs();
+        }
+
+        function drawAnnotations() {
+            const canvas = document.getElementById('annotationCanvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            const sideCard = getCurrentSideCard();
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (!sideCard.annotations) return;
+
+            // Calculate scale from original image to displayed canvas
+            const scaleX = canvas.offsetWidth / currentCard.image.width;
+            const scaleY = canvas.offsetHeight / currentCard.image.height;
+
+            sideCard.annotations.forEach(ann => {
+                ctx.strokeStyle = '#' + ann.color;
+                ctx.fillStyle = 'rgba(' + parseInt(ann.color.slice(0, 2), 16) + ', ' + parseInt(ann.color.slice(2, 4), 16) + ', ' + parseInt(ann.color.slice(4, 6), 16) + ', 0.3)';
+
+                if (ann.type === 'label' && ann.bounds) {
+                    const {topLeft, bottomRight} = ann.bounds;
+                    const x = topLeft.x * scaleX;
+                    const y = topLeft.y * scaleY;
+                    const width = (bottomRight.x - topLeft.x) * scaleX;
+                    const height = (bottomRight.y - topLeft.y) * scaleY;
+
+                    ctx.strokeRect(x, y, width, height);
+                    ctx.fillStyle = '#' + ann.color;
+                    const fontSize = Math.max(10, (ann.fontSize || 14) * scaleX);
+                    ctx.font = `${fontSize}px sans-serif`;
+                    const text = ann.text?.EN || ann.text?.[Object.keys(ann.text)[0]] || '';
+                    ctx.fillText(text, x + 4, y + fontSize);
+                } else if (ann.type === 'arrow') {
+                    ctx.beginPath();
+                    ctx.moveTo(ann.origin.x * scaleX, ann.origin.y * scaleY);
+                    ctx.lineTo(ann.target.x * scaleX, ann.target.y * scaleY);
+                    ctx.lineWidth = ann.strokeWidth || 2;
+                    ctx.stroke();
+                } else if (ann.type === 'overlay' && ann.nodes && ann.nodes.length > 0) {
+                    ctx.beginPath();
+                    ctx.moveTo(ann.nodes[0].x * scaleX, ann.nodes[0].y * scaleY);
+                    ann.nodes.forEach(node => ctx.lineTo(node.x * scaleX, node.y * scaleY));
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.lineWidth = ann.strokeWidth || 2;
+                    ctx.stroke();
+                }
+            });
+        }
+
+        function renderLanguageTabs() {
+            const languages = ['EN', 'DE', 'FR', 'PL', 'LA'];
+
+            // Only render for the current side
+            const tabsId = currentSide === 'front' ? 'frontTabs' : 'backTabs';
+            const contentId = currentSide === 'front' ? 'frontContent' : 'backContent';
+
+            const tabs = document.getElementById(tabsId);
+            const content = document.getElementById(contentId);
+            const sideCard = getCurrentSideCard();
+
+            if (!tabs || !content || !sideCard) return;
+
+            // Hide the other side's section
+            const frontSections = Array.from(document.querySelectorAll('.form-section')).filter(s => s.querySelector('#frontTabs'));
+            const backSections = Array.from(document.querySelectorAll('.form-section')).filter(s => s.querySelector('#backTabs'));
+
+            if (frontSections.length > 0 && backSections.length > 0) {
+                if (currentSide === 'front') {
+                    frontSections.forEach(s => s.style.display = 'block');
+                    backSections.forEach(s => s.style.display = 'none');
+                } else {
+                    frontSections.forEach(s => s.style.display = 'none');
+                    backSections.forEach(s => s.style.display = 'block');
+                }
+            }
+
+            tabs.innerHTML = '';
+            content.innerHTML = '';
+
+            languages.forEach((lang, i) => {
+                const tab = document.createElement('button');
+                tab.type = 'button';
+                tab.className = `language-tab ${i === 0 ? 'active' : ''}`;
+                tab.textContent = lang;
+                tab.onclick = () => switchTab(tab, currentSide, lang);
+                tabs.appendChild(tab);
+
+                const contentDiv = document.createElement('div');
+                contentDiv.className = `language-content ${i === 0 ? 'active' : ''}`;
+                contentDiv.innerHTML = `<textarea id="${currentSide}_${lang}" placeholder="Enter ${lang} text...">${sideCard.text[lang] || ''}</textarea>`;
+                content.appendChild(contentDiv);
+            });
+        }
+
+        function switchTab(tabButton, side, lang) {
+            if (!tabButton || !tabButton.parentElement) return;
+
+            // Hide all tabs/content for this side
+            const allTabs = tabButton.parentElement.querySelectorAll('.language-tab');
+            const allContent = tabButton.parentElement.nextElementSibling?.querySelectorAll('.language-content') || [];
+
+            allTabs.forEach(t => t.classList.remove('active'));
+            allContent.forEach(c => c.classList.remove('active'));
+
+            // Show selected
+            tabButton.classList.add('active');
+            const contentIndex = Array.from(allTabs).indexOf(tabButton);
+            if (allContent[contentIndex]) {
+                allContent[contentIndex].classList.add('active');
+            }
+        }
+
+        function addTag(tag) {
+            tag = tag.trim();
+            if (!tag) return;
+            if (!currentCard.tags.includes(tag)) {
+                currentCard.tags.push(tag);
+            }
+            const tagsInput = document.getElementById('tagsInput');
+            if (!tagsInput) return;
+
+            const tagEl = document.createElement('span');
+            tagEl.className = 'tag';
+            tagEl.innerHTML = `${tag} <button type="button" onclick="removeTag(this)">×</button>`;
+            tagsInput.insertBefore(tagEl, tagsInput.lastChild);
+        }
+
+        function removeTag(button) {
+            if (!button || !button.parentElement) return;
+            const tag = button.parentElement.textContent.slice(0, -1).trim();
+            currentCard.tags = currentCard.tags.filter(t => t !== tag);
+            button.parentElement.remove();
+        }
+
+        async function saveCard(e) {
+            e.preventDefault();
+
+            // Update card from form
+            currentCard.title = document.getElementById('title').value;
+            currentCard.view = document.getElementById('view').value;
+
+            // Update language content for all sides
+            const languages = ['EN', 'DE', 'FR', 'PL', 'LA'];
+
+            currentCard.cards.forEach(card => {
+                card.text = {};
+                languages.forEach(lang => {
+                    const textarea = document.getElementById(`${card.side}_${lang}`);
+                    if (textarea && textarea.value) {
+                        card.text[lang] = textarea.value;
+                    }
+                });
+            });
+
+            try {
+                const response = await fetch(`${API_BASE}/card`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(currentCard)
+                });
+
+                if (response.ok) {
+                    showStatus('Card saved successfully!', 'success');
+                } else {
+                    showStatus('Error saving card', 'error');
+                }
+            } catch (error) {
+                showStatus('Error: ' + error.message, 'error');
+            }
+        }
+
+        function resetForm() {
+            renderCardForm();
+        }
+
+        function highlightCard(cardId) {
+            document.querySelectorAll('.card-item').forEach(item => {
+                item.classList.remove('active');
+                if (item.textContent === currentCard.title) {
+                    item.classList.add('active');
+                }
+            });
+        }
+
+        function showStatus(message, type, target = 'save') {
+            const targetEl = document.getElementById(target + 'Status');
+            if (targetEl) {
+                targetEl.className = `status ${type}`;
+                targetEl.textContent = message;
+                if (type === 'success') {
+                    setTimeout(() => targetEl.innerHTML = '', 3000);
+                }
+            }
+        }
+
+        // Side switching
+        function switchSide(side) {
+            currentSide = side;
+            const buttons = document.querySelectorAll('.side-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+            renderCardForm();
+        }
+
+        // Get current side card
+        function getCurrentSideCard() {
+            return currentCard.cards.find(c => c.side === currentSide);
+        }
+
+        // Annotation management
+        function updateAnnotationTool() {
+            const type = document.getElementById('annotationType').value;
+            const toolDiv = document.getElementById('annotationTool');
+            toolDiv.innerHTML = '';
+
+            if (!type) return;
+
+            if (type === 'label') {
+                toolDiv.innerHTML = `
+                    <div class="tool-row">
+                        <div class="form-group" style="margin: 0;">
+                            <label style="font-size: 12px;">Text</label>
+                            <input type="text" id="annText" placeholder="Label text" style="font-size: 12px;">
+                        </div>
+                        <div class="form-group" style="margin: 0;">
+                            <label style="font-size: 12px;">Color</label>
+                            <input type="color" id="annColor" value="#FF0000" style="font-size: 12px;">
+                        </div>
+                    </div>
+                    <div class="tool-row full">
+                        <button type="button" class="btn-secondary" style="width: 100%; padding: 8px;" onclick="startPlacingLabel()">
+                            Click on image to place
+                        </button>
+                    </div>
+                `;
+            } else if (type === 'arrow') {
+                toolDiv.innerHTML = `
+                    <div class="tool-row">
+                        <div class="form-group" style="margin: 0;">
+                            <label style="font-size: 12px;">Label (optional)</label>
+                            <input type="text" id="annText" placeholder="Arrow label" style="font-size: 12px;">
+                        </div>
+                        <div class="form-group" style="margin: 0;">
+                            <label style="font-size: 12px;">Color</label>
+                            <input type="color" id="annColor" value="#FF6666" style="font-size: 12px;">
+                        </div>
+                    </div>
+                    <div class="tool-row full">
+                        <button type="button" class="btn-secondary" style="width: 100%; padding: 8px;" onclick="startPlacingArrow()">
+                            Click start point, then end point
+                        </button>
+                    </div>
+                `;
+            } else if (type === 'overlay') {
+                toolDiv.innerHTML = `
+                    <div class="tool-row">
+                        <div class="form-group" style="margin: 0;">
+                            <label style="font-size: 12px;">Color</label>
+                            <input type="color" id="annColor" value="#FF0000" style="font-size: 12px;">
+                        </div>
+                        <div class="form-group" style="margin: 0;">
+                            <label style="font-size: 12px;">Opacity</label>
+                            <input type="range" id="annOpacity" min="0" max="100" value="15" style="margin-top: 6px;">
+                        </div>
+                    </div>
+                    <div class="tool-row full">
+                        <button type="button" class="btn-secondary" style="width: 100%; padding: 8px;" onclick="startPlacingOverlay()">
+                            Click points to create polygon
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        function startPlacingLabel() {
+            enableCanvasMode('label');
+        }
+
+        function startPlacingArrow() {
+            enableCanvasMode('arrow');
+        }
+
+        function startPlacingOverlay() {
+            enableCanvasMode('overlay');
+        }
+
+        function enableCanvasMode(mode) {
+            const canvas = document.getElementById('annotationCanvas');
+            if (!canvas) return;
+
+            canvas.dataset.mode = mode;
+            canvas.style.cursor = 'crosshair';
+
+            if (mode === 'label') {
+                canvas.onclick = (e) => addLabel(e, canvas);
+            } else if (mode === 'arrow') {
+                let startPoint = null;
+                canvas.onclick = (e) => {
+                    if (!startPoint) {
+                        startPoint = getCanvasCoords(e, canvas);
+                    } else {
+                        addArrow(startPoint, getCanvasCoords(e, canvas), canvas);
+                        startPoint = null;
+                    }
+                };
+            } else if (mode === 'overlay') {
+                const points = [];
+                canvas.onclick = (e) => {
+                    const coords = getCanvasCoords(e, canvas);
+                    points.push(coords);
+                    if (points.length >= 3 && e.ctrlKey) {
+                        addOverlay(points, canvas);
+                        canvas.onclick = null;
+                    }
+                };
+            }
+        }
+
+        function getCanvasCoords(event, canvas) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Scale to original image dimensions
+            const scaleX = currentCard.image.width / canvas.offsetWidth;
+            const scaleY = currentCard.image.height / canvas.offsetHeight;
+
+            return {
+                x: Math.round(x * scaleX),
+                y: Math.round(y * scaleY)
+            };
+        }
+
+        function addLabel(event, canvas) {
+            const text = document.getElementById('annText').value;
+            const color = document.getElementById('annColor').value.replace('#', '');
+            const coords = getCanvasCoords(event, canvas);
+
+            if (!text) {
+                alert('Please enter label text');
+                return;
+            }
+
+            const sideCard = getCurrentSideCard();
+            const annotation = {
+                type: 'label',
+                text: { 'EN': text },
+                bounds: {
+                    topLeft: coords,
+                    bottomRight: { x: coords.x + 100, y: coords.y + 30 }
+                },
+                color: color,
+                fontSize: 14
+            };
+
+            if (!sideCard.annotations) sideCard.annotations = [];
+            sideCard.annotations.push(annotation);
+
+            showStatus('Label added', 'success');
+            document.getElementById('annotationType').value = '';
+            updateAnnotationTool();
+            renderAnnotationsList();
+            drawAnnotations();
+            canvas.onclick = null;
+            canvas.style.cursor = 'auto';
+        }
+
+        function addArrow(start, end, canvas) {
+            const text = document.getElementById('annText').value;
+            const color = document.getElementById('annColor').value.replace('#', '');
+
+            const sideCard = getCurrentSideCard();
+            const annotation = {
+                type: 'arrow',
+                origin: start,
+                target: end,
+                color: color,
+                strokeWidth: 2
+            };
+
+            if (text) annotation.text = { 'EN': text };
+
+            if (!sideCard.annotations) sideCard.annotations = [];
+            sideCard.annotations.push(annotation);
+
+            showStatus('Arrow added', 'success');
+            document.getElementById('annotationType').value = '';
+            updateAnnotationTool();
+            renderAnnotationsList();
+            drawAnnotations();
+            canvas.onclick = null;
+            canvas.style.cursor = 'auto';
+        }
+
+        function addOverlay(points, canvas) {
+            const color = document.getElementById('annColor').value.replace('#', '');
+            const opacity = (document.getElementById('annOpacity').value / 100).toFixed(2);
+
+            const sideCard = getCurrentSideCard();
+            const annotation = {
+                type: 'overlay',
+                nodes: points,
+                color: color,
+                opacity: parseFloat(opacity),
+                strokeColor: color,
+                strokeWidth: 2
+            };
+
+            if (!sideCard.annotations) sideCard.annotations = [];
+            sideCard.annotations.push(annotation);
+
+            showStatus('Overlay added', 'success');
+            document.getElementById('annotationType').value = '';
+            updateAnnotationTool();
+            renderAnnotationsList();
+            drawAnnotations();
+            canvas.style.cursor = 'auto';
+        }
+
+        function renderAnnotationsList() {
+            const sideCard = getCurrentSideCard();
+            const list = document.getElementById('annotationsList');
+
+            if (!sideCard.annotations || sideCard.annotations.length === 0) {
+                list.innerHTML = '<div style="padding: 12px; color: #999; text-align: center; font-size: 12px;">No annotations</div>';
+                return;
+            }
+
+            list.innerHTML = sideCard.annotations.map((ann, i) => `
+                <div class="annotation-item">
+                    <div class="annotation-item-info">
+                        <div class="annotation-item-type">${ann.type.toUpperCase()}</div>
+                        <div class="annotation-item-text">
+                            ${ann.text ? Object.values(ann.text)[0] : 'No text'}
+                        </div>
+                    </div>
+                    <div class="annotation-item-actions">
+                        <button type="button" class="btn-secondary" onclick="editAnnotation(${i})">Edit</button>
+                        <button type="button" class="btn-secondary" onclick="deleteAnnotation(${i})">Delete</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function editAnnotation(index) {
+            alert('Edit annotation UI coming soon');
+        }
+
+        function deleteAnnotation(index) {
+            const sideCard = getCurrentSideCard();
+            sideCard.annotations.splice(index, 1);
+            renderAnnotationsList();
+            drawAnnotations();
+            showStatus('Annotation deleted', 'success');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadDecks);
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fabric": "^6.9.1",
+    "paper": "^0.12.18"
+  }
+}

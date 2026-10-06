@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Polygon Editor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/fabric/dist/index.min.js"></script>
+    <style>
+        * {user-select: none;}
+        #toolBarTable {
+          margin: 20px auto;
+          border-collapse: collapse;
+          font-family: Arial, Helvetica, sans-serif;
+          width: 880px;
+        }
+        #toolBarTable tr:first-child td {
+          padding: 4px;
+          text-align: center;
+          border: 1px black solid;
+          min-width: 120px;
+          cursor: pointer;
+        }
+        #td2 {
+          max-width:240px;
+          pointer-events: none;
+        }
+
+        #toolBarTable tr:first-child td:hover {
+          background-color: Gainsboro;
+        }
+        .info td {
+          padding: 8px;
+        }
+        #bodytxt {
+          padding-left: 10px !important;
+          text-align: left !important;
+          vertical-align: top;
+          width: 300px;
+          font-size: 14px;
+          border:none !important;
+          pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <table id="toolBarTable">
+        <tr>
+            <td id="cursor">Cursor:</td>
+            <td colspan="2" id="td2">dblclick poly for nodes</td>
+            <td id="polyline">Polygon</td>
+            <td id="polygon">Polyline</td>
+            <td id="bodytxt" rowspan="4">
+                <p>Polygon editor with node editing and edge detection.</p>
+                <p>Click to draw polygon points. Double-click to finish.</p>
+                <p>Double-click on polygon to edit nodes. Hover over nodes to select. Drag to move.</p>
+                <p>Click on an edge to add a new point there.</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <canvas id="canvas" width="600" height="400" style="border:1px solid black"></canvas>
+            </td>
+        </tr>
+        <tr class="info">
+            <td>nodes:</td>
+            <td>points:</td>
+            <td>objects:</td>
+            <td>originX:</td>
+            <td>originY:</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <div id="debug">double click to close polygon</div>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            var pts=[],polyShape,nodeNum=0,nodes=[],polyType,polyline,polygon,lastPt=1,poly,btn,isDown=false,mouse;
+            var objFill='',objStroke='black',objStrokeWidth=1,zindex,redrawAll;
+            let defaults = {objectCaching:false,preserveObjectStacking:true,perPixelTargetFind:true}
+            canvas = new fabric.Canvas($('canvas')[0],{...defaults,targetFindTolerance:10});
+            let Props = {objectCaching:false,hasControls:false,hasBorders:true,originX:'center',originY:'center',
+            strokeUniform:true,borderOpacityWhenMoving:0,cornerColor:'magenta',cornerStyle:'circle',padding:10,borderDashArray:[4,4]};
+
+            //////////////////////////////////////////////////////////////////// HELPER: Distance from point to line segment
+            function closestPointOnLineSegment(point, lineStart, lineEnd) {
+                const dx = lineEnd.x - lineStart.x;
+                const dy = lineEnd.y - lineStart.y;
+                const lenSq = dx * dx + dy * dy;
+                let t = 0;
+
+                if (lenSq !== 0) {
+                    const dotProduct = (point.x - lineStart.x) * dx + (point.y - lineStart.y) * dy;
+                    t = Math.max(0, Math.min(1, dotProduct / lenSq));
+                }
+
+                return {
+                    x: lineStart.x + t * dx,
+                    y: lineStart.y + t * dy
+                };
+            }
+
+            function distanceToPoint(point, p) {
+                const dx = point.x - p.x;
+                const dy = point.y - p.y;
+                return Math.sqrt(dx * dx + dy * dy);
+            }
+
+            //////////////////////////////////////////////////////////////////// MOUSE:DOWN
+            canvas.on('mouse:down', function (e) {
+                if (btn=='Polyline' || btn=='Polygon' && poly==true) {
+                    if (pts.length > 1) { pts.splice(-1,1); }
+                    pts.push({x: parseInt(mouse.x), y: parseInt(mouse.y)});
+                    console.log('Point added. pts=', pts);
+                    polyline = new fabric.Polyline(pts,{...Props,name:'temp',fill:'',stroke:'black'});
+                    canvas.add(polyline);
+                    lastPt++; isDown=true; $('#debug').text('Points: ' + pts.length); info();
+                }
+
+                if ((e.target && isDown==false && e.target.name=='poly') || e.target==null) {clearNodes();}
+            });
+
+            //////////////////////////////////////////////////////////////////// MOUSE:MOVE (NEW POLYLINES)
+            canvas.on('mouse:move', function(e){
+                mouse = canvas.getPointer(e);
+                if (poly==true && isDown) { polyline.points[lastPt-1] = {x: mouse.x, y: mouse.y}; canvas.renderAll();  }
+            });
+
+            //////////////////////////////////////////////////////////////////// OBJECT:MOVING (NODES)
+            canvas.on('object:moving', function (e) {
+                if (e.target && e.target.name=='node') {
+                    polyShape.points[ e.target.nodeNum] = {x:e.target.getCenterPoint().x, y:e.target.getCenterPoint().y};
+                }
+            });
+
+            //////////////////////////////////////////////////////////////////// MOUSE:DBLCLICK
+            canvas.on('mouse:dblclick', function (e) {
+                if (btn=='Polyline' || btn=='Polygon') {
+                    canvas.forEachObject(function(i) { if (i.name=='temp') { canvas.remove(i); } });
+                    objFill= '#'+Math.random().toString(16).slice(-6)
+                    makePolygon(true);
+                    addNodes(polyShape); canvas.add.apply(canvas,nodes); info();
+                }
+                if (e.target && poly==false && e.target.name=='poly') {
+                    addNodes(e.target);
+                    canvas.add.apply(canvas,nodes); info();
+                    canvas.discardActiveObject().renderAll();
+                }
+                resetToolBar('cursor'); canvas.renderAll();
+                isDown=false; poly=false; lastPt=1; btn='Cursor';
+            });
+
+            //////////////////////////////////////////////////////////////////// OBJECT:MODIFIED
+            canvas.on('object:modified', function(e) {
+                if (e.target && poly==false && (e.target.name=='poly' || e.target.name=='node')) {
+                    addNodes(polyShape); pts = [];
+                    polyShape.get('points').forEach((point, i) => { pts[i]={x:nodes[i].left,y:nodes[i].top}; });
+                    polyShape.set({redraw:true});
+                    objFill = polyShape.fill; objStroke = polyShape.stroke; objStrokeWidth = polyShape.strokeWidth;
+                    zindex=canvas.getObjects().indexOf(polyShape)
+                    makePolygon(true);
+                    polyShape.moveTo(zindex);
+                    addNodes(polyShape);
+                    canvas.add.apply(canvas,nodes); info();
+                }
+            });
+
+            canvas.on('selection:created', function() { if (canvas.getActiveObjects().length>1) {redrawAll=true; clearNodes();} });
+            canvas.on('selection:cleared', function() {   if (redrawAll==true) {redrawAll=false; redrawAllPolys();} });
+
+            function clearNodes() { nodes.forEach((node, i)=>{canvas.remove(node);}) }
+
+            //////////////////////////////////////////////////////////////////// REDRAW ALL POLYGONS
+            function redrawAllPolys() {
+                canvas.getObjects().forEach((obj, i) => {
+                    if (obj.name=='poly') {
+                        addNodes(obj);
+                        pts = [];
+                        obj.get('points').forEach((point, i) => { pts[i]={x:nodes[i].left,y:nodes[i].top}; });
+                        obj.set({redraw:true});
+                        zindex=canvas.getObjects().indexOf(obj)
+                        if (obj.pType) { polyType = obj.pType; }
+                        objFill = obj.fill; objStroke = obj.stroke; objStrokeWidth = obj.strokeWidth;
+                        makePolygon(true);
+                        obj.moveTo(zindex);
+                    }
+                });
+            }
+
+            //////////////////////////////////////////////////////////////////// MAKE POLYGON
+            function makePolygon(val) {
+                if (val!=true) {return;}
+                console.log('makePolygon: pts=', pts, 'polyType=', polyType);
+                canvas.getObjects().forEach((obj, i) => {
+                    if (obj.redraw==true && obj.name=='poly') { canvas.setActiveObject(obj); canvas.remove(canvas.getActiveObject()); }
+                });
+                try {
+                    polyShape = new fabric[polyType](pts,{...Props,name:'poly',redraw:null,objectCaching:false });
+                    console.log('Polygon created:', polyShape.type, 'points:', polyShape.points.length);
+                    objFill = polyType=='Polygon' ? objFill : '';
+                    polyShape.set({
+                        pType:polyType,
+                        hasControls:false,
+                        hasBorders:false,
+                        fill:objFill,
+                        stroke:'black',
+                        strokeWidth:2
+                    });
+                    canvas.add(polyShape);
+                    console.log('Polygon added with fill:', objFill, 'stroke:', polyShape.stroke);
+                    canvas.renderAll();
+                } catch(e) {
+                    console.error('Error creating polygon:', e);
+                    $('#debug').text('Error: ' + e.message);
+                }
+
+                polyShape.on('mousedown', function(e) {
+                    polyShape = e.target;
+                    if (e.target.get('type') =='polyline') {polyType='Polyline'} else {polyType='Polygon'}
+                });
+            }
+
+            //////////////////////////////////////////////////////////////////// ADD NODES
+            function addNodes(polyShape) {
+                clearNodes();
+                matrix = polyShape.calcTransformMatrix(); nodeNum=0;
+                var transformedpts = polyShape.get('points').map(function(p){
+                    return new fabric.Point( p.x - polyShape.pathOffset.x, p.y - polyShape.pathOffset.y);
+                    }).map(function(p){ return fabric.util.transformPoint(p, matrix); });
+
+                nodes = transformedpts.map(function(p){
+                    return new fabric.Circle({...Props,name:'node',nodeNum:nodeNum++,left:p.x,top:p.y,radius:7,fill:'red',hoverCursor:'pointer',selectable:false,opacity:.8});
+                });
+
+                nodes.forEach((node, i) => {
+                    node.on('mouseover', function(e) {
+                        node.selectable = true;
+                        node.set('fill','green');
+                        canvas.renderAll();
+                    });
+                    node.on('mouseout', function(e) {
+                        node.selectable = false;
+                        node.set('fill','red');
+                        canvas.renderAll();
+                    });
+
+                    // Edge detection: click near edge to add point
+                    node.on('mousedown', function(e) {
+                        const clickPt = canvas.getPointer(e.e);
+
+                        // Check distance to edges
+                        let minDist = Infinity;
+                        let closestEdge = -1;
+                        let closestPt = null;
+
+                        for (let j = 0; j < polyShape.points.length; j++) {
+                            const p1 = transformedpts[j];
+                            const p2 = transformedpts[(j + 1) % transformedpts.length];
+
+                            const closest = closestPointOnLineSegment(clickPt, p1, p2);
+                            const dist = distanceToPoint(clickPt, closest);
+
+                            if (dist < minDist) {
+                                minDist = dist;
+                                closestEdge = j;
+                                closestPt = closest;
+                            }
+                        }
+
+                        // If click is on edge, add vertex
+                        if (minDist < 20 && closestEdge >= 0) {
+                            const originalPt = {
+                                x: closestPt.x - polyShape.left,
+                                y: closestPt.y - polyShape.top
+                            };
+                            polyShape.points.splice(closestEdge + 1, 0, originalPt);
+                            addNodes(polyShape);
+                            canvas.add.apply(canvas, nodes);
+                            canvas.renderAll();
+                            $('#debug').text('Point added on edge');
+                        }
+                    });
+                });
+            }
+
+            //////////////////////////////////////////////////////////////////// UI DISPLAY
+            $('#toolBarTable').on('click', 'tr:first-child td', function(e) {
+                resetToolBar(this.id);
+                btn =  $(this).text();
+                clearNodes();
+                if (btn=='Cursor') { polyType=''; poly=false; }
+                if (btn=='Polyline') { polyType='Polyline'; poly=true; pts=[]; lastPt=1; }
+                if (btn=='Polygon') { polyType='Polygon'; poly=true; pts=[]; lastPt=1; }
+            });
+
+            function resetToolBar(id) {
+                $('#toolBarTable td').css( {'background-color':'white','color':'black'} );
+                $('#'+id).css( {'background-color':'green','color':'white' }); btn='Cursor';
+            }
+
+            //////////////////////////////////////////////////////////////////// HTML TABLE
+            function info() {
+                $('.info td').each(function (i) {
+                    if(i==0 && polyShape) {$(this).text('nodes:'+nodes.length)};
+                    if(i==1 && pts) $(this).text('points:'+nodes.length);
+                    if(i==2) $(this).text('objects:'+canvas.getObjects().length);
+                    if(i==3 && polyShape) $(this).text('originX:'+parseInt(polyShape.left));
+                    if(i==4 && polyShape) $(this).text('originY:'+parseInt(polyShape.top));
+                })
+            }
+        }); //end ready
+    </script>
+</body>
+</html>

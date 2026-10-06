@@ -1,0 +1,52 @@
+{
+  "decks": [
+    {
+      "id": "abdomen",
+      "name": "Abdomen",
+      "subdecks": [
+        {
+          "id": "abdomen-vessels",
+          "name": "Vessels",
+          "cardIds": ["AbdomenCeliac_Anterior"]
+        },
+        {
+          "id": "abdomen-nerves",
+          "name": "Nerves",
+          "cardIds": []
+        },
+        {
+          "id": "abdomen-organs",
+          "name": "Organs",
+          "cardIds": []
+        }
+      ]
+    },
+    {
+      "id": "upper-limb",
+      "name": "Upper Limb",
+      "subdecks": [
+        {
+          "id": "upper-limb-osteology",
+          "name": "Osteology",
+          "cardIds": []
+        },
+        {
+          "id": "upper-limb-nerves",
+          "name": "Nerves",
+          "cardIds": []
+        }
+      ]
+    },
+    {
+      "id": "head-neck",
+      "name": "Head and Neck",
+      "subdecks": [
+        {
+          "id": "head-neck-brain",
+          "name": "Brain",
+          "cardIds": []
+        }
+      ]
+    }
+  ]
+}
