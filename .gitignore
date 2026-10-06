@@ -23,3 +23,6 @@ memory/
 media/*
 !media/README.md
 .batches/
+
+# Project assets and master images - too large
+_Master Images/
