@@ -11,7 +11,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         h1 { margin-bottom: 10px; }
@@ -308,13 +308,24 @@
 
         // Load background image
         let backgroundRaster = null;
+        let currentImageAspectRatio = null;
+
+        function resizeCanvasToFitContainer(imageWidth, imageHeight) {
+            const canvas = document.getElementById('canvas');
+            const container = document.querySelector('.container');
+            const containerWidth = container ? container.offsetWidth : window.innerWidth - 40;
+
+            canvas.width = Math.min(containerWidth - 4, imageWidth);
+            canvas.height = canvas.width / (imageWidth / imageHeight);
+            paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+
+            currentImageAspectRatio = imageWidth / imageHeight;
+        }
+
         const img = new Image();
         img.src = 'assets/example_img_wide.png';
         img.onload = function() {
-            const canvas = document.getElementById('canvas');
-            canvas.width = canvas.parentElement.offsetWidth - 4;
-            canvas.height = canvas.width / (img.width / img.height);
-            paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+            resizeCanvasToFitContainer(img.width, img.height);
 
             backgroundRaster = new paper.Raster(img);
             backgroundRaster.fitBounds(paper.view.bounds);
@@ -323,6 +334,29 @@
             backgroundRaster.sendToBack();
             paper.view.update();
         };
+
+        // Resize canvas on window resize
+        window.addEventListener('resize', function() {
+            if (currentImageAspectRatio) {
+                const canvas = document.getElementById('canvas');
+                const container = document.querySelector('.container');
+                const containerWidth = container ? container.offsetWidth : window.innerWidth - 40;
+
+                const newWidth = Math.min(containerWidth - 4, 2000); // Assume max image width
+                const newHeight = newWidth / currentImageAspectRatio;
+
+                if (canvas.width !== newWidth || canvas.height !== newHeight) {
+                    canvas.width = newWidth;
+                    canvas.height = newHeight;
+                    paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+
+                    if (backgroundRaster) {
+                        backgroundRaster.fitBounds(paper.view.bounds);
+                    }
+                    paper.view.update();
+                }
+            }
+        });
 
         let isDrawing = false;
         let isEditing = true; // Start in edit mode by default
@@ -549,6 +583,26 @@
             status.textContent = isDrawingLine ? 'Drawing line: Click 2 points, right-click or ESC to finish' : 'Click "Draw Line" to draw';
         });
 
+        // Draw textbox mode
+        let isDrawingTextbox = false;
+        const textboxBtn = document.getElementById('textboxBtn');
+
+        textboxBtn.addEventListener('click', function() {
+            isDrawingTextbox = !isDrawingTextbox;
+            isEditing = false;
+            isDrawing = false;
+            textboxBtn.classList.toggle('active');
+            drawBtn.classList.remove('active');
+            drawLineBtn.classList.remove('active');
+            editBtn.classList.remove('active');
+
+            status.textContent = isDrawingTextbox ? 'Click to place textbox' : 'Textbox mode off';
+
+            if (!isDrawingTextbox) {
+                colorControls.style.display = 'none';
+            }
+        });
+
         // Edit mode
         editBtn.addEventListener('click', function() {
             isEditing = !isEditing;
@@ -586,6 +640,60 @@
             selectedPath = null;
             colorControls.style.display = 'none';
             status.textContent = 'Canvas cleared';
+        });
+
+        // Copy buttons
+        const copyFrontToBackBtn = document.getElementById('copyFrontToBackBtn');
+        const copyBackToFrontBtn = document.getElementById('copyBackToFrontBtn');
+
+        copyFrontToBackBtn.addEventListener('click', function() {
+            // Save current side (back) first
+            cardData[currentSide].polygons = polygons.map(p => ({
+                points: p.segments.map(s => ({x: s.point.x, y: s.point.y})),
+                isLine: p.polygonData?.isLine || false,
+                strokeColor: p.strokeColor?.toCSS() || null,
+                fillColor: p.fillColor?.toCSS() || null,
+                strokeWidth: p.strokeWidth || 1,
+                polygonData: p.polygonData || {}
+            }));
+
+            // Copy front to back
+            cardData.back.polygons = JSON.parse(JSON.stringify(cardData.front.polygons));
+
+            // If on back side, reload
+            if (currentSide === 'back') {
+                paper.project.activeLayer.removeChildren();
+                polygons = [];
+                loadPolygonsForSide('back');
+                paper.view.update();
+            }
+
+            status.textContent = 'Copied front → back';
+        });
+
+        copyBackToFrontBtn.addEventListener('click', function() {
+            // Save current side (front) first
+            cardData[currentSide].polygons = polygons.map(p => ({
+                points: p.segments.map(s => ({x: s.point.x, y: s.point.y})),
+                isLine: p.polygonData?.isLine || false,
+                strokeColor: p.strokeColor?.toCSS() || null,
+                fillColor: p.fillColor?.toCSS() || null,
+                strokeWidth: p.strokeWidth || 1,
+                polygonData: p.polygonData || {}
+            }));
+
+            // Copy back to front
+            cardData.front.polygons = JSON.parse(JSON.stringify(cardData.back.polygons));
+
+            // If on front side, reload
+            if (currentSide === 'front') {
+                paper.project.activeLayer.removeChildren();
+                polygons = [];
+                loadPolygonsForSide('front');
+                paper.view.update();
+            }
+
+            status.textContent = 'Copied back → front';
         });
 
         // Color picker
@@ -651,6 +759,21 @@
         });
 
         function switchSide(side) {
+            // Save current side's polygons before switching
+            cardData[currentSide].polygons = polygons.map(p => ({
+                points: p.segments.map(s => ({x: s.point.x, y: s.point.y})),
+                isLine: p.polygonData?.isLine || false,
+                strokeColor: p.strokeColor?.toCSS() || null,
+                fillColor: p.fillColor?.toCSS() || null,
+                strokeWidth: p.strokeWidth || 1,
+                polygonData: p.polygonData || {}
+            }));
+
+            // Clear the canvas
+            paper.project.activeLayer.removeChildren();
+            selectedPath = null;
+            polygons = [];
+
             currentSide = side;
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelector(`.tab[data-side="${side}"]`).classList.add('active');
@@ -667,24 +790,51 @@
 
                 const img = new Image();
                 img.onload = function() {
-                    const container = document.querySelector('.container');
-                    const containerWidth = container ? container.offsetWidth : window.innerWidth - 40;
-
-                    canvas.width = Math.min(containerWidth, img.width);
-                    canvas.height = canvas.width / (img.width / img.height);
-                    paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+                    resizeCanvasToFitContainer(img.width, img.height);
 
                     backgroundRaster = new paper.Raster(img);
                     backgroundRaster.fitBounds(paper.view.bounds);
                     backgroundRaster.evented = false;
                     backgroundRaster.selectable = false;
                     backgroundRaster.sendToBack();
+
+                    // Load this side's polygons
+                    loadPolygonsForSide(side);
+
                     paper.view.update();
                 };
                 img.src = imagePath;
+            } else {
+                // No image, just load polygons
+                loadPolygonsForSide(side);
             }
 
             status.textContent = `Switched to ${side} side`;
+        }
+
+        function loadPolygonsForSide(side) {
+            // Load saved polygons for this side
+            const sidePolygons = cardData[side].polygons || [];
+            polygons = [];
+
+            sidePolygons.forEach(pathData => {
+                if (pathData.points && pathData.points.length > 0) {
+                    const points = pathData.points.map(p => new paper.Point(p.x, p.y));
+                    const path = new paper.Path(points);
+                    path.closed = !pathData.isLine;
+                    path.strokeColor = pathData.strokeColor ? pathData.strokeColor : null;
+                    path.fillColor = pathData.fillColor ? pathData.fillColor : null;
+                    path.strokeWidth = pathData.strokeWidth || 1;
+                    path.polygonData = pathData.polygonData || {};
+
+                    polygons.push(path);
+
+                    // Re-render line ends if it's a line
+                    if (path.polygonData.isLine) {
+                        renderLineEnds(path);
+                    }
+                }
+            });
         }
 
         // Language switching
@@ -865,14 +1015,8 @@
 
             const img = new Image();
             img.onload = function() {
-                // Calculate available width from container
-                const container = document.querySelector('.container');
-                const containerWidth = container ? container.offsetWidth : window.innerWidth - 40;
-
-                // Scale to fit container width
-                canvas.width = Math.min(containerWidth, img.width);
-                canvas.height = canvas.width / (img.width / img.height);
-                paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+                // Resize canvas to fit container with proper aspect ratio
+                resizeCanvasToFitContainer(img.width, img.height);
 
                 // Create and fit raster
                 backgroundRaster = new paper.Raster(img);
