@@ -241,6 +241,7 @@
         </div>
         <div id="status">Edit mode: Click polygon to select, drag to move.</div>
         <canvas id="canvas" width="800" height="600"></canvas>
+        <div id="textboxEditor" contenteditable="true" style="display: none; position: absolute; background: transparent; border: 1px solid #0064c8; padding: 2px; outline: none; z-index: 1000; min-height: 16px; font-family: Arial; white-space: nowrap;"></div>
 
         <div class="metadata-panel active" data-side="front">
             <div class="metadata-field">
@@ -584,24 +585,6 @@
         });
 
         // Draw textbox mode
-        let isDrawingTextbox = false;
-        const textboxBtn = document.getElementById('textboxBtn');
-
-        textboxBtn.addEventListener('click', function() {
-            isDrawingTextbox = !isDrawingTextbox;
-            isEditing = false;
-            isDrawing = false;
-            textboxBtn.classList.toggle('active');
-            drawBtn.classList.remove('active');
-            drawLineBtn.classList.remove('active');
-            editBtn.classList.remove('active');
-
-            status.textContent = isDrawingTextbox ? 'Click to place textbox' : 'Textbox mode off';
-
-            if (!isDrawingTextbox) {
-                colorControls.style.display = 'none';
-            }
-        });
 
         // Edit mode
         editBtn.addEventListener('click', function() {
