@@ -15,12 +15,133 @@
             margin: 0 auto;
         }
         h1 { margin-bottom: 10px; }
-        .controls {
-            margin: 10px 0;
-            padding: 10px;
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
             background: white;
+            padding: 10px;
             border-radius: 4px;
             border: 1px solid #ddd;
+        }
+        .language-selector {
+            display: flex;
+            gap: 5px;
+        }
+        .language-selector button {
+            margin: 0;
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+        .tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 4px 4px 0 0;
+            border: 1px solid #ddd;
+            border-bottom: none;
+        }
+        .tab {
+            padding: 10px 20px;
+            border: none;
+            background: #f5f5f5;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-size: 14px;
+            margin: 0;
+            border-radius: 0;
+        }
+        .tab.active {
+            background: white;
+            border-bottom-color: #007bff;
+            color: #007bff;
+        }
+        .controls {
+            margin: 0 0 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 0 0 4px 4px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .metadata-panel {
+            display: none;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .metadata-panel.active {
+            display: block;
+        }
+        .metadata-field {
+            margin-bottom: 12px;
+        }
+        .metadata-field label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 4px;
+            font-size: 12px;
+        }
+        .metadata-field input,
+        .metadata-field textarea {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+        .metadata-field textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+        .modal-content h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .modal-content p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .modal-buttons button {
+            padding: 10px 20px;
+            margin: 0;
+            min-width: 100px;
         }
         button {
             padding: 8px 16px;
@@ -53,18 +174,50 @@
 </head>
 <body>
     <div class="container">
-        <h1>Paper.js Polygon Editor</h1>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <h1 style="margin: 0;">Paper.js Polygon Editor</h1>
+            <div class="language-selector">
+                <button id="langEN" class="active">EN</button>
+                <button id="langDE">DE</button>
+                <button id="langFR">FR</button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-side="front">Front</button>
+            <button class="tab" data-side="back">Back</button>
+        </div>
+
         <div class="controls">
             <button id="drawBtn">Draw Polygon</button>
             <button id="drawLineBtn">Draw Line</button>
+            <button id="textboxBtn">Draw Textbox</button>
             <button id="editBtn" class="active">Edit Mode</button>
             <button id="clearBtn">Clear All</button>
+            <button id="copyFrontToBackBtn">← Copy Front to Back</button>
+            <button id="copyBackToFrontBtn">Copy Back to Front →</button>
             <button id="imagePickerBtn">Load Background Image</button>
             <input type="file" id="imageInput" accept="image/*" style="display: none;">
         </div>
         <div id="colorControls" style="display: none; position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 1000;">
             <label>Color: <input type="color" id="colorPicker"></label>
             <label id="opacityLabel" style="margin-left: 10px;">Opacity: <input type="range" id="opacitySlider" min="0" max="1" step="0.1" style="width: 100px;"></label>
+
+            <div id="textboxControls" style="display: none; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 10px;">
+                <div>
+                    <label>Text: <input type="text" id="textboxInput" placeholder="Enter text..." style="width: 150px;"></label>
+                </div>
+                <div>
+                    <label>Size:
+                        <select id="textSizeSelect" style="width: 100px;">
+                            <option value="small">Small (3%)</option>
+                            <option value="medium" selected>Medium (5%)</option>
+                            <option value="large">Large (8%)</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
             <div id="lineEndControls" style="display: none; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 10px;">
                 <div>
                     <label>Start: <select id="lineStartSelect" style="width: 80px;">
@@ -88,12 +241,70 @@
         </div>
         <div id="status">Edit mode: Click polygon to select, drag to move.</div>
         <canvas id="canvas" width="800" height="600"></canvas>
+
+        <div class="metadata-panel active" data-side="front">
+            <div class="metadata-field">
+                <label>Question:</label>
+                <textarea id="frontQuestion" placeholder="Enter question..."></textarea>
+            </div>
+            <div class="metadata-field">
+                <label>Description:</label>
+                <textarea id="frontDescription" placeholder="Enter description for front..."></textarea>
+            </div>
+        </div>
+
+        <div class="metadata-panel" data-side="back">
+            <div class="metadata-field">
+                <label>Answer:</label>
+                <textarea id="backAnswer" placeholder="Enter answer..."></textarea>
+            </div>
+            <div class="metadata-field">
+                <label>Description:</label>
+                <textarea id="backDescription" placeholder="Enter description for back..."></textarea>
+            </div>
+        </div>
+
+        <div id="sideModal" class="modal">
+            <div class="modal-content">
+                <h3>Which side to set image to?</h3>
+                <p id="modalStatus"></p>
+                <div class="modal-buttons">
+                    <button id="modalFront">Front</button>
+                    <button id="modalBack">Back</button>
+                    <button id="modalBoth">Both</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="node_modules/paper/dist/paper-full.min.js"></script>
     <script>
         // Set up Paper.js
         paper.setup('canvas');
+
+        // Tab and language state
+        let currentSide = 'front';
+        let currentLanguage = 'EN';
+        let cardData = {
+            front: {
+                polygons: [],
+                lines: [],
+                textboxes: [],
+                metadata: {
+                    question: { EN: '', DE: '', FR: '' },
+                    description: { EN: '', DE: '', FR: '' }
+                }
+            },
+            back: {
+                polygons: [],
+                lines: [],
+                textboxes: [],
+                metadata: {
+                    answer: { EN: '', DE: '', FR: '' },
+                    description: { EN: '', DE: '', FR: '' }
+                }
+            }
+        };
 
         // Load background image
         let backgroundRaster = null;
@@ -309,7 +520,7 @@
             isDrawing = isDrawingLine;
             isEditing = false;
             drawLineBtn.classList.toggle('active');
-            drawBtn.classList.toggle('active', isDrawingLine);
+            drawBtn.classList.remove('active');
             editBtn.classList.remove('active');
             points = [];
 
@@ -344,7 +555,23 @@
             isDrawing = false;
             editBtn.classList.toggle('active');
             drawBtn.classList.remove('active');
+            drawLineBtn.classList.remove('active');
+
+            // Hide handles and deselect when exiting edit mode
+            if (!isEditing) {
+                hideHandles();
+                if (selectedPath) {
+                    selectedPath.strokeColor = null;
+                }
+                selectedPath = null;
+                selectedPoint = null;
+                selectedPointIndices = [];
+                colorPicker.blur();
+                colorControls.style.display = 'none';
+            }
+
             status.textContent = isEditing ? 'Edit mode: Click polygon to select, drag points to move' : 'Click "Edit Mode" to edit';
+            paper.view.update();
         });
 
         // Clear all
@@ -415,6 +642,91 @@
             }
         });
 
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const side = this.dataset.side;
+                switchSide(side);
+            });
+        });
+
+        function switchSide(side) {
+            currentSide = side;
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.tab[data-side="${side}"]`).classList.add('active');
+            document.querySelectorAll('.metadata-panel').forEach(p => p.classList.remove('active'));
+            document.querySelector(`.metadata-panel[data-side="${side}"]`).classList.add('active');
+
+            // Load the appropriate background image for this side
+            const imagePath = side === 'front' ? frontImage : backImage;
+            if (imagePath) {
+                // Remove old raster and load new one
+                if (backgroundRaster) {
+                    backgroundRaster.remove();
+                }
+
+                const img = new Image();
+                img.onload = function() {
+                    const container = document.querySelector('.container');
+                    const containerWidth = container ? container.offsetWidth : window.innerWidth - 40;
+
+                    canvas.width = Math.min(containerWidth, img.width);
+                    canvas.height = canvas.width / (img.width / img.height);
+                    paper.view.viewSize = new paper.Size(canvas.width, canvas.height);
+
+                    backgroundRaster = new paper.Raster(img);
+                    backgroundRaster.fitBounds(paper.view.bounds);
+                    backgroundRaster.evented = false;
+                    backgroundRaster.selectable = false;
+                    backgroundRaster.sendToBack();
+                    paper.view.update();
+                };
+                img.src = imagePath;
+            }
+
+            status.textContent = `Switched to ${side} side`;
+        }
+
+        // Language switching
+        document.querySelectorAll('.language-selector button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.id.replace('lang', '');
+                currentLanguage = lang;
+                document.querySelectorAll('.language-selector button').forEach(b => b.classList.remove('active'));
+                document.getElementById(`lang${lang}`).classList.add('active');
+                updateMetadataFieldsForLanguage(lang);
+                status.textContent = `Language changed to ${lang}`;
+            });
+        });
+
+        function updateMetadataFieldsForLanguage(lang) {
+            // Update front side
+            const frontQuestion = document.getElementById('frontQuestion');
+            const frontDescription = document.getElementById('frontDescription');
+            frontQuestion.value = cardData.front.metadata.question[lang] || '';
+            frontDescription.value = cardData.front.metadata.description[lang] || '';
+
+            // Update back side
+            const backAnswer = document.getElementById('backAnswer');
+            const backDescription = document.getElementById('backDescription');
+            backAnswer.value = cardData.back.metadata.answer[lang] || '';
+            backDescription.value = cardData.back.metadata.description[lang] || '';
+        }
+
+        // Metadata field listeners
+        document.getElementById('frontQuestion').addEventListener('input', function() {
+            cardData.front.metadata.question[currentLanguage] = this.value;
+        });
+        document.getElementById('frontDescription').addEventListener('input', function() {
+            cardData.front.metadata.description[currentLanguage] = this.value;
+        });
+        document.getElementById('backAnswer').addEventListener('input', function() {
+            cardData.back.metadata.answer[currentLanguage] = this.value;
+        });
+        document.getElementById('backDescription').addEventListener('input', function() {
+            cardData.back.metadata.description[currentLanguage] = this.value;
+        });
+
         // Image picker
         const imagePickerBtn = document.getElementById('imagePickerBtn');
         const imageInput = document.getElementById('imageInput');
@@ -453,31 +765,100 @@
                 }
             }
 
-            // Image not found in standard locations
-            const addToAssets = confirm(
-                `Image "${fileName}" not found in media, assets, or images folders.\n\n` +
-                'Would you like to:\n' +
-                '- OK: Add to assets folder\n' +
-                '- Cancel: Enter custom path'
-            );
+            // Image not found - upload it to media folder
+            status.textContent = 'Uploading ' + fileName + ' to media folder...';
 
-            if (addToAssets) {
-                // Try loading from assets (user can manually add the file there)
-                const assetPath = `assets/${fileName}`;
-                loadBackgroundImage(assetPath);
-                status.textContent = 'Please add ' + fileName + ' to assets folder. Attempting to load from: ' + assetPath;
-            } else {
-                // Let user enter custom path
-                const customPath = prompt('Enter relative path to image:', fileName);
-                if (customPath && customPath.trim()) {
-                    loadBackgroundImage(customPath.trim());
-                    status.textContent = 'Background image loaded: ' + customPath;
+            const reader = new FileReader();
+            reader.onload = async function(event) {
+                try {
+                    const mediaPath = `media/${fileName}`;
+                    const response = await fetch(`/api/upload-image?path=${encodeURIComponent(mediaPath)}`, {
+                        method: 'POST',
+                        body: event.target.result,
+                        headers: {
+                            'Content-Type': 'application/octet-stream'
+                        }
+                    });
+
+                    let result;
+                    try {
+                        result = await response.json();
+                    } catch (e) {
+                        // If JSON parsing fails, still try to load from the media path
+                        loadBackgroundImage(mediaPath);
+                        status.textContent = 'Image uploaded to media folder: ' + mediaPath;
+                        return;
+                    }
+
+                    if (response.ok) {
+                        loadBackgroundImage(result.path);
+                        status.textContent = 'Image uploaded to media folder: ' + result.path;
+                    } else {
+                        status.textContent = 'Failed to upload image: ' + (result.error || 'Unknown error');
+                    }
+                } catch (error) {
+                    status.textContent = 'Error uploading image: ' + error.message;
                 }
-            }
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+        let frontImage = null;
+        let backImage = null;
+        let pendingImagePath = null;
+
+        function showSideSelectionModal(callback) {
+            const modal = document.getElementById('sideModal');
+            const statusText = document.getElementById('modalStatus');
+
+            statusText.textContent =
+                (frontImage ? '✓' : '○') + ' Front: ' + (frontImage ? 'Set' : 'Empty') + ' | ' +
+                (backImage ? '✓' : '○') + ' Back: ' + (backImage ? 'Set' : 'Empty');
+
+            modal.classList.add('show');
+
+            const handleChoice = (side) => {
+                modal.classList.remove('show');
+                document.getElementById('modalFront').onclick = null;
+                document.getElementById('modalBack').onclick = null;
+                document.getElementById('modalBoth').onclick = null;
+                callback(side);
+            };
+
+            document.getElementById('modalFront').onclick = () => handleChoice('front');
+            document.getElementById('modalBack').onclick = () => handleChoice('back');
+            document.getElementById('modalBoth').onclick = () => handleChoice('both');
         }
 
         function loadBackgroundImage(imagePath) {
-            // Remove old background raster if it exists
+            // Determine which side(s) should get the image
+            let sides = [];
+
+            // If both sides are empty, set both by default
+            if (!frontImage && !backImage) {
+                sides = ['front', 'back'];
+                doLoadImage(imagePath, sides);
+            } else {
+                // If one or both sides already have an image, ask which to update
+                pendingImagePath = imagePath;
+                showSideSelectionModal((choice) => {
+                    let selectedSides = [];
+                    if (choice === 'both') {
+                        selectedSides = ['front', 'back'];
+                    } else if (choice === 'front') {
+                        selectedSides = ['front'];
+                    } else if (choice === 'back') {
+                        selectedSides = ['back'];
+                    }
+                    doLoadImage(pendingImagePath, selectedSides);
+                });
+                return;
+            }
+        }
+
+        function doLoadImage(imagePath, sides) {
+
+            // Load the image
             if (backgroundRaster) {
                 backgroundRaster.remove();
             }
@@ -500,6 +881,22 @@
                 backgroundRaster.selectable = false;
                 backgroundRaster.sendToBack();
                 paper.view.update();
+
+                // Store the image path for the selected sides
+                sides.forEach(side => {
+                    if (side === 'front') {
+                        frontImage = imagePath;
+                    } else if (side === 'back') {
+                        backImage = imagePath;
+                    }
+                });
+
+                // Switch to the first selected side
+                if (sides.length > 0) {
+                    switchSide(sides[0]);
+                }
+
+                status.textContent = 'Image set to ' + sides.join(' and ') + ': ' + imagePath;
             };
             img.src = imagePath;
         }
