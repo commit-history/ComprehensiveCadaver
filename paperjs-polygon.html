@@ -94,7 +94,7 @@
         // Load background image
         let backgroundRaster = null;
         const img = new Image();
-        img.src = 'assets/example_img.png';
+        img.src = 'assets/example_img_wide.png';
         img.onload = function() {
             const canvas = document.getElementById('canvas');
             canvas.width = canvas.parentElement.offsetWidth - 4;
@@ -125,6 +125,101 @@
         let polygonJustSelected = false; // Track if polygon was just selected this click
         let lastColor = '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0'); // Remember last color
         let lastOpacity = 0.5; // Remember last opacity
+
+        // Function to render line endpoints
+        function renderLineEnds(line) {
+            if (!line.polygonData || !line.polygonData.isLine) return;
+
+            // Remove old line end markers if they exist
+            if (line.lineEndGroup) {
+                line.lineEndGroup.remove();
+            }
+
+            // Create group for line ends
+            line.lineEndGroup = new paper.Group();
+            line.lineEndGroup.evented = false;
+            line.lineEndGroup.selectable = false;
+
+            const segments = line.segments;
+            const lineColor = line.strokeColor;
+            const lineWidth = line.strokeWidth;
+
+            // Render start cap
+            if (line.polygonData.lineStart && line.polygonData.lineStart !== 'none') {
+                const startPoint = segments[0].point;
+                const nextPoint = segments[1].point;
+                const angle = Math.atan2(nextPoint.y - startPoint.y, nextPoint.x - startPoint.x);
+                drawLineEnd(line.lineEndGroup, startPoint, angle, line.polygonData.lineStart, lineColor, lineWidth);
+            }
+
+            // Render end cap
+            if (line.polygonData.lineEnd && line.polygonData.lineEnd !== 'none') {
+                const endPoint = segments[segments.length - 1].point;
+                const prevPoint = segments[segments.length - 2].point;
+                const angle = Math.atan2(endPoint.y - prevPoint.y, endPoint.x - prevPoint.x);
+                drawLineEnd(line.lineEndGroup, endPoint, angle, line.polygonData.lineEnd, lineColor, lineWidth);
+            }
+        }
+
+        function drawLineEnd(group, point, angle, style, color, lineWidth) {
+            const size = lineWidth * 12;
+            let shape;
+
+            switch (style) {
+                case 'arrow':
+                    // Create arrow with tip at the line endpoint
+                    const arrowLength = size;
+                    const arrowWidth = arrowLength / 2;
+                    const angleRad = angle;
+
+                    // Arrow points: tip at line end, base perpendicular
+                    const tipPoint = point;
+                    const baseOffsetX = -arrowLength * Math.cos(angleRad);
+                    const baseOffsetY = -arrowLength * Math.sin(angleRad);
+                    const perpX = -Math.sin(angleRad);
+                    const perpY = Math.cos(angleRad);
+
+                    const leftPoint = new paper.Point(
+                        point.x + baseOffsetX + perpX * arrowWidth / 2,
+                        point.y + baseOffsetY + perpY * arrowWidth / 2
+                    );
+                    const rightPoint = new paper.Point(
+                        point.x + baseOffsetX - perpX * arrowWidth / 2,
+                        point.y + baseOffsetY - perpY * arrowWidth / 2
+                    );
+
+                    shape = new paper.Path([tipPoint, leftPoint, rightPoint]);
+                    shape.closed = true;
+                    shape.fillColor = color;
+                    break;
+
+                case 'circle':
+                    shape = new paper.Path.Circle(point, size / 4);
+                    shape.fillColor = color;
+                    break;
+
+                case 'square':
+                    shape = new paper.Path.Rectangle({
+                        center: point,
+                        size: [size / 2, size / 2]
+                    });
+                    // No rotation for square - always straight
+                    shape.fillColor = color;
+                    break;
+
+                case 'diamond':
+                    shape = new paper.Path.RegularPolygon(point, 4, size / 3);
+                    // No line-angle rotation for diamond - always at 45 degrees
+                    shape.rotation = 45;
+                    shape.fillColor = color;
+                    break;
+            }
+
+            if (shape) {
+                shape.strokeColor = null;
+                group.addChild(shape);
+            }
+        }
 
         const drawBtn = document.getElementById('drawBtn');
         const drawLineBtn = document.getElementById('drawLineBtn');
@@ -299,6 +394,7 @@
         lineStartSelect.addEventListener('change', function() {
             if (selectedPath && selectedPath.polygonData.isLine) {
                 selectedPath.polygonData.lineStart = lineStartSelect.value;
+                renderLineEnds(selectedPath);
                 paper.view.update();
             }
         });
@@ -307,6 +403,7 @@
         lineEndSelect.addEventListener('change', function() {
             if (selectedPath && selectedPath.polygonData.isLine) {
                 selectedPath.polygonData.lineEnd = lineEndSelect.value;
+                renderLineEnds(selectedPath);
                 paper.view.update();
             }
         });
@@ -755,6 +852,11 @@
                         }
                     });
 
+                    // Re-render line ends if this is a line
+                    if (selectedPath.polygonData.isLine) {
+                        renderLineEnds(selectedPath);
+                    }
+
                     status.textContent = `Moving ${pointsToMove.length} point(s)...`;
                 } else if (draggingEdgeIndex >= 0 && !createdPointThisDrag && !selectedPath.polygonData.isLine) {
                     // We're dragging a polygon edge - add a point at the current drag location
@@ -846,6 +948,11 @@
 
                     // Move all handle circles with polygon
                     handleCircles.forEach(circle => circle.translate(event.delta));
+
+                    // Move line end markers with polygon
+                    if (selectedPath.lineEndGroup) {
+                        selectedPath.lineEndGroup.translate(event.delta);
+                    }
 
                     status.textContent = selectedPointIndices.length > 0 ? `Moving ${selectedPointIndices.length} point(s)...` : 'Drag to select all points';
                 }
@@ -986,6 +1093,12 @@
             }
 
             polygons.push(polygon);
+
+            // Render line ends if this is a line
+            if (isDrawingLine) {
+                renderLineEnds(polygon);
+            }
+
             points = [];
 
             // Exit draw mode and enter edit mode
